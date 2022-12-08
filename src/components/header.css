@@ -1,0 +1,14 @@
+.bambaNavbar {
+  padding: 48px 0px 48px 0px;
+}
+
+@media screen and (max-width: 400px) {
+  .bambaNavbar {
+    padding: 24px 0px 24px 0px;
+  }
+
+  .bambaLogo {
+    width: 133.38px;
+    height: 30.42px;
+  }
+}

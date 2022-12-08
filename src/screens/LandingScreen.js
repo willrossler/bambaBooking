@@ -1,37 +1,42 @@
 import React from "react";
-import BgComponent from "../components/BgComponent";
+import bLogo from "../assets/logos/bLogo.svg";
+
 import BookingCamp from "../components/BookingCamp";
 import BookingClass from "../components/BookingClass";
+import "./landingScreen.css";
 
 const LandingScreen = () => {
   const bgColor = "#3C469C";
   return (
     <>
-      <section style={{ backgroundColor: bgColor }} className="p-5">
-        <div className="container">
-          <div
-            className="h2 py-4"
-            style={{ color: "#FFF", fontSize: "64px", lineHeight: "76px" }}
-          >
-            HERE TO HELP YOU SHAPE <br />
-            YOUR NEW IMPROVED YOU
-          </div>
-          <div
-            style={{ color: "#FFF", fontSize: "32px", lineHeight: "38px" }}
-            className="py-4 h4"
-          >
-            PHYSICAL — MENTAL — SPIRITUAL
-          </div>
-          <div className="row ">
-            <div className="col">
-              <BookingClass />
+      <img className="desktop" src={bLogo} />
+
+      <div className="bgDivOne">
+        <img className="bLogoBG" src={bLogo} />
+
+        <section
+          style={{ backgroundColor: bgColor }}
+          className="sectionWrapper p-5 d-flex justify-content-center"
+        >
+          <div className="container">
+            <hr className="mobileHr" />
+            <div className="textOne h2 py-4 ">
+              HERE TO HELP YOU SHAPE YOUR NEW IMPROVED YOU
             </div>
-            <div className="col">
-              <BookingCamp />
+            <div style={{}} className=" textTwo h4">
+              PHYSICAL — MENTAL — SPIRITUAL
+            </div>
+            <div className="cardWrapper row">
+              <div className="cardContainer col">
+                <BookingClass className="bookClass" />
+              </div>
+              <div className="cardContainer col">
+                <BookingCamp className="bookCamp" />
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </>
   );
 };

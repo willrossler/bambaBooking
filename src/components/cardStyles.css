@@ -1,0 +1,64 @@
+.bookingCard {
+  height: 600px;
+  width: 600px;
+  background-color: #fff;
+  border-radius: 0;
+}
+
+.mobileHr {
+  display: none;
+}
+
+.bootClass {
+  font-size: 64px;
+}
+
+/* smaller screens  */
+@media screen and (max-width: 1400px) {
+  .bookingCard {
+    height: 400px;
+    width: 400px;
+    background-color: #fff;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .bookingCard {
+    height: 300px;
+    width: 300px;
+    background-color: #fff;
+  }
+}
+
+/* iphone 12 size  */
+@media screen and (max-width: 400px) {
+  .bookingCard {
+    border-radius: 0;
+    height: 180px;
+    width: 180px;
+    background-color: #fff;
+  }
+
+  .cardWrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .bookingCard p {
+    font-size: 14px;
+  }
+  .bookingCard h5 {
+    font-size: 24px;
+  }
+
+  .cardContainer {
+    padding: 0%;
+    display: flex;
+
+    justify-content: center;
+  }
+
+  .mobileHr {
+    display: flex;
+    border-top: 1px solid white;
+    margin-bottom: 10px;
+  }
+}
