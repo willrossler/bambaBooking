@@ -13,7 +13,10 @@ const Header = () => {
           <div className="container">
             <a href="/">
               <img className="navbar-brand" src={bambaLogo}></img>
-            </a>
+            </a> 
+            <div className="d-flex justify-content-end">
+              
+              </div>     
           </div>
         </nav>
       </div>

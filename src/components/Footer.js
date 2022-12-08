@@ -1,7 +1,7 @@
 import React from "react";
 import bLogo from "../assets/logos/bLogo.svg";
 import bambaLogo from "../assets/logos/bambaLogo.svg";
-import "./footer.css";
+
 
 const Footer = () => {
   return (

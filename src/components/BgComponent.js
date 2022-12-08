@@ -1,5 +1,5 @@
 import React from "react";
-import "./bgComponent.css";
+import "./styles/bgComponent.css";
 import bLogo from "../assets/logos/bLogo.svg";
 
 const BgComponent = () => {
