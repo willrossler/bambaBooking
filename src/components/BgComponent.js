@@ -1,6 +1,5 @@
 import React from "react";
 import "./bgComponent.css";
-import LandingContent from "./LandingContent";
 import bLogo from "../assets/logos/bLogo.svg";
 
 const BgComponent = () => {
@@ -13,6 +12,7 @@ const BgComponent = () => {
         <div className="logowrapper flex-column">
           <div className="d-flex flex-row">
             <img
+              className="img-fluid"
               src={bLogo}
               style={{
                 opacity: "0.2",
@@ -36,8 +36,6 @@ const BgComponent = () => {
               />
             </div>
           </div>
-
-          <LandingContent />
         </div>
       </div>
     </>

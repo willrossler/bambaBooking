@@ -1,6 +1,5 @@
 import React from "react";
 import Background from "../assets/images/bookback.jpg";
-import "./bookingScreen.css";
 
 const BookingScreen = () => {
   return (

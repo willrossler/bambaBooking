@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./bookingCard.css";
+import { ArrowRight } from "react-bootstrap-icons";
 
 const BookingClass = () => {
   return (
     <div>
       <div
-        className="card text-center d-flex text-center me-3"
+        className="card text-center d-flex text-center"
         style={{
           width: "100%",
           borderRadius: "0",
@@ -18,8 +18,12 @@ const BookingClass = () => {
           <p className="card-text">
             BOOK <br />—
           </p>
-          <h5 className="card-title">CLASS</h5>
-          <Link to="/booking">asd</Link>
+          <h5 style={{ fontSize: "48px" }} className="card-title">
+            CLASS
+          </h5>
+          <Link to="/booking">
+            <ArrowRight color="black" size={48} />
+          </Link>
         </div>
       </div>
     </div>
