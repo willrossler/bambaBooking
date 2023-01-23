@@ -1,0 +1,39 @@
+.enlarged-1 {
+  font-size: 105px;
+}
+
+.enlarged-2 {
+  transform: scale(1.1);
+}
+
+/* IMAGE BANNER */
+.image-container {
+  position: relative;
+  text-align: center;
+  color: #f5aac9;
+}
+
+.bannerText {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* SCREEN SIZES */
+
+@media screen and (max-width: 1401px) {
+  .trainingLinks div {
+    font-size: 75px !important;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .trainingLinks div {
+    font-size: 50px !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .trainingLinks div {
+    font-size: 24px !important;
+    line-height: 44px;
+  }
+}

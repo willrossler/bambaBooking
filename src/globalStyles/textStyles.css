@@ -1,0 +1,40 @@
+.paragraph {
+  color: #fff;
+}
+
+.textHeader {
+  color: #fff;
+}
+
+.title {
+  color: #fff;
+}
+
+.textHeaderPink {
+  color: #f5aac9;
+}
+
+.pinkHr {
+  border: 3px solid #f5aac9;
+  opacity: 1;
+  width: 112px;
+}
+.pinkHrMobile {
+  border: 2px solid #f5aac9;
+  background-color: #f5aac9;
+  opacity: 1;
+  width: 75px;
+}
+
+.map-container {
+  height: 100%;
+  width: 100%;
+}
+
+.kartaBild {
+  background-image: url("../assets/images/kartaPrint.png");
+  width: 100%;
+  height: auto;
+  zoom: 80%;
+  margin-left: 60px;
+}

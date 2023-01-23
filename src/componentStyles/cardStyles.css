@@ -1,0 +1,186 @@
+.bookingCard {
+  height: 600px;
+  width: 600px;
+  background-color: #fff;
+  border-radius: 0;
+}
+
+.mobileHr {
+  display: none;
+}
+
+.newHR {
+  display: none;
+}
+
+.bootClass {
+  font-size: 64px;
+}
+
+/* smaller screens  */
+@media screen and (max-width: 1440px) {
+  .bookingCard {
+    height: 620px;
+    width: 620px;
+    background-color: #fff;
+  }
+
+  .bookingCard p {
+    font-size: 36px;
+  }
+  .bookingCard h5 {
+    font-size: 58px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .bookingCard {
+    height: 520px;
+    width: 520px;
+    background-color: #fff;
+  }
+
+  .bookingCard p {
+    font-size: 26px;
+  }
+  .bookingCard h5 {
+    font-size: 44px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .bookingCard {
+    height: 300px;
+    width: 300px;
+    background-color: #fff;
+  }
+
+  .bookingCard p {
+    font-size: 18px;
+  }
+  .bookingCard h5 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .bookingCard {
+    height: 300px;
+    width: 300px;
+    background-color: #fff;
+  }
+
+  .bookingCard p {
+    font-size: 12px;
+  }
+  .bookingCard h5 {
+    font-size: 20px;
+  }
+
+  .arrowCard {
+    width: 30px;
+    height: 20px;
+  }
+
+  .cardContainer {
+    padding: 0%;
+    display: flex;
+
+    justify-content: center;
+  }
+}
+
+/* iphone 12 size  */
+
+/* iphone 14 PRO MAX size  */
+@media screen and (max-width: 430px) {
+  .bookingCard {
+    border-radius: 0;
+    height: 190px;
+    width: auto;
+    background-color: #fff;
+  }
+
+  .col {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .cardWrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .bookingCard p {
+    font-size: 12px;
+  }
+  .bookingCard h5 {
+    font-size: 20px;
+  }
+
+  .arrowCard {
+    width: 30px;
+    height: 20px;
+  }
+  .cardContainer {
+    padding: 0%;
+    display: flex;
+
+    justify-content: center;
+  }
+
+  .mobileHr {
+    display: flex;
+    border-top: 1px solid white;
+    margin-bottom: 10px;
+  }
+}
+
+/* IPHONE 12 PRO SIZE */
+
+@media screen and (max-width: 390px) {
+  .bookingCard {
+    border-radius: 0;
+    height: 176px;
+    width: auto;
+    background-color: #fff;
+  }
+
+  .col {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .cardWrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .bookingCard h5 {
+    font-size: 16px;
+  }
+  .bookingCard p {
+    font-size: 10px;
+  }
+  .arrowCard {
+    width: 30px;
+    height: 20px;
+  }
+  .cardContainer {
+    padding: 0%;
+    display: flex;
+
+    justify-content: center;
+  }
+
+  .newHR {
+    display: block;
+    border-top: 1px solid white;
+    border-color: #fff;
+    opacity: 0.1;
+    margin-top: 0;
+  }
+
+  .mobileHr {
+    display: flex;
+    border-top: 1px solid white;
+    margin-bottom: 10px;
+  }
+}
