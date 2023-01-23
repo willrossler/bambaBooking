@@ -1,24 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "react-bootstrap-icons";
-import "./cardStyles.css";
+import "../componentStyles/cardStyles.css";
 
 const BookingCamp = () => {
   return (
-    <div className="">
-      <div className="card text-center d-flex text-center bookingCard">
+    <div className="p-2">
+      <div className="card text-center d-flex text-center bookingCard ">
         <div className="card-body d-flex flex-column justify-content-center ">
-          <Link
-            style={{ textDecoration: "none", color: "black" }}
-            to="/booking"
-          >
+          <Link style={{ textDecoration: "none", color: "black" }} to="/camp">
             <p style={{ fontWeight: "600" }} className="card-text">
-              BOOK <br />—
+              BOKA <br />—
             </p>
             <h5 style={{ fontWeight: "600" }} className="bootClass card-title">
-              BOOTCAMP
+              CAMP
             </h5>
-            <ArrowRight color="black" size={48} />
+            <ArrowRight className="arrowCard" color="black" size={48} />
           </Link>
         </div>
       </div>

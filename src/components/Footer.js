@@ -1,44 +1,99 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import bLogo from "../assets/logos/bLogo.svg";
-import "./footer.css";
+import "../componentStyles/footer.css";
+import ContactInfo from "./ContactInfo";
+import FooterLinks from "./FooterLinks";
+import { Link, useLocation } from "react-router-dom";
 
 const Footer = () => {
-  return (
-    <>
-      <div style={{ backgroundColor: "black" }}>
-        <nav className="navbar navbar-dark py-5">
-          <div className="container d-flex flex-row justify-content-start">
-            <a href="/">
-              <img className="bLogo navbar-brand" src={bLogo}></img>
-            </a>
+  const location = useLocation();
+  const [footerColor, setfooterColor] = useState("black");
+  useEffect(() => {
+    if (location.pathname === "/booking") {
+      setfooterColor("black");
+      console.log(footerColor);
+    } else {
+      setfooterColor("#3C469C");
+      console.log(footerColor);
+    }
+  }, [location.pathname]);
 
-            <div className="row ">
-              <hr
-                style={{
-                  borderTop: "2px solid white",
-                  width: "230px",
-                  opactity: "1",
-                  transform: "rotate(90deg)",
-                }}
-              />
-              <div className="col text-start text-white ">
+  return (
+    <div
+      style={{
+        backgroundColor: footerColor,
+      }}
+    >
+      <div style={{ color: "#fff" }} class="container py-5 page-footer ">
+        <div class="row d-flex justify-content-between ">
+          <div class="col-4">
+            <img
+              src={bLogo}
+              className=""
+              style={{ height: "140px", width: "auto" }}
+            />
+          </div>
+          <div class="col-4">
+            {" "}
+            <ul
+              style={{ color: "#fff", fontSize: "14px" }}
+              className="list-unstyled h-100 text-start"
+            >
+              <li>
                 <p style={{ marginBottom: "0" }}>Bamba</p>
-                <p style={{ marginBottom: "0", opacity: "0.5" }}>
+              </li>
+              <li>
+                <p style={{ opacity: "0.5", marginBottom: "0" }}>
                   Lützengatan 10
                 </p>
-                <p style={{ marginBottom: "0", opacity: "0.5" }}>
+                <p style={{ opacity: "0.5", marginBottom: "0" }}>
                   11520 Stockholm
                 </p>
-                <p style={{ opacity: "0.5" }}>Sweden</p>
-                <p style={{ marginBottom: "0" }}>info@bamba.se</p>
-                <p style={{}}>www.bambaostermalm.se</p>
+                <p style={{ opacity: "0.5", marginBottom: "0" }}>Sweden</p>
+              </li>
+              <br />
+              <li>
+                <p style={{ marginBottom: "0" }}>info@bambaostermalm.se</p>
+                <p style={{ marginBottom: "0" }}>www.bambaostermalm.se</p>
+              </li>
+              <br />
+              <li>
                 <p style={{ marginBottom: "0" }}>Instagram@bambaostermalm</p>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
-        </nav>
+          <div class="col-4 d-flex ">
+            <ul className="list-unstyled h-100 text-start ">
+              <li>
+                <Link style={{ color: "#fff" }} to="/">
+                  — FILOSOFI
+                </Link>
+              </li>
+              <li>
+                <Link style={{ color: "#fff" }} to="/training">
+                  — TRAINING
+                </Link>
+              </li>
+              <li>
+                <Link style={{ color: "#fff" }} to="/contact">
+                  — CONTACT
+                </Link>
+              </li>
+              <li>
+                <Link style={{ color: "#fff" }} to="/shop">
+                  — SHOP
+                </Link>
+              </li>
+              <li>
+                <Link style={{ color: "#fff" }} to="/booking">
+                  — BOOK CLASSES
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </>
+    </div>
   );
 };
 

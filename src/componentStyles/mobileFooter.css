@@ -1,0 +1,28 @@
+.parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) repeat(2, 0) 1fr;
+  grid-template-rows: repeat(2, 1fr) repeat(3, 0);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.mobileFooter {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.div3 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+@media screen and (min-width: 768px) {
+  .mobileFooter {
+    display: none;
+  }
+}

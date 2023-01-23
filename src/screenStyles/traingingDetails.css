@@ -1,0 +1,68 @@
+.mobileView {
+  display: none;
+}
+
+.boxerBannerContainer {
+  background-color: rgb(59, 91, 134);
+}
+
+.bannerCard {
+  width: 600px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.textContainer {
+  width: 500px;
+}
+
+@media screen and (max-width: 400px) {
+  .desktopView {
+    display: none;
+  }
+
+  .textContainer {
+    width: auto;
+  }
+
+  .mobileView {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* iPhone PRO MAX size  */
+
+/* @media screen and (max-width: 430px) {
+  .desktopView {
+    display: none;
+  }
+
+  .textContainer {
+    width: auto;
+  }
+
+  .mobileView {
+    display: flex;
+    flex-direction: column;
+  }
+} */
+@media screen and (max-width: 780px) {
+  .desktopView {
+    display: none;
+  }
+
+  .textContainer {
+    width: auto;
+  }
+
+  .mobileView {
+    display: flex;
+    flex-direction: column;
+  }
+}

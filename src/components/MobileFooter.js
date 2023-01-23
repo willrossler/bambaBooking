@@ -1,34 +1,36 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import bLogo from "../assets/logos/bLogo.svg";
-import "./footer.css";
+import "../componentStyles/mobileFooter.css";
+import FooterLinks from "./FooterLinks";
+import ContactInfo from "./ContactInfo";
+import { Link, useLocation } from "react-router-dom";
 
 const MobileFooter = () => {
-  return (
-    <footer
-      style={{ backgroundColor: "#3C469C" }}
-      className="p-5 text-white text-center position-relative"
-    >
-      <div
-        style={{}}
-        className="container d-flex flex-row justify-content-start"
-      >
-        {/* <p className="lead">Copyright &copy; 2022 Bamba AB</p> */}
-        <img src={bLogo} />
-        <div className="contactInfo text-start">
-          <p>Bamba</p>
-          <p>Lützengatan 10</p>
-          <p>11520 Stockholm</p>
-          <p>Sweden</p>
-          <p>info@bamba.se</p>
-          <p>www.bambaostermalm.se</p>
-          <p>Instagram @bambaostermalm</p>
-        </div>
+  const location = useLocation();
+  const [footerColor, setfooterColor] = useState("black");
 
-        <a href="/" className="position-absolute bottom-0 end-0 p-5">
-          <i className="bi bi-arrow-up-circle h1 color-white"></i>
-        </a>
+  useEffect(() => {
+    if (location.pathname === "/booking") {
+      setfooterColor("#000000");
+    } else {
+      setfooterColor("#3C469C");
+    }
+  }, [location.pathname]);
+
+  return (
+    <>
+      <div class="mobileFooter parent" style={{ backgroundColor: footerColor }}>
+        <div class="div1 container">
+          <img src={bLogo} style={{ width: "70px", height: "70px" }} />
+        </div>
+        <div class="div2 px-4">
+          <ContactInfo />
+        </div>
+        <div class="div3 px-4">
+          <FooterLinks />
+        </div>
       </div>
-    </footer>
+    </>
   );
 };
 export default MobileFooter;

@@ -1,0 +1,37 @@
+.d-sm-inline.d-md-inline .nav-link-text::before {
+  content: "— ";
+}
+
+/* iPhone PRO MAX  */
+.nav-link:hover {
+  color: #3c469c;
+  transition: color 200ms ease-in-out;
+}
+.active-link {
+  border-bottom: 4px solid #3c469c;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 430px) {
+  .bambaNavbar {
+    padding: 24px 0px 24px 0px;
+  }
+
+  .bambaLogo {
+    width: 133.38px;
+    height: 30.42px;
+  }
+}
+
+/* iPhone 12 size  */
+
+@media screen and (max-width: 400px) {
+  .bambaNavbar {
+    padding: 24px 0px 24px 0px;
+  }
+
+  .bambaLogo {
+    width: 133.38px;
+    height: 30.42px;
+  }
+}
