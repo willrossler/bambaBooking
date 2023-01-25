@@ -12,12 +12,15 @@ const BootCampDetails = () => {
     <>
       {/* DESKTOP VIEW  */}
 
+      <h1
+        style={{ fontSize: "64px", paddingTop: "80px" }}
+        className="title container desktopView"
+      >
+        CAMP
+        <hr className="pinkHr" />
+      </h1>
       <div className="wrapper desktopView container">
         <div className="textContainer">
-          <h1 style={{ fontSize: "64px" }} className="title">
-            CAMP
-          </h1>
-          <hr className="pinkHr" />
           <div style={{ marginBottom: "60px" }} className="row py-4">
             <h3 style={{ color: "#fff" }}>FORMS OF TRAINING</h3>
             <div className="paragraph">
@@ -70,12 +73,15 @@ const BootCampDetails = () => {
       </section>
       {/* MOBILE VIEW  */}
 
-      <h1 className="container" style={{ color: "#fff", paddingTop: "20px" }}>
+      <h1
+        className="container mobileView"
+        style={{ color: "#fff", paddingTop: "20px" }}
+      >
         CAMP
         <hr className="pinkHrMobile" />
       </h1>
 
-      <img src={bootCampPic} className="img-fluid" />
+      <img src={bootCampPic} className="img-fluid mobileView" />
       <div className="container mobileView">
         <div className="textContainer">
           <div style={{ color: "#fff" }} className="row py-4">

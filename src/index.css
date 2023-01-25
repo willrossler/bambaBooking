@@ -8,6 +8,7 @@
 * {
   font-family: "N27" !important;
   text-decoration: none !important;
+  outline: 1px solid limegreen !important;
 }
 
 body {

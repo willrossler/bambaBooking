@@ -63,30 +63,30 @@ const Footer = () => {
             </ul>
           </div>
           <div class="col-4 d-flex ">
-            <ul className="list-unstyled h-100 text-start ">
-              <li>
+            <ul className="list-unstyled h-100  ">
+              <li className="">
                 <Link style={{ color: "#fff" }} to="/">
                   — FILOSOFI
                 </Link>
               </li>
-              <li>
+              <li className="">
                 <Link style={{ color: "#fff" }} to="/training">
-                  — TRAINING
+                  — TRÄNING
                 </Link>
               </li>
-              <li>
+              <li className="">
                 <Link style={{ color: "#fff" }} to="/contact">
-                  — CONTACT
+                  — KONTAKT
                 </Link>
               </li>
-              <li>
+              <li className="">
                 <Link style={{ color: "#fff" }} to="/shop">
-                  — SHOP
+                  — OM OSS
                 </Link>
               </li>
-              <li>
+              <li className="">
                 <Link style={{ color: "#fff" }} to="/booking">
-                  — BOOK CLASSES
+                  — BOKA
                 </Link>
               </li>
             </ul>

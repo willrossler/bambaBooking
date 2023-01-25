@@ -152,7 +152,7 @@ function Header() {
                   className="d-lg-none "
                   onClick={handleClose}
                 >
-                  — PHILOSOPHY
+                  — FILOSOFI
                 </Link>
               </Nav.Link>
               <Nav.Link>
@@ -166,7 +166,7 @@ function Header() {
                   className="d-lg-none "
                   onClick={handleClose}
                 >
-                  — TRAINING
+                  — TRÄNING
                 </Link>
               </Nav.Link>
               <Nav.Link>
@@ -181,7 +181,7 @@ function Header() {
                   onClick={handleClose}
                 >
                   {" "}
-                  — CONTACT
+                  — KONTAKT
                 </Link>
               </Nav.Link>
               <Nav.Link>
@@ -196,7 +196,7 @@ function Header() {
                   onClick={handleClose}
                 >
                   {" "}
-                  — SHOP
+                  — OM OSS
                 </Link>
               </Nav.Link>
 

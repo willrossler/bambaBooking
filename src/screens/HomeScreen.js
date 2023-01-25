@@ -16,18 +16,20 @@ const HomeScreen = () => {
         alt="Home Image"
       />
       <div className="d-flex container headerBox ">
-        <h2
-          className="text-start"
-          style={{ color: "#fff", lineHeight: "3rem" }}
-        >
-          GYMMET FÖR <br />
-          KROPP OCH SINNE
-        </h2>
-
+        <div className="col">
+          <h2
+            className="text-start"
+            style={{ color: "#fff", lineHeight: "3rem" }}
+          >
+            GYMMET FÖR <br />
+            KROPP OCH SINNE
+          </h2>
+          <hr className="pinkHrMobile mobileView" />
+          {/* <hr className="pinkHr desktopView" /> */}
+          <h5 style={{ color: "#fff" }}> [BAMBA - Body and Mind by Abbe]</h5>
+        </div>
         <div className="flex-col textContainer">
           <p className="paragraph">
-            {" "}
-            [BAMBA - Body and Mind by Abbe] <br />
             På BAMBA stöttar vi dig i att se till helheten, för vi har sett det
             med egna ögon – den positiva effekten av kost, träning, gemenskap
             och mental coaching förändrar liv till det bättre. <br />
