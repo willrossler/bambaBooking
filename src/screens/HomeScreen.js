@@ -43,7 +43,7 @@ const HomeScreen = () => {
             Kom som du är, gå härifrån nöjdare.{" "}
           </p>
 
-          <h3 className="textHeaderPink">Physical</h3>
+          <h3 className="textHeaderPink">Fysiskt</h3>
 
           <p className="paragraph">
             {" "}
@@ -55,7 +55,7 @@ const HomeScreen = () => {
             är varierat, anpassat och i ständig förändring då varje session ter
             sig olika.{" "}
           </p>
-          <h3 className="textHeaderPink">Mental</h3>
+          <h3 className="textHeaderPink">Mentalt</h3>
           <p className="paragraph">
             {" "}
             Varför tränar du? Ditt psykiska mående har stor inverkan på din
@@ -65,7 +65,7 @@ const HomeScreen = () => {
             dig med en-och-en coachning sessioner, anpassade utefter din
             livssituation.{" "}
           </p>
-          <h3 className="textHeaderPink">Spiritual</h3>
+          <h3 className="textHeaderPink">Spirituellt</h3>
           <p className="paragraph">
             {" "}
             Let’s face it, ensam är inte särskilt stark. Gemenskap spelar högt
