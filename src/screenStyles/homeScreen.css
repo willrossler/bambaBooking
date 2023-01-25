@@ -5,6 +5,11 @@
   padding-bottom: 5rem;
 }
 
+@media (min-width: 1000px) {
+  .container {
+  }
+}
+
 @media screen and (max-width: 800px) {
   .headerBox {
     display: flex;
