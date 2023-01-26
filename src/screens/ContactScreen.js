@@ -6,6 +6,7 @@ import TrainerCardMartin from "../components/TrainerCardMartin";
 import TrainerCardJocke from "../components/TrainerCardJocke";
 import MapComponent from "../components/MapComponent";
 import MapComponentMobile from "../components/MapComponentMobile";
+import kartaBild from "../assets/images/kartaPrint.png";
 
 const ContactScreen = () => {
   return (

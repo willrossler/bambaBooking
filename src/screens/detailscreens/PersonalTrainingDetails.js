@@ -2,49 +2,65 @@ import React from "react";
 import TrainingInfo from "../../components/TrainingInfo";
 import "../../screenStyles/traingingDetails.css";
 import Image from "react-bootstrap/Image";
+import { Link } from "react-router-dom";
 
 import TrainerCardAbbe from "../../components/TrainerCardAbbe";
 import TrainerCardJocke from "../../components/TrainerCardJocke";
 import TrainerCardMartin from "../../components/TrainerCardMartin";
+import ptPic from "../../assets/images/PTdetails.jpg";
+
 const PersonalTrainingDetails = () => {
   return (
     <>
       {/* DESKTOP VIEW  */}
-      <div className="container desktopView">
-        <div className="wrapper">
-          <div className="textContainer">
-            <h1 className="title">PERSONAL TRAINING</h1>
-            <hr className="pinkHr" />
-            <h2 style={{ color: "#F5AAC9", paddingTop: "1rem" }}>
-              Introduktion
-            </h2>
-            <p className="paragraph">
-              Vad vill du uppnå med din träning och vad vill du lära dig? Få ett
-              skräddarsytt, personligt träningsprogram skapat helt utefter din
-              nivå och förutsättningar. Utöver fysisk träning erbjuder vi även
-              kostupplägg och mental coaching. Vi, Abbe, Martin och Joakim, har
-              alla olika bakgrunder inom fysisk aktivitet och delar passionen
-              för att lära ut och hjälpa andra göra framsteg. CTA (skicka till
-              About Us): Möt våra tränare
-            </p>
-            <TrainingInfo />
-          </div>
-
-          <div className="bannerCard">
-            <img className="img-fluid" src={{}} />
-          </div>
-        </div>
-        <h1 className="title">COACHES</h1>
+      <h1
+        style={{ fontSize: "52px", paddingTop: "80px" }}
+        className="title container desktopView"
+      >
+        PERSONAL TRAINING
         <hr className="pinkHr" />
+      </h1>
+      <div className="wrapper container desktopView">
+        <div className="textContainer">
+          <TrainingInfo />
+          <h2 style={{ color: "#F5AAC9", paddingTop: "1rem" }}>Beskrivning</h2>
 
-        <div className="d-flex flex-row mb-3 ">
-          <TrainerCardAbbe />
-          <div style={{ margin: "0px 80px" }}>
-            <TrainerCardJocke />
-          </div>
-          <TrainerCardMartin />
+          <p className="paragraph">
+            Vad vill du uppnå med din träning och vad vill du lära dig? Få ett
+            skräddarsytt, personligt träningsprogram skapat helt utefter din
+            nivå och förutsättningar. Utöver fysisk träning erbjuder vi även
+            kostupplägg och mental coaching. Vi, Abbe, Martin och Joakim, har
+            alla olika bakgrunder inom fysisk aktivitet och delar passionen för
+            att lära ut och hjälpa andra göra framsteg. CTA (skicka till About
+            Us): Möt våra tränare
+          </p>
+          <h5 style={{ color: "#fff" }}>
+            Läs mer om våra tränare <Link to="/shop">här. </Link>{" "}
+          </h5>
+        </div>
+        <div className="bannerCard">
+          <img className="img-fluid" src={ptPic} />
         </div>
       </div>
+      <section className="container desktopView">
+        <div style={{ paddingBottom: "100px" }} className="container ">
+          <h1 style={{ fontSize: "64px" }} className="textHeader">
+            COACHER
+          </h1>
+          <hr className="pinkHr" />
+          <div className="d-flex justify-content-between ">
+            <div>
+              <TrainerCardAbbe />
+            </div>
+            <div style={{ margin: "0px 40px" }}>
+              <TrainerCardJocke />
+            </div>
+            <div>
+              <TrainerCardMartin />
+            </div>
+          </div>
+        </div>
+      </section>
       {/* MOBILE VIEW  */}
 
       <div className="container mobileView">
