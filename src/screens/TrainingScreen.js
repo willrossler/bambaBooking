@@ -72,7 +72,7 @@ const TrainingScreen = () => {
         return {
           backgroundColor: "",
           marginTop: "40px",
-          marginBottom: "60px",
+          marginBottom: "400px",
         };
     }
   };

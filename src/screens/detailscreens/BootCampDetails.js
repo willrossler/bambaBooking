@@ -13,7 +13,7 @@ const BootCampDetails = () => {
       {/* DESKTOP VIEW  */}
 
       <h1
-        style={{ fontSize: "64px", paddingTop: "80px" }}
+        style={{ fontSize: "52px", paddingTop: "80px" }}
         className="title container desktopView"
       >
         CAMP
