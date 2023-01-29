@@ -182,8 +182,9 @@ function Header() {
                   style={{
                     marginLeft: "100px",
                     backgroundColor: "#fff",
+                    height: "50px",
                   }}
-                  class="btn btn-primary btn-light px-5 py-2 rounded-0 d-none d-lg-block d-xl-block"
+                  class="btn btn-primary btn-light px-5 rounded-0 d-none d-lg-block d-xl-block"
                 >
                   <Link style={{ color: "black" }} to="/booking">
                     BOOK
