@@ -1,3 +1,49 @@
+.linkStylesFooter p {
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 43px;
+  margin: 0;
+}
+
+@media screen and (max-width: 1800px) {
+  .linkStylesFooter p {
+    font-size: 19.5px;
+    font-weight: 300;
+    line-height: 32.25px;
+  }
+  @media screen and (max-width: 1200px) {
+    .linkStylesFooter p {
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 21.5px;
+    }
+  }
+}
+
+.infoStylesFooter p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 22px;
+  margin: 0;
+}
+
+@media screen and (max-width: 1800px) {
+  .infoStylesFooter p {
+    font-size: 13.5px;
+    font-weight: 300;
+    line-height: 16.5px;
+    margin: 0;
+  }
+  @media screen and (max-width: 1200px) {
+    .infoStylesFooter p {
+      font-size: 9px;
+      font-weight: 300;
+      line-height: 11px;
+      margin: 0;
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   .page-footer {
     display: none;

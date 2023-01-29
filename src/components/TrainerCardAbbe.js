@@ -4,30 +4,18 @@ import "../componentStyles/trainerCard.css";
 
 const TrainerCardAbbe = () => {
   return (
-    <div style={{ padding: "40px 0 40px 0" }} className="d-flex flex-col">
+    <div className="d-flex flex-col trainerCard">
       <div className="d-flex flex-column">
-        <img
-          src={abbePic}
-          alt=""
-          className="user-image"
-          style={{ width: "100%", borderRadius: "50%" }}
-        />
-        <hr
-          style={{
-            width: "auto",
-            opacity: "0.5",
-            marginTop: "2rem",
-            marginBottom: "2rem",
-          }}
-        />
+        <img src={abbePic} alt="" className="user-image" />
+        <hr />
         <div className="trainerCardP">
-          <p style={{ fontSize: "18px", margin: "0" }}>Abbe Joof</p>
-          <p style={{ opacity: "0.5", fontSize: "18px", margin: "0" }}>
+          <p>Abbe Joof</p>
+          <p style={{ opacity: "0.5", fontWeight: "400" }}>
             Founder + Personal Trainer
           </p>
-          <p style={{ opacity: "50%", fontSize: "18px", margin: "0" }}> — </p>
-          <p style={{ fontSize: "18px", margin: "0" }}>abbe@bamba.se</p>
-          <p style={{ fontSize: "18px", margin: "0" }}>+467 012 345 67</p>
+          <p style={{ opacity: "0.5", fontWeight: "400" }}> — </p>
+          <p>abbe@bamba.se</p>
+          <p>+467 012 345 67</p>
         </div>
       </div>
     </div>

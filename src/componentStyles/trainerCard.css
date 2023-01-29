@@ -1,3 +1,33 @@
-.trainerCardP {
+.trainerCard p {
   color: #fff;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.trainerCard img {
+  width: 255px;
+  height: 255px;
+  border-radius: 50%;
+}
+
+hr {
+  color: #fff;
+  opacity: 0.2;
+}
+
+@media screen and (max-width: 420px) {
+  .trainerCard p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 16.8px;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  .trainerCard img {
+    width: 175px;
+    height: 175px;
+  }
 }

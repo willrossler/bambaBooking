@@ -1,13 +1,123 @@
-.paragraph {
-  color: #fff;
-}
+/* <----------------------------- TEXT STYLING GOBAL --------------------> */
 
-.textHeader {
-  color: #fff;
-}
+/*  GIGA-LARGE SCREEN ??? */
+
+/* TRAINING FORMS */
 
 .title {
   color: #fff;
+  font-size: 64px;
+}
+
+.trainingForms p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21px;
+  margin: 0;
+}
+.trainingForms h3 {
+  color: #fff;
+  font-size: 18px;
+
+  font-weight: 500;
+}
+.homeParagraph {
+  font-size: 24px;
+  line-height: 28px;
+  color: #fff;
+  font-weight: lighter;
+}
+
+p {
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+  font-weight: lighter;
+}
+
+@media screen and (max-width: 1800px) {
+  .trainingForms p {
+    color: #fff;
+    font-size: 13.5px;
+    font-weight: 300;
+    line-height: 15.75px;
+    margin: 0;
+  }
+  .trainingForms h3 {
+    font-size: 13.5px;
+    color: #fff;
+    font-weight: 500;
+  }
+  p {
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+    font-weight: lighter;
+  }
+
+  .homeParagraph {
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+    font-weight: lighter;
+  }
+  h1 {
+    font-size: 36px;
+    line-height: 43px;
+    color: #fff;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  /* .trainingForms p {
+    color: #fff;
+    font-size: 9px;
+    font-weight: 300;
+    line-height: 10.5px;
+    margin: 0;
+  }
+  .trainingForms h3 {
+    color: #fff;
+    font-size: 9px;
+
+    font-weight: 500;
+  }
+  p {
+    font-size: 12px;
+    line-height: 14px;
+    color: #fff;
+    font-weight: lighter;
+  } */
+}
+
+/* -------------------------------------------- */
+
+/* LARGE LAPTOP/DESKTOP */
+
+@media screen and (max-width: 1800px) {
+}
+
+/* LAPTOP REGULAR */
+
+@media screen and (max-width: 1200px) {
+  .homeParagraph {
+    font-size: 12px;
+    line-height: 14px;
+    color: #fff;
+    font-weight: lighter;
+  }
+  h1 {
+    font-size: 24px;
+    line-height: 28px;
+    color: #fff;
+    font-weight: 500;
+  }
+}
+
+/* SMALLER SCREENS/IPAD */
+@media screen and (max-width: 1000px) {
 }
 
 .textHeaderPink {
