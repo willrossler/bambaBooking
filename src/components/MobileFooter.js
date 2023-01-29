@@ -19,15 +19,18 @@ const MobileFooter = () => {
 
   return (
     <>
-      <div class="mobileFooter parent" style={{ backgroundColor: footerColor }}>
+      <div
+        class="mobileFooter parent"
+        style={{ backgroundColor: footerColor, marginTop: "100px" }}
+      >
         <div class="div1 container">
           <img src={bLogo} style={{ width: "70px", height: "70px" }} />
         </div>
         <div class="div2 px-4">
-          <ContactInfo />
+          <FooterLinks />
         </div>
         <div class="div3 px-4">
-          <FooterLinks />
+          <ContactInfo />
         </div>
       </div>
     </>

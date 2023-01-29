@@ -4,6 +4,12 @@ import "../globalStyles/textStyles.css";
 
 import homeBanner from "../assets/images/homePic.jpg";
 
+const pStyles = {
+  fontSize: "24px",
+  lineHeight: "28px",
+  color: "#fff",
+};
+
 const HomeScreen = () => {
   const [showMenu, setShowMenu] = useState(false);
 
@@ -15,21 +21,20 @@ const HomeScreen = () => {
         className="img-fluid d-none d-lg-block d-md-inline"
         alt="Home Image"
       />
-      <div className="d-flex container headerBox ">
+      <div className="container d-flex d-none d-lg-flex ">
         <div className="col">
           <h2
             className="text-start"
-            style={{ color: "#fff", lineHeight: "3rem" }}
+            style={{ color: "#fff", lineHeight: "58px", fontSize: "48px" }}
           >
             GYMMET FÖR <br />
             KROPP OCH SINNE
           </h2>
-          <hr className="pinkHrMobile mobileView" />
-          {/* <hr className="pinkHr desktopView" /> */}
+
           <h5 style={{ color: "#fff" }}> [BAMBA - Body and Mind by Abbe]</h5>
         </div>
         <div className="flex-col textContainer">
-          <p className="paragraph">
+          <p className="homeParagraph">
             På BAMBA stöttar vi dig i att se till helheten, för vi har sett det
             med egna ögon – den positiva effekten av kost, träning, gemenskap
             och mental coaching förändrar liv till det bättre. <br />
@@ -45,7 +50,7 @@ const HomeScreen = () => {
 
           <h3 className="textHeaderPink">Fysiskt</h3>
 
-          <p className="paragraph">
+          <p className="homeParagraph">
             {" "}
             Hur vill du använda din kropp? Vi tror på “medveten rörelse” - där
             varje pass fyller sitt syfte, om du så vill uppnå ett mål inför en
@@ -56,7 +61,7 @@ const HomeScreen = () => {
             sig olika.{" "}
           </p>
           <h3 className="textHeaderPink">Mentalt</h3>
-          <p className="paragraph">
+          <p className="homeParagraph">
             {" "}
             Varför tränar du? Ditt psykiska mående har stor inverkan på din
             fysiska kropp, därför separerar vi inte på de två utan väver dem
@@ -66,7 +71,7 @@ const HomeScreen = () => {
             livssituation.{" "}
           </p>
           <h3 className="textHeaderPink">Spirituellt</h3>
-          <p className="paragraph">
+          <p className="homeParagraph">
             {" "}
             Let’s face it, ensam är inte särskilt stark. Gemenskap spelar högt
             på BAMBA och vi välkomnar dig att bli en del av den! Energi finns i

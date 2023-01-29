@@ -8,6 +8,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { Button } from "react-bootstrap";
 
+import "../componentStyles/mobileMenuStyles.css";
 import "../componentStyles/header.css";
 
 function Header() {
@@ -48,7 +49,7 @@ function Header() {
       <Container>
         <Navbar.Brand>
           <Link to="/">
-            <img src={bambaLogo} />
+            <img className="bambaLogo" src={bambaLogo} />
           </Link>
         </Navbar.Brand>
 
@@ -68,23 +69,23 @@ function Header() {
           <Offcanvas.Header
             style={{
               backgroundColor: "#3C469C",
-              height: "82px",
-              marginBottom: "60px",
+              height: "72px",
             }}
           >
             <Navbar.Brand>
               <Link className="d-lg-none" to="/">
-                <img src={bambaLogo} />
+                <img className="bambaLogo" src={bambaLogo} />
               </Link>
             </Navbar.Brand>
+
             <X
               className="d-lg-none "
               style={{ width: "40px", height: "40px", color: "#fff" }}
               onClick={handleClose}
             />
           </Offcanvas.Header>
+          <hr className="shadowHr" />
           <Offcanvas.Body>
-            {" "}
             <Nav className="ms-auto py-3  ">
               <Nav.Link>
                 <Link
@@ -141,65 +142,39 @@ function Header() {
                 </Link>
               </Nav.Link>
 
-              <Nav.Link>
-                <Link
-                  style={{
-                    color: "#fff",
-                    paddingBottom: "15px",
-                    fontSize: "35px",
-                  }}
-                  to="/"
-                  className="d-lg-none "
-                  onClick={handleClose}
-                >
-                  — FILOSOFI
-                </Link>
-              </Nav.Link>
-              <Nav.Link>
-                <Link
-                  style={{
-                    color: "#fff",
-                    paddingBottom: "15px",
-                    fontSize: "35px",
-                  }}
-                  to="/training"
-                  className="d-lg-none "
-                  onClick={handleClose}
-                >
-                  — TRÄNING
-                </Link>
-              </Nav.Link>
-              <Nav.Link>
-                <Link
-                  style={{
-                    color: "#fff",
-                    paddingBottom: "15px",
-                    fontSize: "35px",
-                  }}
-                  to="contact"
-                  className="d-lg-none "
-                  onClick={handleClose}
-                >
-                  {" "}
-                  — KONTAKT
-                </Link>
-              </Nav.Link>
-              <Nav.Link>
-                <Link
-                  style={{
-                    color: "#fff",
-                    paddingBottom: "15px",
-                    fontSize: "35px",
-                  }}
-                  to="/shop"
-                  className="d-lg-none"
-                  onClick={handleClose}
-                >
-                  {" "}
-                  — OM OSS
-                </Link>
-              </Nav.Link>
-
+              {/*  MOBILE LINKS */}
+              <div className="mobileLinksStyle">
+                <Nav.Link>
+                  <Link to="/" className="d-lg-none " onClick={handleClose}>
+                    — FILOSOFI
+                  </Link>
+                </Nav.Link>
+                <Nav.Link>
+                  <Link
+                    to="/training"
+                    className="d-lg-none "
+                    onClick={handleClose}
+                  >
+                    — TRÄNING
+                  </Link>
+                </Nav.Link>
+                <Nav.Link>
+                  <Link
+                    to="contact"
+                    className="d-lg-none "
+                    onClick={handleClose}
+                  >
+                    {" "}
+                    — KONTAKT
+                  </Link>
+                </Nav.Link>
+                <Nav.Link>
+                  <Link to="/shop" className="d-lg-none" onClick={handleClose}>
+                    {" "}
+                    — OM OSS
+                  </Link>
+                </Nav.Link>
+              </div>
               <div class="col-4 text-center d-flex">
                 {/* BIG SCREEN BUTTON */}
 
@@ -227,11 +202,11 @@ function Header() {
                 className="d-lg-none btn btn-primary btn-light px-5 py-2 rounded-0 "
               >
                 <Link
-                  style={{ color: "black" }}
+                  style={{ color: "black", fontSize: "18px" }}
                   onClick={handleClose}
                   to="/booking"
                 >
-                  BOOK MOBILE
+                  BOKA
                 </Link>
               </button>
               <div className="d-lg-none">

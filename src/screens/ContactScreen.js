@@ -29,7 +29,7 @@ const ContactScreen = () => {
               className="d-flex justify-content-between pb-5 "
             >
               <div>
-                <h1 style={{ fontSize: "64px" }} className="textHeader">
+                <h1 className="title">
                   LOCATION
                   <hr className="pinkHr" />
                 </h1>
@@ -43,9 +43,7 @@ const ContactScreen = () => {
         </section>
         <section className=" ">
           <div style={{ paddingBottom: "100px" }} className="container ">
-            <h1 style={{ fontSize: "64px" }} className="textHeader">
-              PERSONAL TRAINERS
-            </h1>
+            <h1 className="title">PERSONAL TRAINERS</h1>
             <hr className="pinkHr" />
             <div className="d-flex justify-content-between ">
               <div>
