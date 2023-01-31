@@ -9,7 +9,7 @@ const TrainerCardJocke = () => {
         <img src={jockePic} alt="" className="user-image" />
         <hr />
         <div className="trainerCardP">
-          <p>Joakim Karlsson</p>
+          <p style={{ fontWeight: "500" }}>Joakim Karlsson</p>
           <p style={{ opacity: "0.5", fontWeight: "400" }}>Personal Trainer</p>
           <p style={{ opacity: "0.5", fontWeight: "400" }}> — </p>
           <p>jocke@bamba.se</p>
