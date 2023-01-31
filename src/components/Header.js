@@ -60,7 +60,12 @@ function Header() {
         />
 
         <Offcanvas
-          style={{ backgroundColor: "#3C469C", width: "100%", height: "100&" }}
+          style={{
+            backgroundColor: "#3C469C",
+            width: "100%",
+            height: "100%",
+            border: "none",
+          }}
           className="ms-auto "
           show={show}
           onHide={handleClose}
@@ -102,7 +107,7 @@ function Header() {
                       : "d-none d-lg-inline "
                   }
                 >
-                  PHILOSOPHY
+                  FILOSOFI
                 </Link>
               </Nav.Link>
               <Nav.Link>
@@ -115,7 +120,7 @@ function Header() {
                       : "d-none d-lg-inline "
                   }
                 >
-                  TRAINING
+                  TRÄNING
                 </Link>
               </Nav.Link>
               <Nav.Link>
@@ -129,7 +134,7 @@ function Header() {
                   }
                 >
                   {" "}
-                  CONTACT
+                  KONTAKT
                 </Link>
               </Nav.Link>
               <Nav.Link>
@@ -191,7 +196,14 @@ function Header() {
                   }}
                   class="btn btn-primary btn-light px-5 rounded-0 d-none d-lg-block d-xl-block"
                 >
-                  <Link style={{ color: "black" }} to="/booking">
+                  <Link
+                    style={{
+                      color: "black",
+                      fontWeight: "500",
+                      fontSize: "18px",
+                    }}
+                    to="/booking"
+                  >
                     BOOK
                   </Link>
                 </button>
@@ -201,14 +213,18 @@ function Header() {
 
               <button
                 style={{
-                  marginTop: "50px",
+                  marginTop: "130px",
                   marginBottom: "50px",
                   backgroundColor: "#D9D9D9",
                 }}
-                className="d-lg-none btn btn-primary btn-light px-5 py-2 rounded-0 "
+                className="d-lg-none btn btn-primary btn-light  py-2 rounded-0 "
               >
                 <Link
-                  style={{ color: "black", fontSize: "18px" }}
+                  style={{
+                    color: "black",
+                    fontSize: "18px",
+                    fontWeight: "500",
+                  }}
                   onClick={handleClose}
                   to="/booking"
                 >
@@ -216,7 +232,7 @@ function Header() {
                 </Link>
               </button>
               <div className="d-lg-none bottomInfo">
-                <div class="d-flex justify-content-between align-items-end ">
+                <div class="d-flex justify-content-center align-items-end  ">
                   <p
                     className="text-end"
                     style={{ fontSize: "14px", marginBottom: "0" }}
@@ -275,7 +291,7 @@ function Header() {
                   </p>
                 </div>
                 <hr />
-                <div class="d-flex align-items-end justify-content-between">
+                <div class="d-flex align-items-end justify-content-center">
                   <p style={{ fontSize: "14px" }}>@</p>
 
                   <p style={{ fontSize: "14px", opacity: "0.5" }}>

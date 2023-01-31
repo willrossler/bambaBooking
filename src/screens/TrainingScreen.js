@@ -17,7 +17,7 @@ const TrainingScreen = () => {
 
   const getStyles = (index) => {
     return {
-      fontSize: index === hoveredIndex ? "100px" : "100px",
+      fontSize: index === hoveredIndex ? "100copx" : "100px",
       transition: "all 200ms ease-in-out",
       color: index === hoveredIndex ? "#F5AAC9" : "#fff",
       opacity: index === hoveredIndex ? 1 : index % 2 === 0 ? 0.5 : 1,
