@@ -2,7 +2,21 @@
   font-family: "N27";
   src: url("./fonts/n27-regular-webfont.woff") format("woff"),
     url("./fonts/n27-regular-webfont.woff2") format("woff2");
-  font-weight: normal;
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "N27";
+  src: url("./fonts/n27-light-webfont.woff") format("woff"),
+    url("./fonts/n27-light-webfont.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "N27";
+  src: url("./fonts/n27-extralight-webfont.woff") format("woff"),
+    url("./fonts/n27-extralight-webfont.woff2") format("woff2");
+  font-weight: 300;
   font-style: normal;
 }
 * {

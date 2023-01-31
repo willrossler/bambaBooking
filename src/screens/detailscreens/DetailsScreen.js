@@ -1,18 +1,81 @@
 import React from "react";
+import BoxingBanner from "../../components/BoxingBanner";
 import TrainerCardAbbe from "../../components/TrainerCardAbbe";
 import TrainerCardJocke from "../../components/TrainerCardJocke";
 import TrainerCardMartin from "../../components/TrainerCardMartin";
-import "../../globalStyles/textStyles.css";
-import "../../screenStyles/traingingDetails.css";
 import bootCampPic from "../../assets/images/bootCamp.jpg";
+
+import TrainingInfo from "../../components/TrainingInfo";
+import "../../screenStyles/traingingDetails.css";
+
 import texts from "../../assets/texts/texts.json";
 
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router";
 
-const BootCampDetails = () => {
-  const [text, setText] = useState("");
+import PTPic from "../../assets/images/PTpic.jpg";
+import boxingPic from "../../assets/images/boxingPic.jpg";
+import weightPic from "../../assets/images/weightLiftPic.jpg";
+import campPic from "../../assets/images/bootCamp.jpg";
+import mentalPic from "../../assets/images/mentalTrainingPic.jpg";
+import martialPic from "../../assets/images/martialPic.jpg";
+
+const DetailsScreen = () => {
   const location = useLocation();
+
+  const [src, setSrc] = useState("");
+  const [text, setText] = useState("");
+  const [title, setTitle] = useState("");
+
+  useEffect(() => {
+    switch (location.pathname) {
+      case "/boxing":
+        setSrc(boxingPic);
+        break;
+      case "/weightlifting":
+        setSrc(weightPic);
+        break;
+      case "/bootcamp":
+        setSrc(campPic);
+        break;
+      case "/mentaltraining":
+        setSrc(mentalPic);
+        break;
+      case "/personaltraining":
+        setSrc(PTPic);
+        break;
+      case "/martialarts":
+        setSrc(martialPic);
+        break;
+      default:
+        setSrc("/path/to/default.jpg");
+    }
+  }, [location.pathname]);
+
+  useEffect(() => {
+    switch (location.pathname) {
+      case "/boxing":
+        setTitle("BOXNING");
+        break;
+      case "/weightlifting":
+        setTitle("STYRKETRÄNING");
+        break;
+      case "/bootcamp":
+        setTitle("CAMP");
+        break;
+      case "/mentaltraining":
+        setTitle("MENTAL TRÄNING");
+        break;
+      case "/personaltraining":
+        setTitle("PERSONLIG TRÄNING");
+        break;
+      case "/martialarts":
+        setTitle("KAMPSPORT");
+        break;
+      default:
+        setTitle("/path/to/default.jpg");
+    }
+  }, [location.pathname]);
 
   useEffect(() => {
     switch (location.pathname) {
@@ -36,6 +99,7 @@ const BootCampDetails = () => {
         break;
       default:
         setText("Default text");
+        console.log(texts);
     }
   }, [location.pathname]);
 
@@ -45,8 +109,11 @@ const BootCampDetails = () => {
       <div className="wrapper desktopView container">
         <div className="textContainer">
           <h1 className="title desktopView">
-            CAMP
-            <hr className="pinkHr" />
+            {title}
+            <hr
+              style={{ marginTop: "40px", marginBottom: "40px" }}
+              className="pinkHr"
+            />
           </h1>
 
           <h2 className="textHeaderPink">Beskrivning</h2>
@@ -73,7 +140,12 @@ const BootCampDetails = () => {
         </div>
 
         <div className="bannerCard">
-          <img src={bootCampPic} className="img-fluid" />
+          <img
+            src={src}
+            style={{ marginBottom: "40px" }}
+            className="img-fluid"
+            alt="Workout Image"
+          />
           <div className="d-flex justify-content-between ">
             <div>
               <TrainerCardAbbe />
@@ -117,7 +189,17 @@ const BootCampDetails = () => {
                   lineHeight: "22px",
                 }}
               >
-                {text}
+                Mellan 06.00-06.50, måndag, tisdag, torsdag och fredag under 8
+                veckor, möts vi för intensiv morgonträning. Passen är enbart för
+                er i campen och behöver inte bokas utan du får tillgång till
+                alla pass när du köper Camp 8 veckor.
+                <br />
+                <br /> Camp utformas av någon av oss tränare och blandar olika
+                träningsformer som styrka, kondition och kampsport. <br />
+                <br /> Beroende på vem som håller i camp kan passen komma att se
+                annorlunda ut. Alla vi har olika vinklar och sätt att träna på,
+                detta bidrar till en varierad träningsform.
+                <br />
               </p>
             </p>
             <hr
@@ -166,4 +248,4 @@ const BootCampDetails = () => {
   );
 };
 
-export default BootCampDetails;
+export default DetailsScreen;

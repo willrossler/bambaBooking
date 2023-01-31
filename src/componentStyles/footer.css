@@ -5,21 +5,38 @@
   margin: 0;
 }
 
+.footerLogo {
+  width: 113px;
+  height: 142px;
+}
+
 @media screen and (max-width: 1800px) {
   .linkStylesFooter p {
     font-size: 19.5px;
     font-weight: 300;
     line-height: 32.25px;
   }
-  @media screen and (max-width: 1200px) {
-    .linkStylesFooter p {
-      font-size: 13px;
-      font-weight: 300;
-      line-height: 21.5px;
-    }
+
+  .footerLogo {
+    width: 85px;
+    height: 106px;
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .linkStylesFooter p {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 21.5px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .linkStylesFooter p {
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 17.5px;
+  }
+}
 .infoStylesFooter p {
   font-size: 18px;
   font-weight: 300;

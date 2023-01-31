@@ -44,7 +44,7 @@ function Header() {
         backgroundColor: headerColor,
       }}
       expand="lg"
-      className="navbar navbar-dark py-3"
+      className="navbar navbar-dark py-2"
     >
       <Container>
         <Navbar.Brand>
@@ -67,9 +67,11 @@ function Header() {
           responsive="lg"
         >
           <Offcanvas.Header
+            className="container"
             style={{
               backgroundColor: "#3C469C",
               height: "72px",
+              paddingRight: "12px",
             }}
           >
             <Navbar.Brand>
@@ -77,10 +79,13 @@ function Header() {
                 <img className="bambaLogo" src={bambaLogo} />
               </Link>
             </Navbar.Brand>
-
             <X
-              className="d-lg-none "
-              style={{ width: "40px", height: "40px", color: "#fff" }}
+              className="d-lg-none"
+              style={{
+                width: "40",
+                height: "40",
+                color: "#fff",
+              }}
               onClick={handleClose}
             />
           </Offcanvas.Header>
@@ -210,16 +215,76 @@ function Header() {
                   BOKA
                 </Link>
               </button>
-              <div className="d-lg-none">
-                <div class="d-flex">
-                  <p style={pStyles}>
-                    Bamba | Lutzengatan 10 | 11520 Stockholm | Sweden
+              <div className="d-lg-none bottomInfo">
+                <div class="d-flex justify-content-between align-items-end ">
+                  <p
+                    className="text-end"
+                    style={{ fontSize: "14px", marginBottom: "0" }}
+                  >
+                    Bamba{" "}
+                  </p>
+                  <p style={{ fontSize: "14px", marginBottom: "0" }}> | </p>
+                  <p
+                    style={{
+                      fontSize: "14px",
+                      marginBottom: "0",
+                      opacity: "0.5",
+                    }}
+                  >
+                    {" "}
+                    Lützengatan 10
+                  </p>
+                  <p
+                    style={{
+                      fontSize: "14px",
+                      marginBottom: "0",
+                      opacity: "0.5",
+                    }}
+                  >
+                    {" "}
+                    |{" "}
+                  </p>
+
+                  <p
+                    style={{
+                      fontSize: "14px",
+                      marginBottom: "0",
+                      opacity: "0.5",
+                    }}
+                  >
+                    11520 Stockholm
+                  </p>
+                  <p
+                    style={{
+                      fontSize: "14px",
+                      marginBottom: "0",
+                      opacity: "0.5",
+                    }}
+                  >
+                    {" "}
+                    |{" "}
+                  </p>
+                  <p
+                    style={{
+                      fontSize: "14px",
+                      marginBottom: "0",
+                      opacity: "0.5",
+                    }}
+                  >
+                    Sverige{" "}
                   </p>
                 </div>
-                <hr style={{ marginTop: "15px", marginBottom: "15px" }} />
-                <div class="d-flex">
-                  <p style={pStyles}>
-                    Instagram @bambagym | E-mail info@bambaostermalm.se
+                <hr />
+                <div class="d-flex align-items-end justify-content-between">
+                  <p style={{ fontSize: "14px" }}>@</p>
+
+                  <p style={{ fontSize: "14px", opacity: "0.5" }}>
+                    bambaostermalm
+                  </p>
+                  <p style={{ fontSize: "14px" }}> | </p>
+                  <p style={{ fontSize: "14px" }}>Email:</p>
+                  <p style={{ fontSize: "14px", opacity: "0.5" }}>
+                    info@bambaostermalm
                   </p>
                 </div>
               </div>

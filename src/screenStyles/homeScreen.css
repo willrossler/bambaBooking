@@ -1,1 +1,21 @@
+.homeTitle {
+  font-size: 48px;
+  line-height: 57px;
+  color: #fff;
+}
 
+@media screen and (max-width: 1800px) {
+  .homeTitle {
+    font-size: 36px;
+    line-height: 42px;
+    color: #fff;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .homeTitle {
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #fff;
+  }
+}

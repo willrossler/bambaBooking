@@ -13,12 +13,10 @@ import ContactScreen from "./screens/ContactScreen";
 import ShopScreen from "./screens/ShopScreen";
 import MobileFooter from "./components/MobileFooter";
 import TrainingScreen from "./screens/TrainingScreen";
-import { ProSidebarProvider } from "react-pro-sidebar";
 import WeightLiftingDetails from "./screens/detailscreens/WeightLiftingDetails";
 import BootCampDetails from "./screens/detailscreens/BootCampDetails";
-import MartialArtsDetails from "./screens/detailscreens/MartialArtsDetails";
+import DetailsScreen from "./screens/detailscreens/DetailsScreen";
 import MentalTrainingDetails from "./screens/detailscreens/MentalTrainingDetails";
-import PtAcademyDetails from "./screens/detailscreens/PtAcademyDetails";
 import PersonalTrainingDetails from "./screens/detailscreens/PersonalTrainingDetails";
 import ScheduleComponent from "./components/ScheduleComponent";
 import PtScreen from "./screens/PtScreen";
@@ -45,13 +43,13 @@ function App() {
         <Route path="/schedule" element={<ScheduelScreen />} />
         <Route path="/camp" element={<CampScreen />} />
         <Route path="/ptschedule" element={<PtScreen />} />
-        <Route path="/boxing" element={<BoxingDetails />} />
-        <Route path="/weightlifting" element={<WeightLiftingDetails />} />
-        <Route path="/bootcamp" element={<BootCampDetails />} />
-        <Route path="/martialarts" element={<MartialArtsDetails />} />
-        <Route path="/mentaltraining" element={<MentalTrainingDetails />} />
-        <Route path="/ptacademy" element={<PtAcademyDetails />} />
-        <Route path="/personaltraining" element={<PersonalTrainingDetails />} />
+        <Route path="/details" element={<DetailsScreen />} />
+        <Route path="/boxing" element={<DetailsScreen />} />
+        <Route path="/weightlifting" element={<DetailsScreen />} />
+        <Route path="/bootcamp" element={<DetailsScreen />} />
+        <Route path="/mentaltraining" element={<DetailsScreen />} />
+        <Route path="/personaltraining" element={<DetailsScreen />} />
+        <Route path="/martialarts" element={<DetailsScreen />} />
         <Route path="/contact" element={<ContactScreen />} />
         <Route path="/shop" element={<ShopScreen />} />
       </Routes>
