@@ -3,6 +3,13 @@
 /*  GIGA-LARGE SCREEN ??? */
 
 /* TRAINING FORMS */
+.bannerTextMobile p {
+  font-size: 32px;
+  line-height: 120px;
+  font-weight: 400;
+  position: absolute;
+  top: 30%;
+}
 
 .mobileParagraph {
   font-size: 16px;
@@ -20,6 +27,7 @@
 .title {
   color: #fff;
   font-size: 64px;
+  font-weight: 400;
 }
 
 .trainingForms p {
@@ -36,7 +44,7 @@
   font-weight: 500;
 }
 .homeParagraph {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 28px;
   color: #fff;
   font-weight: 300;
@@ -66,6 +74,7 @@ p {
   .title {
     color: #fff;
     font-size: 48px;
+    font-weight: 400;
   }
 
   p {

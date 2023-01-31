@@ -9,7 +9,7 @@ const TrainerCardAbbe = () => {
         <img src={abbePic} alt="" className="user-image" />
         <hr />
         <div className="trainerCardP">
-          <p>Abbe Joof</p>
+          <p style={{ fontWeight: "500" }}>Abbe Joof</p>
           <p style={{ opacity: "0.5", fontWeight: "400" }}>Personal Trainer</p>
           <p style={{ opacity: "0.5", fontWeight: "400" }}> — </p>
           <p>abbe@bamba.se</p>

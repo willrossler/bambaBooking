@@ -17,12 +17,17 @@ const HomeScreen = () => {
   return (
     <>
       {/* todo lägg en bild för mobile screen. */}
-      <img
-        src={homeBanner}
-        className="img-fluid d-none d-lg-block d-md-inline"
-        alt="Home Image"
-        style={{ marginBottom: "100px" }}
-      />
+      <div className="bannerTextMobile">
+        <p style={{ color: "#F5AAC9" }}>
+          DIN LIVSKVALITE — <p>VÅR DRIVKRAFT</p>
+        </p>
+        <img
+          src={homeBanner}
+          className="img-fluid d-none d-lg-block d-md-inline"
+          alt="Home Image"
+          style={{ marginBottom: "100px" }}
+        />
+      </div>
 
       <div className="container desktopView">
         <div className="row">

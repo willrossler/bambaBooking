@@ -8,7 +8,7 @@ const TrainerCardMartin = () => {
         <img src={martinPic} alt="" className="user-image" />
         <hr />
         <div className="trainerCardP">
-          <p>Martin Pettersson</p>
+          <p style={{ fontWeight: "500" }}>Martin Pettersson</p>
           <p style={{ opacity: "0.5", fontWeight: "400" }}>Personal Trainer</p>
           <p style={{ opacity: "0.5", fontWeight: "400" }}> — </p>
           <p>martin@bamba.se</p>

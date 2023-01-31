@@ -41,6 +41,7 @@ function Header() {
   return (
     <Navbar
       style={{
+        maxWidth: "100%",
         backgroundColor: headerColor,
       }}
       expand="lg"
@@ -62,11 +63,10 @@ function Header() {
         <Offcanvas
           style={{
             backgroundColor: "#3C469C",
-            width: "100%",
+            maxWidth: "100%",
             height: "100%",
             border: "none",
           }}
-          className="ms-auto "
           show={show}
           onHide={handleClose}
           responsive="lg"
@@ -74,6 +74,7 @@ function Header() {
           <Offcanvas.Header
             className="container"
             style={{
+              maxWidth: "100%",
               backgroundColor: "#3C469C",
               height: "72px",
               paddingRight: "12px",
