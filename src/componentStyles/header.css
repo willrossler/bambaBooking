@@ -12,11 +12,23 @@
   padding-top: 20px;
 }
 
-@media screen and (max-width: 430px) {
-  .bambaNavbar {
+@media screen and (max-width: 1000px) {
+  .navbar {
     padding: 24px 0px 24px 0px;
   }
-
+  .navbar {
+    height: 72px;
+  }
+  .bambaLogo {
+    width: 114px;
+    height: 26px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .navbar {
+    padding: 24px 0px 24px 0px;
+    height: 72px;
+  }
   .bambaLogo {
     width: 114px;
     height: 26px;
@@ -26,7 +38,7 @@
 /* iPhone 12 size  */
 
 @media screen and (max-width: 400px) {
-  .bambaNavbar {
+  .navbar {
     padding: 24px 0px 24px 0px;
   }
 

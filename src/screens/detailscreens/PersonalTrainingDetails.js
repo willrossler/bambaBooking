@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 import TrainerCardAbbe from "../../components/TrainerCardAbbe";
 import TrainerCardJocke from "../../components/TrainerCardJocke";
 import TrainerCardMartin from "../../components/TrainerCardMartin";
-import ptPic from "../../assets/images/PTdetails.jpg";
 
 const PersonalTrainingDetails = () => {
   return (
@@ -39,7 +38,7 @@ const PersonalTrainingDetails = () => {
           </h5>
         </div>
         <div className="bannerCard">
-          <img className="img-fluid" src={ptPic} />
+          <img className="img-fluid" />
         </div>
       </div>
       <section className="container desktopView">

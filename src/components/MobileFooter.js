@@ -21,7 +21,7 @@ const MobileFooter = () => {
     <>
       <div
         class="mobileFooter parent"
-        style={{ backgroundColor: footerColor, marginTop: "100px" }}
+        style={{ backgroundColor: footerColor, marginTop: "6em" }}
       >
         <div class="div1 container">
           <img src={bLogo} style={{ width: "70px", height: "70px" }} />

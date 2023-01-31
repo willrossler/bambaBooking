@@ -1,10 +1,11 @@
 import React from "react";
 import jockePic from "../assets/images/jockePic.png";
 import "../componentStyles/trainerCard.css";
+
 const TrainerCardJocke = () => {
   return (
-    <div className="d-flex flex-col">
-      <div className="d-flex flex-column trainerCard">
+    <div className="d-flex flex-col trainerCard">
+      <div className="d-flex flex-column ">
         <img src={jockePic} alt="" className="user-image" />
         <hr />
         <div className="trainerCardP">

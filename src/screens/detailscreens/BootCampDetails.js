@@ -1,14 +1,44 @@
 import React from "react";
-import BoxingBanner from "../../components/BoxingBanner";
 import TrainerCardAbbe from "../../components/TrainerCardAbbe";
 import TrainerCardJocke from "../../components/TrainerCardJocke";
 import TrainerCardMartin from "../../components/TrainerCardMartin";
-import TrainingInfo from "../../components/TrainingInfo";
 import "../../globalStyles/textStyles.css";
 import "../../screenStyles/traingingDetails.css";
 import bootCampPic from "../../assets/images/bootCamp.jpg";
+import texts from "../../assets/texts/texts.json";
+
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router";
 
 const BootCampDetails = () => {
+  const [text, setText] = useState("");
+  const location = useLocation();
+
+  useEffect(() => {
+    switch (location.pathname) {
+      case "/boxing":
+        setText(texts.boxingCopy);
+        break;
+      case "/weightlifting":
+        setText(texts.weightCopy);
+        break;
+      case "/bootcamp":
+        setText(texts.campCopy);
+        break;
+      case "/martialarts":
+        setText(texts.martialCopy);
+        break;
+      case "/mentaltraining":
+        setText(texts.mentalCopy);
+        break;
+      case "/personaltraining":
+        setText(texts.personalTrainingCopy);
+        break;
+      default:
+        setText("Default text");
+    }
+  }, [location.pathname]);
+
   return (
     <>
       {/* DESKTOP VIEW  */}
@@ -21,19 +51,7 @@ const BootCampDetails = () => {
 
           <h2 className="textHeaderPink">Beskrivning</h2>
           <br />
-          <p>
-            Mellan 06.00-06.50, måndag, tisdag, torsdag och fredag under 8
-            veckor, möts vi för intensiv morgonträning. Passen är enbart för er
-            i campen och behöver inte bokas utan du får tillgång till alla pass
-            när du köper Camp 8 veckor.
-            <br />
-            <br /> Camp utformas av någon av oss tränare och blandar olika
-            träningsformer som styrka, kondition och kampsport. <br />
-            <br /> Beroende på vem som håller i camp kan passen komma att se
-            annorlunda ut. Alla vi har olika vinklar och sätt att träna på,
-            detta bidrar till en varierad träningsform.
-            <br />
-          </p>
+          <p id="descriptionText">{text}</p>
           <br />
           <hr style={{ color: "#fff", opacity: "0.2" }} />
           <br />
@@ -73,7 +91,7 @@ const BootCampDetails = () => {
       {/* MOBILE VIEW  */}
       <div className="container">
         <hr
-          className=""
+          className="mobileView"
           style={{ color: "#fff", opacity: "0.2", margin: "0" }}
         />
         <h1
@@ -99,17 +117,7 @@ const BootCampDetails = () => {
                   lineHeight: "22px",
                 }}
               >
-                Mellan 06.00-06.50, måndag, tisdag, torsdag och fredag under 8
-                veckor, möts vi för intensiv morgonträning. Passen är enbart för
-                er i campen och behöver inte bokas utan du får tillgång till
-                alla pass när du köper Camp 8 veckor.
-                <br />
-                <br /> Camp utformas av någon av oss tränare och blandar olika
-                träningsformer som styrka, kondition och kampsport. <br />
-                <br /> Beroende på vem som håller i camp kan passen komma att se
-                annorlunda ut. Alla vi har olika vinklar och sätt att träna på,
-                detta bidrar till en varierad träningsform.
-                <br />
+                {text}
               </p>
             </p>
             <hr

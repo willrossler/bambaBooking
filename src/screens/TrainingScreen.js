@@ -17,7 +17,7 @@ const TrainingScreen = () => {
 
   const getStyles = (index) => {
     return {
-      fontSize: index === hoveredIndex ? "101px" : "100px",
+      fontSize: index === hoveredIndex ? "100px" : "100px",
       transition: "all 200ms ease-in-out",
       color: index === hoveredIndex ? "#F5AAC9" : "#fff",
       opacity: index === hoveredIndex ? 1 : index % 2 === 0 ? 0.5 : 1,
@@ -30,143 +30,131 @@ const TrainingScreen = () => {
         return {
           transition: "background-color 200ms",
           marginTop: "40px",
-          marginBottom: "400px",
         };
       case 2:
         return {
           transition: "background-color 200ms",
           marginTop: "40px",
-          marginBottom: "400px",
         };
       case 3:
         return {
           transition: "background-color 200ms",
           marginTop: "40px",
-          marginBottom: "400px",
         };
       case 4:
         return {
           transition: "background-color 200ms",
           marginTop: "40px",
-          marginBottom: "400px",
         };
       case 5:
         return {
           transition: "background-color 200ms",
           marginTop: "40px",
-          marginBottom: "400px",
         };
       case 6:
         return {
           transition: "background-color 200ms",
           marginTop: "40px",
-          marginBottom: "400px",
         };
       case 7:
         return {
           transition: "background-color 200ms",
           marginTop: "40px",
-          marginBottom: "400px",
         };
       default:
         return {
           backgroundColor: "",
           marginTop: "40px",
-          marginBottom: "400px",
         };
     }
   };
 
   return (
     <>
-      {/* todo lägg en bild för mobile screen. */}
-      <div className="d-none d-lg-inline d-md-inline image-container">
-        <img className="img-fluid" src={trainingPicBanner} />
-        <div className="container bannerText">
-          <h1 style={{ color: "F0AA9C" }}></h1>
+      <div style={{ vh: "100", dvh: "100" }}>
+        {/* todo lägg en bild för mobile screen. */}
+        <div className="d-none d-lg-inline d-md-inline image-container">
+          <img className="img-fluid" src={trainingPicBanner} />
         </div>
-      </div>
-      <div className="d-sm-inline d-lg-none d-md-none">
-        <img className="img-fluid" src={mobileTrainBanner} />
-        <div className="container bannerText">
-          <h1 style={{ color: "F0AA9C" }}></h1>
+        <div className="d-sm-inline d-lg-none d-md-none">
+          <img className="img-fluid" src={mobileTrainBanner} />
         </div>
-      </div>
 
-      <div
-        className="container py-3 trainingLinks"
-        style={getParentStyles(hoveredIndex)}
-      >
-        <Link to="/personaltraining">
-          <div
-            id="personalTraining"
-            onMouseEnter={() => handleMouseEnter(1)}
-            onMouseLeave={handleMouseLeave}
-            style={getStyles(1)}
-          >
-            PERSONAL TRAINING —
-          </div>
-        </Link>
-        <Link to="/weightlifting">
-          <div
-            id="weightLifting"
-            onMouseEnter={() => handleMouseEnter(2)}
-            onMouseLeave={handleMouseLeave}
-            style={getStyles(2)}
-          >
-            WEIGHT LIFTING —
-          </div>
-        </Link>
-        <Link to="/martialarts">
-          <div
-            id="martialArts"
-            onMouseEnter={() => handleMouseEnter(3)}
-            onMouseLeave={handleMouseLeave}
-            style={getStyles(3)}
-          >
-            MARTIAL ARTS —
-          </div>
-        </Link>
-        <Link to="/boxing">
-          <div
-            id="boxing"
-            onMouseEnter={() => handleMouseEnter(4)}
-            onMouseLeave={handleMouseLeave}
-            style={getStyles(4)}
-          >
-            BOXING —
-          </div>
-        </Link>
-        <Link to="/mentaltraining">
-          <div
-            id="mentalTraining"
-            onMouseEnter={() => handleMouseEnter(5)}
-            onMouseLeave={handleMouseLeave}
-            style={getStyles(5)}
-          >
-            MENTAL TRAINING —
-          </div>
-        </Link>
-        <Link to="/bootcamp">
-          <div
-            id="bootCamp"
-            onMouseEnter={() => handleMouseEnter(6)}
-            onMouseLeave={handleMouseLeave}
-            style={getStyles(6)}
-          >
-            BOOT CAMP —
-          </div>
-        </Link>
-        <Link to="/ptacademy">
-          <div
-            id="ptAcademy"
-            onMouseEnter={() => handleMouseEnter(7)}
-            onMouseLeave={handleMouseLeave}
-            style={getStyles(7)}
-          >
-            PT ACADEMY —
-          </div>
-        </Link>
+        <div
+          className="container py-3 trainingLinks"
+          style={getParentStyles(hoveredIndex)}
+        >
+          <Link to="/personaltraining">
+            <div
+              id="personalTraining"
+              onMouseEnter={() => handleMouseEnter(1)}
+              onMouseLeave={handleMouseLeave}
+              style={getStyles(1)}
+            >
+              PERSONAL TRAINING —
+            </div>
+          </Link>
+          <Link to="/weightlifting">
+            <div
+              id="weightLifting"
+              onMouseEnter={() => handleMouseEnter(2)}
+              onMouseLeave={handleMouseLeave}
+              style={getStyles(2)}
+            >
+              WEIGHT LIFTING —
+            </div>
+          </Link>
+          <Link to="/martialarts">
+            <div
+              id="martialArts"
+              onMouseEnter={() => handleMouseEnter(3)}
+              onMouseLeave={handleMouseLeave}
+              style={getStyles(3)}
+            >
+              MARTIAL ARTS —
+            </div>
+          </Link>
+          <Link to="/boxing">
+            <div
+              id="boxing"
+              onMouseEnter={() => handleMouseEnter(4)}
+              onMouseLeave={handleMouseLeave}
+              style={getStyles(4)}
+            >
+              BOXING —
+            </div>
+          </Link>
+          <Link to="/mentaltraining">
+            <div
+              id="mentalTraining"
+              onMouseEnter={() => handleMouseEnter(5)}
+              onMouseLeave={handleMouseLeave}
+              style={getStyles(5)}
+            >
+              MENTAL TRAINING —
+            </div>
+          </Link>
+          <Link to="/bootcamp">
+            <div
+              id="bootCamp"
+              onMouseEnter={() => handleMouseEnter(6)}
+              onMouseLeave={handleMouseLeave}
+              style={getStyles(6)}
+            >
+              BOOT CAMP —
+            </div>
+          </Link>
+          <Link to="/ptacademy">
+            <div
+              id="ptAcademy"
+              onMouseEnter={() => handleMouseEnter(7)}
+              onMouseLeave={handleMouseLeave}
+              style={getStyles(7)}
+            >
+              PT ACADEMY —
+            </div>
+          </Link>
+        </div>
       </div>
     </>
   );

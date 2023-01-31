@@ -6,29 +6,24 @@ import TrainerCardMartin from "../components/TrainerCardMartin";
 import TrainerCardJocke from "../components/TrainerCardJocke";
 import MapComponent from "../components/MapComponent";
 import MapComponentMobile from "../components/MapComponentMobile";
-import kartaBild from "../assets/images/kartaPrint.png";
+
+import contactPic from "../assets/images/contactPic.jpg";
 
 const ContactScreen = () => {
   return (
     <>
       {/* DESKTOP VIEW  */}
-
-      <div className="desktopView">
-        <HomeBanner />
-
-        <section
-          style={{
-            paddingTop: "100px",
-            paddingBottom: "100px",
-          }}
-          className="container"
-        >
+      <img
+        src={contactPic}
+        className="img-fluid d-none d-lg-block d-md-inline"
+        alt="Home Image"
+        style={{ marginBottom: "100px" }}
+      />
+      <div className="desktopView container">
+        <section>
           <div>
-            <div
-              style={{ height: "65vh" }}
-              className="d-flex justify-content-between pb-5 "
-            >
-              <div>
+            <div className="d-flex justify-content-between pb-5 pt-5 ">
+              <div style={{ paddingTop: "3em", paddingRight: "12em" }}>
                 <h1 className="title">
                   LOCATION
                   <hr className="pinkHr" />
@@ -36,25 +31,24 @@ const ContactScreen = () => {
 
                 <ContactInfo />
               </div>
-              <div className="kartaBild"></div>
-              {/* <MapComponent /> */}
+              <MapComponent />
             </div>
           </div>
         </section>
         <section className=" ">
-          <div style={{ paddingBottom: "100px" }} className="container ">
-            <h1 className="title">PERSONAL TRAINERS</h1>
+          <div className="container ">
+            <h1 style={{ paddingTop: "3em" }} className="title">
+              PERSONAL TRAINERS
+            </h1>
             <hr className="pinkHr" />
-            <div className="d-flex justify-content-between ">
-              <div>
-                <TrainerCardAbbe />
-              </div>
-              <div style={{ margin: "0px 40px" }}>
-                <TrainerCardJocke />
-              </div>
-              <div>
-                <TrainerCardMartin />
-              </div>
+            <div
+              style={{ paddingTop: "3em" }}
+              className="d-flex justify-content-between"
+            >
+              <TrainerCardAbbe />
+              <TrainerCardJocke />
+              <TrainerCardMartin />
+              <TrainerCardMartin />
             </div>
           </div>
         </section>
@@ -71,9 +65,11 @@ const ContactScreen = () => {
           <h1 style={{ color: "#fff", fontSize: "35px" }}>PERSONAL TRAINERS</h1>
           <hr className="pinkHrMobile" />
 
-          <div className="d-flex flex-column mb-3 ">
+          <div className="d-flex flex-row mb-3 ">
             <TrainerCardAbbe />
             <TrainerCardJocke />
+          </div>
+          <div className="d-flex flex-row mb-3 ">
             <TrainerCardMartin />
           </div>
         </section>

@@ -21,12 +21,13 @@ const Footer = () => {
     <div
       style={{
         backgroundColor: footerColor,
+        marginTop: "100px",
       }}
     >
       <div class="container py-5 page-footer ">
         <div class=" d-flex justify-content-between ">
           <div class="col-4">
-            <img src={bLogo} />
+            <img className="footerLogo" src={bLogo} />
           </div>
           <div class="col-4">
             {" "}
@@ -54,28 +55,28 @@ const Footer = () => {
             <ul className="list-unstyled">
               <li>
                 <Link to="/">
-                  <p>— FILOSOFI</p>
+                  <p>— Filosofi</p>
                 </Link>
               </li>
               <li>
                 <Link to="/training">
-                  <p>— TRÄNING </p>
+                  <p>— Träning </p>
                 </Link>
               </li>
               <li>
                 <Link to="/contact">
                   {" "}
-                  <p>— KONTAKT </p>
+                  <p>— Kontakt </p>
                 </Link>
               </li>
               <li>
                 <Link to="/shop">
-                  <p> — OM OSS</p>
+                  <p> — Om oss</p>
                 </Link>
               </li>
               <li>
                 <Link to="/booking">
-                  <p>— BOKA</p>
+                  <p>— Boka</p>
                 </Link>
               </li>
             </ul>

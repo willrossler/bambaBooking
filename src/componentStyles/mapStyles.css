@@ -1,0 +1,7 @@
+@media screen and (max-width: 1400px) {
+  .mapStyle {
+    position: relative;
+    height: 350px;
+    width: auto;
+  }
+}
