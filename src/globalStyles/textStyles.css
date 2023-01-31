@@ -4,6 +4,19 @@
 
 /* TRAINING FORMS */
 
+.mobileParagraph {
+  font-size: 16px;
+  line-height: 19.2px;
+  font-weight: 300;
+}
+
+.textHeaderPinkMobile {
+  font-size: 16px;
+  line-height: 19.2px;
+  font-weight: 500;
+  color: #f5aac9;
+}
+
 .title {
   color: #fff;
   font-size: 64px;
