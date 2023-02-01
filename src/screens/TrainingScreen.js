@@ -72,13 +72,24 @@ const TrainingScreen = () => {
   return (
     <>
       <div style={{ vh: "100", dvh: "100" }}>
-        {/* todo lägg en bild för mobile screen. */}
         <div className="d-none d-lg-inline d-md-inline image-container">
           <img className="img-fluid" src={trainingPicBanner} />
         </div>
-        <div className="d-sm-inline d-lg-none d-md-none">
+        {/* WE FACILITATE MADE-TO- MEASURE TRAINING JUST FOR YOU */}
+        <div className="bannerTextMobile mobileView ">
+          <p className="container" style={{ color: "#F5AAC9" }}>
+            {" "}
+            <span style={{ color: "#fff" }}>
+              {" "}
+              VI SKAPAR SKRÄDDARSYDD TRÄNING
+            </span>{" "}
+            <br />
+            JUST FÖR DIG
+          </p>
           <img className="img-fluid" src={mobileTrainBanner} />
         </div>
+
+        <div className="d-sm-inline d-lg-none d-md-none"></div>
 
         <div
           className="container py-3 trainingLinks"

@@ -151,7 +151,6 @@ const MentalTrainingDetails = () => {
           </p>
         </div>
         <TrainerCardAbbe />
-        {/* todo RIGHT PADDING  */}
       </div>
     </>
   );

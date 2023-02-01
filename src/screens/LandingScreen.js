@@ -37,7 +37,7 @@ const LandingScreen = () => {
                 det <Link to="weeklyschedule">här.</Link>
               </p>
             </div> */}
-
+            {/*  hover rosa färg på rutor */}
             <div className="">
               <div className="row text-center pb-5 ">
                 <div className="col">

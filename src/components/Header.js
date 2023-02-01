@@ -14,39 +14,42 @@ import "../componentStyles/header.css";
 function Header() {
   const location = useLocation();
   const [headerColor, setHeaderColor] = useState("black");
-
+  const [buttonBackground, setButtonBackground] = useState("white");
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const pStyles = {
-    paddin: "0px",
-    margin: "0px",
-    fontSize: "13px",
-    color: "#fff",
-    opacity: "0.5",
-  };
+  useEffect(() => {
+    if (location.pathname === "/booking") {
+      setButtonBackground("#F5AAC9");
+    } else {
+      setButtonBackground("white");
+    }
+  }, [location.pathname]);
 
   useEffect(() => {
     if (location.pathname === "/booking") {
       setHeaderColor("#3C469C");
-      console.log(headerColor);
     } else {
       setHeaderColor("black ");
-      console.log(headerColor);
     }
   }, [location.pathname]);
 
   return (
     <Navbar
       style={{
-        maxWidth: "100%",
+        width: "100%",
         backgroundColor: headerColor,
       }}
       expand="lg"
       className="navbar navbar-dark py-2"
     >
+      {/* todo synka logans med text-start genom länkar och knapp - CHECK */}
+      {/* todo hover rosa transition på länkar + knapp - CHECK */}
+      {/* todo kolla avstånd mellan länkar CHECK? kanske för mycket */}
+      {/* todo kolla transition för active link */}
+      {/* todo rosa knapp BOOK på bokningssidans -CHECK*/}
       <Container>
         <Navbar.Brand>
           <Link to="/">
@@ -95,17 +98,18 @@ function Header() {
               onClick={handleClose}
             />
           </Offcanvas.Header>
-          <hr className="shadowHr" />
+          <hr className="shadowHr mobileView" />
           <Offcanvas.Body>
-            <Nav className="ms-auto py-3  ">
-              <Nav.Link>
+            <Nav className="ms-auto py-3 d-flex align-items-center">
+              <Nav.Link id="hoverLink">
                 <Link
+                  id="hoverLink"
                   style={{ color: "#fff", paddingBottom: "15px" }}
                   to="/"
                   className={
                     location.pathname === "/"
-                      ? "d-none d-lg-inline active-link"
-                      : "d-none d-lg-inline "
+                      ? " d-none d-lg-inline active-link mx-3"
+                      : "d-none d-lg-inline mx-3"
                   }
                 >
                   FILOSOFI
@@ -113,12 +117,13 @@ function Header() {
               </Nav.Link>
               <Nav.Link>
                 <Link
+                  id="hoverLink"
                   style={{ color: "#fff", paddingBottom: "15px" }}
                   to="/training"
                   className={
                     location.pathname === "/training"
-                      ? "d-none d-lg-inline active-link"
-                      : "d-none d-lg-inline "
+                      ? "d-none d-lg-inline active-link mx-3"
+                      : "d-none d-lg-inline mx-3"
                   }
                 >
                   TRÄNING
@@ -126,32 +131,49 @@ function Header() {
               </Nav.Link>
               <Nav.Link>
                 <Link
+                  id="hoverLink"
                   style={{ color: "#fff", paddingBottom: "15px" }}
                   to="contact"
                   className={
                     location.pathname === "/contact"
-                      ? "d-none d-lg-inline active-link"
-                      : "d-none d-lg-inline "
+                      ? "d-none d-lg-inline active-link mx-3"
+                      : "d-none d-lg-inline mx-3"
                   }
                 >
-                  {" "}
                   KONTAKT
                 </Link>
               </Nav.Link>
               <Nav.Link>
                 <Link
+                  id="hoverLink"
                   style={{ color: "#fff", paddingBottom: "15px" }}
                   to="/shop"
                   className={
                     location.pathname === "/shop"
-                      ? "d-none d-lg-inline active-link"
-                      : "d-none d-lg-inline "
+                      ? "d-none d-lg-inline active-link mx-3"
+                      : "d-none d-lg-inline mx-3"
                   }
                 >
                   {" "}
-                  OM OSS
+                  SHOP
                 </Link>
               </Nav.Link>
+
+              <Nav.Link>
+                <Link
+                  id="bookingBtn"
+                  style={{
+                    backgroundColor: buttonBackground,
+                  }}
+                  to="/booking"
+                  className="d-none d-lg-inline"
+                >
+                  {" "}
+                  BOKA
+                </Link>
+              </Nav.Link>
+
+              {/* BIG SCREEN BUTTON */}
 
               {/*  MOBILE LINKS */}
               <div className="mobileLinksStyle">
@@ -186,29 +208,6 @@ function Header() {
                   </Link>
                 </Nav.Link>
               </div>
-              <div class="col-4 text-center d-flex">
-                {/* BIG SCREEN BUTTON */}
-
-                <button
-                  style={{
-                    marginLeft: "100px",
-                    backgroundColor: "#fff",
-                    height: "50px",
-                  }}
-                  class="btn btn-primary btn-light px-5 rounded-0 d-none d-lg-block d-xl-block"
-                >
-                  <Link
-                    style={{
-                      color: "black",
-                      fontWeight: "500",
-                      fontSize: "18px",
-                    }}
-                    to="/booking"
-                  >
-                    BOOK
-                  </Link>
-                </button>
-              </div>
 
               {/* MOBILE BUTTON AND TEXT */}
 
@@ -232,8 +231,11 @@ function Header() {
                   BOKA
                 </Link>
               </button>
-              <div className="d-lg-none bottomInfo">
-                <div class="d-flex justify-content-center align-items-end  ">
+
+              {/* to do  */}
+
+              <div className="d-lg-none container bottomInfo">
+                <div class="d-flex justify-content-between align-items-end  ">
                   <p
                     className="text-end"
                     style={{ fontSize: "14px", marginBottom: "0" }}
@@ -291,14 +293,17 @@ function Header() {
                     Sverige{" "}
                   </p>
                 </div>
+
+                {/* todo varsin rad, instagram & email, text start, satt avstånd på |  */}
                 <hr />
-                <div class="d-flex align-items-end justify-content-center">
-                  <p style={{ fontSize: "14px" }}>@</p>
+                <div class="d-flex align-items-end justify-content-between ">
+                  <p style={{ fontSize: "14px" }}>Instagram@</p>
 
                   <p style={{ fontSize: "14px", opacity: "0.5" }}>
                     bambaostermalm
                   </p>
                   <p style={{ fontSize: "14px" }}> | </p>
+
                   <p style={{ fontSize: "14px" }}>Email:</p>
                   <p style={{ fontSize: "14px", opacity: "0.5" }}>
                     info@bambaostermalm

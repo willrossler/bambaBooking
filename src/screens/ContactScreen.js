@@ -26,7 +26,7 @@ const ContactScreen = () => {
               <div style={{ paddingTop: "3em", paddingRight: "12em" }}>
                 <h1 className="title">
                   LOCATION
-                  <hr className="pinkHr" />
+                  <hr style={{ marginBottom: "1em" }} className="pinkHr" />
                 </h1>
 
                 <ContactInfo />
@@ -40,15 +40,17 @@ const ContactScreen = () => {
             <h1 style={{ paddingTop: "3em" }} className="title">
               PERSONAL TRAINERS
             </h1>
-            <hr className="pinkHr" />
-            <div
-              style={{ paddingTop: "3em" }}
-              className="d-flex justify-content-between"
-            >
-              <TrainerCardAbbe />
-              <TrainerCardJocke />
-              <TrainerCardMartin />
-              <TrainerCardMartin />
+            <hr className="pinkHr" style={{ marginBottom: "1em" }} />
+            <div style={{ marginBottom: "2em" }} class="d-flex flex-row ">
+              <div>
+                <TrainerCardAbbe />
+              </div>
+              <div>
+                <TrainerCardAbbe />
+              </div>
+              <div>
+                <TrainerCardAbbe />
+              </div>
             </div>
           </div>
         </section>
@@ -56,21 +58,50 @@ const ContactScreen = () => {
 
       <div className="mobileView">
         <section className="d-flex flex-column container">
-          <h1 style={{ color: "#fff", fontSize: "32px", marginTop: "40px" }}>
+          <h1
+            style={{
+              color: "#fff",
+              fontSize: "32px",
+              marginTop: "40px",
+              marginBottom: "0.5em",
+            }}
+          >
             LOCATION
           </h1>
           <hr className="pinkHrMobile" />
           <MapComponentMobile />
           <ContactInfo />
-          <h1 style={{ color: "#fff", fontSize: "35px" }}>PERSONAL TRAINERS</h1>
-          <hr className="pinkHrMobile" />
+          {/* samma setup som på details */}
 
-          <div className="d-flex flex-row mb-3 ">
-            <TrainerCardAbbe />
-            <TrainerCardJocke />
+          <h1
+            style={{
+              color: "#fff",
+              fontSize: "32px",
+              marginTop: "2.5em",
+              marginBottom: "0.5em",
+            }}
+          >
+            PERSONAL TRAINERS
+          </h1>
+          <hr style={{ marginBottom: "2em" }} className="pinkHrMobile" />
+
+          <div
+            style={{ marginBottom: "2em" }}
+            class="d-flex flex-row justify-content-between"
+          >
+            <div>
+              {" "}
+              <TrainerCardAbbe />
+            </div>
+            <div>
+              <TrainerCardJocke />
+            </div>
           </div>
-          <div className="d-flex flex-row mb-3 ">
-            <TrainerCardMartin />
+          <div class="d-flex flex-row">
+            <div>
+              {" "}
+              <TrainerCardMartin />
+            </div>
           </div>
         </section>
       </div>

@@ -151,7 +151,6 @@ const BoxingDetails = () => {
           </p>
         </div>
         <TrainerCardAbbe />
-        {/* todo RIGHT PADDING  */}
       </div>
     </>
   );

@@ -16,18 +16,12 @@ const HomeScreen = () => {
 
   return (
     <>
-      {/* todo lägg en bild för mobile screen. */}
-      <div className="bannerTextMobile">
-        <p style={{ color: "#F5AAC9" }}>
-          DIN LIVSKVALITE — <p>VÅR DRIVKRAFT</p>
-        </p>
-        <img
-          src={homeBanner}
-          className="img-fluid d-none d-lg-block d-md-inline"
-          alt="Home Image"
-          style={{ marginBottom: "100px" }}
-        />
-      </div>
+      <img
+        src={homeBanner}
+        className="img-fluid d-none d-lg-block d-md-inline"
+        alt="Home Image"
+        style={{ marginBottom: "100px" }}
+      />
 
       <div className="container desktopView">
         <div className="row">
@@ -55,10 +49,11 @@ const HomeScreen = () => {
               <br />
               Kom som du är, gå härifrån nöjdare.{" "}
             </p>
-            <br />
-            <h3 className="textHeaderPink">Fysiskt</h3>
-            <br />
-            <p className="homeParagraph">
+
+            <h3 style={{ paddingTop: "1.75em" }} className="textHeaderPink">
+              Fysiskt
+            </h3>
+            <p style={{ paddingTop: "1em" }} className="homeParagraph">
               {" "}
               Hur vill du använda din kropp? Vi tror på “medveten rörelse” - där
               varje pass fyller sitt syfte, om du så vill uppnå ett mål inför en
@@ -96,7 +91,20 @@ const HomeScreen = () => {
           </div>
         </div>
       </div>
-      <img src={mobileHomePic} className="mobileView img-fluid" />
+
+      {/* ------------------BANNER MOBILE---------------- */}
+
+      <div className="bannerTextMobile mobileView ">
+        <p className="container" style={{ color: "#F5AAC9" }}>
+          {" "}
+          <span style={{ color: "#fff" }}> DIN LIVSKVALITE —</span> <br />
+          VÅR DRIVKRAFT
+        </p>
+        <img src={mobileHomePic} className="mobileView img-fluid" />
+      </div>
+
+      {/* ------------------------------- */}
+
       <div className="mobileView container">
         <h1
           style={{ paddingTop: "1em", fontWeight: "400" }}

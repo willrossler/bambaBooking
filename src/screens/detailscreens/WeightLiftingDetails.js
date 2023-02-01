@@ -154,7 +154,6 @@ const WeightLiftingDetails = () => {
           </p>
         </div>
         <TrainerCardAbbe />
-        {/* todo RIGHT PADDING  */}
       </div>
     </>
   );
