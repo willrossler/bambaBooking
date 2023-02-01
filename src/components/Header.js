@@ -235,14 +235,16 @@ function Header() {
               {/* to do  */}
 
               <div className="d-lg-none container bottomInfo">
-                <div class="d-flex justify-content-between align-items-end  ">
+                <div class="d-flex align-items-end  ">
                   <p
                     className="text-end"
                     style={{ fontSize: "14px", marginBottom: "0" }}
                   >
                     Bamba{" "}
                   </p>
-                  <p style={{ fontSize: "14px", marginBottom: "0" }}> | </p>
+                  <p style={{ fontSize: "14px", marginBottom: "0" }}>
+                    &nbsp;|&nbsp;
+                  </p>
                   <p
                     style={{
                       fontSize: "14px",
@@ -260,8 +262,7 @@ function Header() {
                       opacity: "0.5",
                     }}
                   >
-                    {" "}
-                    |{" "}
+                    &nbsp;|&nbsp;
                   </p>
 
                   <p
@@ -280,8 +281,7 @@ function Header() {
                       opacity: "0.5",
                     }}
                   >
-                    {" "}
-                    |{" "}
+                    &nbsp;|&nbsp;
                   </p>
                   <p
                     style={{
@@ -293,22 +293,46 @@ function Header() {
                     Sverige{" "}
                   </p>
                 </div>
-
-                {/* todo varsin rad, instagram & email, text start, satt avstånd på |  */}
                 <hr />
-                <div class="d-flex align-items-end justify-content-between ">
-                  <p style={{ fontSize: "14px" }}>Instagram@</p>
 
-                  <p style={{ fontSize: "14px", opacity: "0.5" }}>
-                    bambaostermalm
+                <div class="d-flex   ">
+                  <p
+                    className="text-end"
+                    style={{ fontSize: "14px", marginBottom: "0" }}
+                  >
+                    Instagram@
                   </p>
-                  <p style={{ fontSize: "14px" }}> | </p>
 
-                  <p style={{ fontSize: "14px" }}>Email:</p>
-                  <p style={{ fontSize: "14px", opacity: "0.5" }}>
-                    info@bambaostermalm
+                  <p
+                    style={{
+                      fontSize: "14px",
+                      marginBottom: "0",
+                      opacity: "0.5",
+                    }}
+                  >
+                    &nbsp;bambaostermalm
                   </p>
                 </div>
+                <div class="d-flex   ">
+                  <p
+                    className="text-end"
+                    style={{ fontSize: "14px", marginBottom: "0" }}
+                  >
+                    E-mail:
+                  </p>
+
+                  <p
+                    style={{
+                      fontSize: "14px",
+                      marginBottom: "0",
+                      opacity: "0.5",
+                    }}
+                  >
+                    &nbsp;info@bambaostermalm.se
+                  </p>
+                </div>
+
+                {/* todo varsin rad, instagram & email, text start, satt avstånd på |  */}
               </div>
             </Nav>
           </Offcanvas.Body>
