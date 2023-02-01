@@ -143,7 +143,6 @@ const PersonalTrainingDetails = () => {
         <TrainerCardAbbe />
         <TrainerCardJocke />
         <TrainerCardMartin />
-        {/* todo RIGHT PADDING  */}
       </div>
     </>
   );

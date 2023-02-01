@@ -19,6 +19,7 @@ import weightPic from "../../assets/images/weightLiftPic.jpg";
 import campPic from "../../assets/images/bootCamp.jpg";
 import mentalPic from "../../assets/images/mentalTrainingPic.jpg";
 import martialPic from "../../assets/images/martialPic.jpg";
+import { lineHeight } from "@mui/system";
 
 const DetailsScreen = () => {
   const location = useLocation();
@@ -115,9 +116,10 @@ const DetailsScreen = () => {
               className="pinkHr"
             />
           </h1>
-
-          <h2 className="textHeaderPink">Beskrivning</h2>
+          {/*  */}
+          <p style={{ fontWeight: "500", color: "#F5AAC9" }}>Beskrivning</p>
           <br />
+          {/* todo lineHeight samt mobil */}
           <p id="descriptionText">{text}</p>
           <br />
           <hr style={{ color: "#fff", opacity: "0.2" }} />
@@ -146,6 +148,7 @@ const DetailsScreen = () => {
             className="img-fluid"
             alt="Workout Image"
           />
+          {/* ÖKA AVSTÅND todo CHECK  */}
           <div className="d-flex justify-content-between ">
             <div>
               <TrainerCardAbbe />
@@ -177,7 +180,18 @@ const DetailsScreen = () => {
         <img src={bootCampPic} className="img-fluid  mobileView" />
         <div className=" mobileView">
           <div className="textContainer">
-            <h3 style={{ color: "#F5AAC9", marginTop: "30px" }}>Beskrivning</h3>
+            <p
+              style={{
+                color: "#F5AAC9",
+                marginTop: "30px",
+                marginBottom: "1em",
+                fontWeight: "500",
+                fontSize: "14px",
+                lineHeight: "16.8px",
+              }}
+            >
+              Beskrivning
+            </p>
 
             <p>
               {" "}
@@ -211,7 +225,10 @@ const DetailsScreen = () => {
                 marginBottom: "0px",
               }}
             />
-            <div className="trainingForms row py-4 ">
+            <div
+              style={{ marginBottom: "2em" }}
+              className="trainingForms row py-4 "
+            >
               <h3>FORMS OF TRAINING</h3>
               <div>
                 <p>— Klasser (upp till 12 personer)</p>
@@ -224,24 +241,25 @@ const DetailsScreen = () => {
               </div>
             </div>
 
-            <div class="d-flex flex-row">
-              <div class="p-1">
+            <div
+              style={{ marginBottom: "2em" }}
+              class="d-flex flex-row justify-content-between"
+            >
+              <div>
                 {" "}
                 <TrainerCardAbbe />
               </div>
-              <div class="p-1">
+              <div>
                 <TrainerCardJocke />
               </div>
             </div>
             <div class="d-flex flex-row">
-              <div class="p-1">
+              <div>
                 {" "}
                 <TrainerCardMartin />
               </div>
             </div>
           </div>
-
-          {/* todo RIGHT PADDING  */}
         </div>
       </div>
     </>

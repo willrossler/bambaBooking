@@ -3,13 +3,33 @@
 }
 
 /* iPhone PRO MAX  */
-.nav-link:hover {
-  color: #3c469c;
-  transition: color 200ms ease-in-out;
-}
+
 .active-link {
   border-bottom: 4px solid #3c469c;
-  padding-top: 20px;
+  padding-top: 30px;
+}
+#hoverLink:hover {
+  color: #f5aac9 !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+#bookingBtn {
+  color: #000;
+  font-weight: 500;
+  padding: 1em 3em 1em 3em;
+  margin-left: 5em;
+}
+
+#bookingBtn:hover {
+  background-color: #f5aac9 !important;
+  color: #000;
+  transition: all 0.2s ease-in-out !important;
+}
+
+@media screen and (min-width: 1000px) {
+  .alignNavbar {
+    align-items: center !important;
+  }
 }
 
 @media screen and (max-width: 1000px) {

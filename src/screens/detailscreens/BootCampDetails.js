@@ -158,8 +158,6 @@ const BootCampDetails = () => {
               </div>
             </div>
           </div>
-
-          {/* todo RIGHT PADDING  */}
         </div>
       </div>
     </>

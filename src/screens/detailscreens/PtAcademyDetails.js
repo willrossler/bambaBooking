@@ -148,7 +148,6 @@ const PtAcademyDetails = () => {
             volutpat. Mattis enim ut tellus eleme{" "}
           </p>
         </div>
-        {/* todo RIGHT PADDING  */}
       </div>
     </>
   );
