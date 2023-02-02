@@ -16,8 +16,8 @@
 
 @font-face {
   font-family: "N27";
-  src: url("./fonts/n27-medium-webfont.woff2") format("woff"),
-    url() format("woff2");
+  src: url("./fonts/n27-medium-webfont.woff") format("woff"),
+    url("./fonts/n27-medium-webfont.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
 }

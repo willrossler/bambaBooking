@@ -6,7 +6,6 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
-import { Button } from "react-bootstrap";
 
 import "../componentStyles/mobileMenuStyles.css";
 import "../componentStyles/header.css";
@@ -53,7 +52,7 @@ function Header() {
       <Container>
         <Navbar.Brand>
           <Link to="/">
-            <img className="bambaLogo" src={bambaLogo} />
+            <img className="bambaLogo" src={bambaLogo} alt="Bamba Logotype" />
           </Link>
         </Navbar.Brand>
 
@@ -85,7 +84,11 @@ function Header() {
           >
             <Navbar.Brand>
               <Link className="d-lg-none" to="/">
-                <img className="bambaLogo" src={bambaLogo} />
+                <img
+                  className="bambaLogo"
+                  src={bambaLogo}
+                  alt="Bamba Logotype"
+                />
               </Link>
             </Navbar.Brand>
             <X
@@ -100,7 +103,7 @@ function Header() {
           </Offcanvas.Header>
           <hr className="shadowHr mobileView" />
           <Offcanvas.Body>
-            <Nav className="ms-auto py-3 d-flex align-items-center">
+            <Nav id="navBar" className="ms-auto py-3 d-flex">
               <Nav.Link id="hoverLink">
                 <Link
                   id="hoverLink"
@@ -173,8 +176,6 @@ function Header() {
                 </Link>
               </Nav.Link>
 
-              {/* BIG SCREEN BUTTON */}
-
               {/*  MOBILE LINKS */}
               <div className="mobileLinksStyle">
                 <Nav.Link>
@@ -211,20 +212,9 @@ function Header() {
 
               {/* MOBILE BUTTON AND TEXT */}
 
-              <button
-                style={{
-                  marginTop: "130px",
-                  marginBottom: "50px",
-                  backgroundColor: "#D9D9D9",
-                }}
-                className="d-lg-none btn btn-primary btn-light  py-2 rounded-0 "
-              >
+              <button className="d-lg-none btn mobileButton">
                 <Link
-                  style={{
-                    color: "black",
-                    fontSize: "18px",
-                    fontWeight: "500",
-                  }}
+                  className="mobileButton"
                   onClick={handleClose}
                   to="/booking"
                 >
