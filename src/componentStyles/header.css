@@ -4,6 +4,27 @@
 
 /* iPhone PRO MAX  */
 
+.mobileButton {
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #d9d9d9;
+  border-radius: 0;
+  width: 100%;
+  margin-top: 5em;
+  margin-bottom: 2em;
+}
+
+#navBar {
+  align-items: start;
+}
+
+@media screen and (min-width: 1000px) {
+  #navBar {
+    align-items: center !important;
+  }
+}
+
 .active-link {
   border-bottom: 4px solid #3c469c;
   padding-top: 30px;
