@@ -32,73 +32,37 @@ const DetailsScreen = () => {
     switch (location.pathname) {
       case "/boxing":
         setSrc(boxingPic);
-        break;
-      case "/weightlifting":
-        setSrc(weightPic);
-        break;
-      case "/bootcamp":
-        setSrc(campPic);
-        break;
-      case "/mentaltraining":
-        setSrc(mentalPic);
-        break;
-      case "/personaltraining":
-        setSrc(PTPic);
-        break;
-      case "/martialarts":
-        setSrc(martialPic);
-        break;
-      default:
-        setSrc("/path/to/default.jpg");
-    }
-  }, [location.pathname]);
-
-  useEffect(() => {
-    switch (location.pathname) {
-      case "/boxing":
         setTitle("BOXNING");
-        break;
-      case "/weightlifting":
-        setTitle("STYRKETRÄNING");
-        break;
-      case "/bootcamp":
-        setTitle("CAMP");
-        break;
-      case "/mentaltraining":
-        setTitle("MENTAL TRÄNING");
-        break;
-      case "/personaltraining":
-        setTitle("PERSONLIG TRÄNING");
-        break;
-      case "/martialarts":
-        setTitle("KAMPSPORT");
-        break;
-      default:
-        setTitle("/path/to/default.jpg");
-    }
-  }, [location.pathname]);
-
-  useEffect(() => {
-    switch (location.pathname) {
-      case "/boxing":
         setText(texts.boxingCopy);
         break;
       case "/weightlifting":
+        setSrc(weightPic);
+        setTitle("STYRKETRÄNING");
         setText(texts.weightCopy);
         break;
       case "/bootcamp":
+        setSrc(campPic);
+        setTitle("CAMP");
         setText(texts.campCopy);
         break;
       case "/martialarts":
+        setSrc(martialPic);
+        setTitle("KAMPSPORT");
         setText(texts.martialCopy);
         break;
       case "/mentaltraining":
+        setSrc(mentalPic);
+        setTitle("MENTAL TRÄNING");
         setText(texts.mentalCopy);
         break;
       case "/personaltraining":
+        setSrc(PTPic);
+        setTitle("PERSONLIG TRÄNING");
         setText(texts.personalTrainingCopy);
         break;
       default:
+        setSrc("/path/to/default.jpg");
+        setTitle("Default title");
         setText("Default text");
         console.log(texts);
     }
@@ -173,11 +137,11 @@ const DetailsScreen = () => {
           className=" mobileView"
           style={{ color: "#fff", fontSize: "32px", marginTop: "55px" }}
         >
-          CAMP
+          {title}
           <hr className="pinkHrMobile" />
         </h1>
 
-        <img src={bootCampPic} className="img-fluid  mobileView" />
+        <img src={src} className="img-fluid  mobileView" />
         <div className=" mobileView">
           <div className="textContainer">
             <p
@@ -203,17 +167,7 @@ const DetailsScreen = () => {
                   lineHeight: "22px",
                 }}
               >
-                Mellan 06.00-06.50, måndag, tisdag, torsdag och fredag under 8
-                veckor, möts vi för intensiv morgonträning. Passen är enbart för
-                er i campen och behöver inte bokas utan du får tillgång till
-                alla pass när du köper Camp 8 veckor.
-                <br />
-                <br /> Camp utformas av någon av oss tränare och blandar olika
-                träningsformer som styrka, kondition och kampsport. <br />
-                <br /> Beroende på vem som håller i camp kan passen komma att se
-                annorlunda ut. Alla vi har olika vinklar och sätt att träna på,
-                detta bidrar till en varierad träningsform.
-                <br />
+                {text}
               </p>
             </p>
             <hr
