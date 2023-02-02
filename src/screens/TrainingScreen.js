@@ -17,7 +17,7 @@ const TrainingScreen = () => {
 
   const getStyles = (index) => {
     return {
-      fontSize: index === hoveredIndex ? "100copx" : "100px",
+      fontSize: index === hoveredIndex ? "75px" : "75px",
       transition: "all 200ms ease-in-out",
       color: index === hoveredIndex ? "#F5AAC9" : "#fff",
       opacity: index === hoveredIndex ? 1 : index % 2 === 0 ? 0.5 : 1,
@@ -92,7 +92,7 @@ const TrainingScreen = () => {
         <div className="d-sm-inline d-lg-none d-md-none"></div>
 
         <div
-          className="container py-3 trainingLinks"
+          className="container text-start trainingLinks"
           style={getParentStyles(hoveredIndex)}
         >
           <Link to="/personaltraining">

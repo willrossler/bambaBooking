@@ -1,11 +1,3 @@
-.enlarged-1 {
-  font-size: 105px;
-}
-
-.enlarged-2 {
-  transform: scale(1.1);
-}
-
 /* IMAGE BANNER */
 .image-container {
   position: relative;
@@ -19,16 +11,21 @@
   left: 16px;
 }
 
+.trainingLinks {
+  padding-top: 5%;
+  padding-bottom: 15%;
+}
+
 /* SCREEN SIZES */
 
 @media screen and (max-width: 1401px) {
   .trainingLinks div {
-    font-size: 75px !important;
+    font-size: 50px !important;
   }
 }
 @media screen and (max-width: 1050px) {
   .trainingLinks div {
-    font-size: 50px !important;
+    font-size: 38px !important;
   }
 }
 @media screen and (max-width: 400px) {
