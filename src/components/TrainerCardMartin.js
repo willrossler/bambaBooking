@@ -11,8 +11,8 @@ const TrainerCardMartin = () => {
           <p style={{ fontWeight: "500" }}>Martin Pettersson</p>
           <p style={{ opacity: "0.5", fontWeight: "400" }}>Personal Trainer</p>
           <p style={{ opacity: "0.5", fontWeight: "400" }}> — </p>
-          <p>martin@bamba.se</p>
-          <p>+467 012 345 67</p>
+          <p style={{ fontWeight: "400" }}>martin@bamba.se</p>
+          <p style={{ fontWeight: "400" }}>+467 012 345 67</p>
         </div>
       </div>
     </div>

@@ -12,8 +12,8 @@ const TrainerCardJocke = () => {
           <p style={{ fontWeight: "500" }}>Joakim Karlsson</p>
           <p style={{ opacity: "0.5", fontWeight: "400" }}>Personal Trainer</p>
           <p style={{ opacity: "0.5", fontWeight: "400" }}> — </p>
-          <p>jocke@bamba.se</p>
-          <p>+467 012 345 67</p>
+          <p style={{ fontWeight: "400" }}>jocke@bamba.se</p>
+          <p style={{ fontWeight: "400" }}>+467 012 345 67</p>
         </div>
       </div>
     </div>
