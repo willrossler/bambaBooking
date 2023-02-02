@@ -3,6 +3,10 @@
 }
 
 /* iPhone PRO MAX  */
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 0;
+  padding-left: 0;
+}
 
 .mobileButton {
   color: black;
@@ -13,6 +17,9 @@
   width: 100%;
   margin-top: 5em;
   margin-bottom: 2em;
+}
+
+a.nav-link {
 }
 
 #navBar {
