@@ -1,5 +1,5 @@
 import React from "react";
-import HomeBanner from "../components/HomeBanner";
+
 import ContactInfo from "../components/ContactInfo";
 import TrainerCardAbbe from "../components/TrainerCardAbbe";
 import TrainerCardMartin from "../components/TrainerCardMartin";
@@ -23,7 +23,7 @@ const ContactScreen = () => {
         <section>
           <div>
             <div className="d-flex justify-content-between pb-5 pt-5 ">
-              <div style={{ paddingTop: "3em", paddingRight: "12em" }}>
+              <div style={{ paddingTop: "3em", paddingRight: "22%" }}>
                 <h1 className="title">
                   LOCATION
                   <hr style={{ marginBottom: "1em" }} className="pinkHr" />
@@ -37,19 +37,20 @@ const ContactScreen = () => {
         </section>
         <section className=" ">
           <div className="container ">
-            <h1 style={{ paddingTop: "3em" }} className="title">
+            <h1 style={{ paddingTop: "2em" }} className="title">
               PERSONAL TRAINERS
             </h1>
-            <hr className="pinkHr" style={{ marginBottom: "1em" }} />
-            <div style={{ marginBottom: "2em" }} class="d-flex flex-row ">
-              <div>
+            <hr style={{ marginBottom: "4em" }} className="pinkHr" />
+
+            <div className="d-flex flex-row justify-content-start">
+              <div style={{ marginRight: "7%" }}>
                 <TrainerCardAbbe />
               </div>
-              <div>
-                <TrainerCardAbbe />
+              <div style={{ marginLeft: "7%", marginRight: "7%" }}>
+                <TrainerCardJocke />
               </div>
-              <div>
-                <TrainerCardAbbe />
+              <div style={{ marginLeft: "7%" }}>
+                <TrainerCardMartin />
               </div>
             </div>
           </div>
@@ -69,7 +70,6 @@ const ContactScreen = () => {
             LOCATION
           </h1>
           <hr className="pinkHrMobile" />
-          <MapComponentMobile />
           <ContactInfo />
           {/* samma setup som på details */}
 
