@@ -224,15 +224,27 @@ function Header() {
                 <div class="d-flex align-items-end  ">
                   <p
                     className="text-end"
-                    style={{ fontSize: "14px", marginBottom: "0" }}
+                    style={{
+                      fontSize: "14px",
+                      marginBottom: "0",
+                      color: "#fff",
+                      fontWeight: "500",
+                    }}
                   >
                     Bamba{" "}
                   </p>
-                  <p style={{ fontSize: "14px", marginBottom: "0" }}>
+                  <p
+                    style={{
+                      fontSize: "14px",
+                      marginBottom: "0",
+                      color: "#fff",
+                    }}
+                  >
                     &nbsp;|&nbsp;
                   </p>
                   <p
                     style={{
+                      color: "#fff",
                       fontSize: "14px",
                       marginBottom: "0",
                       opacity: "0.5",
@@ -243,6 +255,7 @@ function Header() {
                   </p>
                   <p
                     style={{
+                      color: "#fff",
                       fontSize: "14px",
                       marginBottom: "0",
                       opacity: "0.5",
@@ -253,6 +266,7 @@ function Header() {
 
                   <p
                     style={{
+                      color: "#fff",
                       fontSize: "14px",
                       marginBottom: "0",
                       opacity: "0.5",
@@ -262,6 +276,7 @@ function Header() {
                   </p>
                   <p
                     style={{
+                      color: "#fff",
                       fontSize: "14px",
                       marginBottom: "0",
                       opacity: "0.5",
@@ -271,6 +286,7 @@ function Header() {
                   </p>
                   <p
                     style={{
+                      color: "#fff",
                       fontSize: "14px",
                       marginBottom: "0",
                       opacity: "0.5",
@@ -284,7 +300,12 @@ function Header() {
                 <div class="d-flex   ">
                   <p
                     className="text-end"
-                    style={{ fontSize: "14px", marginBottom: "0" }}
+                    style={{
+                      fontSize: "14px",
+                      marginBottom: "0",
+                      color: "#fff",
+                      fontWeight: "500",
+                    }}
                   >
                     Instagram@
                   </p>
@@ -294,15 +315,21 @@ function Header() {
                       fontSize: "14px",
                       marginBottom: "0",
                       opacity: "0.5",
+                      color: "#fff",
                     }}
                   >
-                    &nbsp;bambaostermalm
+                    &nbsp; &nbsp;bambaostermalm
                   </p>
                 </div>
                 <div class="d-flex   ">
                   <p
                     className="text-end"
-                    style={{ fontSize: "14px", marginBottom: "0" }}
+                    style={{
+                      fontSize: "14px",
+                      marginBottom: "0",
+                      color: "#fff",
+                      fontWeight: "500",
+                    }}
                   >
                     E-mail:
                   </p>
@@ -312,9 +339,10 @@ function Header() {
                       fontSize: "14px",
                       marginBottom: "0",
                       opacity: "0.5",
+                      color: "#fff",
                     }}
                   >
-                    &nbsp;info@bambaostermalm.se
+                    &nbsp;&nbsp;info@bambaostermalm.se
                   </p>
                 </div>
 
