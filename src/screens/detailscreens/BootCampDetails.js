@@ -51,7 +51,7 @@ const BootCampDetails = () => {
 
           <h2 className="textHeaderPink">Beskrivning</h2>
           <br />
-          <p id="descriptionText">{text}</p>
+          <p className="descriptionText">{text}</p>
           <br />
           <hr style={{ color: "#fff", opacity: "0.2" }} />
           <br />

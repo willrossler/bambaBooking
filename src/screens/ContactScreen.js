@@ -38,15 +38,10 @@ const ContactScreen = () => {
         </section>
         <section className=" ">
           <div className="container ">
-            <h1 style={{ paddingTop: "2em" }} className="title">
-              PERSONAL TRAINERS
-            </h1>
+            <h1 className="title">PERSONAL TRAINERS</h1>
             <hr className="pinkHr" />
             {/* todo avstånd bilder enligt figma */}
-            <div
-              style={{ marginTop: "3em" }}
-              className="d-flex flex-row justify-content-start"
-            >
+            <div className="d-flex flex-row justify-content-start">
               <div>
                 <TrainerCardAbbe />
               </div>

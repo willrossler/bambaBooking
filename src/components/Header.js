@@ -42,7 +42,7 @@ function Header() {
         backgroundColor: headerColor,
       }}
       expand="lg"
-      className="navbar navbar-dark py-2"
+      className="navbar navbar-dark"
     >
       {/* todo synka logans med text-start genom länkar och knapp - CHECK */}
       {/* todo hover rosa transition på länkar + knapp - CHECK */}
@@ -104,7 +104,7 @@ function Header() {
           </Offcanvas.Header>
           <hr className="shadowHr mobileView" />
           <Offcanvas.Body>
-            <Nav id="navBar" className="ms-auto py-3 d-flex">
+            <Nav id="navBar" className="ms-auto d-flex">
               <Nav.Link id="hoverLink">
                 <Link
                   id="hoverLink"
@@ -155,7 +155,7 @@ function Header() {
                   }
                 >
                   {" "}
-                  SHOP
+                  OM OSS
                 </Link>
               </Nav.Link>
 

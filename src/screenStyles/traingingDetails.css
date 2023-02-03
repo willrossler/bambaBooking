@@ -6,7 +6,7 @@
   font-weight: 500;
   color: #f5aac9;
   font-size: 18px;
-  line-height: 21.8px;
+  line-height: 21.6px;
   margin: 0;
 }
 
@@ -15,6 +15,22 @@
   line-height: 21.6px;
   color: #fff;
   font-weight: 300;
+}
+
+.descriptionTextMobile {
+  font-weight: 300;
+  font-size: 14px;
+  color: #fff;
+  line-height: 16.8px;
+}
+
+.descriptionTitleMobile {
+  font-size: 14px;
+  line-height: 16.8px;
+  font-weight: 500px;
+  color: #f5aac9;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 .boxerBannerContainer {
@@ -33,13 +49,13 @@
 }
 
 .textContainer {
-  margin-right: 15%;
+  /* margin-right: 8%; */
 }
 
 @media screen and (max-width: 1800px) {
   .descriptionText {
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 13.5px;
+    line-height: 16.2px;
     color: #fff;
     font-weight: 300;
   }

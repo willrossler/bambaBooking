@@ -7,6 +7,11 @@
   margin: 0;
 }
 
+.linkStylesFooter p:hover {
+  color: #f5aac9 !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
 .footerLogo {
   width: 113px;
   height: 142px;

@@ -51,10 +51,8 @@ const HomeScreen = () => {
               Kom som du är, gå härifrån nöjdare.{" "}
             </p>
             {/* todo avstånd rubrik till brödtext. alla skärmstorlekar CHECK */}
-            <h3 style={{ paddingTop: "1.75em" }} className="textHeaderPink">
-              Fysiskt
-            </h3>
-            <p style={{ paddingTop: "1em" }} className="homeParagraph">
+            <h3 className="textHeaderPink">Fysiskt</h3>
+            <p className="homeParagraph">
               {" "}
               Hur vill du använda din kropp? Vi tror på “medveten rörelse” - där
               varje pass fyller sitt syfte, om du så vill uppnå ett mål inför en
