@@ -127,47 +127,24 @@ const DetailsScreen = () => {
       <div className="container">
         <hr
           className="mobileView"
-          style={{ color: "#fff", opacity: "0.2", margin: "0" }}
+          style={{ color: "#fff", opacity: "0.2", marginTop: "16px" }}
         />
         <h1
           className=" mobileView"
           style={{ color: "#fff", fontSize: "32px", marginTop: "55px" }}
         >
           {title}
-          <hr
-            style={{ marginTop: "30px", marginBottom: "30px" }}
-            className="pinkHrMobile"
-          />
+          <hr className="pinkHrMobile" />
         </h1>
         {/* dubbla avstånd? todo */}
         <img src={src} className="img-fluid  mobileView" />
         <div className=" mobileView">
           <div className="textContainer">
-            <p
-              style={{
-                color: "#F5AAC9",
-                marginTop: "30px",
-                marginBottom: "1em",
-                fontWeight: "500",
-                fontSize: "14px",
-                lineHeight: "16.8px",
-              }}
-            >
-              Beskrivning
-            </p>
+            <p className="descriptionTitleMobile">Beskrivning</p>
 
             <p>
               {" "}
-              <p
-                style={{
-                  fontWeight: "300",
-                  fontSize: "14px",
-                  color: "#fff",
-                  lineHeight: "22px",
-                }}
-              >
-                {text}
-              </p>
+              <p className="descriptionTextMobile">{text}</p>
             </p>
             <hr
               className=""
@@ -175,27 +152,26 @@ const DetailsScreen = () => {
                 color: "#fff",
                 opacity: "0.2",
                 marginTop: "60px",
-                marginBottom: "10px",
+                marginBottom: "30px",
               }}
             />
-            <div
-              style={{ marginBottom: "2em" }}
-              className="trainingForms row py-4 "
-            >
-              <h3>FORMS OF TRAINING</h3>
-              <div>
-                <p>— Klasser (upp till 12 personer)</p>
-                <p>— Mindre grupper (upp till 5 personer)</p>
-                <p>— Personal training (one on one)</p>
-                <p>— Testa på (tre pass för en komplett genomgång)</p>
-                <p>— Introduktion (ett pass)</p>
-                <br />
-                <p>All träningsupplägg är tillgängliga som presentkort.</p>
+            <div style={{}} className=" row">
+              <p className="trainingFormsTitle">FORMS OF TRAINING</p>
+              <div className="trainingForms">
+                <p>—&nbsp; Klasser (upp till 12 personer)</p>
+                <p>—&nbsp; Mindre grupper (upp till 5 personer)</p>
+                <p>—&nbsp; Personal training (one on one)</p>
+                <p>—&nbsp; Testa på (tre pass för en komplett genomgång)</p>
+                <p>—&nbsp; Introduktion (ett pass)</p>
               </div>
+              <p className="trainingFormsTitle">
+                All träningsupplägg är tillgängliga som presentkort.
+              </p>
             </div>
 
             <div
-              style={{ marginBottom: "2em" }}
+              style={{ paddingTop: "40px", marginBottom: "32px" }}
+              // between funkar ej . todo
               class="d-flex flex-row justify-content-between"
             >
               <div>
