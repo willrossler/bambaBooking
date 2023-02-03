@@ -1,11 +1,8 @@
 import React from "react";
-import BoxingBanner from "../../components/BoxingBanner";
 import TrainerCardAbbe from "../../components/TrainerCardAbbe";
 import TrainerCardJocke from "../../components/TrainerCardJocke";
 import TrainerCardMartin from "../../components/TrainerCardMartin";
-import bootCampPic from "../../assets/images/bootCamp.jpg";
 
-import TrainingInfo from "../../components/TrainingInfo";
 import "../../screenStyles/traingingDetails.css";
 
 import texts from "../../assets/texts/texts.json";
@@ -19,7 +16,6 @@ import weightPic from "../../assets/images/weightLiftPic.jpg";
 import campPic from "../../assets/images/bootCamp.jpg";
 import mentalPic from "../../assets/images/mentalTrainingPic.jpg";
 import martialPic from "../../assets/images/martialPic.jpg";
-import { lineHeight } from "@mui/system";
 
 const DetailsScreen = () => {
   const location = useLocation();
@@ -72,7 +68,7 @@ const DetailsScreen = () => {
     <>
       {/* DESKTOP VIEW  */}
       <div className="wrapper desktopView container">
-        <div className="textContainer">
+        <div className="textContainer ">
           <h1 className="title desktopView">
             {title}
             <hr
@@ -81,10 +77,10 @@ const DetailsScreen = () => {
             />
           </h1>
           {/*  */}
-          <p style={{ fontWeight: "500", color: "#F5AAC9" }}>Beskrivning</p>
+          <p className="descriptionTitle">Beskrivning</p>
           <br />
           {/* todo lineHeight samt mobil */}
-          <p id="descriptionText">{text}</p>
+          <p className="descriptionText">{text}</p>
           <br />
           <hr style={{ color: "#fff", opacity: "0.2" }} />
           <br />
@@ -138,9 +134,12 @@ const DetailsScreen = () => {
           style={{ color: "#fff", fontSize: "32px", marginTop: "55px" }}
         >
           {title}
-          <hr className="pinkHrMobile" />
+          <hr
+            style={{ marginTop: "30px", marginBottom: "30px" }}
+            className="pinkHrMobile"
+          />
         </h1>
-
+        {/* dubbla avstånd? todo */}
         <img src={src} className="img-fluid  mobileView" />
         <div className=" mobileView">
           <div className="textContainer">
@@ -175,8 +174,8 @@ const DetailsScreen = () => {
               style={{
                 color: "#fff",
                 opacity: "0.2",
-                marginTop: "40px",
-                marginBottom: "0px",
+                marginTop: "60px",
+                marginBottom: "10px",
               }}
             />
             <div
