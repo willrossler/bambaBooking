@@ -11,19 +11,19 @@ const FooterLinks = () => {
   return (
     <div style={{ lineHeight: "45px" }} className="col text-start text-white ">
       <Link to="/home" style={linkStyles}>
-        <p className="footer-link">Filosofi</p>
+        <p className="footer-link">— Filosofi</p>
       </Link>
       <Link to="/training" style={linkStyles}>
-        <p className="footer-link">Träning</p>
+        <p className="footer-link">— Träning</p>
       </Link>
       <Link to="/contact" style={linkStyles}>
-        <p className="footer-link">Kontakt</p>
+        <p className="footer-link">— Kontakt</p>
       </Link>
       <Link to="/shop" style={linkStyles}>
-        <p className="footer-link">Om Oss</p>
+        <p className="footer-link">— Om Oss</p>
       </Link>
       <Link to="/booking" style={linkStyles}>
-        <p className="footer-link">Boka</p>
+        <p className="footer-link">— Boka</p>
       </Link>
     </div>
   );

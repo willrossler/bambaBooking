@@ -16,6 +16,7 @@ const HomeScreen = () => {
 
   return (
     <>
+      {/* mindre avstånd på container */}
       <img
         src={homeBanner}
         className="img-fluid d-none d-lg-block d-md-inline"
@@ -49,7 +50,7 @@ const HomeScreen = () => {
               <br />
               Kom som du är, gå härifrån nöjdare.{" "}
             </p>
-
+            {/* todo avstånd rubrik till brödtext. alla skärmstorlekar CHECK */}
             <h3 style={{ paddingTop: "1.75em" }} className="textHeaderPink">
               Fysiskt
             </h3>

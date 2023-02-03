@@ -51,6 +51,7 @@ function Header() {
       {/* todo rosa knapp BOOK på bokningssidans -CHECK*/}
       <Container>
         <Navbar.Brand>
+          {/* logotyp storlek */}
           <Link to="/">
             <img className="bambaLogo" src={bambaLogo} alt="Bamba Logotype" />
           </Link>
@@ -107,7 +108,6 @@ function Header() {
               <Nav.Link id="hoverLink">
                 <Link
                   id="hoverLink"
-                  style={{ color: "#fff", paddingBottom: "15px" }}
                   to="/"
                   className={
                     location.pathname === "/"
@@ -121,7 +121,6 @@ function Header() {
               <Nav.Link>
                 <Link
                   id="hoverLink"
-                  style={{ color: "#fff", paddingBottom: "15px" }}
                   to="/training"
                   className={
                     location.pathname === "/training"
@@ -135,7 +134,6 @@ function Header() {
               <Nav.Link>
                 <Link
                   id="hoverLink"
-                  style={{ color: "#fff", paddingBottom: "15px" }}
                   to="contact"
                   className={
                     location.pathname === "/contact"
@@ -149,7 +147,6 @@ function Header() {
               <Nav.Link>
                 <Link
                   id="hoverLink"
-                  style={{ color: "#fff", paddingBottom: "15px" }}
                   to="/shop"
                   className={
                     location.pathname === "/shop"
@@ -222,8 +219,7 @@ function Header() {
                 </Link>
               </button>
 
-              {/* to do  */}
-
+              {/* todo markera träning i meny när man är i sub-kategorier */}
               <div className="d-lg-none container bottomInfo">
                 <div class="d-flex align-items-end  ">
                   <p

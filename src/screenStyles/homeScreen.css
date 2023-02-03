@@ -2,8 +2,45 @@
   font-size: 48px;
   line-height: 57px;
   color: #fff;
-  font-weight: 500;
+  font-weight: 400;
 }
+
+.homeParagraph {
+  font-size: 24px;
+  line-height: 28.8px;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 3em;
+}
+
+@media screen and (max-width: 1800px) {
+  .homeParagraph {
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 3em;
+  }
+
+  .textHeaderPink {
+    color: #f5aac9;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+}
+
+/* 
+  .homeParagraph {
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+    font-weight: 300;
+  }
+
+
+
+*/
 
 @media screen and (max-width: 1800px) {
   .homeTitle {

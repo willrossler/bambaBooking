@@ -3,7 +3,7 @@ import "../componentStyles/contactInfoStyles.css";
 
 const ContactInfo = () => {
   return (
-    <div className="col text-start text-white contactInfo">
+    <div className="col text-start  contactInfo">
       <p>Bamba</p>
       <p style={{ opacity: "0.5" }}>Lützengatan 10</p>
       <p style={{ opacity: "0.5" }}>11520 Stockholm</p>

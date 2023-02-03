@@ -25,9 +25,10 @@ const ContactScreen = () => {
             <div className="d-flex justify-content-between pb-5 pt-5 ">
               <div style={{ paddingTop: "3em", paddingRight: "22%" }}>
                 <h1 className="title">
+                  {/* kolla avstånd mellan streck todo */}
                   LOCATION
-                  <hr style={{ marginBottom: "1em" }} className="pinkHr" />
                 </h1>
+                <hr className="pinkHr" />
 
                 <ContactInfo />
               </div>
@@ -40,16 +41,22 @@ const ContactScreen = () => {
             <h1 style={{ paddingTop: "2em" }} className="title">
               PERSONAL TRAINERS
             </h1>
-            <hr style={{ marginBottom: "4em" }} className="pinkHr" />
-
-            <div className="d-flex flex-row justify-content-start">
-              <div style={{ marginRight: "7%" }}>
+            <hr className="pinkHr" />
+            {/* todo avstånd bilder enligt figma */}
+            <div
+              style={{ marginTop: "3em" }}
+              className="d-flex flex-row justify-content-start"
+            >
+              <div>
                 <TrainerCardAbbe />
               </div>
-              <div style={{ marginLeft: "7%", marginRight: "7%" }}>
+              <div>
                 <TrainerCardJocke />
               </div>
-              <div style={{ marginLeft: "7%" }}>
+              <div>
+                <TrainerCardMartin />
+              </div>
+              <div>
                 <TrainerCardMartin />
               </div>
             </div>

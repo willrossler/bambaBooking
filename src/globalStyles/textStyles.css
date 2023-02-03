@@ -45,21 +45,15 @@
 
   font-weight: 500;
 }
-.homeParagraph {
-  font-size: 20px;
-  line-height: 28px;
-  color: #fff;
-  font-weight: 300;
-}
-
-p {
-  font-size: 18px;
-  line-height: 21px;
-  color: #fff;
-  font-weight: 300;
-}
 
 @media screen and (max-width: 1800px) {
+  h1 {
+    font-size: 24px;
+    line-height: 28px;
+    color: #fff;
+    font-weight: 500;
+  }
+
   .trainingForms p {
     color: #fff;
     font-size: 13.5px;
@@ -79,19 +73,6 @@ p {
     font-weight: 400;
   }
 
-  p {
-    font-size: 18px;
-    line-height: 21px;
-    color: #fff;
-    font-weight: 300;
-  }
-
-  .homeParagraph {
-    font-size: 18px;
-    line-height: 21px;
-    color: #fff;
-    font-weight: 300;
-  }
   h1 {
     font-size: 36px;
     line-height: 43px;
@@ -100,51 +81,11 @@ p {
   }
 }
 
-@media screen and (max-width: 1200px) {
-  /* .trainingForms p {
-    color: #fff;
-    font-size: 9px;
-    font-weight: 300;
-    line-height: 10.5px;
-    margin: 0;
-  }
-  .trainingForms h3 {
-    color: #fff;
-    font-size: 9px;
-
-    font-weight: 500;
-  }
-  p {
-    font-size: 12px;
-    line-height: 14px;
-    color: #fff;
-    font-weight: lighter;
-  } */
-}
-
 /* -------------------------------------------- */
 
 /* LARGE LAPTOP/DESKTOP */
 
-@media screen and (max-width: 1800px) {
-}
-
 /* LAPTOP REGULAR */
-
-@media screen and (max-width: 1200px) {
-  .homeParagraph {
-    font-size: 12px;
-    line-height: 14px;
-    color: #fff;
-    font-weight: lighter;
-  }
-  h1 {
-    font-size: 24px;
-    line-height: 28px;
-    color: #fff;
-    font-weight: 500;
-  }
-}
 
 /* SMALLER SCREENS/IPAD */
 
@@ -153,11 +94,19 @@ p {
   font-size: 24px;
   line-height: 28px;
 }
+
 @media screen and (max-width: 1200px) {
   .textHeaderPink {
     color: #f5aac9;
     font-size: 12px;
     line-height: 14px;
+  }
+
+  h1 {
+    font-size: 24px;
+    line-height: 28px;
+    color: #fff;
+    font-weight: 500;
   }
 }
 
@@ -165,6 +114,8 @@ p {
   border: 3px solid #f5aac9;
   opacity: 1;
   width: 112px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .pinkHrMobile {
   border: 2px solid #f5aac9;
