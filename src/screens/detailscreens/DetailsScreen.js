@@ -69,7 +69,7 @@ const DetailsScreen = () => {
     <>
       <Container style={{ marginTop: "40px" }} className="desktopView">
         <Row className="d-flex">
-          <Col style={{ paddingRight: "50px" }} xs={12} md={6}>
+          <Col style={{ paddingRight: "5rem" }} xs={12} md={6}>
             <div>
               <h1 className="title">
                 {title}
@@ -102,7 +102,7 @@ const DetailsScreen = () => {
             <div>
               <img
                 src={src}
-                style={{ marginBottom: "40px" }}
+                style={{ marginBottom: "60px" }}
                 className="img-fluid"
                 alt="Workout Image"
               />
