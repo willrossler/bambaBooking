@@ -22,7 +22,6 @@ const LandingScreen = () => {
           className="sectionWrapper d-flex justify-content-center pb-5"
         >
           <div className="container ">
-            <hr className="newHR" />
             <div className="textOne h2 py-4 ">
               HERE TO HELP YOU SHAPE <br className="break" /> YOUR NEW IMPROVED
               YOU

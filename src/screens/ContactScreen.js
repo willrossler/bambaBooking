@@ -7,6 +7,8 @@ import TrainerCardJocke from "../components/TrainerCardJocke";
 import MapComponent from "../components/MapComponent";
 import MapComponentMobile from "../components/MapComponentMobile";
 
+import { Row, Col } from "react-bootstrap";
+
 import contactPic from "../assets/images/contactPic.jpg";
 
 const ContactScreen = () => {
@@ -42,16 +44,13 @@ const ContactScreen = () => {
             <hr className="pinkHr" />
             {/* todo avstånd bilder enligt figma */}
             <div className="d-flex flex-row justify-content-start">
-              <div>
+              <div style={{ marginRight: "5%" }}>
                 <TrainerCardAbbe />
               </div>
-              <div>
+              <div style={{ marginRight: "5%", marginLeft: "5%" }}>
                 <TrainerCardJocke />
               </div>
-              <div>
-                <TrainerCardMartin />
-              </div>
-              <div>
+              <div style={{ marginRight: "5%", marginLeft: "5%" }}>
                 <TrainerCardMartin />
               </div>
             </div>
@@ -61,49 +60,32 @@ const ContactScreen = () => {
 
       <div className="mobileView">
         <section className="d-flex flex-column container">
-          <h1
-            style={{
-              color: "#fff",
-              fontSize: "32px",
-              marginTop: "40px",
-              marginBottom: "0.5em",
-            }}
-          >
+          <hr style={{ margin: "0" }} />
+          <h1 style={{ marginTop: "40px" }} className="title">
             LOCATION
+            <hr className="pinkHrMobile" />
           </h1>
-          <hr className="pinkHrMobile" />
           <ContactInfo />
           {/* samma setup som på details */}
 
-          <h1
-            style={{
-              color: "#fff",
-              fontSize: "32px",
-              marginTop: "2.5em",
-              marginBottom: "0.5em",
-            }}
-          >
-            PERSONAL TRAINERS
+          <h1 style={{ marginTop: "40px" }} className="title">
+            PERSONLIGA TRÄNARE
+            <hr className="pinkHrMobile" />
           </h1>
-          <hr style={{ marginBottom: "2em" }} className="pinkHrMobile" />
-
-          <div
-            style={{ marginBottom: "2em" }}
-            class="d-flex flex-row justify-content-between"
-          >
-            <div>
-              {" "}
-              <TrainerCardAbbe />
-            </div>
-            <div>
-              <TrainerCardJocke />
-            </div>
-          </div>
-          <div class="d-flex flex-row">
-            <div>
-              {" "}
-              <TrainerCardMartin />
-            </div>
+          <div className="container d-flex" style={{ marginTop: "40px" }}>
+            <Row>
+              <Col>
+                <TrainerCardAbbe />
+              </Col>
+              <Col style={{ marginTop: "30px" }}>
+                <TrainerCardJocke />
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <TrainerCardMartin />
+              </Col>
+            </Row>
           </div>
         </section>
       </div>

@@ -27,7 +27,7 @@
 .descriptionTitleMobile {
   font-size: 14px;
   line-height: 16.8px;
-  font-weight: 500px;
+  font-weight: 500;
   color: #f5aac9;
   margin-top: 30px;
   margin-bottom: 20px;
@@ -37,37 +37,24 @@
   background-color: rgb(59, 91, 134);
 }
 
-.bannerCard {
-  width: 600px;
-}
-
 .wrapper {
-  display: flex;
-  justify-content: space-between;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.textContainer {
-  /* margin-right: 8%; */
+  width: 100%;
 }
 
 @media screen and (max-width: 1800px) {
-  .descriptionText {
+  /* .descriptionText {
     font-size: 13.5px;
     line-height: 16.2px;
     color: #fff;
     font-weight: 300;
-  }
+  } */
 }
 
 @media screen and (max-width: 400px) {
   .desktopView {
     display: none;
-  }
-
-  .textContainer {
-    width: auto;
   }
 
   .mobileView {
@@ -83,10 +70,6 @@
     display: none;
   }
 
-  .textContainer {
-    width: auto;
-  }
-
   .mobileView {
     display: flex;
     flex-direction: column;
@@ -95,10 +78,6 @@
 @media screen and (max-width: 780px) {
   .desktopView {
     display: none;
-  }
-
-  .textContainer {
-    width: auto;
   }
 
   .mobileView {

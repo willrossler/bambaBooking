@@ -49,6 +49,9 @@
   line-height: 21px;
   margin-bottom: 20px;
 }
+.trainingForms p {
+  margin-bottom: 0;
+}
 .trainingFormsTitle {
   font-size: 14px;
   font-weight: 500;
