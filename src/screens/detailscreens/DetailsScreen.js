@@ -106,7 +106,21 @@ const DetailsScreen = () => {
                 className="img-fluid"
                 alt="Workout Image"
               />
-              <div className="d-flex justify-content-between">
+              <div className=" ">
+                {/* todo avstånd bilder enligt figma */}
+                <div className="d-flex flex-row justify-content-between">
+                  <div>
+                    <TrainerCardAbbe />
+                  </div>
+                  <div>
+                    <TrainerCardJocke />
+                  </div>
+                  <div>
+                    <TrainerCardMartin />
+                  </div>
+                </div>
+              </div>
+              {/* <div className="d-flex justify-content-between">
                 <Row>
                   <Col xs={12} md={4}>
                     <TrainerCardAbbe />
@@ -118,7 +132,7 @@ const DetailsScreen = () => {
                     <TrainerCardMartin />
                   </Col>
                 </Row>
-              </div>
+              </div> */}
             </div>
           </Col>
         </Row>
@@ -134,7 +148,7 @@ const DetailsScreen = () => {
         <p className="descriptionTitleMobile" style={{ marginTop: "30px" }}>
           Beskrivning
         </p>
-        <p className="descriptionTextMobile" style={{ marginBottom: "20px" }}>
+        <p className="descriptionTextMobile" style={{ marginBottom: "30px" }}>
           {text}
         </p>
         <hr />

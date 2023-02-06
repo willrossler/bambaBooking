@@ -25,6 +25,7 @@
   line-height: 19.2px;
   font-weight: 500;
   color: #f5aac9;
+  margin-bottom: 18px;
 }
 
 .pinkHr {
@@ -74,19 +75,6 @@
     margin-bottom: 45px;
   }
 
-  .trainingForms p {
-    color: #fff;
-    font-size: 13.5px;
-    font-weight: 300;
-    line-height: 15.75px;
-    margin: 0;
-  }
-  .trainingForms h3 {
-    font-size: 13.5px;
-    color: #fff;
-    font-weight: 500;
-  }
-
   .title {
     color: #fff;
     font-size: 48px;
@@ -115,7 +103,7 @@
   line-height: 28px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   .textHeaderPink {
     color: #f5aac9;
     font-size: 12px;
@@ -132,6 +120,19 @@
   h1 {
     font-size: 24px;
     line-height: 28px;
+    color: #fff;
+    font-weight: 500;
+  }
+
+  .trainingForms p {
+    color: #fff;
+    font-size: 13.5px;
+    font-weight: 300;
+    line-height: 15.75px;
+    margin: 0;
+  }
+  .trainingForms h3 {
+    font-size: 13.5px;
     color: #fff;
     font-weight: 500;
   }

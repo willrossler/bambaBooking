@@ -30,7 +30,7 @@
   font-weight: 500;
   color: #f5aac9;
   margin-top: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .boxerBannerContainer {
@@ -43,13 +43,13 @@
   width: 100%;
 }
 
-@media screen and (max-width: 1800px) {
-  /* .descriptionText {
-    font-size: 13.5px;
-    line-height: 16.2px;
+@media screen and (max-width: 1000px) {
+  .descriptionText {
+    font-size: 16.5px;
+    line-height: 19px;
     color: #fff;
     font-weight: 300;
-  } */
+  }
 }
 
 @media screen and (max-width: 400px) {

@@ -5,16 +5,19 @@
 .navbar-expand-lg .navbar-nav .nav-link {
   padding-right: 0;
   padding-left: 0;
+  margin-bottom: 0;
 }
 
 .nav-link {
   padding: 0;
 }
+#navBar {
+  padding-top: 15px;
+}
 
 .navbar {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  align-items: center !important;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .bambaLogo {
@@ -42,7 +45,8 @@
 }
 
 .active-link {
-  border-bottom: 4px solid #3c469c;
+  border-bottom: 5px solid #3c469c;
+  padding-bottom: 24px;
 }
 
 #hoverLink:hover {
@@ -67,13 +71,17 @@
   transition: all 0.2s ease-in-out !important;
 }
 
-@media screen and (max-width: 2000px) {
+@media screen and (max-width: 1200px) {
   #hoverLink {
     color: #fff;
     font-size: 14px;
     font-weight: 500;
   }
 
+  .active-link {
+    border-bottom: 4px solid #3c469c;
+    padding-bottom: 24px;
+  }
   #bookingBtn {
     font-size: 13px;
     color: #000;
@@ -81,10 +89,10 @@
     padding: 1em 2em 1em 2em;
     margin-left: 7em;
   }
-  /* .bambaLogo {
+  .bambaLogo {
     width: 133px;
     height: 30px;
-  } */
+  }
 }
 
 @media screen and (max-width: 1000px) {
