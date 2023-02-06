@@ -7,9 +7,14 @@
   padding-left: 0;
 }
 
+.nav-link {
+  padding: 0;
+}
+
 .navbar {
   padding-top: 2rem;
   padding-bottom: 2rem;
+  align-items: center !important;
 }
 
 .bambaLogo {
@@ -34,15 +39,6 @@
   color: #fff;
   font-size: 18px;
   line-height: 21.8px;
-}
-#navBar {
-  align-items: start;
-}
-
-@media screen and (min-width: 1000px) {
-  #navBar {
-    align-items: center !important;
-  }
 }
 
 .active-link {
@@ -71,10 +67,10 @@
   transition: all 0.2s ease-in-out !important;
 }
 
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 2000px) {
   #hoverLink {
     color: #fff;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
   }
 
@@ -82,20 +78,20 @@
     font-size: 13px;
     color: #000;
     font-weight: 500;
-    padding: 0.6em 1.7em 0.6em 1.7em;
+    padding: 1em 2em 1em 2em;
     margin-left: 7em;
   }
+  /* .bambaLogo {
+    width: 133px;
+    height: 30px;
+  } */
 }
 
 @media screen and (max-width: 1000px) {
-  .alignNavbar {
-    align-items: center !important;
-  }
   .navbar {
     padding: 24px 0px 24px 0px;
-  }
-  .navbar {
     height: 72px;
+    margin-bottom: 16px;
   }
   .bambaLogo {
     width: 114px;
@@ -106,6 +102,7 @@
   .navbar {
     padding: 24px 0px 24px 0px;
     height: 72px;
+    margin-bottom: 16px;
   }
   .bambaLogo {
     width: 114px;

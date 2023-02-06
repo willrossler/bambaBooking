@@ -7,6 +7,7 @@ import "../../screenStyles/traingingDetails.css";
 
 import texts from "../../assets/texts/texts.json";
 
+import { Row, Col, Container } from "react-bootstrap";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router";
 
@@ -66,131 +67,107 @@ const DetailsScreen = () => {
 
   return (
     <>
-      {/* DESKTOP VIEW  */}
-      <div className="wrapper desktopView container">
-        <div className="textContainer ">
-          <h1 className="title desktopView">
-            {title}
-            <hr
-              style={{ marginTop: "40px", marginBottom: "40px" }}
-              className="pinkHr"
-            />
-          </h1>
-          {/*  */}
-          <p className="descriptionTitle">Beskrivning</p>
-          <br />
-          {/* todo lineHeight samt mobil */}
-          <p className="descriptionText">{text}</p>
-          <br />
-          <hr style={{ color: "#fff", opacity: "0.2" }} />
-          <br />
-          <div className="trainingForms row ">
-            <h3>FORMS OF TRAINING</h3>
-            <br />
+      <Container style={{ marginTop: "40px" }} className="desktopView">
+        <Row className="d-flex">
+          <Col style={{ paddingRight: "50px" }} xs={12} md={6}>
             <div>
-              <p>— Klasser (upp till 12 personer)</p>
-              <p>— Mindre grupper (upp till 5 personer)</p>
-              <p>— Personal training (one on one)</p>
-              <p>— Testa på (tre pass för en komplett genomgång)</p>
-              <p>— Introduktion (ett pass)</p>
+              <h1 className="title">
+                {title}
+                <hr style={{}} className="pinkHr" />
+              </h1>
+              <p className="descriptionTitle">Beskrivning</p>
               <br />
-              <p style={{ fontWeight: "500" }}>
-                All träningsupplägg är tillgängliga som presentkort.
-              </p>
+              <p className="descriptionText">{text}</p>
+              <br />
+              <hr style={{ color: "#fff", opacity: "0.2" }} />
+              <br />
+              <div className="trainingForms">
+                <h3>FORMS OF TRAINING</h3>
+                <br />
+                <div>
+                  <p>— Klasser (upp till 12 personer)</p>
+                  <p>— Mindre grupper (upp till 5 personer)</p>
+                  <p>— Personal training (one on one)</p>
+                  <p>— Testa på (tre pass för en komplett genomgång)</p>
+                  <p>— Introduktion (ett pass)</p>
+                  <br />
+                  <p style={{ fontWeight: "500" }}>
+                    All träningsupplägg är tillgängliga som presentkort.
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-
-        <div className="bannerCard">
-          <img
-            src={src}
-            style={{ marginBottom: "40px" }}
-            className="img-fluid"
-            alt="Workout Image"
-          />
-          {/* ÖKA AVSTÅND todo CHECK  */}
-          <div className="d-flex justify-content-between ">
+          </Col>
+          <Col xs={12} md={6}>
             <div>
-              <TrainerCardAbbe />
+              <img
+                src={src}
+                style={{ marginBottom: "40px" }}
+                className="img-fluid"
+                alt="Workout Image"
+              />
+              <div className="d-flex justify-content-between">
+                <Row>
+                  <Col xs={12} md={4}>
+                    <TrainerCardAbbe />
+                  </Col>
+                  <Col xs={12} md={4}>
+                    <TrainerCardJocke />
+                  </Col>
+                  <Col xs={12} md={4}>
+                    <TrainerCardMartin />
+                  </Col>
+                </Row>
+              </div>
             </div>
-            <div style={{ marginLeft: "20px", marginRight: "20px" }}>
-              <TrainerCardJocke />
-            </div>
-            <div>
-              <TrainerCardMartin />
-            </div>
-          </div>
-        </div>
-      </div>
+          </Col>
+        </Row>
+      </Container>
 
-      {/* MOBILE VIEW  */}
-      <div className="container">
-        <hr
-          className="mobileView"
-          style={{ color: "#fff", opacity: "0.2", marginTop: "16px" }}
-        />
-        <h1
-          className=" mobileView"
-          style={{ color: "#fff", fontSize: "32px", marginTop: "55px" }}
-        >
+      <Container className="mobileView">
+        <hr style={{ margin: "0" }} />
+        <h1 style={{ marginTop: "40px" }} className="title">
           {title}
           <hr className="pinkHrMobile" />
         </h1>
-        {/* dubbla avstånd? todo */}
-        <img src={src} className="img-fluid  mobileView" />
-        <div className=" mobileView">
-          <div className="textContainer">
-            <p className="descriptionTitleMobile">Beskrivning</p>
-
-            <p>
-              {" "}
-              <p className="descriptionTextMobile">{text}</p>
+        <img src={src} className="img-fluid mobileImg" alt="Workout Image" />
+        <p className="descriptionTitleMobile" style={{ marginTop: "30px" }}>
+          Beskrivning
+        </p>
+        <p className="descriptionTextMobile" style={{ marginBottom: "20px" }}>
+          {text}
+        </p>
+        <hr />
+        <div className="trainingForms " style={{ marginTop: "20px" }}>
+          <h3>FORMS OF TRAINING</h3>
+          <div>
+            <p>— Klasser (upp till 12 personer)</p>
+            <p>— Mindre grupper (upp till 5 personer)</p>
+            <p>— Personal training (one on one)</p>
+            <p>— Testa på (tre pass för en komplett genomgång)</p>
+            <p>— Introduktion (ett pass)</p>
+            <br />
+            <p style={{ fontWeight: "500" }}>
+              All träningsupplägg är tillgängliga som presentkort.
             </p>
-            <hr
-              className=""
-              style={{
-                color: "#fff",
-                opacity: "0.2",
-                marginTop: "60px",
-                marginBottom: "30px",
-              }}
-            />
-            <div style={{}} className=" row">
-              <p className="trainingFormsTitle">FORMS OF TRAINING</p>
-              <div className="trainingForms">
-                <p>—&nbsp; Klasser (upp till 12 personer)</p>
-                <p>—&nbsp; Mindre grupper (upp till 5 personer)</p>
-                <p>—&nbsp; Personal training (one on one)</p>
-                <p>—&nbsp; Testa på (tre pass för en komplett genomgång)</p>
-                <p>—&nbsp; Introduktion (ett pass)</p>
-              </div>
-              <p className="trainingFormsTitle">
-                All träningsupplägg är tillgängliga som presentkort.
-              </p>
-            </div>
-
-            <div
-              style={{ paddingTop: "40px", marginBottom: "32px" }}
-              // between funkar ej . todo
-              class="d-flex flex-row justify-content-between"
-            >
-              <div>
-                {" "}
-                <TrainerCardAbbe />
-              </div>
-              <div>
-                <TrainerCardJocke />
-              </div>
-            </div>
-            <div class="d-flex flex-row">
-              <div>
-                {" "}
-                <TrainerCardMartin />
-              </div>
-            </div>
           </div>
         </div>
-      </div>
+        <div className="container d-flex" style={{ marginTop: "40px" }}>
+          <Row>
+            <Col>
+              <TrainerCardAbbe />
+            </Col>
+            <Col style={{ marginTop: "30px" }}>
+              <TrainerCardJocke />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <TrainerCardMartin />
+            </Col>
+          </Row>
+        </div>
+      </Container>
     </>
   );
 };
