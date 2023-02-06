@@ -13,7 +13,6 @@ const ContactInfo = () => {
       <p>info@bambaostermalm.se</p>
       <p>www.bambaostermalm.se</p>
       <br />
-      <br />
 
       <p>Instagram@bambaostermalm</p>
     </div>

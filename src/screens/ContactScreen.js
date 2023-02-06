@@ -68,11 +68,11 @@ const ContactScreen = () => {
           <ContactInfo />
           {/* samma setup som på details */}
 
-          <h1 style={{ marginTop: "40px" }} className="title">
+          <h1 style={{ marginTop: "60px" }} className="title">
             PERSONLIGA TRÄNARE
             <hr className="pinkHrMobile" />
           </h1>
-          <div className="container d-flex" style={{ marginTop: "40px" }}>
+          <div className="container d-flex" style={{ marginTop: "8px" }}>
             <Row>
               <Col>
                 <TrainerCardAbbe />
