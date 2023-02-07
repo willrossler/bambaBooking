@@ -13,6 +13,7 @@
 }
 #navBar {
   padding-top: 15px;
+  align-items: center;
 }
 
 .navbar {
@@ -104,6 +105,10 @@
   .bambaLogo {
     width: 114px;
     height: 26px;
+  }
+  #navBar {
+    /* padding-top: 15px; */
+    align-items: start !important;
   }
 }
 @media screen and (max-width: 430px) {
