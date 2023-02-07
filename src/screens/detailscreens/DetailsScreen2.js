@@ -1,0 +1,351 @@
+import React from "react";
+import TrainerCardAbbe from "../../components/TrainerCardAbbe";
+import TrainerCardJocke from "../../components/TrainerCardJocke";
+import TrainerCardMartin from "../../components/TrainerCardMartin";
+
+import "../../screenStyles/traingingDetails.css";
+
+import texts from "../../assets/texts/texts.json";
+
+import { Row, Col, Container } from "react-bootstrap";
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router";
+
+import PTPic from "../../assets/images/PTpic.jpg";
+import boxingPic from "../../assets/images/boxingPic.jpg";
+import weightPic from "../../assets/images/weightLiftPic.jpg";
+import campPic from "../../assets/images/bootCamp.jpg";
+import mentalPic from "../../assets/images/mentalTrainingPic.jpg";
+import martialPic from "../../assets/images/martialPic.jpg";
+
+const DetailsScreen2 = () => {
+  const location = useLocation();
+
+  const [src, setSrc] = useState("");
+  const [text, setText] = useState("");
+  const [title, setTitle] = useState("");
+
+  useEffect(() => {
+    switch (location.pathname) {
+      case "/boxing":
+        setSrc(boxingPic);
+        setTitle("BOXNING");
+        setText(texts.boxingCopy);
+        break;
+      case "/weightlifting":
+        setSrc(weightPic);
+        setTitle("STYRKETRÄNING");
+        setText(texts.weightCopy);
+        break;
+      case "/bootcamp":
+        setSrc(campPic);
+        setTitle("CAMP");
+        setText(texts.campCopy);
+        break;
+      case "/martialarts":
+        setSrc(martialPic);
+        setTitle("KAMPSPORT");
+        setText(texts.martialCopy);
+        break;
+      case "/mentaltraining":
+        setSrc(mentalPic);
+        setTitle("MENTAL TRÄNING");
+        setText(texts.mentalCopy);
+        break;
+      case "/boxing2":
+        setSrc(martialPic);
+        setTitle("BOXNING 2");
+        break;
+      default:
+        setSrc("/path/to/default.jpg");
+        setTitle("Default title");
+        setText("Default text");
+        console.log(texts);
+    }
+  }, [location.pathname]);
+
+  return (
+    <>
+      <Container style={{ marginTop: "40px" }} className="desktopView">
+        <Row className="d-flex">
+          <Col style={{ paddingRight: "5rem" }} xs={12} md={6}>
+            <div>
+              <h1 className="title">
+                {title}
+                <hr style={{}} className="pinkHr" />
+              </h1>
+              <p className="descriptionTitle">Introduktion</p>
+              <br />
+              <p className="descriptionText">
+                Boxningskonsten har trollbundit människor sen långt tillbaka i
+                tiden. Allt från de dansande rörelserna till kraften och
+                spänningen. Som träningsform har den kanske fått mer erkännande
+                på senare år vilket vi verkligen tycker den förtjänar – få
+                träningsformer är så dynamiska och effektiva för både muskler
+                och mental träning.
+                <br />
+                <br /> Utmaningen är att i rytm utföra slagserier i en
+                koordinerad sammansättning av balans, styrka och fotarbete.
+                Detta kan till en början se enkelt ut men det är en konst som
+                kan förfinas i många år.{" "}
+              </p>
+              <br />
+              <p className="descriptionTitle">Kondition och uthållighet</p>
+              <br />
+              <p className="descriptionText">
+                Få sporter bygger kondition och uthållighet som boxning. Den
+                högintensiva träningen som ofta sker i intervaller skapar
+                grunden för god konditionsträning. Lägger man där till den
+                fysiska och muskulära träningen för både ben och armar bygger
+                det snabbt och effektivt uthållighet. Allt detta bidrar i sin
+                tur till att minska risken för kardiovaskulära sjukdomar, högt
+                blodtryck, diabetes och andra sjukdomstillstånd. <br />
+                <br />
+                Ett boxningspass är inte lätt, det är en intensiv upplevelse.
+                Oavsett vad din skicklighet eller konditionsnivå är, bör ett bra
+                boxningspass vara tufft och utmanande. Många människor gillar
+                det här, men det är också bra för din kondition eftersom det
+                bygger uthållighet och förbättrar uthålligheten. Om du går på
+                boxningsträning regelbundet kommer du att finna det lättare att
+                träna längre och mer intensivt. Boxningspass är bra tillägg till
+                andra träningsformer och uthållighetsträning som distanslöpning
+                och triathlon.
+              </p>
+
+              <br />
+              <p className="descriptionTitle">Koordination och balans</p>
+              <br />
+              <p className="descriptionText">
+                De snabba kroppsrörelserna i boxning är bra för balans, medan
+                slagen förbättrar hand-öga-koordinationen. Även utan
+                corespecifika rörelser under styrketräningsdelen av träningen
+                bygger boxning dessa muskler. De rörelser som behövs för att
+                boxas bygger corestyrka, vilket i sin tur hjälper dig att få
+                bättre balans. Äldre kunder och de med särskilda hälsobehov drar
+                särskilt nytta av corestyrka och förbättrad balans.
+              </p>
+              <br />
+              <p className="descriptionTitle">Styrka och muskler</p>
+              <br />
+              <p className="descriptionText">
+                Boxning är en fysisk träningsform och aktiverar i princip hela
+                kroppen – allt från inre core muskulatur till alla stora och små
+                muskelgrupper. Detta är anledningen till att träningsformen är
+                så effektiv och uppskattad.
+                <br /> En del av träningen är styrkeintervaller växlat med att
+                slå på en boxningssäck och andra tekniska rörelser. Även de
+                olika försvarsrörelserna (även om vi inte slår på varandra) ökar
+                hela kroppens styrka. Detta beror på att du behöver hela din
+                kropp för att boxas. Att slå ett slag korrekt involverar hela
+                kroppen och de flesta muskelgrupper. Du behöver din core för att
+                stabilisera dig själv, din underkropp och höfter för att svänga
+                och ge kraft till slaget, och naturligtvis överkroppen för att
+                ge slaget.
+              </p>
+              <br />
+              <p className="descriptionTitle">Mental träning</p>
+              <br />
+
+              <p className="descriptionText">
+                Alla dessa fysiska fördelar är tillräckligt för att uppmuntra de
+                flesta att prova boxning, men det finns mer. Träningens
+                intensiva karaktär, den fysiska och mentala utmaningen och
+                frigörandet av att slå något hårt bidrar alla till de mentala
+                hälsofördelarna med boxningspass:
+              </p>
+              <ul className="descriptionText" style={{ marginBottom: "30px" }}>
+                <li> Minska stress och andra negativa känslor</li>
+                <li>Hitta känslomässig befrielse i en säker miljö</li>
+                <li>Lyft upp ett dåligt humör efter en jobbig dag</li>
+                <li>Sov bättre på natten efter ett intensivt träningspass</li>
+                <li>
+                  Få självförtroende av att möta en utmaning och bli starkare
+                </li>
+              </ul>
+              <br />
+              <hr style={{ color: "#fff", opacity: "0.2" }} />
+              <br />
+              <div style={{ marginTop: "20px" }} className="trainingForms">
+                <h3>FORMS OF TRAINING</h3>
+                <br />
+                <div>
+                  <p>— Klasser (upp till 12 personer)</p>
+                  <p>— Mindre grupper (upp till 5 personer)</p>
+                  <p>— Personal training (one on one)</p>
+                  <p>— Testa på (tre pass för en komplett genomgång)</p>
+                  <p>— Introduktion (ett pass)</p>
+                  <br />
+                  <p style={{ fontWeight: "500" }}>
+                    All träningsupplägg är tillgängliga som presentkort.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </Col>
+          <Col xs={12} md={6}>
+            <div>
+              <img
+                src={src}
+                style={{ marginBottom: "60px" }}
+                className="img-fluid"
+                alt="Workout Image"
+              />
+              <div className=" ">
+                {/* todo avstånd bilder enligt figma */}
+                <div className="d-flex flex-row justify-content-between">
+                  <div>
+                    <TrainerCardAbbe />
+                  </div>
+                  <div>
+                    <TrainerCardJocke />
+                  </div>
+                  <div>
+                    <TrainerCardMartin />
+                  </div>
+                </div>
+              </div>
+              {/* <div className="d-flex justify-content-between">
+                <Row>
+                  <Col xs={12} md={4}>
+                    <TrainerCardAbbe />
+                  </Col>
+                  <Col xs={12} md={4}>
+                    <TrainerCardJocke />
+                  </Col>
+                  <Col xs={12} md={4}>
+                    <TrainerCardMartin />
+                  </Col>
+                </Row>
+              </div> */}
+            </div>
+          </Col>
+        </Row>
+      </Container>
+
+      <Container className="mobileView">
+        <hr style={{ margin: "0" }} />
+        <h1 style={{ marginTop: "40px" }} className="title">
+          {title}
+          <hr className="pinkHrMobile" />
+        </h1>
+        <img src={src} className="img-fluid mobileImg" alt="Workout Image" />
+        <p className="descriptionTitleMobile" style={{ marginTop: "30px" }}>
+          Introduktion
+        </p>
+        <p className="descriptionTextMobile" style={{}}>
+          Boxningskonsten har trollbundit människor sen långt tillbaka i tiden.
+          Allt från de dansande rörelserna till kraften och spänningen. Som
+          träningsform har den kanske fått mer erkännande på senare år vilket vi
+          verkligen tycker den förtjänar – få träningsformer är så dynamiska och
+          effektiva för både muskler och mental träning.
+          <br />
+          <br /> Utmaningen är att i rytm utföra slagserier i en koordinerad
+          sammansättning av balans, styrka och fotarbete. Detta kan till en
+          början se enkelt ut men det är en konst som kan förfinas i många år.{" "}
+        </p>
+        <p className="descriptionTitleMobile" style={{ marginTop: "30px" }}>
+          Kondition och uthållighet
+        </p>
+        <p className="descriptionTextMobile" style={{}}>
+          Få sporter bygger kondition och uthållighet som boxning. Den
+          högintensiva träningen som ofta sker i intervaller skapar grunden för
+          god konditionsträning. Lägger man där till den fysiska och muskulära
+          träningen för både ben och armar bygger det snabbt och effektivt
+          uthållighet. Allt detta bidrar i sin tur till att minska risken för
+          kardiovaskulära sjukdomar, högt blodtryck, diabetes och andra
+          sjukdomstillstånd. <br />
+          <br />
+          Ett boxningspass är inte lätt, det är en intensiv upplevelse. Oavsett
+          vad din skicklighet eller konditionsnivå är, bör ett bra boxningspass
+          vara tufft och utmanande. Många människor gillar det här, men det är
+          också bra för din kondition eftersom det bygger uthållighet och
+          förbättrar uthålligheten. Om du går på boxningsträning regelbundet
+          kommer du att finna det lättare att träna längre och mer intensivt.
+          Boxningspass är bra tillägg till andra träningsformer och
+          uthållighetsträning som distanslöpning och triathlon.
+        </p>
+        <p className="descriptionTitleMobile" style={{ marginTop: "30px" }}>
+          Koordination och balans
+        </p>
+        <p className="descriptionTextMobile" style={{}}>
+          De snabba kroppsrörelserna i boxning är bra för balans, medan slagen
+          förbättrar hand-öga-koordinationen. Även utan corespecifika rörelser
+          under styrketräningsdelen av träningen bygger boxning dessa muskler.
+          De rörelser som behövs för att boxas bygger corestyrka, vilket i sin
+          tur hjälper dig att få bättre balans. Äldre kunder och de med
+          särskilda hälsobehov drar särskilt nytta av corestyrka och förbättrad
+          balans.
+        </p>
+        <p className="descriptionTitleMobile" style={{ marginTop: "30px" }}>
+          Styrka och muskler
+        </p>
+        <p className="descriptionTextMobile" style={{}}>
+          Boxning är en fysisk träningsform och aktiverar i princip hela kroppen
+          – allt från inre core muskulatur till alla stora och små
+          muskelgrupper. Detta är anledningen till att träningsformen är så
+          effektiv och uppskattad.
+          <br />
+          <br /> En del av träningen är styrkeintervaller växlat med att slå på
+          en boxningssäck och andra tekniska rörelser. Även de olika
+          försvarsrörelserna (även om vi inte slår på varandra) ökar hela
+          kroppens styrka. Detta beror på att du behöver hela din kropp för att
+          boxas. Att slå ett slag korrekt involverar hela kroppen och de flesta
+          muskelgrupper. Du behöver din core för att stabilisera dig själv, din
+          underkropp och höfter för att svänga och ge kraft till slaget, och
+          naturligtvis överkroppen för att ge slaget.
+        </p>
+        <p className="descriptionTitleMobile" style={{ marginTop: "30px" }}>
+          Mental träning
+        </p>
+        <p className="descriptionTextMobile" style={{}}>
+          Alla dessa fysiska fördelar är tillräckligt för att uppmuntra de
+          flesta att prova boxning, men det finns mer. Träningens intensiva
+          karaktär, den fysiska och mentala utmaningen och frigörandet av att
+          slå något hårt bidrar alla till de mentala hälsofördelarna med
+          boxningspass:
+        </p>
+
+        <ul className="descriptionTextMobile" style={{ marginBottom: "30px" }}>
+          <li> Minska stress och andra negativa känslor</li>
+          <li>Hitta känslomässig befrielse i en säker miljö</li>
+          <li>Lyft upp ett dåligt humör efter en jobbig dag</li>
+          <li>Sov bättre på natten efter ett intensivt träningspass</li>
+          <li>Få självförtroende av att möta en utmaning och bli starkare</li>
+        </ul>
+
+        <hr />
+        <div className="trainingForms " style={{ marginTop: "20px" }}>
+          <h3>FORMS OF TRAINING</h3>
+          <div>
+            <p>— Klasser (upp till 12 personer)</p>
+            <p>— Mindre grupper (upp till 5 personer)</p>
+            <p>— Personal training (one on one)</p>
+            <p>— Testa på (tre pass för en komplett genomgång)</p>
+            <p>— Introduktion (ett pass)</p>
+            <br />
+            <p style={{ fontWeight: "500" }}>
+              All träningsupplägg är tillgängliga som presentkort.
+            </p>
+          </div>
+        </div>
+        <div className="container d-flex" style={{ marginTop: "40px" }}>
+          <Row>
+            <Col>
+              <TrainerCardAbbe />
+            </Col>
+            <Col style={{ marginTop: "30px" }}>
+              <TrainerCardJocke />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <TrainerCardMartin />
+            </Col>
+          </Row>
+        </div>
+      </Container>
+    </>
+  );
+};
+
+export default DetailsScreen2;

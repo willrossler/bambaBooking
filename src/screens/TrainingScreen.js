@@ -155,14 +155,24 @@ const TrainingScreen = () => {
               BOOT CAMP —
             </div>
           </Link>
-          <Link to="/ptacademy">
+          <Link to="/boxing2">
             <div
-              id="ptAcademy"
+              id=""
               onMouseEnter={() => handleMouseEnter(7)}
               onMouseLeave={handleMouseLeave}
               style={getStyles(7)}
             >
-              PT ACADEMY —
+              BOXING 2
+            </div>
+          </Link>
+          <Link to="/boxing3">
+            <div
+              id=""
+              onMouseEnter={() => handleMouseEnter(7)}
+              onMouseLeave={handleMouseLeave}
+              style={getStyles(7)}
+            >
+              BOXING 3
             </div>
           </Link>
         </div>
