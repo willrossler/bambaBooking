@@ -105,7 +105,7 @@ function Header() {
           </Offcanvas.Header>
           <hr className="shadowHr mobileView" />
           <Offcanvas.Body>
-            <Nav id="navBar" className="ms-auto d-flex align-items-center">
+            <Nav id="navBar" className="ms-auto d-flex ">
               <Nav.Link>
                 <Link
                   id="hoverLink"

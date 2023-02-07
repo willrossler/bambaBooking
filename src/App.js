@@ -20,6 +20,8 @@ import MentalTrainingDetails from "./screens/detailscreens/MentalTrainingDetails
 import PersonalTrainingDetails from "./screens/detailscreens/PersonalTrainingDetails";
 import ScheduleComponent from "./components/ScheduleComponent";
 import PtScreen from "./screens/PtScreen";
+import DetailsScreen2 from "./screens/detailscreens/DetailsScreen2";
+import DetailsScreen3 from "./screens/detailscreens/DetailsScreen3";
 
 function App() {
   const location = useLocation();
@@ -52,7 +54,8 @@ function App() {
         <Route path="/weightlifting" element={<DetailsScreen />} />
         <Route path="/bootcamp" element={<DetailsScreen />} />
         <Route path="/mentaltraining" element={<DetailsScreen />} />
-        <Route path="/personaltraining" element={<DetailsScreen />} />
+        <Route path="/boxing2" element={<DetailsScreen2 />} />
+        <Route path="/boxing3" element={<DetailsScreen3 />} />
         <Route path="/martialarts" element={<DetailsScreen />} />
         <Route path="/contact" element={<ContactScreen />} />
         <Route path="/shop" element={<ShopScreen />} />
