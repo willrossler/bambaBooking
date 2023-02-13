@@ -14,6 +14,102 @@ import { Row, Col } from "react-bootstrap";
 import contactPic from "../assets/images/contactPic.jpg";
 
 const ContactScreen = () => {
+  const mapStyles = [
+    {
+      featureType: "administrative",
+      elementType: "labels.text.fill",
+      stylers: [
+        {
+          color: "#444444",
+        },
+      ],
+    },
+    {
+      featureType: "administrative.country",
+      elementType: "geometry",
+      stylers: [
+        {
+          visibility: "off",
+        },
+        {
+          saturation: "-3",
+        },
+        {
+          lightness: "29",
+        },
+      ],
+    },
+    {
+      featureType: "landscape",
+      elementType: "all",
+      stylers: [
+        {
+          color: "#f2f2f2",
+        },
+      ],
+    },
+    {
+      featureType: "poi",
+      elementType: "all",
+      stylers: [
+        {
+          visibility: "off",
+        },
+      ],
+    },
+    {
+      featureType: "road",
+      elementType: "all",
+      stylers: [
+        {
+          saturation: -100,
+        },
+        {
+          lightness: 45,
+        },
+      ],
+    },
+    {
+      featureType: "road.highway",
+      elementType: "all",
+      stylers: [
+        {
+          visibility: "simplified",
+        },
+      ],
+    },
+    {
+      featureType: "road.arterial",
+      elementType: "labels.icon",
+      stylers: [
+        {
+          visibility: "off",
+        },
+      ],
+    },
+    {
+      featureType: "transit",
+      elementType: "all",
+      stylers: [
+        {
+          visibility: "off",
+        },
+      ],
+    },
+    {
+      featureType: "water",
+      elementType: "all",
+      stylers: [
+        {
+          color: "#b7b7b7",
+        },
+        {
+          visibility: "on",
+        },
+      ],
+    },
+  ];
+
   return (
     <>
       {/* DESKTOP VIEW  */}
@@ -82,6 +178,13 @@ const ContactScreen = () => {
             LOCATION
             <hr className="pinkHrMobile" />
           </h1>
+          <img
+            className="img-fluid"
+            src={`https://maps.googleapis.com/maps/api/staticmap?center=Lützengatan+10,+11520+Stockholm&zoom=17&size=400x400&markers=color:red%7CLützengatan+10,+11520+Stockholm&style=${encodeURIComponent(
+              JSON.stringify(mapStyles)
+            )}&key=AIzaSyBo6BuIHPsmjbTKwZIWg0mPpohgu3JHqow`}
+            alt="Google Maps Image"
+          />
           <ContactInfo />
           {/* samma setup som på details */}
           <h1 style={{ marginTop: "60px" }} className="title">

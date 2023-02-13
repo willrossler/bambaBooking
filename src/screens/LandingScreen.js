@@ -5,6 +5,7 @@ import BookingClass from "../components/BookingClass";
 import BookingMembership from "../components/BookingMembership";
 import "../screenStyles/landingScreen.css";
 import { Link } from "react-router-dom";
+import { Col, Row, Container } from "react-bootstrap";
 import bLogo from "../assets/logos/bLogo.svg";
 import bLogo2 from "../assets/logos/bLogo2.svg";
 const LandingScreen = () => {
@@ -54,6 +55,23 @@ const LandingScreen = () => {
               </div>
             </div>
           </div>
+
+          {/* <Row>
+            <Col xs={6} style={{ height: "200px", backgroundColor: "#fff" }}>
+              Box 1
+            </Col>
+            <Col xs={6} style={{ height: "200px", backgroundColor: "#fff" }}>
+              Box 2
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={6} style={{ height: "200px", backgroundColor: "#fff" }}>
+              Box 3
+            </Col>
+            <Col xs={6} style={{ height: "200px", backgroundColor: "#fff" }}>
+              Box 4
+            </Col>
+          </Row> */}
         </div>
       </section>
     </>

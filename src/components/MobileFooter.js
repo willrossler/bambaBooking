@@ -24,8 +24,8 @@ const MobileFooter = () => {
         style={{
           backgroundColor: footerColor,
           marginTop: "40px",
-          marginBottom: "40px",
           paddingTop: "40px",
+          paddingBottom: "60px",
         }}
       >
         <div class="div1 container px-4">
