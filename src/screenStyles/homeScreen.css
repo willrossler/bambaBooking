@@ -5,12 +5,30 @@
   font-weight: 400;
 }
 
+.homeBanner {
+  background-image: url("../assets/images/homePic.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 1200px;
+  width: 100%;
+  margin-bottom: 200px;
+}
+
+.homeBanner p {
+  color: #f5aac9;
+  line-height: 115px;
+  font-size: 96px;
+  font-weight: 500;
+  padding-top: 10%;
+  font-weight: 500;
+}
+
 .homeParagraph {
   font-size: 24px;
   line-height: 28.8px;
   color: #fff;
   font-weight: 300;
-  margin-bottom: 4%;
+  /* margin-bottom: 4%; */
 }
 
 @media screen and (max-width: 1800px) {

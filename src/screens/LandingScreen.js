@@ -1,26 +1,30 @@
 import React from "react";
-import bLogo from "../assets/logos/bLogo.svg";
 import BookingPT from "../components/BookingPT";
 import BookingCamp from "../components/BookingCamp";
 import BookingClass from "../components/BookingClass";
 import BookingMembership from "../components/BookingMembership";
 import "../screenStyles/landingScreen.css";
 import { Link } from "react-router-dom";
-
+import bLogo from "../assets/logos/bLogo.svg";
+import bLogo2 from "../assets/logos/bLogo2.svg";
 const LandingScreen = () => {
   const bgColor = "#3C469C";
 
   return (
     <>
-      <img className="desktop" src={bLogo} />
+      <hr className="mobileView" style={{ margin: "0" }} />
 
-      <div className="bgDivOne">
-        <img className="bLogoBG" src={bLogo} />
-
-        <section
-          style={{ backgroundColor: bgColor }}
-          className="sectionWrapper d-flex justify-content-center pb-5"
-        >
+      <section className=" d-flex justify-content-center ">
+        <div className="mobileView logoMobile">
+          <img src={bLogo} />
+        </div>
+        <div className="logo-container">
+          <div className="desktopView top-left-logo">
+            <img src={bLogo} />
+          </div>
+          <div className="desktopView bottom-right-logo">
+            <img src={bLogo2} />
+          </div>
           <div className="container ">
             <div className="textOne h2 py-4 ">
               HERE TO HELP YOU SHAPE <br className="break" /> YOUR NEW IMPROVED
@@ -50,8 +54,8 @@ const LandingScreen = () => {
               </div>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </>
   );
 };

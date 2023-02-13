@@ -1,5 +1,7 @@
 import React from "react";
 
+import "../screenStyles/contactScreen.css";
+
 import ContactInfo from "../components/ContactInfo";
 import TrainerCardAbbe from "../components/TrainerCardAbbe";
 import TrainerCardMartin from "../components/TrainerCardMartin";
@@ -15,16 +17,28 @@ const ContactScreen = () => {
   return (
     <>
       {/* DESKTOP VIEW  */}
-      <img
-        src={contactPic}
-        className="img-fluid d-none d-lg-block d-md-inline"
-        alt="Home Image"
-        style={{ marginBottom: "100px" }}
-      />
-      <div className="desktopView container">
+      <div className="contactBanner desktopView ">
+        <p className="container" style={{ color: "#F5AAC9" }}>
+          <span style={{ color: "#fff" }}>
+            VI SKAPAR SKRÄDDARSYDD <br />
+            TRÄNING —
+          </span>
+          <br />
+          JUST FÖR DIG
+          <br />
+          <span style={{ color: "#fff", fontSize: "32px" }}>
+            FYSISKT — MENTALT — SPIRITUELLT
+          </span>
+        </p>
+      </div>
+
+      <div style={{ marginTop: "100px" }} className="desktopView container">
         <section>
           <div>
-            <div className="d-flex justify-content-between pb-5 pt-5 ">
+            <div
+              style={{ marginBottom: "60px" }}
+              className="d-flex justify-content-between pb-5 pt-5 "
+            >
               <div style={{ paddingTop: "3em", paddingRight: "22%" }}>
                 <h1 className="title">
                   {/* kolla avstånd mellan streck todo */}
@@ -43,7 +57,10 @@ const ContactScreen = () => {
             <h1 className="title">PERSONAL TRAINERS</h1>
             <hr className="pinkHr" />
             {/* todo avstånd bilder enligt figma */}
-            <div className="d-flex flex-row justify-content-start">
+            <div
+              style={{ marginBottom: "200px" }}
+              className="d-flex flex-row justify-content-start"
+            >
               <div style={{ marginRight: "5%" }}>
                 <TrainerCardAbbe />
               </div>
@@ -67,26 +84,15 @@ const ContactScreen = () => {
           </h1>
           <ContactInfo />
           {/* samma setup som på details */}
-
           <h1 style={{ marginTop: "60px" }} className="title">
             PERSONLIGA TRÄNARE
             <hr className="pinkHrMobile" />
           </h1>
-          <div className="container d-flex" style={{ marginTop: "8px" }}>
-            <Row>
-              <Col>
-                <TrainerCardAbbe />
-              </Col>
-              <Col style={{ marginTop: "30px" }}>
-                <TrainerCardJocke />
-              </Col>
-            </Row>
-            <Row>
-              <Col>
-                <TrainerCardMartin />
-              </Col>
-            </Row>
-          </div>
+          <div className="mobileTrainerGrid">
+            <TrainerCardAbbe />
+            <TrainerCardJocke />
+            <TrainerCardMartin />
+          </div>{" "}
         </section>
       </div>
     </>

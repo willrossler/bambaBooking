@@ -3,6 +3,7 @@ import bLogo from "../assets/logos/bLogo.svg";
 import "../componentStyles/footer.css";
 import "../globalStyles/textStyles.css";
 import { Link, useLocation } from "react-router-dom";
+import { Container, Row, Col } from "react-bootstrap";
 
 const Footer = () => {
   const location = useLocation();
@@ -19,18 +20,21 @@ const Footer = () => {
 
   return (
     <div
+      className="desktopView"
       style={{
         backgroundColor: footerColor,
-        marginTop: "100px",
+        padding: "50px",
       }}
     >
-      <div class="container py-5 page-footer ">
-        <div class=" d-flex justify-content-between ">
-          <div class="col-4">
-            <img className="footerLogo" src={bLogo} />
-          </div>
-          <div class="col-4">
-            {" "}
+      <Container style={{ paddingTop: "40px" }} className="desktopView">
+        <Row>
+          <Col xs={12} md={6} style={{ display: "flex", flexDirection: "row" }}>
+            <img
+              style={{ marginRight: "15%" }}
+              className="footerLogo "
+              src={bLogo}
+            />
+
             <ul className="list-unstyled h-100 text-start infoStylesFooter">
               <li>
                 <p>Bamba</p>
@@ -50,39 +54,41 @@ const Footer = () => {
                 <p>Instagram@bambaostermalm</p>
               </li>
             </ul>
-          </div>
-          <div className="col linkStylesFooter">
-            <ul className="list-unstyled">
-              <li>
-                <Link to="/">
-                  <p>— Filosofi</p>
-                </Link>
-              </li>
-              <li>
-                <Link to="/training">
-                  <p>— Träning </p>
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact">
-                  {" "}
-                  <p>— Kontakt </p>
-                </Link>
-              </li>
-              <li>
-                <Link to="/shop">
-                  <p> — Om oss</p>
-                </Link>
-              </li>
-              <li>
-                <Link to="/booking">
-                  <p>— Boka</p>
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+          </Col>
+          <Col xs={12} md={6}>
+            <div className="col linkStylesFooter">
+              <ul className="list-unstyled">
+                <li>
+                  <Link to="/">
+                    <p>— Filosofi</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/training">
+                    <p>— Träning </p>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/contact">
+                    {" "}
+                    <p>— Kontakt </p>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/shop">
+                    <p> — Om oss</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/booking">
+                    <p>— Boka</p>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 };
