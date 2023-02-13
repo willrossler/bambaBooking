@@ -17,12 +17,15 @@ const HomeScreen = () => {
   return (
     <>
       {/* mindre avstånd på container */}
-      <img
-        src={homeBanner}
-        className="img-fluid d-none d-lg-block d-md-inline"
-        alt="Home Image"
-        style={{ marginBottom: "100px" }}
-      />
+
+      <div className="homeBanner desktopView">
+        <p className="container" style={{ color: "#F5AAC9" }}>
+          <span style={{ color: "#fff" }}>
+            DIN LIVSKVALITÉ <br />
+          </span>
+          VÅR DRIVKRAFT
+        </p>
+      </div>
 
       <div className="container desktopView">
         <div className="row">
@@ -50,8 +53,11 @@ const HomeScreen = () => {
               <br />
               Kom som du är, gå härifrån nöjdare.{" "}
             </p>
+            <br />
+            <br />
             {/* todo avstånd rubrik till brödtext. alla skärmstorlekar CHECK */}
             <h3 className="textHeaderPink">Fysiskt</h3>
+            <br />
             <p className="homeParagraph">
               {" "}
               Hur vill du använda din kropp? Vi tror på “medveten rörelse” - där
@@ -62,6 +68,9 @@ const HomeScreen = () => {
               träningsutbud är varierat, anpassat och i ständig förändring då
               varje session ter sig olika.{" "}
             </p>
+            <br />
+            <br />
+
             <h3 className="textHeaderPink">Mentalt</h3>
             <br />
 
@@ -74,6 +83,9 @@ const HomeScreen = () => {
               för dig med en-och-en coachning sessioner, anpassade utefter din
               livssituation.{" "}
             </p>
+            <br />
+            <br />
+
             <h3 className="textHeaderPink">Spirituellt</h3>
             <br />
 

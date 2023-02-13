@@ -1,5 +1,4 @@
 import React from "react";
-import Background from "../assets/images/bookback.jpg";
 
 const MembershipScreen = () => {
   return (

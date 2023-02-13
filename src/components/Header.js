@@ -45,10 +45,7 @@ function Header() {
       className="navbar navbar-dark"
     >
       {/* todo synka logans med text-start genom länkar och knapp - CHECK */}
-      {/* todo hover rosa transition på länkar + knapp - CHECK */}
-      {/* todo kolla avstånd mellan länkar CHECK? kanske för mycket */}
       {/* todo kolla transition för active link */}
-      {/* todo rosa knapp BOOK på bokningssidans -CHECK*/}
       <Container>
         <Navbar.Brand>
           {/* logotyp storlek */}
@@ -124,7 +121,13 @@ function Header() {
                   id="hoverLink"
                   to="/training"
                   className={
-                    location.pathname === "/training"
+                    location.pathname === "/training" ||
+                    location.pathname === "/boxing" ||
+                    location.pathname === "/weightlifting" ||
+                    location.pathname === "/bootcamp" ||
+                    location.pathname === "/mentailtraining" ||
+                    location.pathname === "/martialarts" ||
+                    location.pathname === "/personaltraining"
                       ? "d-none d-lg-inline active-link mx-3"
                       : "d-none d-lg-inline mx-3"
                   }

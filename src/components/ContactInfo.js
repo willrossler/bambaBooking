@@ -3,10 +3,11 @@ import "../componentStyles/contactInfoStyles.css";
 
 const ContactInfo = () => {
   return (
-    <div className="col text-start  contactInfo">
+    <div className="col text-start contactInfo">
       <p>Bamba</p>
-      <p style={{ opacity: "0.5" }}>Lützengatan 10</p>
-      <p style={{ opacity: "0.5" }}>11520 Stockholm</p>
+      <p style={{ opacity: "0.5" }}>Lützengatan&nbsp;10</p>
+
+      <p style={{ opacity: "0.5" }}>11520&nbsp;Stockholm</p>
       <p style={{ opacity: "0.5" }}>Sweden</p>
       <br />
 
@@ -14,7 +15,9 @@ const ContactInfo = () => {
       <p>www.bambaostermalm.se</p>
       <br />
 
-      <p>Instagram@bambaostermalm</p>
+      <p>
+        <span>Instagram@bambaostermalm</span>
+      </p>
     </div>
   );
 };

@@ -1,14 +1,10 @@
 .parent {
+  height: 70vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr) repeat(2, 0) 1fr;
   grid-template-rows: repeat(2, 1fr) repeat(3, 0);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-}
-
-.mobileFooter {
-  padding-top: 40px;
-  padding-bottom: 40px;
 }
 
 .div1 {

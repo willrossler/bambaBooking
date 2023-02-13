@@ -12,10 +12,10 @@ const BookingClass = () => {
             style={{ textDecoration: "none", color: "black" }}
             to="/schedule"
           >
-            <p style={{ fontWeight: "600" }} className="card-text">
+            <p style={{ fontWeight: "500" }} className="card-text">
               BOKA <br />—
             </p>
-            <h5 style={{ fontWeight: "600" }} className="bootClass card-title">
+            <h5 style={{ fontWeight: "500" }} className="bootClass card-title">
               GRUPPTRÄNING
             </h5>
             <ArrowRight className="arrowCard" color="black" size={48} />

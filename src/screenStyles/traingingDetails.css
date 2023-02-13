@@ -2,6 +2,9 @@
   display: none;
 }
 
+.img-fluid {
+}
+
 .descriptionTitle {
   font-weight: 500;
   color: #f5aac9;
@@ -37,6 +40,30 @@
   background-color: rgb(59, 91, 134);
 }
 
+.mobileTrainerGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between !important;
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+  .mobileTrainerGrid {
+  }
+
+  .mobileTrainerGrid > * {
+    width: 33.33%;
+  }
+}
+@media (max-width: 767px) {
+  .mobileTrainerGrid > :last-child {
+    margin-top: 30px;
+  }
+}
+
 .wrapper {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -52,7 +79,7 @@
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 430px) {
   .desktopView {
     display: none;
   }
@@ -63,19 +90,7 @@
   }
 }
 
-/* iPhone PRO MAX size  */
-
-/* @media screen and (max-width: 430px) {
-  .desktopView {
-    display: none;
-  }
-
-  .mobileView {
-    display: flex;
-    flex-direction: column;
-  }
-} */
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 900px) {
   .desktopView {
     display: none;
   }

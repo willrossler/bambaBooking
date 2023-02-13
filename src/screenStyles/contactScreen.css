@@ -1,0 +1,26 @@
+.contactBanner {
+  background-image: url("../assets/images/contactPic.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 800px;
+  width: 100%;
+}
+
+.contactBanner p {
+  color: #f5aac9;
+  line-height: 76.8px;
+  font-size: 64px;
+  font-weight: 500;
+  padding-top: 10%;
+}
+
+.contactBanner p {
+  color: #f5aac9;
+  line-height: 76.8px;
+  font-size: 64px;
+  font-weight: 500;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

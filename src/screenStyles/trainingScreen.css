@@ -1,14 +1,35 @@
 /* IMAGE BANNER */
-.image-container {
-  position: relative;
-  text-align: center;
-  color: #f5aac9;
+
+.trainingBanner {
+  background-image: url("../assets/images/trainingPicBanner.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 800px;
+  width: 100%;
 }
 
-.bannerText {
-  position: absolute;
-  top: 8px;
-  left: 16px;
+.trainingBanner p {
+  color: #f5aac9;
+  line-height: 76.8px;
+  font-size: 64px;
+  font-weight: 500;
+  padding-top: 10%;
+}
+
+.mobileBanner {
+  background-image: url("../assets/images/trainingPicBanner.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+  width: 100%;
+}
+
+.mobileBanner p {
+  color: #f5aac9;
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 500;
+  padding-top: 40%;
 }
 
 .trainingLinks {

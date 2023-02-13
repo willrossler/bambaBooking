@@ -1,6 +1,5 @@
 import React from "react";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
-import bottle from "../assets/images/bottle.jpg";
 const ProductCard = () => {
   return (
     <>
@@ -9,7 +8,6 @@ const ProductCard = () => {
           style={{ width: "auto" }}
           className="cardContainer d-flex flex-column"
         >
-          <img src={bottle} />
           <div className="d-flex flex-row justify-content-between">
             <div className="priceName d-flex flex-column">
               <div style={{ color: "#fff" }}>Bamba Vattenflaska</div>

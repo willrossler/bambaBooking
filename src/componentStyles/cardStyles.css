@@ -5,6 +5,10 @@
   border-radius: 0;
 }
 
+.col {
+  padding: 0;
+}
+
 .mobileHr {
   display: none;
 }
