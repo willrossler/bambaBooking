@@ -24,6 +24,7 @@ const Footer = () => {
       style={{
         backgroundColor: footerColor,
         padding: "50px",
+        marginTop: "100px",
       }}
     >
       <Container style={{ paddingTop: "40px" }} className="desktopView">

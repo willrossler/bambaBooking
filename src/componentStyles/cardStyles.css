@@ -4,15 +4,14 @@
   background-color: #fff;
   border-radius: 0;
 }
-
-.col {
-  padding: 0;
+.bookingCard:hover {
+  background-color: #f5aac9;
+  transition: background-color 200ms ease;
+  cursor: pointer;
 }
-
 .mobileHr {
   display: none;
 }
-
 .newHR {
   display: none;
 }

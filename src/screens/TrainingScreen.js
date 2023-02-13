@@ -102,14 +102,14 @@ const TrainingScreen = () => {
         className="container text-start trainingLinks"
         style={getParentStyles(hoveredIndex)}
       >
-        <Link to="/personaltraining">
+        <Link to="/bootcamp">
           <div
             id="personalTraining"
             onMouseEnter={() => handleMouseEnter(1)}
             onMouseLeave={handleMouseLeave}
             style={getStyles(1)}
           >
-            PERSONAL TRAINING —
+            CAMP —
           </div>
         </Link>
         <Link to="/weightlifting">
@@ -119,67 +119,48 @@ const TrainingScreen = () => {
             onMouseLeave={handleMouseLeave}
             style={getStyles(2)}
           >
-            WEIGHT LIFTING —
-          </div>
-        </Link>
-        <Link to="/martialarts">
-          <div
-            id="martialArts"
-            onMouseEnter={() => handleMouseEnter(3)}
-            onMouseLeave={handleMouseLeave}
-            style={getStyles(3)}
-          >
-            MARTIAL ARTS —
+            STYRKETRÄNING —
           </div>
         </Link>
         <Link to="/boxing">
           <div
             id="boxing"
+            onMouseEnter={() => handleMouseEnter(3)}
+            onMouseLeave={handleMouseLeave}
+            style={getStyles(3)}
+          >
+            BOXNING —
+          </div>
+        </Link>
+        <Link to="/personaltraining">
+          <div
+            id="bootCamp"
             onMouseEnter={() => handleMouseEnter(4)}
             onMouseLeave={handleMouseLeave}
             style={getStyles(4)}
           >
-            BOXING —
+            PERSONLIG TRÄNING —
           </div>
         </Link>
-        <Link to="/mentaltraining">
+        <Link to="/martialarts">
           <div
-            id="mentalTraining"
+            id="martialArts"
             onMouseEnter={() => handleMouseEnter(5)}
             onMouseLeave={handleMouseLeave}
             style={getStyles(5)}
           >
-            MENTAL TRAINING —
+            KAMPSPORT —
           </div>
         </Link>
-        <Link to="/bootcamp">
+
+        <Link to="/mentaltraining">
           <div
-            id="bootCamp"
+            id="mentalTraining"
             onMouseEnter={() => handleMouseEnter(6)}
             onMouseLeave={handleMouseLeave}
             style={getStyles(6)}
           >
-            BOOT CAMP —
-          </div>
-        </Link>
-        <Link to="/boxing2">
-          <div
-            id=""
-            onMouseEnter={() => handleMouseEnter(7)}
-            onMouseLeave={handleMouseLeave}
-            style={getStyles(7)}
-          >
-            BOXING 2
-          </div>
-        </Link>
-        <Link to="/boxing3">
-          <div
-            id=""
-            onMouseEnter={() => handleMouseEnter(7)}
-            onMouseLeave={handleMouseLeave}
-            style={getStyles(7)}
-          >
-            BOXING 3
+            MENTAL TRÄNING —
           </div>
         </Link>
       </div>

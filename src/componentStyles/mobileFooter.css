@@ -1,5 +1,4 @@
 .parent {
-  height: 70vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr) repeat(2, 0) 1fr;
   grid-template-rows: repeat(2, 1fr) repeat(3, 0);
