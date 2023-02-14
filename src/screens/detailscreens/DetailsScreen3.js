@@ -109,7 +109,9 @@ const DetailsScreen3 = () => {
                 {location.pathname === "/martialarts" && <MartialDetails />}
                 {location.pathname === "/bootcamp" && <CampDetails />}
                 {location.pathname === "/mentaltraining" && <MentailDetails />}
-                {location.pathname === "/personaltraining" && <MentalMobile />}
+                {location.pathname === "/personaltraining" && (
+                  <PersonalTrainingDetails />
+                )}
                 {location.pathname === "/weightlifting" && (
                   <WeightliftDetails />
                 )}
