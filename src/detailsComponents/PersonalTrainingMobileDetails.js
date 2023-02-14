@@ -17,86 +17,64 @@ const PersonalTrainingMobileDetails = () => {
           </p>
         </div>
       </div>
-      <p className="descriptionTitleMobile" style={{ marginTop: "10px" }}>
-        Introduktion
-      </p>
-      <p className="descriptionTextMobile" style={{}}>
-        Boxningskonsten har trollbundit människor sen långt tillbaka i tiden.
-        Allt från de dansande rörelserna till kraften och spänningen. Som
-        träningsform har den kanske fått mer erkännande på senare år vilket vi
-        verkligen tycker den förtjänar – få träningsformer är så dynamiska och
-        effektiva för både muskler och mental träning.
+      <p className="descriptionTitle">Introduktion</p>
+      <br />
+      <p className="descriptionText">
+        Personlig träning ger många fördelar för individer som söker förbättra
+        sin fysiska form och allmänna välbefinnande. En av de största fördelarna
+        med personlig träning är den individuella uppmärksamheten och de
+        personliga träningsplanerna. <br />
+        <br /> En personlig tränare tar hänsyn till en individs unika behov, mål
+        och fysiska förmågor för att skapa en träningsplan som är anpassad
+        specifikt för dem. Detta hjälper till att säkerställa att individen kan
+        nå sina träningsmål på ett säkert och effektivt sätt. Personliga tränare
+        ger också rådgivning och stöd, säkerställer att individer använder rätt
+        form och teknik under sina träningar, vilket minskar risken för skador.
         <br />
-        <br /> Utmaningen är att i rytm utföra slagserier i en koordinerad
-        sammansättning av balans, styrka och fotarbete. Detta kan till en början
-        se enkelt ut men det är en konst som kan förfinas i många år.{" "}
-      </p>
-      <p className="descriptionTitleMobile" style={{ marginTop: "30px" }}>
-        Kondition och uthållighet
-      </p>
-      <p className="descriptionTextMobile" style={{}}>
-        Få sporter bygger kondition och uthållighet som boxning. Den
-        högintensiva träningen som ofta sker i intervaller skapar grunden för
-        god konditionsträning. Lägger man där till den fysiska och muskulära
-        träningen för både ben och armar bygger det snabbt och effektivt
-        uthållighet. Allt detta bidrar i sin tur till att minska risken för
-        kardiovaskulära sjukdomar, högt blodtryck, diabetes och andra
-        sjukdomstillstånd. <br />
         <br />
-        Ett boxningspass är inte lätt, det är en intensiv upplevelse. Oavsett
-        vad din skicklighet eller konditionsnivå är, bör ett bra boxningspass
-        vara tufft och utmanande. Många människor gillar det här, men det är
-        också bra för din kondition eftersom det bygger uthållighet och
-        förbättrar uthålligheten. Om du går på boxningsträning regelbundet
-        kommer du att finna det lättare att träna längre och mer intensivt.
-        Boxningspass är bra tillägg till andra träningsformer och
-        uthållighetsträning som distanslöpning och triathlon.
+        Dessutom kan personlig träning ge ansvarsskyldighet och motivation,
+        eftersom individer oftare håller fast vid sin träningsrutin när de har
+        någon som håller dem ansvariga. Slutligen kan personlig träning också
+        erbjuda en känsla av samhörighet, eftersom individer ofta bildar nära
+        band med sin tränare och andra individer i sin träningsgrupp.
       </p>
-      <p className="descriptionTitleMobile" style={{ marginTop: "30px" }}>
-        Koordination och balans
-      </p>
-      <p className="descriptionTextMobile" style={{}}>
-        De snabba kroppsrörelserna i boxning är bra för balans, medan slagen
-        förbättrar hand-öga-koordinationen. Även utan corespecifika rörelser
-        under styrketräningsdelen av träningen bygger boxning dessa muskler. De
-        rörelser som behövs för att boxas bygger corestyrka, vilket i sin tur
-        hjälper dig att få bättre balans. Äldre kunder och de med särskilda
-        hälsobehov drar särskilt nytta av corestyrka och förbättrad balans.
-      </p>
-      <p className="descriptionTitleMobile" style={{ marginTop: "30px" }}>
-        Styrka och muskler
-      </p>
-      <p className="descriptionTextMobile" style={{}}>
-        Boxning är en fysisk träningsform och aktiverar i princip hela kroppen –
-        allt från inre core muskulatur till alla stora och små muskelgrupper.
-        Detta är anledningen till att träningsformen är så effektiv och
-        uppskattad.
-        <br />
-        <br /> En del av träningen är styrkeintervaller växlat med att slå på en
-        boxningssäck och andra tekniska rörelser. Även de olika
-        försvarsrörelserna (även om vi inte slår på varandra) ökar hela kroppens
-        styrka. Detta beror på att du behöver hela din kropp för att boxas. Att
-        slå ett slag korrekt involverar hela kroppen och de flesta
-        muskelgrupper. Du behöver din core för att stabilisera dig själv, din
-        underkropp och höfter för att svänga och ge kraft till slaget, och
-        naturligtvis överkroppen för att ge slaget.
-      </p>
-      <p className="descriptionTitleMobile" style={{ marginTop: "30px" }}>
-        Mental träning
-      </p>
-      <p className="descriptionTextMobile" style={{}}>
-        Alla dessa fysiska fördelar är tillräckligt för att uppmuntra de flesta
-        att prova boxning, men det finns mer. Träningens intensiva karaktär, den
-        fysiska och mentala utmaningen och frigörandet av att slå något hårt
-        bidrar alla till de mentala hälsofördelarna med boxningspass:
-      </p>
+      <br />
+      {/* <p className="descriptionTitle">Kondition och uthållighet</p>
+      <br />
+      <p className="descriptionText">asd </p>
 
-      <ul className="descriptionTextMobile" style={{ marginBottom: "30px" }}>
-        <li> Minska stress och andra negativa känslor</li>
-        <li>Hitta känslomässig befrielse i en säker miljö</li>
-        <li>Lyft upp ett dåligt humör efter en jobbig dag</li>
-        <li>Sov bättre på natten efter ett intensivt träningspass</li>
-        <li>Få självförtroende av att möta en utmaning och bli starkare</li>
+      <br />
+      <p className="descriptionTitle">Koordination och balans</p>
+      <br />
+      <p className="descriptionText">asd.</p>
+      <br />
+      <p className="descriptionTitle">Styrka och muskler</p>
+      <br />
+      <p className="descriptionText">asd</p>
+      <br />
+      <p className="descriptionTitle">Mental träning</p>
+      <br /> */}
+
+      <p className="descriptionText">Fördelar</p>
+      <ul className="descriptionText" style={{ marginBottom: "30px" }}>
+        <li>
+          {" "}
+          Skräddarsydd träning: en individanpassad träningsplan baserad på dina
+          mål, förutsättningar och begränsningar.
+        </li>
+        <li>
+          Ökad motivation genom stöd och uppmuntran, vilket hjälper dig att
+          fortsätta träna och nå dina mål.
+        </li>
+        <li>
+          Korrekt teknik: vi ser till att se till att du utför övningar korrekt
+          och minskar risken för skador.
+        </li>
+        <li>
+          Genom effektiviserad träning kan du få ut mer av din värdefulla tid
+          genom att fokusera på de mest effektiva övningarna för att nå dina
+          mål.
+        </li>
       </ul>
     </>
   );
