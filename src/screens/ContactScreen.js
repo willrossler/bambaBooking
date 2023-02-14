@@ -116,11 +116,9 @@ const ContactScreen = () => {
       <div className="contactBanner desktopView ">
         <p className="container" style={{ color: "#F5AAC9" }}>
           <span style={{ color: "#fff" }}>
-            VI SKAPAR SKRÄDDARSYDD <br />
-            TRÄNING —
+            HÄR FÖR ATT HJÄLPA DIG <br /> FORMA DITT NYA <br />
           </span>
-          <br />
-          JUST FÖR DIG
+          FÖRBÄTTRADE JAG —
           <br />
           <span style={{ color: "#fff", fontSize: "32px" }}>
             FYSISKT — MENTALT — SPIRITUELLT
