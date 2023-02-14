@@ -4,6 +4,7 @@ import "../globalStyles/textStyles.css";
 
 import homeBanner from "../assets/images/homePic.jpg";
 import mobileHomePic from "../assets/images/mobileHomePic.jpg";
+import mobileHomePic2 from "../assets/images/mobileHomePic2.jpg";
 
 const pStyles = {
   fontSize: "24px",
@@ -111,7 +112,7 @@ const HomeScreen = () => {
           <span style={{ color: "#fff" }}> DIN LIVSKVALITE —</span> <br />
           VÅR DRIVKRAFT
         </p>
-        <img src={mobileHomePic} className="mobileView img-fluid" />
+        <img src={mobileHomePic2} className="mobileView img-fluid" />
       </div>
 
       {/* ------------------------------- */}
