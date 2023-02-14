@@ -39,6 +39,15 @@
     font-weight: 300;
   }
 
+  .homeBanner p {
+    color: #f5aac9;
+    line-height: 115px;
+    font-size: 72px;
+    font-weight: 500;
+    padding-top: 10%;
+    font-weight: 500;
+  }
+
   .textHeaderPink {
     color: #f5aac9;
     font-size: 20px;
