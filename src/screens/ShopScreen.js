@@ -9,7 +9,7 @@ const ShopScreen = () => {
   return (
     <>
       <Container style={{ marginTop: "40px" }} className="desktopView">
-        <Row className="d-flex">
+        <Row style={{ marginBottom: "120px" }} className="d-flex">
           <Col style={{ paddingRight: "5rem" }} xs={12} md={6}>
             <div>
               <h1 className="title">Abbe Joof</h1>
@@ -66,10 +66,7 @@ const ShopScreen = () => {
               <p className="descriptionText" style={{ fontWeight: "400" }}>
                 Specialicerad inom:
               </p>
-              <ul
-                className="descriptionText"
-                style={{ marginBottom: "120px", lineHeight: "21px" }}
-              >
+              <ul className="descriptionText" style={{ lineHeight: "21px" }}>
                 <li>Thaiboxning</li>
                 <li>Coaching</li>
                 <li>Teknik</li>
@@ -79,25 +76,15 @@ const ShopScreen = () => {
           </Col>
           <Col xs={12} md={6}>
             <div>
-              <img
-                src={abbe}
-                style={{ marginBottom: "120px", borderRadius: "50%" }}
-                className="img-fluid"
-                alt="Abbe Joof"
-              />
+              <img src={abbe} className="img-fluid" alt="Abbe Joof" />
             </div>
           </Col>
         </Row>
 
-        <Row className="d-flex">
+        <Row style={{ marginBottom: "120px" }} className="d-flex">
           <Col style={{ paddingRight: "5rem" }} xs={12} md={6}>
             <div>
-              <img
-                src={jocke}
-                style={{ marginBottom: "120px", borderRadius: "50%" }}
-                className="img-fluid"
-                alt="Jocke Karlsson"
-              />
+              <img src={jocke} className="img-fluid" alt="Jocke Karlsson" />
             </div>
           </Col>
           <Col xs={12} md={6}>
@@ -195,7 +182,7 @@ const ShopScreen = () => {
             <div>
               <img
                 src={martin}
-                style={{ marginBottom: "120px", borderRadius: "50%" }}
+                style={{ marginBottom: "120px" }}
                 className="img-fluid"
                 alt="Martin Pettersson"
               />
