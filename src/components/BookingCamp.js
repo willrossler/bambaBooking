@@ -8,12 +8,15 @@ const BookingCamp = () => {
     <div className="p-2">
       <div className="card text-center d-flex text-center bookingCard ">
         <div className="card-body d-flex flex-column justify-content-center ">
-          <Link style={{ textDecoration: "none", color: "black" }} to="/camp">
+          <Link
+            style={{ textDecoration: "none", color: "black" }}
+            to="/weeklyschedule"
+          >
             <p style={{ fontWeight: "500 " }} className="card-text">
               BOKA <br />—
             </p>
             <h5 style={{ fontWeight: "500" }} className="bootClass card-title">
-              CAMP
+              PASS
             </h5>
             <ArrowRight className="arrowCard" color="black" size={48} />
           </Link>

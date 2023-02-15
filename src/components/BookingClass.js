@@ -10,13 +10,13 @@ const BookingClass = () => {
         <div className="card-body d-flex flex-column justify-content-center ">
           <Link
             style={{ textDecoration: "none", color: "black" }}
-            to="/schedule"
+            to="/membership"
           >
             <p style={{ fontWeight: "500" }} className="card-text">
-              BOKA <br />—
+              BLI <br />—
             </p>
             <h5 style={{ fontWeight: "500" }} className="bootClass card-title">
-              GRUPPTRÄNING
+              MEDLEM
             </h5>
             <ArrowRight className="arrowCard" color="black" size={48} />
           </Link>

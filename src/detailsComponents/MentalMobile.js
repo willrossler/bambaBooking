@@ -17,9 +17,9 @@ const MentalMobile = () => {
           </p>
         </div>
       </div>
-      <p className="descriptionTitle">Introduktion</p>
+      <p className="descriptionTitleMobile">Introduktion</p>
       <br />
-      <p className="descriptionText">
+      <p className="descriptionTextMobile">
         Genom att träna sin mentala förmåga, inklusive att utveckla
         självförtroende, motivation och koncentration, kan man förbättra sin
         prestation på olika områden i livet, som arbete, utbildning, idrott
@@ -34,9 +34,9 @@ const MentalMobile = () => {
         arbete, vilket kan leda till bättre resultat och prestation.
       </p>
       <br />
-      <p className="descriptionTitle">Allmänt välbefinnande</p>
+      <p className="descriptionTitleMobile">Allmänt välbefinnande</p>
       <br />
-      <p className="descriptionText">
+      <p className="descriptionTextMobile">
         Genom mental träning kan man lära sig att hantera stress, oro och ångest
         på ett mer konstruktivt sätt. Det kan innebära att man lär sig att
         identifiera och utmana negativa tankemönster, att använda
@@ -49,9 +49,9 @@ const MentalMobile = () => {
       </p>
 
       <br />
-      <p className="descriptionTitle">Styrka och prestation</p>
+      <p className="descriptionTitleMobile">Styrka och prestation</p>
       <br />
-      <p className="descriptionText">
+      <p className="descriptionTextMobile">
         Genom att träna dessa mentala färdigheter kan man också förbättra sin
         förmåga att hantera stress och presterar under press. Till exempel kan
         man använda avslappningsövningar eller visualiseringstekniker för att
@@ -62,8 +62,8 @@ const MentalMobile = () => {
       </p>
       <br />
 
-      <p className="descriptionText">mental:</p>
-      <ul className="descriptionText" style={{ marginBottom: "30px" }}>
+      <p className="descriptionTextMobile">mental:</p>
+      <ul className="descriptionTextMobile" style={{ marginBottom: "30px" }}>
         <li>Ökad självmedvetenhet och självkontroll</li>
         <li>Förbättrad prestation och produktivitet</li>
         <li>Ökad kreativitet och problemlösningsförmåga</li>
