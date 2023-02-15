@@ -17,9 +17,9 @@ const PersonalTrainingMobileDetails = () => {
           </p>
         </div>
       </div>
-      <p className="descriptionTitle">Introduktion</p>
+      <p className="descriptionTitleMobile">Introduktion</p>
       <br />
-      <p className="descriptionText">
+      <p className="descriptionTextMobile">
         Personlig träning ger många fördelar för individer som söker förbättra
         sin fysiska form och allmänna välbefinnande. En av de största fördelarna
         med personlig träning är den individuella uppmärksamheten och de
@@ -55,8 +55,8 @@ const PersonalTrainingMobileDetails = () => {
       <p className="descriptionTitle">Mental träning</p>
       <br /> */}
 
-      <p className="descriptionText">Fördelar</p>
-      <ul className="descriptionText" style={{ marginBottom: "30px" }}>
+      <p className="descriptionTextMobile">Fördelar</p>
+      <ul className="descriptionTextMobile" style={{ marginBottom: "30px" }}>
         <li>
           {" "}
           Skräddarsydd träning: en individanpassad träningsplan baserad på dina

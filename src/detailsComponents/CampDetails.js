@@ -22,14 +22,20 @@ const CampDetails = () => {
       <p className="descriptionTitle">Introduktion</p>
       <br />
       <p className="descriptionText">
-        Boxningskonsten har trollbundit människor sen långt tillbaka i tiden.
-        Allt från de dansande rörelserna till kraften och spänningen. Som
-        träningsform har den kanske fått mer erkännande på senare år vilket vi
-        verkligen tycker den förtjänar – få träningsformer är så dynamiska och
-        effektiva för både muskler och mental träning. Utmaningen är att i rytm
-        utföra slagserier i en koordinerad sammansättning av balans, styrka och
-        fotarbete. Detta kan till en början se enkelt ut men det är en konst som
-        kan förfinas i många år.{" "}
+        på BAMBA är övertygade om att gruppträning är ett fantastiskt sätt att
+        nå träningsmål, oavsett om du är nybörjare eller erfaren atlet.
+        <br />
+        <br />
+        Vi tror att gruppträning är ett fantastiskt sätt att träna på grund av
+        den positiva och motiverande miljön som skapas. Hos oss får ni möjlighet
+        att träna tillsammans med andra som har liknande träningsmål, vilket gör
+        att de kan stötta och inspirera varandra.
+        <br /> Dessutom kan gruppträning vara roligt och socialt, vilket gör det
+        lättare att hålla fast vid en träningsrutin. <br />
+        <br />
+        BAMBA är öppen för alla som vill träna i en positiv och välkomnande
+        miljö. Vi hoppas att du kommer att uppleva fördelarna med gruppträning
+        hos oss och ta del av en motiverande och utmanande träningsmiljö.
       </p>
       <br />
       <p className="descriptionTitle">Kondition och uthållighet</p>
@@ -83,11 +89,19 @@ const CampDetails = () => {
         bidrar alla till de mentala hälsofördelarna med boxningspass:
       </p>
       <ul className="descriptionText" style={{ marginBottom: "30px" }}>
-        <li> Minska stress och andra negativa känslor</li>
-        <li>Hitta känslomässig befrielse i en säker miljö</li>
-        <li>Lyft upp ett dåligt humör efter en jobbig dag</li>
-        <li>Sov bättre på natten efter ett intensivt träningspass</li>
-        <li>Få självförtroende av att möta en utmaning och bli starkare</li>
+        <li>
+          Hjälper till att öka disciplinen och motivationen för att upprätthålla
+          en regelbunden träningsrutin.
+        </li>
+        <li>
+          Gruppträning är bevisat att minska stressnivåerna och förbättra
+          humöret.
+        </li>
+        <li>Öppnar upp för social interaktion och bygger relationer.</li>
+        <li>
+          Få en känsla av gemenskap och tillhörighet du inte får någon
+          annanstans.
+        </li>
       </ul>
       <br />
     </div>
