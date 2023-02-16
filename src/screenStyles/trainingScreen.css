@@ -6,6 +6,8 @@
   background-position: center center;
   height: 800px;
   width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .trainingBanner p {
