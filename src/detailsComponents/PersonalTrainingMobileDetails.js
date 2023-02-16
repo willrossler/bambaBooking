@@ -55,7 +55,12 @@ const PersonalTrainingMobileDetails = () => {
       <p className="descriptionTitle">Mental träning</p>
       <br /> */}
 
-      <p className="descriptionTextMobile">Fördelar</p>
+      <p
+        style={{ fontWeight: "500", color: "#f5aac9" }}
+        className="descriptionTextMobile"
+      >
+        Fördelar
+      </p>
       <ul className="descriptionTextMobile" style={{ marginBottom: "30px" }}>
         <li>
           {" "}

@@ -57,7 +57,8 @@ export const PersonalTrainingDetails = () => {
       <p className="descriptionTitle">Mental träning</p>
       <br /> */}
 
-      <p className="descriptionText">Fördelar</p>
+      <p className="descriptionTitle">Fördelar</p>
+      <br />
       <ul className="descriptionText" style={{ marginBottom: "30px" }}>
         <li>
           {" "}

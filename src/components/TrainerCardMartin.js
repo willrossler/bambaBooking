@@ -1,5 +1,5 @@
 import React from "react";
-import martinPic from "../assets/images/martinPic.png";
+import martinPic from "../assets/images/Martin.jpg";
 import "../componentStyles/trainerCard.css";
 const TrainerCardMartin = () => {
   return (

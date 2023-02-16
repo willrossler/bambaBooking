@@ -1,5 +1,6 @@
 import React from "react";
-import abbePic from "../assets/images/abbePic.png";
+import abbePic from "../assets/images/abbePic.jpg";
+
 import "../componentStyles/trainerCard.css";
 
 const TrainerCardAbbe = () => {

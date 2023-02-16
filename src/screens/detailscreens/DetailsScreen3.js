@@ -10,18 +10,18 @@ import { Row, Col, Container } from "react-bootstrap";
 import { useEffect, useState } from "react";
 import { Routes, useLocation } from "react-router";
 
-import PTpic from "../../assets/images/PTpic.jpg";
-import PTpicMobile from "../../assets/images/PTpicMobile.jpg";
+import PTpic from "../../assets/images/PersonligTraning_Desktop.jpg";
+import PTpicMobile from "../../assets/images/PersonligTraning_Mobile.jpg";
 import boxingPic from "../../assets/images/boxingPic.jpg";
 import boxingPicMobile from "../../assets/images/boxingPicMobile.jpg";
-import weightPic from "../../assets/images/weightLiftPic.jpg";
-import weightPicMobile from "../../assets/images/weightLifMobile.jpg";
-import campPic from "../../assets/images/bootCamp.jpg";
-import campPicMobile from "../../assets/images/bootCampMobile.jpg";
-import mentalPic from "../../assets/images/mentalTrainingPic.jpg";
-import mentalTrainingPicMobile from "../../assets/images/mentalTrainingPicMobile.jpg";
-import martialPic from "../../assets/images/thaibox.jpg";
-import thaiboxMobile from "../../assets/images/thaiboxMobile.jpg";
+import weightPic from "../../assets/images/StyrkeTraning_Desktop.jpg";
+import weightPicMobile from "../../assets/images/StyrkeTraning_Mobile.jpg";
+import campPic from "../../assets/images/BootCamp_Desktop.jpg";
+import campPicMobile from "../../assets/images/BootCamp_Mobile.jpg";
+import mentalPic from "../../assets/images/MentalCoaching_Desktop.jpg";
+import mentalTrainingPicMobile from "../../assets/images/MentalCoaching_Mobile.jpg";
+import martialPic from "../../assets/images/Kampsport_Desktop.jpg";
+import thaiboxMobile from "../../assets/images/Kampsport_Mobile.jpg";
 
 import BoxingDetails from "../../detailsComponents/BoxingDetails";
 import WeightliftDetails from "../../detailsComponents/WeightliftDetails";
@@ -60,7 +60,7 @@ const DetailsScreen3 = () => {
       case "/bootcamp":
         setMobileSrc(campPicMobile);
         setSrc(campPic);
-        setTitle("CAMP");
+        setTitle("BOOT CAMP");
         break;
       case "/martialarts":
         setMobileSrc(thaiboxMobile);
@@ -70,7 +70,7 @@ const DetailsScreen3 = () => {
       case "/mentaltraining":
         setMobileSrc(mentalTrainingPicMobile);
         setSrc(mentalPic);
-        setTitle("MENTAL TRÄNING");
+        setTitle("MENTAL COACHING");
         break;
       case "/personaltraining":
         setMobileSrc(PTpicMobile);

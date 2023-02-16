@@ -1,9 +1,9 @@
 import React from "react";
 import ProductCard from "../components/ProductCard";
 import { Row, Col, Container } from "react-bootstrap";
-import abbe from "../assets/images/abbePic.png";
-import jocke from "../assets/images/jockePic.png";
-import martin from "../assets/images/martinPic.png";
+import abbe from "../assets/images/abbePic.jpg";
+import jocke from "../assets/images/Jocke.jpg";
+import martin from "../assets/images/Martin.jpg";
 
 const ShopScreen = () => {
   return (
