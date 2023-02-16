@@ -17,20 +17,19 @@
   font-weight: 500;
 }
 
+/* MOBILE MOBILE MOBILE MOBILE AOFDIOASIDFAOISDHFOIASDHFOIASHDF */
+
 .mobileBanner {
-  background-image: url("../assets/images/Traning_Mobile.jpg  ");
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: auto;
+  position: relative;
 }
 
 .mobileBanner p {
-  color: #f5aac9;
+  position: absolute;
   font-size: 32px;
   line-height: 38px;
   font-weight: 500;
-  padding-top: 40%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .trainingLinks {
