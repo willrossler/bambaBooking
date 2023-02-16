@@ -1,0 +1,40 @@
+.najmedinPic {
+  height: 636px;
+  width: 636px;
+}
+
+.lineClamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 5; /* Number of rows to display */
+}
+
+.aboutUsHR {
+  border: 2px solid #f5aac9;
+  background-color: #f5aac9;
+  opacity: 1;
+  width: 75px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1400px) {
+  .najmedinPic {
+    height: 546px;
+    width: 546px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .najmedinPic {
+    height: 456px;
+    width: 456px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .najmedinPic {
+    height: 336px;
+    width: 336px;
+  }
+}

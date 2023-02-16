@@ -4,7 +4,7 @@ const CampDetails = () => {
   return (
     <div>
       <div style={{}} className="trainingForms">
-        <h3>FORMS OF TRAINING</h3>
+        <h3>Träningsformer</h3>
         <br />
         <div>
           <p>— Klasser (upp till 12 personer)</p>
@@ -38,21 +38,12 @@ const CampDetails = () => {
         hos oss och ta del av en motiverande och utmanande träningsmiljö.
       </p>
       <br />
-      <p className="descriptionTitle">Kondition och uthållighet</p>
+      <p className="descriptionTitle">Företag</p>
       <br />
-      <p className="descriptionText">
-        Boxningskonsten har trollbundit människor sen långt tillbaka i tiden.
-        Allt från de dansande rörelserna till kraften och spänningen. Som
-        träningsform har den kanske fått mer erkännande på senare år vilket vi
-        verkligen tycker den förtjänar – få träningsformer är så dynamiska och
-        effektiva för både muskler och mental träning. Utmaningen är att i rytm
-        utföra slagserier i en koordinerad sammansättning av balans, styrka och
-        fotarbete. Detta kan till en början se enkelt ut men det är en konst som
-        kan förfinas i många år.{" "}
-      </p>
+      <p className="descriptionText"></p>
 
       <br />
-      <p className="descriptionTitle">Koordination och balans</p>
+      <p className="descriptionTitle"></p>
       <br />
       <p className="descriptionText">
         De snabba kroppsrörelserna i boxning är bra för balans, medan slagen

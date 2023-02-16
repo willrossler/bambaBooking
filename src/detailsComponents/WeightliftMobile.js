@@ -4,7 +4,7 @@ const WeightliftMobile = () => {
   return (
     <>
       <div className="trainingForms " style={{ marginTop: "30px" }}>
-        <h3>FORMS OF TRAINING</h3>
+        <h3>Träningsformer</h3>
         <div>
           <p>— Klasser (upp till 12 personer)</p>
           <p>— Mindre grupper (upp till 5 personer)</p>

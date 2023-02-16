@@ -4,7 +4,7 @@ export const PersonalTrainingDetails = () => {
   return (
     <div>
       <div style={{}} className="trainingForms">
-        <h3>FORMS OF TRAINING</h3>
+        <h3>Träningsformer</h3>
         <br />
         <div>
           <p>— Klasser (upp till 12 personer)</p>

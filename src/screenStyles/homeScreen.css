@@ -62,17 +62,12 @@
   }
 }
 
-/* 
-  .homeParagraph {
-    font-size: 18px;
-    line-height: 21px;
-    color: #fff;
-    font-weight: 300;
-  }
-
-
-
-*/
+.homeParagraph {
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+  font-weight: 300;
+}
 
 @media screen and (max-width: 1800px) {
   .homeTitle {
