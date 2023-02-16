@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../screenStyles/trainingScreen.css";
-
+import trainingMobile from "../assets/images/Traning_Mobile.jpg";
 const TrainingScreen = () => {
   const [hoveredIndex, setHoveredIndex] = useState(-1);
 
@@ -83,15 +83,16 @@ const TrainingScreen = () => {
 
       {/*  MOBILE BANNER */}
 
-      <div className="mobileView mobileBanner">
-        <p className="container" style={{ color: "#F5AAC9" }}>
-          <span style={{ color: "#fff" }}>
-            VI SKAPAR SKRÄDDARSYDD <br />
-            TRÄNING —
+      <div className="mobileBanner mobileView ">
+        <p className="container" style={{ color: "#fff" }}>
+          <span>
+            VI SKAPAR <br />
           </span>
+          SKRÄDDARSYDD TRÄNING —
           <br />
-          JUST FÖR DIG
+          <span style={{ color: "" }}>JUST FÖR DIG</span>
         </p>
+        <img src={trainingMobile} />
       </div>
 
       <div className="d-sm-inline d-lg-none d-md-none"></div>

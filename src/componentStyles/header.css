@@ -118,13 +118,14 @@
 }
 @media screen and (max-width: 430px) {
   .navbar > .container {
-    align-items: flex-start;
   }
 
   .navbar {
     padding: 24px 0px 24px 0px;
     height: 82px;
+    align-content: center;
   }
+
   .bambaLogo {
     width: 114px;
     height: 26px;
