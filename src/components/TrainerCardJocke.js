@@ -1,5 +1,5 @@
 import React from "react";
-import jockePic from "../assets/images/jockePic.png";
+import jockePic from "../assets/images/Jocke.jpg";
 import "../componentStyles/trainerCard.css";
 
 const TrainerCardJocke = () => {

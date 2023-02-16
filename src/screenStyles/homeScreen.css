@@ -6,7 +6,7 @@
 }
 
 .homeBanner {
-  background-image: url("../assets/images/homePic.jpg");
+  background-image: url("../assets/images/Start_Desktop.jpg");
   background-size: cover;
   background-position: center center;
   height: 1200px;
@@ -16,11 +16,10 @@
 
 .homeBanner p {
   color: #f5aac9;
-  line-height: 115px;
-  font-size: 96px;
+  line-height: 76.8px;
+  font-size: 64px;
   font-weight: 500;
   padding-top: 10%;
-  font-weight: 500;
 }
 
 .homeParagraph {

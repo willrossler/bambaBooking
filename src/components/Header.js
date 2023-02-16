@@ -76,9 +76,8 @@ function Header() {
             style={{
               maxWidth: "100%",
               backgroundColor: "#3C469C",
-              height: "72px",
+              height: "82px",
               paddingRight: "12px",
-              marginTop: "10px",
             }}
           >
             <Navbar.Brand>

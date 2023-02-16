@@ -1,7 +1,7 @@
 /* IMAGE BANNER */
 
 .trainingBanner {
-  background-image: url("../assets/images/trainingPicBanner.jpg");
+  background-image: url("../assets/images/Traning_Desktop.jpg");
   background-size: cover;
   background-position: center center;
   height: 800px;
@@ -10,18 +10,17 @@
 
 .trainingBanner p {
   color: #f5aac9;
-  line-height: 76.8px;
-  font-size: 64px;
+  line-height: 60.8px;
+  font-size: 52px;
   font-weight: 500;
-  padding-top: 10%;
 }
 
 .mobileBanner {
-  background-image: url("../assets/images/trainingPicBanner.jpg");
+  background-image: url("../assets/images/Traning_Mobile.jpg  ");
   background-size: cover;
   background-position: center center;
-  height: 500px;
   width: 100%;
+  height: auto;
 }
 
 .mobileBanner p {

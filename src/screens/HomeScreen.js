@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import "../screenStyles/homeScreen.css";
 import "../globalStyles/textStyles.css";
 
-import homeBanner from "../assets/images/homePic.jpg";
-import mobileHomePic from "../assets/images/mobileHomePic.jpg";
-import mobileHomePic2 from "../assets/images/mobileHomePic2.jpg";
+import mobileHomePic2 from "../assets/images/Start_Mobile.jpg";
 
 const pStyles = {
   fontSize: "24px",
@@ -25,6 +23,10 @@ const HomeScreen = () => {
             DIN LIVSKVALITÉ <br />
           </span>
           VÅR DRIVKRAFT
+          <br />
+          <span style={{ color: "#fff", fontSize: "32px" }}>
+            FYSISKT — MENTALT — SPIRITUELLT
+          </span>
         </p>
       </div>
 
@@ -97,8 +99,9 @@ const HomeScreen = () => {
               i allt men allra främst i mötet mellan människor, något vi både
               eftersträvar att skapa och uppmuntrar. Möt nya vänner, dela
               erfarenheter och kunskap, träna livet ur er och skratta
-              tillsammans. “Större än solo, större än vi, genom träning växer
-              vi”{" "}
+              tillsammans. <br />
+              <br />
+              “Större än solo, större än vi, genom träning växer vi!”{" "}
             </p>
           </div>
         </div>

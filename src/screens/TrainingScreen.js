@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../screenStyles/trainingScreen.css";
-import trainingPicBanner from "../assets/images/trainingPicBanner.jpg";
-import mobileTrainBanner from "../assets/images/mobileTraining.jpg";
 
 const TrainingScreen = () => {
   const [hoveredIndex, setHoveredIndex] = useState(-1);
@@ -109,7 +107,7 @@ const TrainingScreen = () => {
             onMouseLeave={handleMouseLeave}
             style={getStyles(1)}
           >
-            CAMP —
+            BOOT CAMP —
           </div>
         </Link>
         <Link to="/weightlifting">
@@ -160,7 +158,7 @@ const TrainingScreen = () => {
             onMouseLeave={handleMouseLeave}
             style={getStyles(6)}
           >
-            MENTAL TRÄNING —
+            MENTAL COACHING —
           </div>
         </Link>
       </div>
