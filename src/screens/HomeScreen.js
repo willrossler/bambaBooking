@@ -109,13 +109,18 @@ const HomeScreen = () => {
 
       {/* ------------------BANNER MOBILE---------------- */}
 
-      <div className="bannerTextMobile mobileView ">
+      <div className="homeBannerMobile mobileView">
         <p className="container" style={{ color: "#F5AAC9" }}>
-          {" "}
-          <span style={{ color: "#fff" }}> DIN LIVSKVALITE —</span> <br />
+          <span style={{ color: "#fff" }}>
+            DIN LIVSKVALITÉ <br />
+          </span>
           VÅR DRIVKRAFT
+          <br />
+          <span style={{ color: "#fff", fontSize: "16px" }}>
+            FYSISKT — MENTALT — SPIRITUELLT
+          </span>
         </p>
-        <img src={mobileHomePic2} className="mobileView img-fluid" />
+        <img src={mobileHomePic2} />
       </div>
 
       {/* ------------------------------- */}

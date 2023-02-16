@@ -3,16 +3,7 @@
 /*  GIGA-LARGE SCREEN ??? */
 
 /* TRAINING FORMS */
-.bannerTextMobile p {
-  font-size: 32px;
-  line-height: 38px;
-  font-weight: 500;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  text-align: start;
-}
+
 .mobileParagraph {
   color: #fff;
   font-size: 16px;
