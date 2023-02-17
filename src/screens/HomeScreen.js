@@ -127,7 +127,7 @@ const HomeScreen = () => {
 
       <div className="mobileView container">
         <h1
-          style={{ paddingTop: "1em", fontWeight: "400" }}
+          style={{ paddingTop: "40px", fontWeight: "400" }}
           className="text-start homeTitle"
         >
           GYMMET FÖR <br />

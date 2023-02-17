@@ -77,16 +77,7 @@ const DetailsScreen3 = () => {
         setSrc(PTpic);
         setTitle("PERSONLIG TRÄNING");
         break;
-      case "/boxing2":
-        setMobileSrc();
-        setSrc(martialPic);
-        setTitle("BOXNING 2");
-        break;
-      case "/boxing3":
-        setMobileSrc();
-        setSrc(martialPic);
-        setTitle("BOXNING 3");
-        break;
+
       default:
         setMobileSrc();
         setSrc("/path/to/default.jpg");
