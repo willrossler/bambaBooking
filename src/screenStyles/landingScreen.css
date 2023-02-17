@@ -1,28 +1,3 @@
-.logo-container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url("../assets/logos/bLogo.svg");
-  background-size: contain;
-  background-position: left top;
-  opacity: 0.2;
-  width: 20%;
-  height: 20%;
-}
-
-.logo-container::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background-image: url("../assets/logos/bLogo.svg");
-  background-size: contain;
-  background-position: right bottom;
-  opacity: 0.2;
-  width: 20%;
-  height: 20%;
-}
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -80,9 +55,6 @@
   transform: rotate(180deg);
 }
 
-.bLogoBG {
-  display: none;
-}
 .textTwo {
   color: #fff;
   font-size: 32px;

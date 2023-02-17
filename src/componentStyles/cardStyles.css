@@ -6,9 +6,14 @@
   font-weight: 500;
 }
 
+.bookingCard {
+  background-color: #fff;
+  transition: background-color 300ms ease-in-out;
+}
+
 .bookingCard:hover {
   background-color: #f5aac9;
-  transition: background-color 200ms ease;
+  transition: background-color 300ms ease-in-out;
   cursor: pointer;
 }
 .mobileHr {
@@ -188,6 +193,47 @@
   }
 }
 
+@media screen and (max-width: 480px) {
+  .bookingCard {
+    height: 222px;
+    width: 222px;
+    border: none;
+    border-radius: 0;
+  }
+  .bookingCard p {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  .bookingCard h5 {
+    font-size: 24px;
+  }
+
+  .arrowCard {
+    height: 22px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .bookingCard {
+    height: 200px;
+    width: 200px;
+    border: none;
+    border-radius: 0;
+  }
+  .bookingCard p {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  .bookingCard h5 {
+    font-size: 24px;
+  }
+
+  .arrowCard {
+    height: 22px;
+  }
+}
+
 @media screen and (max-width: 430px) {
   .bookingCard {
     height: 195px;
@@ -230,10 +276,52 @@
   }
 }
 
+@media screen and (max-width: 420px) {
+  .bookingCard {
+    height: 195px;
+    width: 195px;
+    border: none;
+    border-radius: 0;
+  }
+  .bookingCard p {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  .bookingCard h5 {
+    font-size: 24px;
+  }
+
+  .arrowCard {
+    height: 22px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .bookingCard {
+    height: 180px;
+    width: 180px;
+    border: none;
+    border-radius: 0;
+  }
+  .bookingCard p {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  .bookingCard h5 {
+    font-size: 24px;
+  }
+
+  .arrowCard {
+    height: 22px;
+  }
+}
+
 @media screen and (max-width: 390px) {
   .bookingCard {
-    height: 170px;
-    width: 170px;
+    height: 180px;
+    width: 180px;
     border: none;
     border-radius: 0;
   }

@@ -55,9 +55,14 @@
   padding-bottom: 24px;
 }
 
+#hoverLink {
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
 #hoverLink:hover {
-  color: #f5aac9 !important;
-  transition: all 0.2s ease-in-out !important;
+  color: #f5aac9;
+  transition: all 0.2s ease-in-out;
 }
 
 #bookingBtn {
