@@ -4,7 +4,7 @@ import { ArrowRight } from "react-bootstrap-icons";
 
 const BookingMembership = () => {
   return (
-    <div className=" p-2">
+    <div className="">
       <div className="card text-center d-flex text-center bookingCard ">
         <div className="card-body d-flex flex-column justify-content-center ">
           <Link
@@ -15,7 +15,7 @@ const BookingMembership = () => {
               BOKA <br />—
             </p>
             <h5 style={{ fontWeight: "500" }} className="bootClass card-title">
-              PERSONLIG TRÄNING
+              PT
             </h5>
             <ArrowRight className="arrowCard" color="black" size={48} />
           </Link>

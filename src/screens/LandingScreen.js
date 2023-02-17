@@ -14,64 +14,30 @@ const LandingScreen = () => {
   return (
     <>
       <hr className="mobileView" style={{ margin: "0" }} />
-
-      <section className=" d-flex justify-content-center ">
-        <div className="mobileView logoMobile">
-          <img src={bLogo} />
+      <section className="container d-flex justify-content-center ">
+        <div className="container ">
+          <div className="textOne h2 py-4 " style={{}}>
+            HERE TO HELP YOU SHAPE <br className="break" /> YOUR NEW IMPROVED
+            YOU
+          </div>
+          <div style={{}} className=" textTwo h4">
+            PHYSICAL — MENTAL — SPIRITUAL
+          </div>
         </div>
-        <div className="logo-container">
-          <div className="desktopView top-left-logo">
-            <img src={bLogo} />
-          </div>
-          <div className="desktopView bottom-right-logo">
-            <img src={bLogo2} />
-          </div>
-          <div className="container ">
-            <div className="textOne h2 py-4 ">
-              HERE TO HELP YOU SHAPE <br className="break" /> YOUR NEW IMPROVED
-              YOU
-            </div>
-            <div style={{}} className=" textTwo h4">
-              PHYSICAL — MENTAL — SPIRITUAL
-            </div>
-            {/* <div style={{}} className=" textTwo h4">
-              <p className="seSchema">
-                {" "}
-                Vill du se vårat schema för olika träningstyper <br /> gör du
-                det <Link to="weeklyschedule">här.</Link>
-              </p>
-            </div> */}
-            {/*  hover rosa färg på rutor */}
-            <div className="">
-              <div className="row text-center pb-5 ">
-                <div className="col">
-                  <BookingPT />
-                  <BookingClass />
-                </div>
-                <div className="col">
-                  <BookingMembership />
-                  <BookingCamp />
-                </div>
-              </div>
-            </div>
-          </div>
 
-          {/* <Row>
-            <Col xs={6} style={{ height: "200px", backgroundColor: "#fff" }}>
-              Box 1
-            </Col>
-            <Col xs={6} style={{ height: "200px", backgroundColor: "#fff" }}>
-              Box 2
-            </Col>
-          </Row>
-          <Row>
-            <Col xs={6} style={{ height: "200px", backgroundColor: "#fff" }}>
-              Box 3
-            </Col>
-            <Col xs={6} style={{ height: "200px", backgroundColor: "#fff" }}>
-              Box 4
-            </Col>
-          </Row> */}
+        <div class="grid-container container" style={{ marginBottom: "80px" }}>
+          <div class="grid-item">
+            <BookingMembership />
+          </div>
+          <div class="grid-item">
+            <BookingClass />
+          </div>
+          <div class="grid-item">
+            <BookingPT />
+          </div>
+          <div class="grid-item">
+            <BookingCamp />
+          </div>
         </div>
       </section>
     </>

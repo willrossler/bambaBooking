@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "react-bootstrap-icons";
 const BookingPT = () => {
   return (
-    <div className=" p-2">
+    <div className="">
       <Link style={{ textDecoration: "none", color: "black" }} to="/schedule">
         <div className="card text-center d-flex text-center bookingCard ">
           <div className="card-body d-flex flex-column justify-content-center ">

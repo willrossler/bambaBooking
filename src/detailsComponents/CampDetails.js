@@ -39,12 +39,7 @@ const CampDetails = () => {
       </p>
       <br />
 
-      <p className="descriptionText">
-        Alla dessa fysiska fördelar är tillräckligt för att uppmuntra de flesta
-        att prova boxning, men det finns mer. Träningens intensiva karaktär, den
-        fysiska och mentala utmaningen och frigörandet av att slå något hårt
-        bidrar alla till de mentala hälsofördelarna med boxningspass:
-      </p>
+      <p className="descriptionText">Text om fördelar kring gruppträning /</p>
       <ul className="descriptionText" style={{ marginBottom: "30px" }}>
         <li>
           Hjälper till att öka disciplinen och motivationen för att upprätthålla
