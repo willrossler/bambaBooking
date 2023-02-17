@@ -3,6 +3,13 @@
   width: 636px;
 }
 
+.visaMer {
+  font-size: 14px;
+  line-height: 16.8px;
+  font-weight: 500;
+  color: #f5aac9;
+}
+
 .lineClamp {
   display: -webkit-box;
   -webkit-box-orient: vertical;
