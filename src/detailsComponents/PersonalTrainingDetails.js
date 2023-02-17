@@ -16,9 +16,9 @@ export const PersonalTrainingDetails = () => {
           <p style={{ fontWeight: "500" }}>
             All träningsupplägg är tillgängliga som presentkort.
           </p>
-          <br />
         </div>
       </div>
+      <br />
       <p className="descriptionTitle">Introduktion</p>
       <br />
       <p className="descriptionText">
@@ -41,21 +41,7 @@ export const PersonalTrainingDetails = () => {
         band med sin tränare och andra individer i sin träningsgrupp.
       </p>
       <br />
-      {/* <p className="descriptionTitle">Kondition och uthållighet</p>
       <br />
-      <p className="descriptionText">asd </p>
-
-      <br />
-      <p className="descriptionTitle">Koordination och balans</p>
-      <br />
-      <p className="descriptionText">asd.</p>
-      <br />
-      <p className="descriptionTitle">Styrka och muskler</p>
-      <br />
-      <p className="descriptionText">asd</p>
-      <br />
-      <p className="descriptionTitle">Mental träning</p>
-      <br /> */}
 
       <p className="descriptionTitle">Fördelar</p>
       <br />

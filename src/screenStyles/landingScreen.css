@@ -60,6 +60,7 @@
   font-size: 32px;
   line-height: 38px;
   padding: 24px 0px 24px 0px;
+  margin-bottom: 80px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -85,6 +86,10 @@
     line-height: 50px;
   }
 
+  .textTwo {
+    margin-bottom: 40px;
+  }
+
   .top-left-logo img {
     width: 500px !important;
     height: 600px !important;
@@ -103,6 +108,11 @@
     position: absolute;
     left: 8%;
   }
+
+  .textTwo {
+    margin-bottom: 30px;
+  }
+
   .sectionWrapper {
     padding: 0 !important;
   }
@@ -118,6 +128,9 @@
   .textOne {
     font-size: 38px;
   }
+  .textTwo {
+    margin-bottom: 20px;
+  }
 }
 
 /* iphone PRO MAX  */
@@ -128,6 +141,10 @@
 
   .break {
     display: none;
+  }
+
+  .textTwo {
+    margin-bottom: 20px;
   }
 
   .sectionWrapper {
@@ -147,6 +164,7 @@
     font-size: 19px;
     line-height: 19px;
     padding-top: 0;
+    margin-bottom: 20px;
   }
 
   .sectionWrapper {

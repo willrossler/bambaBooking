@@ -3,23 +3,24 @@ import React from "react";
 const MentailDetails = () => {
   return (
     <div>
-      <div style={{}} className="trainingForms">
-        <h3>Träningsformer</h3>
+      <div className="trainingForms">
+        <p className="descriptionTitle" style={{ color: "#fff" }}>
+          Träningsformer
+        </p>
         <br />
-        <div>
+        <div className="">
           <p>— Klasser (upp till 12 personer)</p>
           <p>— Mindre grupper (upp till 5 personer)</p>
           <p>— Personal training (one on one)</p>
           <p>— Testa på (tre pass för en komplett genomgång)</p>
           <p>— Introduktion (ett pass)</p>
           <br />
-          <p style={{ fontWeight: "500" }}>
+          <p className="descriptionTitle" style={{ color: "#fff" }}>
             All träningsupplägg är tillgängliga som presentkort.
           </p>
-          <br />
         </div>
       </div>
-      <p className="descriptionTitle">Introduktion</p>
+      <br />§<p className="descriptionTitle">Introduktion</p>
       <br />
       <p className="descriptionText">
         Många träningsentusiaster och idrottsutövare har börjat inse att mental
@@ -54,7 +55,6 @@ const MentailDetails = () => {
         engagemang i livet. Som en följd kan man uppleva ökat välbefinnande och
         livskvalitet på ett mer övergripande plan.
       </p>
-
       <br />
       <br />
       <p className="descriptionTitle">Styrka och prestation</p>
@@ -69,7 +69,6 @@ const MentailDetails = () => {
         inom olika områden i livet.
       </p>
       <br />
-
       <p className="descriptionText">Fördelar med mental coaching:</p>
       <ul className="descriptionText" style={{ marginBottom: "30px" }}>
         <li>Ökad självmedvetenhet och självkontroll</li>
