@@ -38,40 +38,6 @@ const CampDetails = () => {
         hos oss och ta del av en motiverande och utmanande träningsmiljö.
       </p>
       <br />
-      <p className="descriptionTitle">Företag</p>
-      <br />
-      <p className="descriptionText"></p>
-
-      <br />
-      <p className="descriptionTitle"></p>
-      <br />
-      <p className="descriptionText">
-        De snabba kroppsrörelserna i boxning är bra för balans, medan slagen
-        förbättrar hand-öga-koordinationen. Även utan corespecifika rörelser
-        under styrketräningsdelen av träningen bygger boxning dessa muskler. De
-        rörelser som behövs för att boxas bygger corestyrka, vilket i sin tur
-        hjälper dig att få bättre balans. Äldre kunder och de med särskilda
-        hälsobehov drar särskilt nytta av corestyrka och förbättrad balans.
-      </p>
-      <br />
-      <p className="descriptionTitle">Styrka och muskler</p>
-      <br />
-      <p className="descriptionText">
-        Boxning är en fysisk träningsform och aktiverar i princip hela kroppen –
-        allt från inre core muskulatur till alla stora och små muskelgrupper.
-        Detta är anledningen till att träningsformen är så effektiv och
-        uppskattad. En del av träningen är styrkeintervaller växlat med att slå
-        på en boxningssäck och andra tekniska rörelser. Även de olika
-        försvarsrörelserna (även om vi inte slår på varandra) ökar hela kroppens
-        styrka. Detta beror på att du behöver hela din kropp för att boxas. Att
-        slå ett slag korrekt involverar hela kroppen och de flesta
-        muskelgrupper. Du behöver din core för att stabilisera dig själv, din
-        underkropp och höfter för att svänga och ge kraft till slaget, och
-        naturligtvis överkroppen för att ge slaget.
-      </p>
-      <br />
-      <p className="descriptionTitle">Mental träning</p>
-      <br />
 
       <p className="descriptionText">
         Alla dessa fysiska fördelar är tillräckligt för att uppmuntra de flesta

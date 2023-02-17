@@ -113,18 +113,6 @@ const ContactScreen = () => {
   return (
     <>
       {/* DESKTOP VIEW  */}
-      <div className="contactBanner desktopView ">
-        <p className="container" style={{ color: "#F5AAC9" }}>
-          <span style={{ color: "#fff" }}>
-            HÄR FÖR ATT HJÄLPA DIG <br /> FORMA DITT NYA <br />
-          </span>
-          FÖRBÄTTRADE JAG —
-          <br />
-          <span style={{ color: "#fff", fontSize: "32px" }}>
-            FYSISKT — MENTALT — SPIRITUELLT
-          </span>
-        </p>
-      </div>
 
       <div style={{ marginTop: "100px" }} className="desktopView container">
         <section>

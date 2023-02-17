@@ -37,7 +37,7 @@
   top: 50%;
   transform: translateY(-50%);
 }
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 1950px) {
   .homeParagraph {
     font-size: 20px;
     line-height: 24px;
@@ -45,12 +45,14 @@
     font-weight: 300;
   }
 
+  .homeBanner {
+    height: 600px;
+  }
+
   .homeBanner p {
     color: #f5aac9;
-    line-height: 115px;
-    font-size: 72px;
-    font-weight: 500;
-    padding-top: 10%;
+    line-height: 57px;
+    font-size: 48px;
     font-weight: 500;
   }
 
@@ -74,6 +76,18 @@
     font-size: 36px;
     line-height: 42px;
     color: #fff;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .homeBanner {
+    height: 500px;
+  }
+
+  .homeBanner p {
+    color: #f5aac9;
+    line-height: 45px;
+    font-size: 40px;
+    font-weight: 500;
   }
 }
 @media screen and (max-width: 1200px) {
