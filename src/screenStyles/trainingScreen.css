@@ -33,8 +33,9 @@
 }
 
 .trainingLinks {
-  padding-top: 5%;
   padding-bottom: 15%;
+  font-weight: 500;
+  padding-top: 80px;
 }
 
 /* SCREEN SIZES */
@@ -81,6 +82,11 @@
   .trainingLinks div {
     font-size: 28px !important;
     line-height: 44px;
+  }
+  .trainingLinks {
+    padding-bottom: 15%;
+    font-weight: 500;
+    padding-top: 20px;
   }
 }
 @media screen and (max-width: 430px) {

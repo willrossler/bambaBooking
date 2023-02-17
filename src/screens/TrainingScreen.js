@@ -27,42 +27,42 @@ const TrainingScreen = () => {
       case 1:
         return {
           transition: "background-color 200ms",
-          marginTop: "40px",
+          marginTop: "20px",
         };
       case 2:
         return {
           transition: "background-color 200ms",
-          marginTop: "40px",
+          marginTop: "20px",
         };
       case 3:
         return {
           transition: "background-color 200ms",
-          marginTop: "40px",
+          marginTop: "20px",
         };
-      case 4:
+      case 2:
         return {
           transition: "background-color 200ms",
-          marginTop: "40px",
+          marginTop: "20px",
         };
       case 5:
         return {
           transition: "background-color 200ms",
-          marginTop: "40px",
+          marginTop: "20px",
         };
       case 6:
         return {
           transition: "background-color 200ms",
-          marginTop: "40px",
+          marginTop: "20px",
         };
       case 7:
         return {
           transition: "background-color 200ms",
-          marginTop: "40px",
+          marginTop: "20px",
         };
       default:
         return {
           backgroundColor: "",
-          marginTop: "40px",
+          marginTop: "20px",
         };
     }
   };
@@ -88,7 +88,7 @@ const TrainingScreen = () => {
           <span>
             VI SKAPAR <br />
           </span>
-          SKRÄDDARSYDD TRÄNING —
+          SKRÄDDARSYDD <br /> TRÄNING —
           <br />
           <span style={{ color: "#F5AAC9" }}>JUST FÖR DIG</span>
         </p>
