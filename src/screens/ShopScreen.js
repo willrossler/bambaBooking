@@ -41,14 +41,14 @@ const ShopScreen = () => {
           {showFullDescriptionAbbe ? <AbbePrez /> : <AbbeShort />}
           {showFullDescriptionAbbe ? (
             <p
-              className="descriptionTitleMobile"
+              className="visaMer"
               onClick={() => setShowFullDescriptionAbbe(false)}
             >
               Visa mindre
             </p>
           ) : (
             <p
-              className="descriptionTitleMobile"
+              className="visaMer"
               onClick={() => setShowFullDescriptionAbbe(true)}
             >
               Läs mer...
@@ -56,33 +56,51 @@ const ShopScreen = () => {
           )}
           {showFullDescriptionJocke ? <JockePrez /> : <JockeShort />}
           {showFullDescriptionJocke ? (
-            <button onClick={() => setShowFullDescriptionJocke(false)}>
+            <p
+              className="visaMer"
+              onClick={() => setShowFullDescriptionJocke(false)}
+            >
               Show less
-            </button>
+            </p>
           ) : (
-            <button onClick={() => setShowFullDescriptionJocke(true)}>
+            <p
+              className="visaMer"
+              onClick={() => setShowFullDescriptionJocke(true)}
+            >
               Show more
-            </button>
+            </p>
           )}
           {showFullDescriptionMartin ? <MartinPrez /> : <MartinShort />}
           {showFullDescriptionMartin ? (
-            <button onClick={() => setShowFullDescriptionMartin(false)}>
+            <p
+              className="visaMer"
+              onClick={() => setShowFullDescriptionMartin(false)}
+            >
               Show less
-            </button>
+            </p>
           ) : (
-            <button onClick={() => setShowFullDescriptionMartin(true)}>
+            <p
+              className="visaMer"
+              onClick={() => setShowFullDescriptionMartin(true)}
+            >
               Show more
-            </button>
+            </p>
           )}
           {showFullDescriptionNajmedin ? <NajPrez /> : <NajShort />}
           {showFullDescriptionNajmedin ? (
-            <button onClick={() => setShowFullDescriptionNajmedin(false)}>
+            <p
+              className="visaMer"
+              onClick={() => setShowFullDescriptionNajmedin(false)}
+            >
               Show less
-            </button>
+            </p>
           ) : (
-            <button onClick={() => setShowFullDescriptionNajmedin(true)}>
+            <p
+              className="visaMer"
+              onClick={() => setShowFullDescriptionNajmedin(true)}
+            >
               Show more
-            </button>
+            </p>
           )}
         </div>
       </Container>
