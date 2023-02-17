@@ -17,9 +17,8 @@ const CampMobileDetails = () => {
           </p>
         </div>
       </div>
-      <p className="descriptionTitleMobile" style={{ marginTop: "10px" }}>
-        Introduktion
-      </p>
+      <br />
+      <p className="descriptionTitleMobile">Introduktion</p>
       <p className="descriptionTextMobile" style={{}}>
         Boxningskonsten har trollbundit människor sen långt tillbaka i tiden.
         Allt från de dansande rörelserna till kraften och spänningen. Som

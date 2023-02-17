@@ -17,6 +17,7 @@ const PersonalTrainingMobileDetails = () => {
           </p>
         </div>
       </div>
+      <br />
       <p className="descriptionTitleMobile">Introduktion</p>
       <br />
       <p className="descriptionTextMobile">
@@ -55,12 +56,9 @@ const PersonalTrainingMobileDetails = () => {
       <p className="descriptionTitle">Mental träning</p>
       <br /> */}
 
-      <p
-        style={{ fontWeight: "500", color: "#f5aac9" }}
-        className="descriptionTextMobile"
-      >
-        Fördelar
-      </p>
+      <p className="descriptionTitleMobile">Fördelar</p>
+      <p className="descriptionTextMobile">kort om fördelarna</p>
+      <br />
       <ul className="descriptionTextMobile" style={{ marginBottom: "30px" }}>
         <li>
           {" "}

@@ -17,6 +17,7 @@ const MentalMobile = () => {
           </p>
         </div>
       </div>
+      <br />
       <p className="descriptionTitleMobile">Introduktion</p>
       <br />
       <p className="descriptionTextMobile">

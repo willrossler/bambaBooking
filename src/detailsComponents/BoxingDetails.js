@@ -95,6 +95,7 @@ const BoxingDetails = () => {
         fysiska och mentala utmaningen och frigörandet av att slå något hårt
         bidrar alla till de mentala hälsofördelarna med boxningspass:
       </p>
+
       <ul className="descriptionText" style={{ marginBottom: "30px" }}>
         <li> Minska stress och andra negativa känslor</li>
         <li>Hitta känslomässig befrielse i en säker miljö</li>

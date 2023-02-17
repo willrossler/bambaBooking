@@ -17,9 +17,8 @@ const MartialMobileDetails = () => {
           </p>
         </div>
       </div>
-      <p className="descriptionTitleMobile" style={{ marginTop: "10px" }}>
-        Introduktion
-      </p>
+      <br />
+      <p className="descriptionTitleMobile">Introduktion</p>
       <p className="descriptionTextMobile" style={{}}>
         Kampsport är samlingsnamnet för ett antal kontaktsporter där två
         personer går i närstrid med varandra. Varje gren har sitt eget regelverk
