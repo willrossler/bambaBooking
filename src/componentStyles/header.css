@@ -78,7 +78,7 @@
   transition: all 0.2s ease-in-out !important;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   #hoverLink {
     color: #fff;
     font-size: 14px;
@@ -89,16 +89,22 @@
     border-bottom: 4px solid #3c469c;
     padding-bottom: 24px;
   }
-  #bookingBtn {
-    font-size: 13px;
-    color: #000;
-    font-weight: 500;
-    padding: 1em 2em 1em 2em;
-    margin-left: 7em;
-  }
+
   .bambaLogo {
     width: 133px;
     height: 30px;
+  }
+
+  #bookingBtn {
+    width: 110.25px;
+    height: 37.5px;
+    padding: 10.5px 37.5px;
+    gap: 7.5px;
+    top: 30px;
+    font-size: 13.5px;
+    color: #000;
+    font-weight: 500;
+    margin-left: 5.25em;
   }
 }
 

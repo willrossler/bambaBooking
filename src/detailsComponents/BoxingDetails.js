@@ -36,6 +36,7 @@ const BoxingDetails = () => {
         kan förfinas i många år.{" "}
       </p>
       <br />
+      <br />
       <p className="descriptionTitle">Kondition och uthållighet</p>
       <br />
       <p className="descriptionText">
@@ -54,7 +55,7 @@ const BoxingDetails = () => {
         till andra träningsformer och uthållighetsträning som distanslöpning och
         triathlon.
       </p>
-
+      <br />
       <br />
       <p className="descriptionTitle">Koordination och balans</p>
       <br />
@@ -66,6 +67,7 @@ const BoxingDetails = () => {
         hjälper dig att få bättre balans. Äldre kunder och de med särskilda
         hälsobehov drar särskilt nytta av corestyrka och förbättrad balans.
       </p>
+      <br />
       <br />
       <p className="descriptionTitle">Styrka och muskler</p>
       <br />
@@ -82,6 +84,7 @@ const BoxingDetails = () => {
         underkropp och höfter för att svänga och ge kraft till slaget, och
         naturligtvis överkroppen för att ge slaget.
       </p>
+      <br />
       <br />
       <p className="descriptionTitle">Mental träning</p>
       <br />

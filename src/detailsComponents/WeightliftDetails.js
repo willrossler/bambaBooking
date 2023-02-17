@@ -19,9 +19,9 @@ const WeightLiftDetails = () => {
           <br />
         </div>
       </div>
-      <p className="descriptionTitleMobile">Introduktion</p>
+      <p className="descriptionTitle">Introduktion</p>
       <br />
-      <p className="descriptionTextMobile">
+      <p className="descriptionText">
         Det mäktiga med tyngdlyftning är att det är en otrolig träningsform för
         hela kroppen då det ökar flexibilitet i leder, stärker skelettet
         (minskar benskörhet) och bidrar till ökad muskelstyrka samtidigt som du
@@ -35,13 +35,12 @@ const WeightLiftDetails = () => {
         överbelastning för att hela tiden uppmuntra musklerna till att bli
         större. Däremot kan du inte undkomma att bli både stark och smidig.
         <br />
-        <br /> OBS: Skifta fokus från "ryck och stöt" till kanske: basövningar,
-        övningar som stärker rörlighet osv.
+        <br />
       </p>
       <br />
-      <p className="descriptionTitleMobile">Styrka, muskler och teknik</p>
+      <p className="descriptionTitle">Styrka, muskler och teknik</p>
       <br />
-      <p className="descriptionTextMobile">
+      <p className="descriptionText">
         När du först börjar med tyngdlyftning inleder vi med att öva teknik så
         att du får lära dig att göra rörelserna korrekt, och därmed minimera
         skaderisken. Ryck och stöt kräver att hela kroppen samarbetar, därför är
@@ -52,9 +51,10 @@ const WeightLiftDetails = () => {
       </p>
 
       <br />
-      <p className="descriptionTitleMobile">Koordination och explosivitet</p>
       <br />
-      <p className="descriptionTextMobile">
+      <p className="descriptionTitle">Koordination och explosivitet</p>
+      <br />
+      <p className="descriptionText">
         Ryck och stöt kräver att dina muskler “pratar” med varandra. Genom
         specifika teknikövningar och separata muskelgruppsövningar bygger vi upp
         styrkan och kontakten mellan de olika muskelgrupperna för att de ska
@@ -64,9 +64,10 @@ const WeightLiftDetails = () => {
         i andra träningsformer, så som crossfit.
       </p>
       <br />
-      <p className="descriptionTitleMobile">Rörlighet och balans</p>
       <br />
-      <p className="descriptionTextMobile">
+      <p className="descriptionTitle">Rörlighet och balans</p>
+      <br />
+      <p className="descriptionText">
         Med tyngdlyftning kommer även ökad rörlighet då du ska kunna sitta i
         djupa knäböj samtidigt som du lyfter tungt med armarna ovanför huvudet.
         Därför kommer du få göra många rörelser som främjar din rörlighet vilket
@@ -75,17 +76,18 @@ const WeightLiftDetails = () => {
         balansövningar som en naturlig del av träningen för tyngdlyftning.
       </p>
       <br />
-      <p className="descriptionTitleMobile">Mental träning</p>
+      <br />
+      <p className="descriptionTitle">Mental träning</p>
       <br />
 
-      <p className="descriptionTextMobile">
+      <p className="descriptionText">
         Du kommer bli förvånad över din egen förmåga. När du utmanar din kropp i
         att lyfta tungt utmanar du samtidigt ditt sinne i vad du tror att du kan
         och vad du de facto kan. Genom att hela tiden pusha dina gränser och
         lyckas med det du inte trodde var möjligt bygger du självkänsla likväl
         som du bygger muskler:
       </p>
-      <ul className="descriptionTextMobile" style={{ marginBottom: "30px" }}>
+      <ul className="descriptionText" style={{ marginBottom: "30px" }}>
         <li> Bättre självkänsla</li>
         <li>Bättre sömn av fysisk trötthet</li>
         <li>Minskad stress tack vare total närvaro under passen</li>

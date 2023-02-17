@@ -40,6 +40,7 @@ const MartialDetails = () => {
         kondition är, varje pass sker på dina villkor och kapacitet.
       </p>
       <br />
+      <br />
       <p className="descriptionTitle">Kondition och uthållighet</p>
       <br />
       <p className="descriptionText">
@@ -51,6 +52,7 @@ const MartialDetails = () => {
         otränad eller tränad du är, du anpassar passet utefter dig och din nivå.
       </p>
 
+      <br />
       <br />
       <p className="descriptionTitle">Koordination och balans</p>
       <br />
@@ -64,6 +66,7 @@ const MartialDetails = () => {
         <br /> här behöver jobbas om lite
       </p>
       <br />
+      <br />
       <p className="descriptionTitle">Styrka och muskler</p>
       <br />
       <p className="descriptionText">
@@ -75,23 +78,22 @@ const MartialDetails = () => {
         kan manövrera slag som kommer din väg.
       </p>
       <br />
+      <br />
       <p className="descriptionTitle">Mental träning</p>
       <br />
 
       <p className="descriptionText">
-        Många efterliknar kampsport vid en form av meditation då det kräver din
-        fulla närvaro. Du har helt enkelt inte tid att ha tankarna någon
-        annanstans när du vill undvika, eller slå, ett slag. Ta tillfället i akt
-        att släppa världen utanför för att istället låta dig absorberas totalt
-        av ditt eget andetag, motståndarens nästa drag och kämparandan i rummet:
+        Alla dessa fysiska fördelar är tillräckligt för att uppmuntra de flesta
+        att prova boxning, men det finns mer. Träningens intensiva karaktär, den
+        fysiska och mentala utmaningen och frigörandet av att slå något hårt
+        bidrar alla till de mentala hälsofördelarna med boxningspass:
       </p>
       <ul className="descriptionText" style={{ marginBottom: "30px" }}>
-        <li>Uppmuntrar total närvaro </li>
-        <li>Minskad stress</li>
-        <li>
-          Här behövs 2-3 till PROS. Ökad disciplin? lättare att ta an utmaningar
-          i livet osv
-        </li>
+        <li> Minska stress och andra negativa känslor</li>
+        <li>Hitta känslomässig befrielse i en säker miljö</li>
+        <li>Lyft upp ett dåligt humör efter en jobbig dag</li>
+        <li>Sov bättre på natten efter ett intensivt träningspass</li>
+        <li>Få självförtroende av att möta en utmaning och bli starkare</li>
       </ul>
       <br />
     </div>

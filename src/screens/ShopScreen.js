@@ -29,7 +29,7 @@ const ShopScreen = () => {
 
   return (
     <>
-      <Container style={{ marginTop: "40px" }} className="desktopView">
+      <Container style={{ marginTop: "100px" }} className="desktopView">
         <AbbeDesktop />
         <JockeDesktop />
         <MartinDesktop />

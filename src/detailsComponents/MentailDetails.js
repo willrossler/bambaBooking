@@ -22,10 +22,14 @@ const MentailDetails = () => {
       <p className="descriptionTitle">Introduktion</p>
       <br />
       <p className="descriptionText">
-        Genom att träna sin mentala förmåga, inklusive att utveckla
-        självförtroende, motivation och koncentration, kan man förbättra sin
-        prestation på olika områden i livet, som arbete, utbildning, idrott
-        eller hobby.
+        Många träningsentusiaster och idrottsutövare har börjat inse att mental
+        träning är lika viktig som fysisk träning. Mental träning handlar om att
+        stärka sinnet genom olika tekniker såsom visualisering och medveten
+        närvaro. Genom att integrera mental träning i din träningsrutin kan du
+        förbättra din prestation, minska stress och öka ditt självförtroende. Vi
+        på BAMBA påminner dig om att mental träning är ett kraftfullt verktyg
+        som kan hjälpa dig att nå dina träningsmål och uppnå balans i livet, och
+        vi uppmuntrar dig att prova på det idag!
         <br />
         <br />
         När man har en stark tro på sig själv och sina förmågor, kan man ta på
@@ -35,6 +39,7 @@ const MentailDetails = () => {
         ökad koncentration leda till bättre beslutsfattande och mer effektivt
         arbete, vilket kan leda till bättre resultat och prestation.
       </p>
+      <br />
       <br />
       <p className="descriptionTitle">Allmänt välbefinnande</p>
       <br />
@@ -51,20 +56,21 @@ const MentailDetails = () => {
       </p>
 
       <br />
+      <br />
       <p className="descriptionTitle">Styrka och prestation</p>
       <br />
       <p className="descriptionText">
         Genom att träna dessa mentala färdigheter kan man också förbättra sin
-        förmåga att hantera stress och presterar under press. Till exempel kan
-        man använda avslappningsövningar eller visualiseringstekniker för att
-        öka sitt lugn och självkontroll i stressiga situationer, som kan bidra
-        till en ökad prestation. Sammanfattningsvis kan utveckling av mentala
+        förmåga att hantera och prestera under press. Till exempel kan man
+        använda avslappningsövningar eller visualiseringstekniker för att öka
+        sitt lugn och självkontroll i stressiga situationer, som kan bidra till
+        en ökad prestation. Sammanfattningsvis kan utveckling av mentala
         färdigheter vara avgörande för att förbättra prestationen och uppnå mål
         inom olika områden i livet.
       </p>
       <br />
 
-      <p className="descriptionText">mental:</p>
+      <p className="descriptionText">Fördelar med mental coaching:</p>
       <ul className="descriptionText" style={{ marginBottom: "30px" }}>
         <li>Ökad självmedvetenhet och självkontroll</li>
         <li>Förbättrad prestation och produktivitet</li>
