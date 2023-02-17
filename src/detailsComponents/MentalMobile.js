@@ -19,7 +19,7 @@ const MentalMobile = () => {
       </div>
       <br />
       <p className="descriptionTitleMobile">Introduktion</p>
-      <br />
+
       <p className="descriptionTextMobile">
         Genom att träna sin mentala förmåga, inklusive att utveckla
         självförtroende, motivation och koncentration, kan man förbättra sin
@@ -35,8 +35,10 @@ const MentalMobile = () => {
         arbete, vilket kan leda till bättre resultat och prestation.
       </p>
       <br />
-      <p className="descriptionTitleMobile">Allmänt välbefinnande</p>
       <br />
+
+      <p className="descriptionTitleMobile">Allmänt välbefinnande</p>
+
       <p className="descriptionTextMobile">
         Genom mental träning kan man lära sig att hantera stress, oro och ångest
         på ett mer konstruktivt sätt. Det kan innebära att man lär sig att
@@ -48,10 +50,9 @@ const MentalMobile = () => {
         engagemang i livet. Som en följd kan man uppleva ökat välbefinnande och
         livskvalitet på ett mer övergripande plan.
       </p>
-
+      <br />
       <br />
       <p className="descriptionTitleMobile">Styrka och prestation</p>
-      <br />
       <p className="descriptionTextMobile">
         Genom att träna dessa mentala färdigheter kan man också förbättra sin
         förmåga att hantera stress och presterar under press. Till exempel kan
@@ -62,8 +63,11 @@ const MentalMobile = () => {
         inom olika områden i livet.
       </p>
       <br />
+      <br />
 
       <p className="descriptionTextMobile">mental:</p>
+      <br />
+
       <ul className="descriptionTextMobile" style={{ marginBottom: "30px" }}>
         <li>Ökad självmedvetenhet och självkontroll</li>
         <li>Förbättrad prestation och produktivitet</li>

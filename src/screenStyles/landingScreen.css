@@ -35,6 +35,7 @@
   color: #fff;
   font-size: 64px;
   line-height: 76px;
+  margin-top: 80px;
 }
 .sectionWrapper {
   padding-bottom: 120px;
@@ -119,6 +120,7 @@
   .textOne {
     font-size: 46px;
     line-height: 44px;
+    margin-top: 40px;
   }
 }
 @media screen and (max-width: 769px) {
@@ -127,6 +129,7 @@
   }
   .textOne {
     font-size: 38px;
+    margin-top: 20px;
   }
   .textTwo {
     margin-bottom: 20px;
@@ -159,6 +162,7 @@
   .textOne {
     font-size: 34px;
     line-height: 38px;
+    margin-top: 20px;
   }
   .textTwo {
     font-size: 19px;
@@ -204,6 +208,7 @@
   .textOne {
     font-size: 32px;
     line-height: 38px;
+    margin-top: 20px;
   }
   .textTwo {
     font-size: 16px;

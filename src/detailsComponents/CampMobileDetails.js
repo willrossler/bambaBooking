@@ -28,11 +28,11 @@ const CampMobileDetails = () => {
         <br />
         <br /> Utmaningen är att i rytm utföra slagserier i en koordinerad
         sammansättning av balans, styrka och fotarbete. Detta kan till en början
-        se enkelt ut men det är en konst som kan förfinas i många år.{" "}
+        se enkelt ut men det är en konst som kan förfinas i många år. <br />
+        <br />
+        <br />
       </p>
-      <p className="descriptionTitleMobile" style={{ marginTop: "30px" }}>
-        Kondition och uthållighet
-      </p>
+      <p className="descriptionTitleMobile">Kondition och uthållighet</p>
       <p className="descriptionTextMobile" style={{}}>
         Få sporter bygger kondition och uthållighet som boxning. Den
         högintensiva träningen som ofta sker i intervaller skapar grunden för
@@ -51,9 +51,9 @@ const CampMobileDetails = () => {
         Boxningspass är bra tillägg till andra träningsformer och
         uthållighetsträning som distanslöpning och triathlon.
       </p>
-      <p className="descriptionTitleMobile" style={{ marginTop: "30px" }}>
-        Koordination och balans
-      </p>
+      <br />
+      <br />
+      <p className="descriptionTitleMobile">Koordination och balans</p>
       <p className="descriptionTextMobile" style={{}}>
         De snabba kroppsrörelserna i boxning är bra för balans, medan slagen
         förbättrar hand-öga-koordinationen. Även utan corespecifika rörelser
@@ -62,9 +62,9 @@ const CampMobileDetails = () => {
         hjälper dig att få bättre balans. Äldre kunder och de med särskilda
         hälsobehov drar särskilt nytta av corestyrka och förbättrad balans.
       </p>
-      <p className="descriptionTitleMobile" style={{ marginTop: "30px" }}>
-        Styrka och muskler
-      </p>
+      <br />
+      <br />
+      <p className="descriptionTitleMobile">Styrka och muskler</p>
       <p className="descriptionTextMobile" style={{}}>
         Boxning är en fysisk träningsform och aktiverar i princip hela kroppen –
         allt från inre core muskulatur till alla stora och små muskelgrupper.
@@ -80,17 +80,17 @@ const CampMobileDetails = () => {
         underkropp och höfter för att svänga och ge kraft till slaget, och
         naturligtvis överkroppen för att ge slaget.
       </p>
-      <p className="descriptionTitleMobile" style={{ marginTop: "30px" }}>
-        Mental träning
-      </p>
+      <br />
+      <br />
+      <p className="descriptionTitleMobile">Mental träning</p>
       <p className="descriptionTextMobile" style={{}}>
         Alla dessa fysiska fördelar är tillräckligt för att uppmuntra de flesta
         att prova boxning, men det finns mer. Träningens intensiva karaktär, den
         fysiska och mentala utmaningen och frigörandet av att slå något hårt
         bidrar alla till de mentala hälsofördelarna med boxningspass:
       </p>
-
-      <ul className="descriptionTextMobile" style={{ marginBottom: "30px" }}>
+      <br />
+      <ul className="descriptionTextMobile">
         <li> Minska stress och andra negativa känslor</li>
         <li>Hitta känslomässig befrielse i en säker miljö</li>
         <li>Lyft upp ett dåligt humör efter en jobbig dag</li>

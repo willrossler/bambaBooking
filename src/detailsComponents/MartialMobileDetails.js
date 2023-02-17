@@ -37,9 +37,10 @@ const MartialMobileDetails = () => {
         ingen roll vad du har för träningsbakgrund eller hur din nuvarande
         kondition är, varje pass sker på dina villkor och kapacitet.
       </p>
-      <p className="descriptionTitleMobile" style={{ marginTop: "30px" }}>
-        Kondition och uthållighet
-      </p>
+      <br />
+      <br />
+
+      <p className="descriptionTitleMobile">Kondition och uthållighet</p>
       <p className="descriptionTextMobile" style={{}}>
         Slagvariationer i intervaller är intensivt och otroligt givande för
         kondition, uthållighet och hjärta. Det gäller att du utmanar dina
@@ -48,9 +49,10 @@ const MartialMobileDetails = () => {
         och därmed bättre syreupptagningsförmåga. Det spelar ingen roll hur
         otränad eller tränad du är, du anpassar passet utefter dig och din nivå.
       </p>
-      <p className="descriptionTitleMobile" style={{ marginTop: "30px" }}>
-        Koordination och balans
-      </p>
+      <br />
+      <br />
+
+      <p className="descriptionTitleMobile">Koordination och balans</p>
       <p className="descriptionTextMobile" style={{}}>
         De snabba kroppsrörelserna i boxning är bra för balans, medan slagen
         förbättrar hand-öga-koordinationen. Även utan corespecifika rörelser
@@ -59,9 +61,11 @@ const MartialMobileDetails = () => {
         hjälper dig att få bättre balans. Äldre kunder och de med särskilda
         hälsobehov drar särskilt nytta av corestyrka och förbättrad balans.
       </p>
-      <p className="descriptionTitleMobile" style={{ marginTop: "30px" }}>
-        Koordination och balans
-      </p>
+
+      <br />
+      <br />
+
+      <p className="descriptionTitleMobile">Koordination och balans</p>
       <p className="descriptionTextMobile" style={{}}>
         Boxa, uppercut, ducka, sparka, boxa igen - slagvariationer i kombination
         med att sparka på ett så kraftfullt vis som möjligt, resulterar i en
@@ -69,9 +73,10 @@ const MartialMobileDetails = () => {
         tacksam då, den likt dans, kommer med oändliga variationer, vilket gör
         att du alltid kan utvecklas och testa nya saker.
       </p>
-      <p className="descriptionTitleMobile" style={{ marginTop: "30px" }}>
-        Styra och muskler
-      </p>
+      <br />
+      <br />
+
+      <p className="descriptionTitleMobile">Styra och muskler</p>
       <p className="descriptionTextMobile" style={{}}>
         Tack vare att hela kroppen används finns det ingen del av dig som inte
         kommer bli starkare. Styrka i axlar, rygg/skuldror, handleder och mage
@@ -80,6 +85,7 @@ const MartialMobileDetails = () => {
         för kampsportare då det främjar frekvens som i sin tur gör att du snabbt
         kan manövrera slag som kommer din väg:
       </p>
+      <br />
 
       <ul className="descriptionTextMobile" style={{ marginBottom: "30px" }}>
         <li>Uppmuntrar total närvaro</li>
