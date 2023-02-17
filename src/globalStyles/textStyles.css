@@ -92,6 +92,7 @@
   color: #f5aac9;
   font-size: 24px;
   line-height: 28px;
+  margin: 0;
 }
 
 @media screen and (max-width: 1000px) {

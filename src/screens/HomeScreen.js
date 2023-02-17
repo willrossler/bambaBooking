@@ -59,7 +59,7 @@ const HomeScreen = () => {
             <br />
             <br />
             {/* todo avstånd rubrik till brödtext. alla skärmstorlekar CHECK */}
-            <h3 className="textHeaderPink">Fysiskt</h3>
+            <p className="textHeaderPink">Fysiskt</p>
             <br />
             <p className="homeParagraph">
               {" "}
@@ -74,7 +74,7 @@ const HomeScreen = () => {
             <br />
             <br />
 
-            <h3 className="textHeaderPink">Mentalt</h3>
+            <p className="textHeaderPink">Mentalt</p>
             <br />
 
             <p className="homeParagraph">
@@ -89,7 +89,7 @@ const HomeScreen = () => {
             <br />
             <br />
 
-            <h3 className="textHeaderPink">Spirituellt</h3>
+            <p className="textHeaderPink">Spirituellt</p>
             <br />
 
             <p className="homeParagraph">

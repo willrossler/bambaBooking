@@ -8,7 +8,9 @@ const BoxingDetails = () => {
   return (
     <div>
       <div style={{}} className="trainingForms">
-        <h3>Träningsformer</h3>
+        <p className="descriptionTitle" style={{ color: "#fff" }}>
+          Träningsformer
+        </p>
         <br />
         <div>
           <p>— Klasser (upp till 12 personer)</p>
@@ -17,7 +19,7 @@ const BoxingDetails = () => {
           <p>— Testa på (tre pass för en komplett genomgång)</p>
           <p>— Introduktion (ett pass)</p>
           <br />
-          <p style={{ fontWeight: "500" }}>
+          <p className="descriptionTitle" style={{ color: "#fff" }}>
             All träningsupplägg är tillgängliga som presentkort.
           </p>
         </div>
