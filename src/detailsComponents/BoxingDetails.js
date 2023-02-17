@@ -20,9 +20,9 @@ const BoxingDetails = () => {
           <p style={{ fontWeight: "500" }}>
             All träningsupplägg är tillgängliga som presentkort.
           </p>
-          <br />
         </div>
       </div>
+      <br />
       <p className="descriptionTitle">Introduktion</p>
       <br />
       <p className="descriptionText">
@@ -95,7 +95,6 @@ const BoxingDetails = () => {
         fysiska och mentala utmaningen och frigörandet av att slå något hårt
         bidrar alla till de mentala hälsofördelarna med boxningspass:
       </p>
-
       <ul className="descriptionText" style={{ marginBottom: "30px" }}>
         <li> Minska stress och andra negativa känslor</li>
         <li>Hitta känslomässig befrielse i en säker miljö</li>

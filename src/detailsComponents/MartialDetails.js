@@ -16,9 +16,9 @@ const MartialDetails = () => {
           <p style={{ fontWeight: "500" }}>
             All träningsupplägg är tillgängliga som presentkort.
           </p>
-          <br />
         </div>
       </div>
+      <br />
       <p className="descriptionTitle">Introduktion</p>
       <br />
       <p className="descriptionText">
@@ -63,7 +63,7 @@ const MartialDetails = () => {
         tacksam då, den likt dans, kommer med oändliga variationer, vilket gör
         att du alltid kan utvecklas och testa nya saker.
         <br />
-        <br /> här behöver jobbas om lite
+        <br />
       </p>
       <br />
       <br />

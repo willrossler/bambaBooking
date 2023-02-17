@@ -16,9 +16,9 @@ const WeightLiftDetails = () => {
           <p style={{ fontWeight: "500" }}>
             All träningsupplägg är tillgängliga som presentkort.
           </p>
-          <br />
         </div>
       </div>
+      <br />
       <p className="descriptionTitle">Introduktion</p>
       <br />
       <p className="descriptionText">
@@ -34,9 +34,8 @@ const WeightLiftDetails = () => {
         risken för det liten. Att bli muskulärt “stor” kräver år av progressiv
         överbelastning för att hela tiden uppmuntra musklerna till att bli
         större. Däremot kan du inte undkomma att bli både stark och smidig.
-        <br />
-        <br />
       </p>
+      <br />
       <br />
       <p className="descriptionTitle">Styrka, muskler och teknik</p>
       <br />
@@ -79,7 +78,6 @@ const WeightLiftDetails = () => {
       <br />
       <p className="descriptionTitle">Mental träning</p>
       <br />
-
       <p className="descriptionText">
         Du kommer bli förvånad över din egen förmåga. När du utmanar din kropp i
         att lyfta tungt utmanar du samtidigt ditt sinne i vad du tror att du kan

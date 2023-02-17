@@ -19,6 +19,7 @@ const CampDetails = () => {
           <br />
         </div>
       </div>
+      <br />
       <p className="descriptionTitle">Introduktion</p>
       <br />
       <p className="descriptionText">

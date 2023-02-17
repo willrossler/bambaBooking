@@ -16,7 +16,7 @@
   grid-area: 2 / 2 / 3 / 3;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
   .mobileFooter {
     display: none;
   }
