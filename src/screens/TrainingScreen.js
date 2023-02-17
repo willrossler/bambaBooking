@@ -73,7 +73,7 @@ const TrainingScreen = () => {
       <div className="trainingBanner desktopView">
         <p className="container" style={{ color: "#F5AAC9" }}>
           <span style={{ color: "#fff" }}>
-            VI SKAPAR SKRÄDDARSYDD <br />
+            VI SKAPAR <br /> SKRÄDDARSYDD <br />
             TRÄNING —
           </span>
           <br />
@@ -90,7 +90,7 @@ const TrainingScreen = () => {
           </span>
           SKRÄDDARSYDD TRÄNING —
           <br />
-          <span style={{ color: "" }}>JUST FÖR DIG</span>
+          <span style={{ color: "#F5AAC9" }}>JUST FÖR DIG</span>
         </p>
         <img src={trainingMobile} />
       </div>

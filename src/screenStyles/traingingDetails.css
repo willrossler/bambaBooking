@@ -25,6 +25,7 @@
   font-size: 14px;
   color: #fff;
   line-height: 16.8px;
+  margin: 0;
 }
 
 .descriptionTitleMobile {
@@ -32,8 +33,6 @@
   line-height: 16.8px;
   font-weight: 500;
   color: #f5aac9;
-  margin-top: 30px;
-  margin-bottom: 16px;
 }
 
 .boxerBannerContainer {
