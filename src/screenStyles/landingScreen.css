@@ -1,3 +1,29 @@
+.top-left-svg {
+  position: absolute;
+  width: 35%;
+  top: 170px;
+  left: 0;
+  opacity: 0.2;
+}
+
+.bottom-right-svg {
+  position: absolute;
+  width: 35%;
+  transform: rotate(180deg);
+  bottom: -80%;
+  right: 0;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.backgroundCont {
+  background-image: url("../assets/logos/bLogoNew.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center 30px;
+  width: 100%;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -9,64 +35,53 @@
   background-color: #fff;
   text-align: center;
 }
-
-.bgDivTwo {
-  transform: rotate(180deg);
-  z-index: 0;
-}
-
-.bLogoBG1 {
-  display: flex;
-  position: absolute;
-  opacity: 0.2;
-  width: 825px;
-  height: 1037px;
-  padding-top: 40px;
-}
-.bLogoBG2 {
-  display: flex;
-  position: absolute;
-  opacity: 0.2;
-  width: 825px;
-  height: 1037px;
-  padding-bottom: 40px;
-}
-.textOne {
-  color: #fff;
-  font-size: 64px;
-  line-height: 76px;
-  margin-top: 80px;
-}
 .sectionWrapper {
   padding-bottom: 120px;
 }
-.desktop {
-  width: 660px;
-  height: 829px;
-  position: absolute;
-  opacity: 0.2;
-  margin-bottom: 50px;
-}
 
-.desktop2 {
-  width: 660px;
-  height: 829px;
-  position: absolute;
-  opacity: 0.2;
-  transform: rotate(180deg);
+.textOne {
+  color: #fff;
+  line-height: 78px;
+  font-size: 64px;
+  font-weight: 500;
+  margin-top: 80px;
 }
 
 .textTwo {
   color: #fff;
   font-size: 32px;
   line-height: 38px;
-  padding: 24px 0px 24px 0px;
   margin-bottom: 80px;
 }
-
+@media screen and (max-width: 1950px) {
+  .textOne {
+    color: #fff;
+    line-height: 57px;
+    font-size: 48px;
+    font-weight: 500;
+  }
+}
 @media screen and (max-width: 1400px) {
   .desktop {
     display: none;
+  }
+
+  .top-left-svg {
+    position: absolute;
+    width: 40%;
+    top: 170px;
+    left: 0;
+    opacity: 0.2;
+  }
+
+  .bottom-right-svg {
+    position: absolute;
+    width: 40%;
+    transform: rotate(180deg);
+    bottom: -70%;
+    right: 0;
+    opacity: 0.2;
+    z-index: 0;
   }
 
   .bLogoBG {
@@ -78,17 +93,31 @@
     padding-top: 40px;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1050px) {
+  .top-left-svg {
+    position: absolute;
+    width: 55%;
+    top: 170px;
+    left: 0;
+    opacity: 0.2;
+  }
+
+  .bottom-right-svg {
+    position: absolute;
+    width: 55%;
+    transform: rotate(180deg);
+    bottom: -40%;
+    right: 0;
+    opacity: 0.2;
+    z-index: 0;
+  }
+
   .bLogoBG {
     width: 400px;
   }
   .textOne {
     font-size: 50px;
     line-height: 50px;
-  }
-
-  .textTwo {
-    margin-bottom: 40px;
   }
 
   .top-left-logo img {
@@ -110,17 +139,13 @@
     left: 8%;
   }
 
-  .textTwo {
-    margin-bottom: 30px;
-  }
-
   .sectionWrapper {
     padding: 0 !important;
   }
   .textOne {
     font-size: 46px;
     line-height: 44px;
-    margin-top: 40px;
+    margin-top: 60px;
   }
 }
 @media screen and (max-width: 769px) {
@@ -128,11 +153,9 @@
     padding: 0 !important;
   }
   .textOne {
-    font-size: 38px;
+    font-size: 32px;
+    line-height: 38px;
     margin-top: 20px;
-  }
-  .textTwo {
-    margin-bottom: 20px;
   }
 }
 
@@ -147,6 +170,8 @@
   }
 
   .textTwo {
+    font-size: 16px;
+    line-height: 19.2px;
     margin-bottom: 20px;
   }
 
@@ -160,39 +185,19 @@
   }
 
   .textOne {
-    font-size: 34px;
+    font-size: 32px;
     line-height: 38px;
-    margin-top: 20px;
-  }
-  .textTwo {
-    font-size: 19px;
-    line-height: 19px;
-    padding-top: 0;
-    margin-bottom: 20px;
+    margin-top: 60px;
   }
 
   .sectionWrapper {
     padding: 0 !important;
-  }
-
-  .bLogoBG {
-    display: flex;
-    position: absolute;
-    opacity: 0.2;
-    width: 430px;
-    height: 550px;
-    padding-top: 40px;
-    padding-bottom: 20px;
   }
 }
 
 /* iphone 12 size  */
 @media screen and (max-width: 400px) {
   .desktop {
-    display: none;
-  }
-
-  .break {
     display: none;
   }
 
@@ -208,25 +213,13 @@
   .textOne {
     font-size: 32px;
     line-height: 38px;
-    margin-top: 20px;
   }
   .textTwo {
     font-size: 16px;
     line-height: 19px;
-    padding-top: 0;
   }
 
   .sectionWrapper {
     padding: 0 !important;
-  }
-
-  .bLogoBG {
-    display: flex;
-    position: absolute;
-    opacity: 0.2;
-    width: 390px;
-    height: 500px;
-    padding-top: 40px;
-    padding-bottom: 20px;
   }
 }

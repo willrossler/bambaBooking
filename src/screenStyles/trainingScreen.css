@@ -8,12 +8,13 @@
   width: 100%;
   display: flex;
   align-items: center;
+  margin-bottom: 100px;
 }
 
 .trainingBanner p {
   color: #f5aac9;
-  line-height: 60.8px;
-  font-size: 52px;
+  line-height: 57px;
+  font-size: 48px;
   font-weight: 500;
 }
 
@@ -35,7 +36,6 @@
 .trainingLinks {
   padding-bottom: 10%;
   font-weight: 500;
-  padding-top: 80px;
 }
 
 /* SCREEN SIZES */
@@ -43,12 +43,13 @@
 @media screen and (max-width: 1950px) {
   .trainingBanner {
     height: 600px;
+    margin-bottom: 100px;
   }
 
   .trainingBanner p {
     color: #f5aac9;
-    line-height: 52px;
-    font-size: 44px;
+    line-height: 57px;
+    font-size: 48px;
     font-weight: 500;
   }
 }
@@ -63,8 +64,8 @@
 
   .trainingBanner p {
     color: #f5aac9;
-    line-height: 52px;
-    font-size: 44px;
+    line-height: 45px;
+    font-size: 40px;
     font-weight: 500;
   }
 }

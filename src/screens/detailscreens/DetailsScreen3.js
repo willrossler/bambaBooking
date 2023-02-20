@@ -87,7 +87,7 @@ const DetailsScreen3 = () => {
 
   return (
     <>
-      <Container style={{ marginTop: "40px" }} className="desktopView">
+      <Container style={{ marginTop: "80px" }} className="desktopView">
         <Row className="d-flex">
           <Col style={{ paddingRight: "5rem" }} xs={12} md={6}>
             <div>

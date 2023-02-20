@@ -1,9 +1,5 @@
 import React from "react";
 
-import { Row, Col, Container } from "react-bootstrap";
-import { useEffect, useState } from "react";
-import { useLocation } from "react-router";
-
 const BoxingDetails = () => {
   return (
     <div>
@@ -20,10 +16,15 @@ const BoxingDetails = () => {
           <p>— Introduktion (ett pass)</p>
           <br />
           <p className="descriptionTitle" style={{ color: "#fff" }}>
-            All träningsupplägg är tillgängliga som presentkort.
+            Alla träningsupplägg är tillgängliga som presentkort.
           </p>
         </div>
       </div>
+      <br />
+
+      <hr />
+      <br />
+
       <br />
       <p className="descriptionTitle">Introduktion</p>
       <br />
@@ -97,6 +98,7 @@ const BoxingDetails = () => {
         fysiska och mentala utmaningen och frigörandet av att slå något hårt
         bidrar alla till de mentala hälsofördelarna med boxningspass:
       </p>
+      <br />
       <ul className="descriptionText" style={{ marginBottom: "30px" }}>
         <li> Minska stress och andra negativa känslor</li>
         <li>Hitta känslomässig befrielse i en säker miljö</li>

@@ -24,9 +24,7 @@ const HomeScreen = () => {
           </span>
           VÅR DRIVKRAFT
           <br />
-          <span style={{ color: "#fff", fontSize: "24px" }}>
-            FYSISKT — MENTALT — SPIRITUELLT
-          </span>
+          <span className="subText">FYSISKT — MENTALT — SPIRITUELLT</span>
         </p>
       </div>
 

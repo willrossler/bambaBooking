@@ -49,9 +49,10 @@ const ShopScreen = () => {
           ) : (
             <p
               className="visaMer"
+              style={{ marginTop: "10px" }}
               onClick={() => setShowFullDescriptionAbbe(true)}
             >
-              Läs mer...
+              Läs mer
             </p>
           )}
           {showFullDescriptionJocke ? <JockePrez /> : <JockeShort />}

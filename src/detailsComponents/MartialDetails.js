@@ -4,7 +4,9 @@ const MartialDetails = () => {
   return (
     <div>
       <div style={{}} className="trainingForms">
-        <h3>Träningsformer</h3>
+        <p className="descriptionTitle" style={{ color: "#fff" }}>
+          Träningsformer
+        </p>
         <br />
         <div>
           <p>— Klasser (upp till 12 personer)</p>
@@ -13,11 +15,14 @@ const MartialDetails = () => {
           <p>— Testa på (tre pass för en komplett genomgång)</p>
           <p>— Introduktion (ett pass)</p>
           <br />
-          <p style={{ fontWeight: "500" }}>
-            All träningsupplägg är tillgängliga som presentkort.
+          <p className="descriptionTitle" style={{ color: "#fff" }}>
+            Alla träningsupplägg är tillgängliga som presentkort.
           </p>
         </div>
       </div>
+      <br />
+      <hr />
+      <br />
       <br />
       <p className="descriptionTitle">Introduktion</p>
       <br />
