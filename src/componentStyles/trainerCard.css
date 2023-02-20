@@ -3,7 +3,9 @@
   height: 185px;
   border-radius: 50%;
 }
-
+.trainerCard {
+  margin-bottom: 30px;
+}
 hr {
   color: #fff;
   opacity: 0.2;

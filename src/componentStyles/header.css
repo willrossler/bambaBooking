@@ -132,9 +132,9 @@
   }
 }
 @media screen and (max-width: 430px) {
-  .navbar > .container {
+  body > div.offcanvas-lg.offcanvas-start.show {
+    width: 100dvh;
   }
-
   .navbar {
     padding: 24px 0px 24px 0px;
     height: 82px;
