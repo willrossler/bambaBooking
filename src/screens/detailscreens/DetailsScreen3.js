@@ -168,7 +168,7 @@ const DetailsScreen3 = () => {
         <div className="mobileTrainerGrid">
           <TrainerCardAbbe />
           <TrainerCardJocke />
-          <TrainerCardMartin />
+          {location.pathname !== "/boxing" && <TrainerCardMartin />}
         </div>
       </Container>
     </>
