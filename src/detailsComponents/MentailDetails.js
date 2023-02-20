@@ -3,12 +3,12 @@ import React from "react";
 const MentailDetails = () => {
   return (
     <div>
-      <div className="trainingForms">
+      <div style={{}} className="trainingForms">
         <p className="descriptionTitle" style={{ color: "#fff" }}>
           Träningsformer
         </p>
         <br />
-        <div className="">
+        <div>
           <p>— Klasser (upp till 12 personer)</p>
           <p>— Mindre grupper (upp till 5 personer)</p>
           <p>— Personal training (one on one)</p>
@@ -16,11 +16,13 @@ const MentailDetails = () => {
           <p>— Introduktion (ett pass)</p>
           <br />
           <p className="descriptionTitle" style={{ color: "#fff" }}>
-            All träningsupplägg är tillgängliga som presentkort.
+            Alla träningsupplägg är tillgängliga som presentkort.
           </p>
         </div>
       </div>
-      <br />§<p className="descriptionTitle">Introduktion</p>
+      <br />
+      <hr />
+      <br />
       <br />
       <p className="descriptionText">
         Många träningsentusiaster och idrottsutövare har börjat inse att mental

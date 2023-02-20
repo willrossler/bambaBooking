@@ -148,13 +148,10 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .textOne {
-  }
-
+@media screen and (max-width: 780px) {
   .bookingCard {
-    height: 253px;
-    width: 253px;
+    height: 343px;
+    width: 343px;
     border: none;
     border-radius: 0;
   }

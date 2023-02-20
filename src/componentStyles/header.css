@@ -83,16 +83,20 @@
   transition: all 0.2s ease-in-out !important;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 2000px) {
   #hoverLink {
     color: #fff;
     font-size: 14px;
     font-weight: 500;
   }
 
+  .navbar {
+    height: 90px;
+  }
+
   .active-link {
     border-bottom: 4px solid #3c469c;
-    padding-bottom: 24px;
+    padding-bottom: 18px;
   }
 
   .bambaLogo {
@@ -140,6 +144,7 @@
   .bambaLogo {
     width: 114px;
     height: 26px;
+    margin-bottom: 1px;
   }
 }
 
@@ -153,5 +158,6 @@
   .bambaLogo {
     width: 114px;
     height: 26px;
+    margin-bottom: 1px;
   }
 }

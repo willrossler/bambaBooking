@@ -3,7 +3,10 @@ import React from "react";
 const BoxingMobileDetails = () => {
   return (
     <>
-      <div className="trainingForms " style={{ marginTop: "30px" }}>
+      <div
+        className="trainingForms "
+        style={{ marginTop: "30px", marginBottom: "10px" }}
+      >
         <h3>Träningsformer</h3>
         <div>
           <p>— Klasser (upp till 12 personer)</p>
@@ -13,10 +16,14 @@ const BoxingMobileDetails = () => {
           <p>— Introduktion (ett pass)</p>
           <br />
           <p style={{ fontWeight: "500" }}>
-            All träningsupplägg är tillgängliga som presentkort.
+            Alla träningsupplägg är tillgängliga som presentkort.
           </p>
         </div>
       </div>
+      <br />
+
+      <hr style={{ margin: "0" }} />
+      <br />
       <br />
 
       <p className="descriptionTitleMobile">Introduktion</p>

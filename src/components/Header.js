@@ -44,8 +44,8 @@ function Header() {
       expand="lg"
       className="navbar navbar-dark"
     >
-      {/* todo synka logans med text-start genom länkar och knapp - CHECK */}
-      {/* todo kolla transition för active link */}
+      {/*  Full bredd på mobilmeny todo  */}
+      {/* 14px länkar och BOOK i näst största - höjd header = 90px */}
       <Container>
         <Navbar.Brand>
           {/* logotyp storlek */}

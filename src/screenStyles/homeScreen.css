@@ -23,6 +23,11 @@
   font-weight: 500;
 }
 
+.subText {
+  font-size: 24px;
+  color: #fff;
+}
+
 /* ASFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDFDAFADSFDASFADSFDSAFDSFDA */
 .homeBannerMobile {
   position: relative;
@@ -83,18 +88,22 @@
     height: 500px;
   }
 
+  .subText {
+    font-size: 20px;
+  }
+
   .homeBanner p {
     color: #f5aac9;
     line-height: 45px;
     font-size: 40px;
     font-weight: 500;
   }
-}
-@media screen and (max-width: 1200px) {
   .homeTitle {
     font-size: 24px;
     line-height: 28px;
 
     color: #fff;
   }
+}
+@media screen and (max-width: 1200px) {
 }
