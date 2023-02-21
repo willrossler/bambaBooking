@@ -9,11 +9,16 @@ const TrainerCardJocke = () => {
         <img src={jockePic} alt="" className="user-image" />
         <hr />
         <div className="trainerCardP">
-          <p style={{ fontWeight: "500" }}>Joakim Karlsson</p>
-          <p style={{ opacity: "0.5", fontWeight: "400" }}>Personal Trainer</p>
+          <p>Joakim Karlsson</p>
+          <p style={{ opacity: "0.5", fontWeight: "400" }}>Personlig Tränare</p>
           <p style={{ opacity: "0.5", fontWeight: "400" }}> — </p>
-          <p style={{ fontWeight: "400" }}>jocke@bamba.se</p>
-          <p style={{ fontWeight: "400" }}>+467 012 345 67</p>
+          <a href="mailto:email@example.com">
+            <p style={{ fontWeight: "400" }}>jocke@bamba.se</p>
+          </a>
+
+          <a href="tel:+1234567890">
+            <p style={{ fontWeight: "400" }}>+467 012 345 67</p>
+          </a>
         </div>
       </div>
     </div>

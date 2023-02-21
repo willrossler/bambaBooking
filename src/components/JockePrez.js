@@ -17,7 +17,7 @@ const JockePrez = () => {
         <p className="descriptionTextMobile" style={{ fontWeight: "500" }}>
           Personlig Tränare
         </p>
-        <hr style={{}} className="pinkHr" />
+        <hr style={{}} className="aboutUsHR" />
         {/* <hr style={{ color: "#fff", opacity: "0.2" }} /> */}
 
         <p className="descriptionTextMobile">

@@ -8,11 +8,15 @@ const AbbeDesktop = () => {
         <Col style={{ paddingRight: "5rem" }} xs={12} md={6}>
           <div>
             <h1 className="title">Abbe Joof</h1>
+            <hr
+              style={{ marginTop: "20px", marginBottom: "60px" }}
+              className="pinkHr"
+            />
             <p className="descriptionText" style={{ fontWeight: "500" }}>
               Ägare + Personlig Tränare
             </p>
-            <hr className="pinkHr" />
-
+            <br />
+            <br />
             <p className="descriptionText">
               Jag är dubbel VM-medaljör i thaiboxning, före detta socialarbetare
               och arbetar som personlig tränare och coach. Jag var med i SVT:s

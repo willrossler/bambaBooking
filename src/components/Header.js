@@ -158,7 +158,7 @@ function Header() {
                   }
                 >
                   {" "}
-                  OM OSS
+                  OM&nbsp;OSS
                 </Link>
               </Nav.Link>
 
@@ -212,15 +212,17 @@ function Header() {
 
               {/* MOBILE BUTTON AND TEXT */}
 
-              <Link
-                className="mobileButton"
-                onClick={handleClose}
-                to="/booking"
-              >
-                <Button className="d-lg-none mobileBtn">
-                  <p>BOKA</p>
-                </Button>
-              </Link>
+              <div style={{ width: "100%" }}>
+                <Link
+                  className="mobileButton"
+                  onClick={handleClose}
+                  to="/booking"
+                >
+                  <Button className="d-lg-none btn mobileBtn">
+                    <p>BOKA</p>
+                  </Button>
+                </Link>
+              </div>
 
               {/* todo markera träning i meny när man är i sub-kategorier */}
               <div style={{ width: "100%" }} className="d-lg-none bottomInfo">

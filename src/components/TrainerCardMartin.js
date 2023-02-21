@@ -8,11 +8,16 @@ const TrainerCardMartin = () => {
         <img src={martinPic} alt="" className="user-image" />
         <hr />
         <div className="trainerCardP">
-          <p style={{ fontWeight: "500" }}>Martin Pettersson</p>
-          <p style={{ opacity: "0.5", fontWeight: "400" }}>Personal Trainer</p>
+          <p>Martin Pettersson</p>
+          <p style={{ opacity: "0.5", fontWeight: "400" }}>Personlig tränare</p>
           <p style={{ opacity: "0.5", fontWeight: "400" }}> — </p>
-          <p style={{ fontWeight: "400" }}>martin@bamba.se</p>
-          <p style={{ fontWeight: "400" }}>+467 012 345 67</p>
+          <a href="mailto:martin@bambaostermalm.se">
+            <p style={{ fontWeight: "400" }}>martin@bamba.se</p>
+          </a>
+
+          <a href="tel:+1234567890">
+            <p style={{ fontWeight: "400" }}>+467 012 345 67</p>
+          </a>
         </div>
       </div>
     </div>

@@ -29,7 +29,7 @@ const ShopScreen = () => {
 
   return (
     <>
-      <Container style={{ marginTop: "100px" }} className="desktopView">
+      <Container style={{ marginTop: "80px" }} className="desktopView">
         <AbbeDesktop />
         <JockeDesktop />
         <MartinDesktop />
@@ -63,7 +63,7 @@ const ShopScreen = () => {
               className="visaMer"
               onClick={() => setShowFullDescriptionJocke(false)}
             >
-              Show less
+              Visa mindre
             </p>
           ) : (
             <p
@@ -71,7 +71,7 @@ const ShopScreen = () => {
               style={{ marginTop: "10px" }}
               onClick={() => setShowFullDescriptionJocke(true)}
             >
-              Show more
+              Läs mer
             </p>
           )}
           {showFullDescriptionMartin ? <MartinPrez /> : <MartinShort />}
@@ -80,7 +80,7 @@ const ShopScreen = () => {
               className="visaMer"
               onClick={() => setShowFullDescriptionMartin(false)}
             >
-              Show less
+              Visa mindre
             </p>
           ) : (
             <p
@@ -88,7 +88,7 @@ const ShopScreen = () => {
               style={{ marginTop: "10px" }}
               onClick={() => setShowFullDescriptionMartin(true)}
             >
-              Show more
+              Läs mer
             </p>
           )}
           {showFullDescriptionNajmedin ? <NajPrez /> : <NajShort />}
@@ -97,7 +97,7 @@ const ShopScreen = () => {
               className="visaMer"
               onClick={() => setShowFullDescriptionNajmedin(false)}
             >
-              Show less
+              Visa mindre
             </p>
           ) : (
             <p
@@ -105,7 +105,7 @@ const ShopScreen = () => {
               style={{ marginTop: "10px" }}
               onClick={() => setShowFullDescriptionNajmedin(true)}
             >
-              Show more
+              Läs mer
             </p>
           )}
         </div>

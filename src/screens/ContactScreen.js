@@ -114,21 +114,40 @@ const ContactScreen = () => {
     <>
       {/* DESKTOP VIEW  */}
 
-      <div style={{ marginTop: "100px" }} className="desktopView container">
+      <div style={{ marginTop: "80px" }} className="desktopView container">
         <section>
           <div>
             <div
               style={{ marginBottom: "60px" }}
-              className="d-flex justify-content-between pb-5 pt-5 "
+              className="d-flex justify-content-between pb-5"
             >
               <div style={{ paddingTop: "3em", paddingRight: "22%" }}>
-                <h1 className="title">
-                  {/* kolla avstånd mellan streck todo */}
-                  KONTAKT
-                </h1>
+                <h1 className="title">KONTAKT</h1>
                 <hr className="pinkHr" />
 
-                <ContactInfo />
+                <div className="col text-start contactScreenInfo">
+                  <p>Bamba</p>
+                  <p style={{ opacity: "0.5" }}>Lützengatan&nbsp;10</p>
+
+                  <p style={{ opacity: "0.5" }}>11520&nbsp;Stockholm</p>
+                  <p style={{ opacity: "0.5" }}>Sweden</p>
+                  <br />
+
+                  <a href="mailto:info@bambaostermalm.se">
+                    <p>
+                      {" "}
+                      <span>info@bambaostermalm.se</span>
+                    </p>
+                  </a>
+                  <a href="www.bambaostermalm.se">
+                    <p>www.bambaostermalm.se</p>
+                  </a>
+                  <br />
+
+                  <a href="https://www.instagram.com/bambaostermalm/">
+                    <p>Instagram@bambaostermalm</p>
+                  </a>
+                </div>
               </div>
               <MapComponent />
             </div>
