@@ -99,7 +99,7 @@ const HomeScreen = () => {
               erfarenheter och kunskap, träna livet ur er och skratta
               tillsammans. <br />
               <br />
-              “Större än solo, större än vi, genom träning växer vi!”{" "}
+              “Större än solo, större än vi, genom träning växer vi!”.{" "}
             </p>
           </div>
         </div>
@@ -182,7 +182,7 @@ const HomeScreen = () => {
           men allra främst i mötet mellan människor, något vi både eftersträvar
           att skapa och uppmuntrar. Möt nya vänner, dela erfarenheter och
           kunskap, träna livet ur er och skratta tillsammans. “Större än solo,
-          större än vi, genom träning växer vi”{" "}
+          större än vi, genom träning växer vi”.{" "}
         </p>
         <br />
       </div>

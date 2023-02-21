@@ -37,6 +37,8 @@ const ShopScreen = () => {
       </Container>
 
       <Container className="mobileView">
+        <hr style={{ margin: "0" }} />
+
         <div>
           {showFullDescriptionAbbe ? <AbbePrez /> : <AbbeShort />}
           {showFullDescriptionAbbe ? (
@@ -66,6 +68,7 @@ const ShopScreen = () => {
           ) : (
             <p
               className="visaMer"
+              style={{ marginTop: "10px" }}
               onClick={() => setShowFullDescriptionJocke(true)}
             >
               Show more
@@ -82,6 +85,7 @@ const ShopScreen = () => {
           ) : (
             <p
               className="visaMer"
+              style={{ marginTop: "10px" }}
               onClick={() => setShowFullDescriptionMartin(true)}
             >
               Show more
@@ -98,6 +102,7 @@ const ShopScreen = () => {
           ) : (
             <p
               className="visaMer"
+              style={{ marginTop: "10px" }}
               onClick={() => setShowFullDescriptionNajmedin(true)}
             >
               Show more

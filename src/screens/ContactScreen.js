@@ -124,7 +124,7 @@ const ContactScreen = () => {
               <div style={{ paddingTop: "3em", paddingRight: "22%" }}>
                 <h1 className="title">
                   {/* kolla avstånd mellan streck todo */}
-                  LOCATION
+                  KONTAKT
                 </h1>
                 <hr className="pinkHr" />
 
@@ -161,7 +161,7 @@ const ContactScreen = () => {
         <section className="d-flex flex-column container">
           <hr style={{ margin: "0" }} />
           <h1 style={{ marginTop: "40px" }} className="title">
-            LOCATION
+            KONTAKT
             <hr className="pinkHrMobile" />
           </h1>
           <img

@@ -6,7 +6,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
-
+import { Button } from "react-bootstrap";
 import "../componentStyles/mobileMenuStyles.css";
 import "../componentStyles/header.css";
 
@@ -212,18 +212,18 @@ function Header() {
 
               {/* MOBILE BUTTON AND TEXT */}
 
-              <button className="d-lg-none btn mobileButton">
-                <Link
-                  className="mobileButton"
-                  onClick={handleClose}
-                  to="/booking"
-                >
-                  BOKA
-                </Link>
-              </button>
+              <Link
+                className="mobileButton"
+                onClick={handleClose}
+                to="/booking"
+              >
+                <Button className="d-lg-none mobileBtn">
+                  <p>BOKA</p>
+                </Button>
+              </Link>
 
               {/* todo markera träning i meny när man är i sub-kategorier */}
-              <div className="d-lg-none container bottomInfo">
+              <div style={{ width: "100%" }} className="d-lg-none bottomInfo">
                 <div class="d-flex align-items-end  ">
                   <p
                     className="text-end"
