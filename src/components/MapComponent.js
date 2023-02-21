@@ -1,10 +1,9 @@
 import React from "react";
 import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
-import customMarker from "../assets/logos/marker.svg";
 import "../componentStyles/mapStyles.css";
 
 const MapComponent = () => {
-  const styles = [
+  const mapStyles = [
     {
       featureType: "administrative",
       elementType: "labels.text.fill",
@@ -102,20 +101,24 @@ const MapComponent = () => {
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: "AIzaSyBo6BuIHPsmjbTKwZIWg0mPpohgu3JHqow",
   });
+
   const position = { lat: 59.33816952392279, lng: 18.092797456516912 };
-  if (!isLoaded) return <div>LOADING MAP...</div>;
+  if (!isLoaded) return <div>Laddar Google Maps...</div>;
   return (
     <>
       <GoogleMap
         className=""
         zoom={18}
+        options={{ styles: mapStyles }}
         center={position}
         mapContainerStyle={{
           width: "100%",
-          height: "550px",
+          height: "500px",
         }}
       >
-        <Marker position={position} options={{ icon: customMarker }}></Marker>
+        <Marker
+          position={{ lat: 59.33816952392279, lng: 18.092797456516912 }}
+        />
       </GoogleMap>
     </>
   );
