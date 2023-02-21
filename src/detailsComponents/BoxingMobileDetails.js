@@ -7,7 +7,8 @@ const BoxingMobileDetails = () => {
         className="trainingForms "
         style={{ marginTop: "30px", marginBottom: "10px" }}
       >
-        <h3>Träningsformer</h3>
+        <p style={{ fontSize: "14px", fontWeight: "500" }}>Träningsformer</p>
+        <br />
         <div>
           <p>— Klasser (upp till 12 personer)</p>
           <p>— Mindre grupper (upp till 5 personer)</p>
@@ -15,7 +16,7 @@ const BoxingMobileDetails = () => {
           <p>— Testa på (tre pass för en komplett genomgång)</p>
           <p>— Introduktion (ett pass)</p>
           <br />
-          <p style={{ fontWeight: "500" }}>
+          <p style={{ fontSize: "14px", fontWeight: "500" }}>
             Alla träningsupplägg är tillgängliga som presentkort.
           </p>
         </div>

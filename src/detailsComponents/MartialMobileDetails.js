@@ -3,8 +3,12 @@ import React from "react";
 const MartialMobileDetails = () => {
   return (
     <>
-      <div className="trainingForms " style={{ marginTop: "30px" }}>
-        <h3>Träningsformer</h3>
+      <div
+        className="trainingForms "
+        style={{ marginTop: "30px", marginBottom: "10px" }}
+      >
+        <p style={{ fontSize: "14px", fontWeight: "500" }}>Träningsformer</p>
+        <br />
         <div>
           <p>— Klasser (upp till 12 personer)</p>
           <p>— Mindre grupper (upp till 5 personer)</p>
@@ -12,12 +16,17 @@ const MartialMobileDetails = () => {
           <p>— Testa på (tre pass för en komplett genomgång)</p>
           <p>— Introduktion (ett pass)</p>
           <br />
-          <p style={{ fontWeight: "500" }}>
-            All träningsupplägg är tillgängliga som presentkort.
+          <p style={{ fontSize: "14px", fontWeight: "500" }}>
+            Alla träningsupplägg är tillgängliga som presentkort.
           </p>
         </div>
       </div>
       <br />
+
+      <hr style={{ margin: "0" }} />
+      <br />
+      <br />
+
       <p className="descriptionTitleMobile">Introduktion</p>
       <p className="descriptionTextMobile" style={{}}>
         Kampsport är samlingsnamnet för ett antal kontaktsporter där två

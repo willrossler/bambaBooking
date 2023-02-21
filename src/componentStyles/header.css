@@ -65,6 +65,19 @@
   transition: all 0.2s ease-in-out;
 }
 
+.mobileBtn {
+  width: 100%;
+  border-radius: 0;
+  color: #000;
+  background-color: #d9d9d9;
+  height: 50px;
+}
+.mobileBtn p {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+
 #bookingBtn {
   width: 147px;
   height: 50px;
@@ -77,10 +90,12 @@
   margin-left: 7em;
 }
 
-#bookingBtn:hover {
-  background-color: #f5aac9 !important;
-  color: #000;
-  transition: all 0.2s ease-in-out !important;
+@media (min-width: 767px) {
+  #bookingBtn:hover {
+    background-color: #f5aac9 !important;
+    color: #000;
+    transition: all 0.2s ease-in-out !important;
+  }
 }
 
 @media screen and (max-width: 2000px) {
