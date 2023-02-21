@@ -5,7 +5,12 @@
   height: 800px;
   width: 100%;
 }
-
+.contactScreenInfo p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 21.6px;
+  margin: 0;
+}
 .contactBanner p {
   color: #f5aac9;
   line-height: 76.8px;

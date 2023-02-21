@@ -14,12 +14,15 @@ const JockeDesktop = () => {
         <Col style={{ paddingLeft: "5rem" }} xs={12} md={6}>
           <div>
             <h1 className="title">Joakim Karlsson</h1>
+            <hr
+              style={{ marginTop: "20px", marginBottom: "60px" }}
+              className="pinkHr"
+            />
             <p className="descriptionText" style={{ fontWeight: "500" }}>
               Personlig Tränare
             </p>
-            <hr style={{}} className="pinkHr" />
-            {/* <hr style={{ color: "#fff", opacity: "0.2" }} /> */}
-
+            <br />
+            <br />
             <p className="descriptionText">
               Träning har varit en konstant i mitt liv, allt från hockey,
               fotboll till kampsport. Jag har gått ett trettiotal matcher som

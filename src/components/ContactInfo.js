@@ -11,13 +11,20 @@ const ContactInfo = () => {
       <p style={{ opacity: "0.5" }}>Sweden</p>
       <br />
 
-      <p>info@bambaostermalm.se</p>
-      <p>www.bambaostermalm.se</p>
+      <a href="mailto:info@bambaostermalm.se">
+        <p>
+          {" "}
+          <span>info@bambaostermalm.se</span>
+        </p>
+      </a>
+      <a href="www.bambaostermalm.se">
+        <p>www.bambaostermalm.se</p>
+      </a>
       <br />
 
-      <p>
-        <span>Instagram@bambaostermalm</span>
-      </p>
+      <a href="https://www.instagram.com/bambaostermalm/">
+        <p>Instagram@bambaostermalm</p>
+      </a>
     </div>
   );
 };

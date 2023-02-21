@@ -21,8 +21,12 @@ const MentailDetails = () => {
         </div>
       </div>
       <br />
+
       <hr />
       <br />
+
+      <br />
+      <p className="descriptionTitle">Introduktion</p>
       <br />
       <p className="descriptionText">
         Många träningsentusiaster och idrottsutövare har börjat inse att mental
@@ -73,6 +77,7 @@ const MentailDetails = () => {
       <br />
       <p className="descriptionText">Fördelar med mental coaching:</p>
       <ul className="descriptionText" style={{ marginBottom: "30px" }}>
+        <br />
         <li>Ökad självmedvetenhet och självkontroll</li>
         <li>Förbättrad prestation och produktivitet</li>
         <li>Ökad kreativitet och problemlösningsförmåga</li>

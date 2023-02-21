@@ -47,12 +47,21 @@ const Footer = () => {
               </li>
               <br />
               <li>
-                <p>info@bambaostermalm.se</p>
-                <p>www.bambaostermalm.se</p>
+                <a href="mailto:info@bambaostermalm.se">
+                  <p>
+                    {" "}
+                    <span>info@bambaostermalm.se</span>
+                  </p>
+                </a>
+                <a href="www.bambaostermalm.se">
+                  <p>www.bambaostermalm.se</p>
+                </a>
               </li>
               <br />
               <li>
-                <p>Instagram@bambaostermalm</p>
+                <a href="https://www.instagram.com/bambaostermalm/">
+                  <p>Instagram@bambaostermalm</p>
+                </a>
               </li>
             </ul>
           </Col>
