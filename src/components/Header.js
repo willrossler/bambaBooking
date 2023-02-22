@@ -124,7 +124,7 @@ function Header() {
                     location.pathname === "/boxing" ||
                     location.pathname === "/weightlifting" ||
                     location.pathname === "/bootcamp" ||
-                    location.pathname === "/mentailtraining" ||
+                    location.pathname === "/mentaltraining" ||
                     location.pathname === "/martialarts" ||
                     location.pathname === "/personaltraining"
                       ? "d-none d-lg-inline active-link mx-3"

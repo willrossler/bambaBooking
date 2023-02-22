@@ -94,6 +94,7 @@ const MartialDetails = () => {
         bidrar alla till de mentala hälsofördelarna med boxningspass:
       </p>
       <ul className="descriptionText" style={{ marginBottom: "30px" }}>
+        <br />
         <li> Minska stress och andra negativa känslor</li>
         <li>Hitta känslomässig befrielse i en säker miljö</li>
         <li>Lyft upp ett dåligt humör efter en jobbig dag</li>

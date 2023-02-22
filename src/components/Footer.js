@@ -8,6 +8,7 @@ import { Container, Row, Col } from "react-bootstrap";
 const Footer = () => {
   const location = useLocation();
   const [footerColor, setfooterColor] = useState("black");
+
   useEffect(() => {
     if (location.pathname === "/booking") {
       setfooterColor("black");
@@ -30,15 +31,14 @@ const Footer = () => {
       <Container style={{ paddingTop: "40px" }} className="desktopView">
         <Row>
           <Col xs={12} md={6} style={{ display: "flex", flexDirection: "row" }}>
-            <img
-              style={{ marginRight: "15%" }}
-              className="footerLogo "
-              src={bLogo}
-            />
-
+            <Link style={{ marginRight: "15%" }} to="/">
+              <img className="footerLogo " src={bLogo} />
+            </Link>
             <ul className="list-unstyled h-100 text-start infoStylesFooter">
               <li>
-                <p>Bamba</p>
+                <Link to="/">
+                  <p id="hoverPink">Bamba</p>
+                </Link>
               </li>
               <li>
                 <p style={{ opacity: "0.5" }}>Lützengatan 10</p>
@@ -48,19 +48,19 @@ const Footer = () => {
               <br />
               <li>
                 <a href="mailto:info@bambaostermalm.se">
-                  <p>
+                  <p id="hoverPink">
                     {" "}
                     <span>info@bambaostermalm.se</span>
                   </p>
                 </a>
                 <a href="www.bambaostermalm.se">
-                  <p>www.bambaostermalm.se</p>
+                  <p id="hoverPink">www.bambaostermalm.se</p>
                 </a>
               </li>
               <br />
               <li>
                 <a href="https://www.instagram.com/bambaostermalm/">
-                  <p>Instagram@bambaostermalm</p>
+                  <p id="hoverPink">Instagram@bambaostermalm</p>
                 </a>
               </li>
             </ul>
@@ -70,28 +70,28 @@ const Footer = () => {
               <ul className="list-unstyled">
                 <li>
                   <Link to="/">
-                    <p>— Filosofi</p>
+                    <p id="hoverPink">— Filosofi</p>
                   </Link>
                 </li>
                 <li>
                   <Link to="/training">
-                    <p>— Träning </p>
+                    <p id="hoverPink">— Träning </p>
                   </Link>
                 </li>
                 <li>
                   <Link to="/contact">
                     {" "}
-                    <p>— Kontakt </p>
+                    <p id="hoverPink">— Kontakt </p>
                   </Link>
                 </li>
                 <li>
                   <Link to="/shop">
-                    <p> — Om oss</p>
+                    <p id="hoverPink"> — Om oss</p>
                   </Link>
                 </li>
                 <li>
                   <Link to="/booking">
-                    <p>— Boka</p>
+                    <p id="hoverPink">— Boka</p>
                   </Link>
                 </li>
               </ul>

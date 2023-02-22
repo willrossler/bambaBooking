@@ -23,15 +23,15 @@
 
 .descriptionTextMobile {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   color: #fff;
-  line-height: 16.8px;
+  line-height: 19.2px;
   margin: 0;
 }
 
 .descriptionTitleMobile {
-  font-size: 14px;
-  line-height: 16.8px;
+  font-size: 16px;
+  line-height: 19.2px;
   font-weight: 500;
   color: #f5aac9;
 }

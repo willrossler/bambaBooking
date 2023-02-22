@@ -16,6 +16,8 @@ hr {
   font-size: 18px;
   line-height: 21px;
   margin: 0;
+  opacity: 1;
+  transition: 0.2s ease-in-out;
 }
 /* @media screen and (max-width: 1800px) {
   .trainerCard p {
@@ -46,8 +48,8 @@ hr {
   }
   .trainerCard p {
     color: #fff;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 16px;
+    line-height: 19.2px;
     font-weight: 400;
     margin: 0;
   }
@@ -59,8 +61,8 @@ hr {
   }
   .trainerCard p {
     color: #fff;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 19.2px;
     font-weight: 400;
     margin: 0;
   }
@@ -72,8 +74,8 @@ hr {
   }
   .trainerCard p {
     color: #fff;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 19.2px;
     font-weight: 400;
     margin: 0;
   }
@@ -88,8 +90,8 @@ hr {
 @media screen and (max-width: 390px) {
   .trainerCard p {
     color: #fff;
-    font-size: 14px;
-    line-height: 16.8px;
+    font-size: 16px;
+    line-height: 19.2px;
     font-weight: 400;
     margin: 0;
   }

@@ -91,6 +91,7 @@ const WeightLiftDetails = () => {
         som du bygger muskler:
       </p>
       <ul className="descriptionText" style={{ marginBottom: "30px" }}>
+        <br />
         <li> Bättre självkänsla</li>
         <li>Bättre sömn av fysisk trötthet</li>
         <li>Minskad stress tack vare total närvaro under passen</li>

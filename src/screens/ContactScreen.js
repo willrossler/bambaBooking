@@ -121,7 +121,7 @@ const ContactScreen = () => {
               style={{ marginBottom: "60px" }}
               className="d-flex justify-content-between pb-5"
             >
-              <div style={{ paddingTop: "3em", paddingRight: "22%" }}>
+              <div style={{ paddingRight: "18%" }}>
                 <h1 className="title">KONTAKT</h1>
                 <hr className="pinkHr" />
 
@@ -134,18 +134,18 @@ const ContactScreen = () => {
                   <br />
 
                   <a href="mailto:info@bambaostermalm.se">
-                    <p>
+                    <p id="hoverPink">
                       {" "}
                       <span>info@bambaostermalm.se</span>
                     </p>
                   </a>
                   <a href="www.bambaostermalm.se">
-                    <p>www.bambaostermalm.se</p>
+                    <p id="hoverPink">www.bambaostermalm.se</p>
                   </a>
                   <br />
 
                   <a href="https://www.instagram.com/bambaostermalm/">
-                    <p>Instagram@bambaostermalm</p>
+                    <p id="hoverPink">Instagram@bambaostermalm</p>
                   </a>
                 </div>
               </div>
@@ -155,7 +155,7 @@ const ContactScreen = () => {
         </section>
         <section className=" ">
           <div className="container ">
-            <h1 className="title">PERSONAL TRAINERS</h1>
+            <h1 className="title">PERSONLIGA TRÄNARE</h1>
             <hr className="pinkHr" />
             {/* todo avstånd bilder enligt figma */}
             <div
