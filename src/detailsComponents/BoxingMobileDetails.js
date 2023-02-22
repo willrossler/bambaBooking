@@ -7,7 +7,11 @@ const BoxingMobileDetails = () => {
         className="trainingForms "
         style={{ marginTop: "30px", marginBottom: "10px" }}
       >
-        <p style={{ fontSize: "14px", fontWeight: "500" }}>Träningsformer</p>
+        <p
+          style={{ fontSize: "16px", lineHeight: "19.2px", fontWeight: "500" }}
+        >
+          Träningsformer
+        </p>
         <br />
         <div>
           <p>— Klasser (upp till 12 personer)</p>
@@ -16,7 +20,13 @@ const BoxingMobileDetails = () => {
           <p>— Testa på (tre pass för en komplett genomgång)</p>
           <p>— Introduktion (ett pass)</p>
           <br />
-          <p style={{ fontSize: "14px", fontWeight: "500" }}>
+          <p
+            style={{
+              fontSize: "16px",
+              lineHeight: "19.2px",
+              fontWeight: "500",
+            }}
+          >
             Alla träningsupplägg är tillgängliga som presentkort.
           </p>
         </div>
@@ -29,7 +39,7 @@ const BoxingMobileDetails = () => {
 
       <p className="descriptionTitleMobile">Introduktion</p>
 
-      <p className="descriptionTextMobile" style={{ marginTop: "20px" }}>
+      <p className="descriptionTextMobile" style={{}}>
         Boxningskonsten har trollbundit människor sen långt tillbaka i tiden.
         Allt från de dansande rörelserna till kraften och spänningen. Som
         träningsform har den kanske fått mer erkännande på senare år vilket vi

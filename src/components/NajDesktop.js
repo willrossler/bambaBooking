@@ -40,18 +40,6 @@ const NajDesktop = () => {
               en glasklar vision formas din personliga kompass som hjälper dig
               att klargöra syftet med nästa steg i ditt liv.
             </p>
-            <p className="descriptionText" style={{ fontWeight: "400" }}>
-              Specialicerad inom: kampsport, teknik, fys & löpning.
-            </p>
-            <ul
-              className="descriptionText"
-              style={{ marginBottom: "30px", lineHeight: "21px" }}
-            >
-              <li>Kampsport</li>
-              <li>Teknik</li>
-              <li>Fys</li>
-              <li>löpning</li>
-            </ul>
           </div>
         </Col>
       </Row>

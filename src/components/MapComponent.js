@@ -108,17 +108,15 @@ const MapComponent = () => {
     <>
       <GoogleMap
         className=""
-        zoom={18}
+        zoom={17}
         options={{ styles: mapStyles }}
         center={position}
         mapContainerStyle={{
           width: "100%",
-          height: "500px",
+          height: "550px",
         }}
       >
-        <Marker
-          position={{ lat: 59.33816952392279, lng: 18.092797456516912 }}
-        />
+        <Marker position={position} />
       </GoogleMap>
     </>
   );

@@ -44,8 +44,9 @@ const CampDetails = () => {
       </p>
       <br />
 
-      <p className="descriptionText">Text om fördelar kring gruppträning /</p>
+      <p className="descriptionText">Text om fördelar kring gruppträning </p>
       <ul className="descriptionText" style={{ marginBottom: "30px" }}>
+        <br />
         <li>
           Hjälper till att öka disciplinen och motivationen för att upprätthålla
           en regelbunden träningsrutin.

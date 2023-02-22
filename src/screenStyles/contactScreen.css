@@ -10,6 +10,8 @@
   font-size: 18px;
   line-height: 21.6px;
   margin: 0;
+  opacity: 1;
+  transition: 0.2s ease-in-out;
 }
 .contactBanner p {
   color: #f5aac9;
