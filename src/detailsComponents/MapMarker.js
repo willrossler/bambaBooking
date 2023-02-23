@@ -19,8 +19,6 @@ const MapMarker = () => {
     strokeWeight: 4,
     scale: 1.5,
   };
-
-  return <Pin icon={pinStyle} />;
 };
 
 export default MapMarker;
