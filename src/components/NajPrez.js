@@ -37,6 +37,7 @@ const NajPrez = () => {
           glasklar vision formas din personliga kompass som hjälper dig att
           klargöra syftet med nästa steg i ditt liv.
         </p>
+        <br />
         <p
           className="descriptionTitleMobile"
           style={{ fontWeight: "500", marginTop: "10px" }}
@@ -47,10 +48,10 @@ const NajPrez = () => {
           className="descriptionTextMobile"
           style={{ marginBottom: "30px", lineHeight: "21px" }}
         >
-          <li>Kampsport</li>
-          <li>Teknik</li>
-          <li>Fys</li>
-          <li>löpning</li>
+          <li>Styrketräning</li>
+          <li>Tyngdlyftning</li>
+          <li>Sportspecifik prestation</li>
+          <li>Öka muskelmassa</li>
         </ul>
       </div>
     </>
