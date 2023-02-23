@@ -60,10 +60,12 @@ const AbbeDesktop = () => {
               form av kampsport!
             </p>
             <br />
-            <p className="descriptionText" style={{ fontWeight: "400" }}>
+            <p className="descriptionTitle" style={{ fontWeight: "400" }}>
               Specialicerad inom:
             </p>
             <ul className="descriptionText" style={{ lineHeight: "21px" }}>
+              <br />
+
               <li>Thaiboxning</li>
               <li>Coaching</li>
               <li>Teknik</li>

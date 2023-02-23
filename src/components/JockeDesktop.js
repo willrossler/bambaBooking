@@ -46,13 +46,15 @@ const JockeDesktop = () => {
               ett hälsosammare liv
             </p>
             <br />
-            <p className="descriptionText" style={{ fontWeight: "400" }}>
+            <p className="descriptionTitle" style={{ fontWeight: "400" }}>
               Specialicerad inom: kampsport, teknik, fys & löpning.
             </p>
             <ul
               className="descriptionText"
               style={{ marginBottom: "30px", lineHeight: "21px" }}
             >
+              <br />
+
               <li>Kampsport</li>
               <li>Teknik</li>
               <li>Fys</li>

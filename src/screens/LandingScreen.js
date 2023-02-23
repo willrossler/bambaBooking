@@ -38,13 +38,13 @@ const LandingScreen = () => {
               fill="#F5AAC9"
             />
           </svg>
-          <div className=" ">
-            <div className="textOne " style={{}}>
+          <div>
+            <div className="textOne">
               HÄR FÖR ATT <br /> FORMA DITT NYA JAG
             </div>
             <br />
             <div style={{}} className=" textTwo">
-              PHYSICAL — MENTAL — SPIRITUAL
+              FYSISKT — MENTALT — SPIRITUELLT
             </div>
           </div>
 
@@ -72,9 +72,8 @@ const LandingScreen = () => {
             <div className="textOne h2" style={{}}>
               HÄR FÖR ATT <br /> FORMA DITT NYA JAG
             </div>
-            <br />
             <div style={{}} className=" textTwo h4">
-              PHYSICAL — MENTAL — SPIRITUAL
+              FYSISKT — MENTALT — SPIRITUELLT
             </div>
           </div>
 

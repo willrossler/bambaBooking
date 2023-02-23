@@ -38,13 +38,12 @@ const MartinDesktop = () => {
               noggrannhet i både utövande och träningsprogram.{" "}
             </p>
             <br />
-            <p className="descriptionText" style={{ fontWeight: "400" }}>
+            <p className="descriptionTitle" style={{ fontWeight: "400" }}>
               Specialicerad inom:
             </p>
-            <ul
-              className="descriptionText"
-              style={{ marginBottom: "30px", lineHeight: "21px" }}
-            >
+            <ul className="descriptionText" style={{ lineHeight: "21px" }}>
+              <br />
+
               <li>Styrketräning</li>
               <li>Tyngdlyftning</li>
               <li>Sportspecifik prestation</li>
