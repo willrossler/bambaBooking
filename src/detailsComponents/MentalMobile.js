@@ -1,42 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const MentalMobile = () => {
   return (
     <>
-      <div
-        className="trainingForms "
-        style={{ marginTop: "30px", marginBottom: "10px" }}
-      >
-        <p
-          style={{ fontSize: "16px", lineHeight: "19.2px", fontWeight: "500" }}
-        >
-          Träningsformer
-        </p>
-        <br />
-        <div>
-          <p>— Klasser (upp till 12 personer)</p>
-          <p>— Mindre grupper (upp till 5 personer)</p>
-          <p>— Personal training (one on one)</p>
-          <p>— Testa på (tre pass för en komplett genomgång)</p>
-          <p>— Introduktion (ett pass)</p>
-          <br />
-          <p
-            style={{
-              fontSize: "16px",
-              lineHeight: "19.2px",
-              fontWeight: "500",
-            }}
-          >
-            Alla träningsupplägg är tillgängliga som presentkort.
-          </p>
-        </div>
-      </div>
       <br />
-
-      <hr style={{ margin: "0" }} />
-      <br />
-      <br />
-
       <p className="descriptionTitleMobile">Introduktion</p>
 
       <p className="descriptionTextMobile">
@@ -84,7 +52,7 @@ const MentalMobile = () => {
       <br />
       <br />
 
-      <p className="descriptionTextMobile">mental:</p>
+      <p className="descriptionTitleMobile">Fördelar med mental coaching:</p>
       <br />
 
       <ul className="descriptionTextMobile" style={{ marginBottom: "30px" }}>
@@ -94,6 +62,10 @@ const MentalMobile = () => {
         <li>Bättre ledarskapsförmåga och samarbete</li>
         <li>Förbättrat känslomässigt välbefinnande och hälsa</li>
       </ul>
+
+      <p className="descriptionTitleMobile">
+        <Link style={{ color: "#fff" }}>Läs mer om vår mentala coach här </Link>
+      </p>
     </>
   );
 };
