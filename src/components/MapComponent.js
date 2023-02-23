@@ -1,5 +1,6 @@
 import React from "react";
 import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
+import MapMarker from "../detailsComponents/MapMarker";
 import "../componentStyles/mapStyles.css";
 
 const MapComponent = () => {
@@ -110,11 +111,11 @@ const MapComponent = () => {
     <>
       <GoogleMap
         zoom={17}
-        // options={{ styles: mapStyles }}
+        options={{ styles: mapStyles }}
         center={position}
         mapContainerClassName="mapStyleClass"
       >
-        <Marker position={position} />
+        <Marker position={position} icon={<MapMarker />} />
       </GoogleMap>
     </>
   );
