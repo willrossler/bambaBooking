@@ -123,15 +123,16 @@ const DetailsScreen3 = () => {
               <div className=" ">
                 {/* todo avstånd bilder enligt figma */}
                 <div className="d-flex flex-row justify-content-between">
-                  <div>
-                    <TrainerCardAbbe />
-                  </div>
-                  <div>
-                    <TrainerCardJocke />
-                  </div>
-                  <div>
+                  {location.pathname === "/weightlifting" && (
                     <TrainerCardMartin />
-                  </div>
+                  )}
+                  <TrainerCardAbbe />
+                  <TrainerCardJocke />
+                  {location.pathname !== "/boxing" &&
+                    location.pathname !== "/martialarts" &&
+                    location.pathname !== "/weightlifting" && (
+                      <TrainerCardMartin />
+                    )}
                 </div>
               </div>
             </div>
@@ -166,9 +167,12 @@ const DetailsScreen3 = () => {
         </div>
         <hr />
         <div className="mobileTrainerGrid">
+          {location.pathname === "/weightlifting" && <TrainerCardMartin />}
           <TrainerCardAbbe />
           <TrainerCardJocke />
-          {location.pathname !== "/boxing" && <TrainerCardMartin />}
+          {location.pathname !== "/boxing" &&
+            location.pathname !== "/martialarts" &&
+            location.pathname !== "/weightlifting" && <TrainerCardMartin />}
         </div>
       </Container>
     </>

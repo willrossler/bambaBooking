@@ -1,42 +1,32 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const MentailDetails = () => {
   return (
     <div>
-      <div style={{}} className="trainingForms">
-        <p className="descriptionTitle" style={{ color: "#fff" }}>
-          Träningsformer
-        </p>
-        <br />
-        <div>
-          <p>— Klasser (upp till 12 personer)</p>
-          <p>— Mindre grupper (upp till 5 personer)</p>
-          <p>— Personal training (one on one)</p>
-          <p>— Testa på (tre pass för en komplett genomgång)</p>
-          <p>— Introduktion (ett pass)</p>
-          <br />
-          <p className="descriptionTitle" style={{ color: "#fff" }}>
-            Alla träningsupplägg är tillgängliga som presentkort.
-          </p>
-        </div>
-      </div>
-      <br />
-
-      <hr />
-      <br />
-
-      <br />
       <p className="descriptionTitle">Introduktion</p>
       <br />
       <p className="descriptionText">
+        Kroppen och sinnet hör ihop och det är när vi känner kontakt med bägge
+        som vi brukar känna oss som mest tillfreds. Fysisk träning utan mental
+        träning är lite som att äta utan att riktigt någonsin bli mätt. Efter
+        ett pass kan du känna dig nöjdare för stunden, men dina eventuella
+        negativa tankespiraler återkommer dagen efter.
+        <br />
+        <br />
+        På BAMBA erbjuder vi livscoachning, oberoende av vad det är du anser att
+        du behöver stöd i så finner vi en väg för dig i det. Det spelar ingen
+        roll om du är en atlet som vill få hjälp med mental träning eller om du
+        behöver stöttning i ditt privatliv. Vi välkomnar allt och alla!
+        <br />
+        <br />
         Många träningsentusiaster och idrottsutövare har börjat inse att mental
         träning är lika viktig som fysisk träning. Mental träning handlar om att
         stärka sinnet genom olika tekniker såsom visualisering och medveten
         närvaro. Genom att integrera mental träning i din träningsrutin kan du
         förbättra din prestation, minska stress och öka ditt självförtroende. Vi
-        på BAMBA påminner dig om att mental träning är ett kraftfullt verktyg
-        som kan hjälpa dig att nå dina träningsmål och uppnå balans i livet, och
-        vi uppmuntrar dig att prova på det idag!
+        påminner dig om att mental träning är ett kraftfullt verktyg som kan
+        hjälpa dig att nå dina träningsmål och uppnå balans i livet, och vi
+        uppmuntrar dig att prova på det idag!
         <br />
         <br />
         När man har en stark tro på sig själv och sina förmågor, kan man ta på
@@ -55,8 +45,10 @@ const MentailDetails = () => {
         på ett mer konstruktivt sätt. Det kan innebära att man lär sig att
         identifiera och utmana negativa tankemönster, att använda
         avslappningsövningar och andningstekniker för att minska stressnivåer,
-        eller att utveckla en mer positiv syn på livet och sig själv. Dessa
-        färdigheter kan inte bara förbättra ens mentala hälsa, utan också
+        eller att utveckla en mer positiv syn på livet och sig själv.
+        <br />
+        <br />
+        Dessa färdigheter kan inte bara förbättra ens mentala hälsa, utan också
         förbättra ens relationer med andra människor och öka ens motivation och
         engagemang i livet. Som en följd kan man uppleva ökat välbefinnande och
         livskvalitet på ett mer övergripande plan.
@@ -85,6 +77,9 @@ const MentailDetails = () => {
         <li>Förbättrat känslomässigt välbefinnande och hälsa</li>
       </ul>
       <br />
+      <p className="descriptionTitle">
+        <Link style={{ color: "#fff" }}>Läs mer om vår mentala coach här </Link>
+      </p>
     </div>
   );
 };

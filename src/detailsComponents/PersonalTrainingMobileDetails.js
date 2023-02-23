@@ -14,11 +14,9 @@ const PersonalTrainingMobileDetails = () => {
         </p>
         <br />
         <div>
-          <p>— Klasser (upp till 12 personer)</p>
-          <p>— Mindre grupper (upp till 5 personer)</p>
-          <p>— Personal training (one on one)</p>
-          <p>— Testa på (tre pass för en komplett genomgång)</p>
-          <p>— Introduktion (ett pass)</p>
+          <p>— Personlig träning (en till en)</p>
+          <p>— Sluten mindre grupp (gruppträning upp till 5 personer)</p>
+
           <br />
           <p
             style={{
@@ -39,64 +37,34 @@ const PersonalTrainingMobileDetails = () => {
 
       <p className="descriptionTitleMobile">Introduktion</p>
       <p className="descriptionTextMobile">
+        Det fantastiska med personlig träning är att en av våra coacher viger
+        sin fulla kapacitet och den kunskap de besitter inom sina områden helt
+        åt dig och de mål du vill nå. Kanske vill du lära dig hur du lyfter
+        vikter rätt, bli bättre på slagteknik eller få bättre kondition - vi
+        hjälper dig dit. Det är både motiverande, utmanande och givande att
+        träna med en coach för du kommer inte undan dig själv, utan kommer
+        alltid peppas till utveckling.
+        <br />
+        <br />
         Personlig träning ger många fördelar för individer som söker förbättra
-        sin fysiska form och allmänna välbefinnande. En av de största fördelarna
-        med personlig träning är den individuella uppmärksamheten och de
-        personliga träningsplanerna. <br />
-        <br /> En personlig tränare tar hänsyn till en individs unika behov, mål
-        och fysiska förmågor för att skapa en träningsplan som är anpassad
-        specifikt för dem. Detta hjälper till att säkerställa att individen kan
-        nå sina träningsmål på ett säkert och effektivt sätt. Personliga tränare
-        ger också rådgivning och stöd, säkerställer att individer använder rätt
-        form och teknik under sina träningar, vilket minskar risken för skador.
+        sin fysiska form och allmänna välbefinnande. Vi tar hänsyn till ditt
+        unika behov, mål och fysiska förmågor för att skapa en träningsplan som
+        är anpassad specifikt för dig. Detta hjälper till att säkerställa att du
+        når dina träningsmål på ett säkert och effektivt sätt.
         <br />
         <br />
+        Vi ger också rådgivning och stöd, säkerställer att du använder rätt form
+        och teknik under dina träningar, vilket minskar risken för skador.
         Dessutom kan personlig träning ge ansvarsskyldighet och motivation,
-        eftersom individer oftare håller fast vid sin träningsrutin när de har
-        någon som håller dem ansvariga. Slutligen kan personlig träning också
-        erbjuda en känsla av samhörighet, eftersom individer ofta bildar nära
-        band med sin tränare och andra individer i sin träningsgrupp.
+        eftersom man oftare håller fast vid sin träningsrutin när man har någon
+        som håller en ansvarig.
+        <br />
+        <br />
+        Du kan välja mellan att ha en stående tid varje vecka eller köpa ett
+        klippkort i appen Wondr där du ser lediga tider och boka upp vecka för
+        vecka vad som passar just dig.
       </p>
       <br />
-      {/* <p className="descriptionTitle">Kondition och uthållighet</p>
-      <br />
-      <p className="descriptionText">asd </p>
-
-      <br />
-      <p className="descriptionTitle">Koordination och balans</p>
-      <br />
-      <p className="descriptionText">asd.</p>
-      <br />
-      <p className="descriptionTitle">Styrka och muskler</p>
-      <br />
-      <p className="descriptionText">asd</p>
-      <br />
-      <p className="descriptionTitle">Mental träning</p>
-      <br /> */}
-
-      <p className="descriptionTitleMobile">Fördelar</p>
-      <p className="descriptionTextMobile">kort om fördelarna</p>
-      <br />
-      <ul className="descriptionTextMobile" style={{ marginBottom: "30px" }}>
-        <li>
-          {" "}
-          Skräddarsydd träning: en individanpassad träningsplan baserad på dina
-          mål, förutsättningar och begränsningar.
-        </li>
-        <li>
-          Ökad motivation genom stöd och uppmuntran, vilket hjälper dig att
-          fortsätta träna och nå dina mål.
-        </li>
-        <li>
-          Korrekt teknik: vi ser till att se till att du utför övningar korrekt
-          och minskar risken för skador.
-        </li>
-        <li>
-          Genom effektiviserad träning kan du få ut mer av din värdefulla tid
-          genom att fokusera på de mest effektiva övningarna för att nå dina
-          mål.
-        </li>
-      </ul>
     </>
   );
 };

@@ -14,11 +14,12 @@ const MartialMobileDetails = () => {
         </p>
         <br />
         <div>
-          <p>— Klasser (upp till 12 personer)</p>
-          <p>— Mindre grupper (upp till 5 personer)</p>
-          <p>— Personal training (one on one)</p>
-          <p>— Testa på (tre pass för en komplett genomgång)</p>
-          <p>— Introduktion (ett pass)</p>
+          <p>— Klasser (gruppträning upp till 12 personer)</p>
+          <p>— Företagsklasser (gruppträning upp till 12 personer)</p>
+          <p>— Personlig träning (en till en)</p>
+          <p>— Klippkort 10pass (gruppträning upp till 12 personer)</p>
+          <p>— Ungdomsträning (gruppträning upp till 12 personer)</p>
+          <p>— Sluten mindre grupp (gruppträning upp till 5 personer)</p>
           <br />
           <p
             style={{
@@ -39,22 +40,18 @@ const MartialMobileDetails = () => {
 
       <p className="descriptionTitleMobile">Introduktion</p>
       <p className="descriptionTextMobile" style={{}}>
-        Kampsport är samlingsnamnet för ett antal kontaktsporter där två
-        personer går i närstrid med varandra. Varje gren har sitt eget regelverk
-        och har olika syften så som: självförsvar, tävling,
-        fysisk/mental/spirituell utveckling och även som sätt att bevara
-        kulturella arv. Förutom den fysiska positiva effekten av kamsport är det
-        ett ypperligt sätt att forma värderingar och beteenden som fokus,
-        tolerans, rättvisa, ödmjukhet och disciplin. På BAMBA utövar vi
-        kamsportsfys inspirerat av boxning och thaiboxning (Muay Thai), även
-        kallat “the Art of 8 Limbs”. Sporten kallas så då du använder dig utav
-        hela kroppen; knän, armbågar, ben, händer etc. Du kommer snabbt märka
-        och känna hur hela kroppen och även hjärnan har fått jobba. För att du
-        ska lära dig hur du får så mycket kraft i slaget som möjligt men också
-        hur du slår utan att skada dig, kommer du drillas i slagteknik. Kamsport
-        är en tillåtande sport som passar alla som tycker om den, så det spelar
-        ingen roll vad du har för träningsbakgrund eller hur din nuvarande
-        kondition är, varje pass sker på dina villkor och kapacitet.
+        På BAMBA utövar vi kampsportsfys inspirerat av boxning och thaiboxning
+        (Muay Thai), även kallat “the Art of 8 Limbs”. Sporten kallas så då du
+        använder dig utav hela kroppen; knän, armbågar, ben, händer etc. Du
+        kommer snabbt märka och känna hur hela kroppen och även hjärnan har fått
+        jobba. Förutom den fysiska positiva effekten av kampsport är det ett
+        ypperligt sätt att forma värderingar och beteenden som fokus, tolerans,
+        rättvisa, ödmjukhet och disciplin.
+        <br />
+        <br />
+        Kampsport är en tillåtande sport som passar alla, så det spelar ingen
+        roll vad du har för träningsbakgrund eller hur din nuvarande kondition
+        är, varje pass sker på dina villkor och kapacitet.
       </p>
       <br />
       <br />
@@ -63,56 +60,74 @@ const MartialMobileDetails = () => {
       <p className="descriptionTextMobile" style={{}}>
         Slagvariationer i intervaller är intensivt och otroligt givande för
         kondition, uthållighet och hjärta. Det gäller att du utmanar dina
-        mjöksyrenivåer för att orka hålla hela intervallen ut. Allteftersom
+        mjölksyrenivåer för att orka hålla hela intervallen ut. Allteftersom
         kommer du märka skillnad i hur länge du orkar då du får starkare hjärta
         och därmed bättre syreupptagningsförmåga. Det spelar ingen roll hur
         otränad eller tränad du är, du anpassar passet utefter dig och din nivå.
+        <br />
+        <br />
+        Kampsportsträning är en utmärkt träningsform för att förbättra
+        konditionen och uthålligheten. Träningen utförs i högintensiva
+        intervaller tillsammans med teknik. Denna kombination av styrka och
+        uthållighet förbättrar också den kardiovaskulära hälsan och minskar
+        risken för sjukdomar såsom högt blodtryck och diabetes.
+        Kampsportsträning är utmanande och kräver en hög grad av fokus och
+        mental uthållighet.
       </p>
       <br />
       <br />
 
       <p className="descriptionTitleMobile">Koordination och balans</p>
       <p className="descriptionTextMobile" style={{}}>
-        De snabba kroppsrörelserna i boxning är bra för balans, medan slagen
-        förbättrar hand-öga-koordinationen. Även utan corespecifika rörelser
-        under styrketräningsdelen av träningen bygger boxning dessa muskler. De
-        rörelser som behövs för att boxas bygger corestyrka, vilket i sin tur
-        hjälper dig att få bättre balans. Äldre kunder och de med särskilda
-        hälsobehov drar särskilt nytta av corestyrka och förbättrad balans.
-      </p>
-
-      <br />
-      <br />
-
-      <p className="descriptionTitleMobile">Koordination och balans</p>
-      <p className="descriptionTextMobile" style={{}}>
-        Boxa, uppercut, ducka, sparka, boxa igen - slagvariationer i kombination
-        med att sparka på ett så kraftfullt vis som möjligt, resulterar i en
-        otrolig förmåga att kontrollera och koordinera sin kropp. Sporten är
-        tacksam då, den likt dans, kommer med oändliga variationer, vilket gör
-        att du alltid kan utvecklas och testa nya saker.
+        Kampsporten är känd för att utveckla koordination och balans. Genom att
+        träna tekniker och rörelsemönster som kräver precision och kontroll,
+        utvecklar man sin kroppskännedom och förmåga att koordinera kroppen. Att
+        balansera på en fot eller utföra en snabb spark kräver en hög grad av
+        balans och stabilitet och med hjälp av våra tränare ser vi till att du
+        snabbt når dit med rätt teknik och övningar.
+        <br />
+        <br />
+        Med regelbunden träning kan kampsporten därför ge förbättrad
+        koordination och balans som kan vara till nytta även i andra idrotter
+        och vardagliga aktiviteter.
       </p>
       <br />
       <br />
-
       <p className="descriptionTitleMobile">Styra och muskler</p>
       <p className="descriptionTextMobile" style={{}}>
         Tack vare att hela kroppen används finns det ingen del av dig som inte
-        kommer bli starkare. Styrka i axlar, rygg/skuldror, handleder och mage
-        är dock nyckelkomponenter för att orka slå upprepade gånger. Benen bör
-        vara stadiga men kvicka. Därför är att hoppa hopprep en vanlig övning
-        för kampsportare då det främjar frekvens som i sin tur gör att du snabbt
-        kan manövrera slag som kommer din väg:
+        kommer bli starkare. Kampsporten är känd för att utveckla styrka och
+        muskler på ett unikt sätt. För att utföra tekniker och rörelser som
+        kräver både kraft och kontroll tränar du hela kroppen och bygger upp
+        muskler på ett balanserat sätt. Genom att använda kroppen som motstånd
+        och genom att utföra tekniker med precision och kontroll, aktiveras
+        flera muskelgrupper samtidigt.
+        <br />
+        <br />
+        De olika teknikerna i kampsporter involverar allt från benen, till
+        kärnan, till överkroppen, och resulterar i en övergripande ökning av
+        muskelmassa, uthållighet och styrka.
+      </p>
+      <br />
+      <br />
+      <p className="descriptionTitleMobile">Mental träning</p>
+      <p className="descriptionTextMobile" style={{}}>
+        Många efterliknar kampsport vid en form av meditation då det kräver din
+        fulla närvaro. Du har helt enkelt inte tid att ha tankarna någon
+        annanstans när du vill undvika, eller slå, ett slag. Ta tillfället i akt
+        att släppa världen utanför för att istället låta dig absorberas totalt
+        av ditt eget andetag, motståndarens nästa drag och kämparandan i rummet.
       </p>
       <br />
 
       <ul className="descriptionTextMobile" style={{ marginBottom: "30px" }}>
         <li>Uppmuntrar total närvaro</li>
         <li>Minskad stress</li>
-        <li>Lyft upp ett dåligt humör efter en jobbig dag</li>
-        <li>Sov bättre på natten efter ett intensivt träningspass</li>
-        <li>Få självförtroende av att möta en utmaning och bli starkare</li>
+        <li>Glädjehormoner</li>
+        <li>Bättre sömn tack vare fysisk utmattning</li>
       </ul>
+
+      {/* todo ta bort marting */}
     </>
   );
 };

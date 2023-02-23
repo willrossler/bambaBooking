@@ -9,11 +9,9 @@ const CampDetails = () => {
         </p>
         <br />
         <div>
-          <p>— Klasser (upp till 12 personer)</p>
-          <p>— Mindre grupper (upp till 5 personer)</p>
-          <p>— Personal training (one on one)</p>
-          <p>— Testa på (tre pass för en komplett genomgång)</p>
-          <p>— Introduktion (ett pass)</p>
+          <p>— Klasser (gruppträning upp till 12 personer)</p>
+          <p>— Företagsklasser (gruppträning upp till 12 personer)</p>
+
           <br />
           <p className="descriptionTitle" style={{ color: "#fff" }}>
             Alla träningsupplägg är tillgängliga som presentkort.
@@ -27,41 +25,25 @@ const CampDetails = () => {
       <p className="descriptionTitle">Introduktion</p>
       <br />
       <p className="descriptionText">
-        på BAMBA är övertygade om att gruppträning är ett fantastiskt sätt att
-        nå träningsmål, oavsett om du är nybörjare eller erfaren atlet.
+        Boot Camp är en träningsform som utövas i grupp och leds av en av våra
+        instruktörer. Det är vår mest populära träningsform som erbjuder en
+        variation av fys, styrketräning och kampsport. Boot Camp är en bra
+        lösning för dig som vill komma igång med din träning samtidigt som du
+        får en rolig och utmanande upplevelse.
         <br />
         <br />
-        Vi tror att gruppträning är ett fantastiskt sätt att träna på grund av
-        den positiva och motiverande miljön som skapas. Hos oss får ni möjlighet
-        att träna tillsammans med andra som har liknande träningsmål, vilket gör
-        att de kan stötta och inspirera varandra.
-        <br /> Dessutom kan gruppträning vara roligt och socialt, vilket gör det
-        lättare att hålla fast vid en träningsrutin. <br />
+        Det här är en gruppträning med mål att åstadkomma stor förändring under
+        en intensiv period oavsett om man vill få hjälp att komma igång med
+        träning, vill komma i bättre form eller få in rutinen att träna varje
+        vecka Vi tränar i en sluten grupp och det finns endast plats för 12
+        personer och en av många fördelar är att ni kommer bli ett sammansvetsat
+        team som kämpar och hjälper varandra genom passen.
         <br />
-        BAMBA är öppen för alla som vill träna i en positiv och välkomnande
-        miljö. Vi hoppas att du kommer att uppleva fördelarna med gruppträning
-        hos oss och ta del av en motiverande och utmanande träningsmiljö.
+        <br />
+        Vi erbjuder 8 eller 10 veckors camp och vi tränar 4 pass per vecka. Vi
+        tränar måndagar, tisdagar, torsdagar och fredagar 06.00-06.50. Du är
+        garanterad plats på alla pass och behöver inte boka dessa i förskott.
       </p>
-      <br />
-
-      <p className="descriptionText">Text om fördelar kring gruppträning </p>
-      <ul className="descriptionText" style={{ marginBottom: "30px" }}>
-        <br />
-        <li>
-          Hjälper till att öka disciplinen och motivationen för att upprätthålla
-          en regelbunden träningsrutin.
-        </li>
-        <li>
-          Gruppträning är bevisat att minska stressnivåerna och förbättra
-          humöret.
-        </li>
-        <li>Öppnar upp för social interaktion och bygger relationer.</li>
-        <li>
-          Få en känsla av gemenskap och tillhörighet du inte får någon
-          annanstans.
-        </li>
-      </ul>
-      <br />
     </div>
   );
 };
