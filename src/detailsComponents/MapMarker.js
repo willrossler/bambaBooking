@@ -10,8 +10,6 @@
 //   );
 // };
 
-// export default MapMarker;
-
 const MapMarker = () => {
   const svgMarkup = `
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44">
@@ -24,3 +22,4 @@ const MapMarker = () => {
   )}`;
   return <img src={svgUrl} alt="Map marker" />;
 };
+export default MapMarker;
