@@ -115,7 +115,12 @@ const MapComponent = () => {
         center={position}
         mapContainerClassName="mapStyleClass"
       >
-        <Marker position={position} icon={<MapMarker />} optimized={false} />
+        <Marker
+          position={position}
+          icon={<MapMarker />}
+          optimized={false}
+          anchor={{ x: 22, y: 22 }}
+        />
       </GoogleMap>
     </>
   );
