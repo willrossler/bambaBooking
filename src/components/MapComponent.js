@@ -115,7 +115,7 @@ const MapComponent = () => {
         center={position}
         mapContainerClassName="mapStyleClass"
       >
-        <Marker position={position} icon={<MapMarker />} />
+        <Marker position={position} icon={<MapMarker />} optimized={false} />
       </GoogleMap>
     </>
   );
