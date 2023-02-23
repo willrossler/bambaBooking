@@ -14,12 +14,12 @@ const MartialMobileDetails = () => {
         </p>
         <br />
         <div>
-          <p>— Klasser (gruppträning upp till 12 personer)</p>
-          <p>— Företagsklasser (gruppträning upp till 12 personer)</p>
+          <p>— Klasser (upp till 12 personer)</p>
+          <p>— Företagsklasser (upp till 12 personer)</p>
           <p>— Personlig träning (en till en)</p>
-          <p>— Klippkort 10pass (gruppträning upp till 12 personer)</p>
-          <p>— Ungdomsträning (gruppträning upp till 12 personer)</p>
-          <p>— Sluten mindre grupp (gruppträning upp till 5 personer)</p>
+          <p>— Klippkort 10pass (upp till 12 personer)</p>
+          <p>— Ungdomsträning (upp till 12 personer)</p>
+          <p>— Sluten mindre grupp (upp till 5 personer)</p>
           <br />
           <p
             style={{

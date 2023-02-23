@@ -15,7 +15,7 @@ const PersonalTrainingMobileDetails = () => {
         <br />
         <div>
           <p>— Personlig träning (en till en)</p>
-          <p>— Sluten mindre grupp (gruppträning upp till 5 personer)</p>
+          <p>— Sluten mindre grupp (upp till 5 personer)</p>
 
           <br />
           <p
