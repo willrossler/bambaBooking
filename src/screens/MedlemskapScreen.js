@@ -1,10 +1,16 @@
 import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
-import abbe from "../assets/images/abbePic.jpg";
 import blackCard from "../assets/images/Card_Black_Square.jpg";
 import whiteCard from "../assets/images/Card_White_Square.jpg";
 import ptCard from "../assets/images/Card_PT_Square.jpg";
 import giftCard from "../assets/images/Card_Klipp_Square.jpg";
+
+import BlackCardShort from "../components/BlackCardShort";
+import WhiteCardShort from "../components/WhiteCardShort";
+import WhiteCard from "../components/WhiteCard";
+import BlackCard from "../components/BlackCard";
+import PassCard from "../components/PassCard";
+import GiftCard from "../components/GiftCard";
 
 const MedlemskapScreen = () => {
   return (
@@ -214,11 +220,6 @@ const MedlemskapScreen = () => {
               <p className="descriptionTitle" style={{ color: "#fff" }}>
                 I lokalen finns det omklädningsrum, duschar och hygienartiklar.
               </p>
-              <br />
-
-              <p className="descriptionTitle" style={{ color: "#fff" }}>
-                Presentkortet håller i X antal år eller ta bort denna?
-              </p>
             </div>
           </Col>
           <Col xs={12} md={6}>
@@ -227,6 +228,14 @@ const MedlemskapScreen = () => {
             </div>
           </Col>
         </Row>
+      </div>
+
+      <div className="container mobileView">
+        <hr style={{ margin: "0" }} />
+        <WhiteCard />
+        <BlackCard />
+        <PassCard />
+        <GiftCard />
       </div>
     </>
   );
