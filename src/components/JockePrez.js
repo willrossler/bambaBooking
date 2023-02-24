@@ -39,7 +39,7 @@ const JockePrez = () => {
           <br />
           Mitt mål som tränare är att hjälpa dig uppnå dina mål, pusha dig till
           nya nivåer samt ge dig ökad styrka, starkare självkänsla och ett
-          hälsosammare liv
+          hälsosammare liv.
         </p>
         <br />
         <p

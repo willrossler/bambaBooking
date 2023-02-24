@@ -23,6 +23,8 @@ import mentalPic from "../../assets/images/MentalCoaching_Desktop.jpg";
 import mentalTrainingPicMobile from "../../assets/images/MentalCoaching_Mobile.jpg";
 import martialPic from "../../assets/images/Kampsport_Desktop.jpg";
 import thaiboxMobile from "../../assets/images/Kampsport_Mobile.jpg";
+import ungdomPic from "../../assets/images/ungdomPic.jpg";
+import foretagsPic from "../../assets/images/foretagPic.jpg";
 
 import BoxingDetails from "../../detailsComponents/BoxingDetails";
 import WeightliftDetails from "../../detailsComponents/WeightliftDetails";
@@ -84,13 +86,13 @@ const DetailsScreen3 = () => {
         setTitle("PERSONLIG TRÄNING");
         break;
       case "/ungdomstraning":
-        setMobileSrc(PTpicMobile);
-        setSrc(PTpic);
+        setMobileSrc(ungdomPic);
+        setSrc(ungdomPic);
         setTitle("UNGDOMSTRÄNING");
         break;
       case "/foretagstraning":
-        setMobileSrc(PTpicMobile);
-        setSrc(PTpic);
+        setMobileSrc(foretagsPic);
+        setSrc(foretagsPic);
         setTitle("FÖRETAGSTRÄNING");
         break;
 
@@ -119,7 +121,6 @@ const DetailsScreen3 = () => {
                 {location.pathname === "/boxing" && <BoxingDetails />}
                 {location.pathname === "/martialarts" && <MartialDetails />}
                 {location.pathname === "/bootcamp" && <CampDetails />}
-                {location.pathname === "/mentaltraining" && <MentailDetails />}
 
                 {location.pathname === "/mentaltraining" && <MentailDetails />}
                 {location.pathname === "/personaltraining" && (

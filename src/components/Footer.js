@@ -77,6 +77,9 @@ const Footer = () => {
                   <Link to="/training">
                     <p id="hoverPink">— Träning </p>
                   </Link>
+                  <Link to="/medlemskap">
+                    <p id="hoverPink">— Medlemskap </p>
+                  </Link>
                 </li>
                 <li>
                   <Link to="/contact">

@@ -13,7 +13,7 @@ const NajShort = () => {
         />
         <h1 className="title">Najmedin Razavi</h1>
         <p className="descriptionTextMobile" style={{ fontWeight: "500" }}>
-          Coach
+          Mental Coach
         </p>
         <hr style={{}} className="aboutUsHR" />
         {/* <hr style={{ color: "#fff", opacity: "0.2" }} /> */}

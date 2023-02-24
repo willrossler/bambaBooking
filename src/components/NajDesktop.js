@@ -15,7 +15,7 @@ const NajDesktop = () => {
           <div>
             <h1 className="title">Najmedin Razavi</h1>
             <p className="descriptionText" style={{ fontWeight: "500" }}>
-              Coach
+              Mental Coach
             </p>
             <hr style={{}} className="pinkHr" />
             {/* <hr style={{ color: "#fff", opacity: "0.2" }} /> */}
