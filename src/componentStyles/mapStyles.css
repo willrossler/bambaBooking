@@ -2,3 +2,45 @@
   width: 100%;
   height: 550px;
 }
+
+@media screen and (max-width: 768px) {
+  .mapStyleClass {
+    width: 100%;
+    height: 696px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .mapStyleClass {
+    width: 100%;
+    height: 401px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .mapStyleClass {
+    width: 100%;
+    height: 396px;
+  }
+}
+
+@media screen and (max-width: 393px) {
+  .mapStyleClass {
+    width: 100%;
+    height: 369px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .mapStyleClass {
+    width: 100%;
+    height: 366px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .mapStyleClass {
+    width: 100%;
+    height: 351px;
+  }
+}
