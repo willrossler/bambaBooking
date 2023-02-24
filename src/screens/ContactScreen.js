@@ -11,7 +11,6 @@ import MapMobile from "../detailsComponents/MapMobile";
 import { Row, Col } from "react-bootstrap";
 
 import contactPic from "../assets/images/contactPic.jpg";
-import MapMarker from "../detailsComponents/MapMarker";
 
 const ContactScreen = () => {
   return (
@@ -89,7 +88,7 @@ const ContactScreen = () => {
           </h1>
           <ContactInfo />
           <br />
-          <MapMobile />
+          <MapComponent />
           {/* samma setup som på details */}
           <h1 style={{ marginTop: "60px" }} className="title">
             PERSONLIGA TRÄNARE

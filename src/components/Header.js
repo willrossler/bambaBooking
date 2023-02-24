@@ -207,6 +207,15 @@ function Header() {
                 </Nav.Link>
                 <Nav.Link>
                   <Link
+                    to="/medlemskap"
+                    className="d-lg-none "
+                    onClick={handleClose}
+                  >
+                    — MEDLEMSKAP
+                  </Link>
+                </Nav.Link>
+                <Nav.Link>
+                  <Link
                     to="contact"
                     className="d-lg-none "
                     onClick={handleClose}

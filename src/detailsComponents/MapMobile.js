@@ -1,4 +1,5 @@
 import React from "react";
+import knappNal from "../assets/logos/Pin_1x.png";
 
 const MapMobile = () => {
   const mapStyles = [
@@ -41,7 +42,7 @@ const MapMobile = () => {
     })
     .join("&style=");
 
-  const staticMapUrl = `https://maps.googleapis.com/maps/api/staticmap?center=Lützengatan+10,+11520+Stockholm&zoom=17&size=400x400&markers=color:red%7CLützengatan+10,+11520+Stockholm&style=${mapStylesString}&key=AIzaSyBo6BuIHPsmjbTKwZIWg0mPpohgu3JHqow`;
+  const staticMapUrl = `https://maps.googleapis.com/maps/api/staticmap?center=Lützengatan+10,+11520+Stockholm&zoom=17&size=400x400&markers=color:red%7CLützengatan+10,+11520+Stockholm&markers=icon:${knappNal}|Lützengatan+10,+11520+Stockholm&style=${mapStylesString}&key=AIzaSyBo6BuIHPsmjbTKwZIWg0mPpohgu3JHqow`;
 
   return (
     <div>
