@@ -116,10 +116,14 @@ const MapComponent = () => {
   };
 
   if (!isLoaded) return <div>Laddar Google Maps...</div>;
+
+  const isSmallScreen = window.innerWidth < 768; // Example breakpoint for small screens
+  const mapZoom = isSmallScreen ? 18 : 17; // Example different zoom levels for small screens
+
   return (
     <>
       <GoogleMap
-        zoom={17}
+        zoom={mapZoom}
         options={{ styles: mapStyles }}
         center={position}
         mapContainerClassName="mapStyleClass"
