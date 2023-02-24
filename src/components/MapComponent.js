@@ -1,6 +1,6 @@
 import React from "react";
 import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
-import MapMarker from "../detailsComponents/MapMarker";
+import knappNal from "../assets/logos/Pin_1x.png";
 import "../componentStyles/mapStyles.css";
 
 const MapComponent = () => {
@@ -124,7 +124,15 @@ const MapComponent = () => {
         center={position}
         mapContainerClassName="mapStyleClass"
       >
-        <Marker position={position} icon={pinStyle} />
+        <Marker
+          position={position}
+          icon={{
+            url: knappNal,
+            scaledSize: new window.google.maps.Size(50, 50),
+            origin: new window.google.maps.Point(0, 0),
+            anchor: new window.google.maps.Point(25, 25),
+          }}
+        />
       </GoogleMap>
     </>
   );

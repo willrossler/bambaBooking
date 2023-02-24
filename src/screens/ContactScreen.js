@@ -87,9 +87,9 @@ const ContactScreen = () => {
             KONTAKT
             <hr className="pinkHrMobile" />
           </h1>
-          {/* karta  */}
-          <MapMobile />
           <ContactInfo />
+          <br />
+          <MapMobile />
           {/* samma setup som på details */}
           <h1 style={{ marginTop: "60px" }} className="title">
             PERSONLIGA TRÄNARE

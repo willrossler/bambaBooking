@@ -116,6 +116,17 @@ const BoxingMobileDetails = () => {
         <li>Ökat självförtroende och känslan att klara av utmaningar</li>
         <li>Stärkt disciplin</li>
       </ul>
+      <br />
+      <p
+        style={{
+          color: "#fff",
+          fontSize: "16px",
+          lineHeight: "19.2px",
+          fontWeight: "500",
+        }}
+      >
+        I lokalen finns det omklädningsrum, duschar och hygienartiklar.
+      </p>
     </>
   );
 };

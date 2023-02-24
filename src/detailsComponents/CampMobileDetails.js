@@ -56,6 +56,16 @@ const CampMobileDetails = () => {
         tränar måndagar, tisdagar, torsdagar och fredagar 06.00-06.50. Du är
         garanterad plats på alla pass och behöver inte boka dessa i förskott.
       </p>
+      <br />
+      <p
+        style={{
+          fontSize: "16px",
+          lineHeight: "19.2px",
+          fontWeight: "500",
+        }}
+      >
+        I lokalen finns det omklädningsrum, duschar och hygienartiklar.
+      </p>
     </>
   );
 };

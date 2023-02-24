@@ -4,6 +4,15 @@
 
 /* TRAINING FORMS */
 
+a.linkHover {
+  color: white;
+  font-weight: 500;
+  transition: color 200ms ease-in-out;
+}
+
+a.linkHover:hover {
+  color: #f5aac9;
+}
 .mobileParagraph {
   color: #fff;
   font-size: 16px;

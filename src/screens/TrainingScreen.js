@@ -59,6 +59,11 @@ const TrainingScreen = () => {
           transition: "background-color 200ms",
           marginTop: "20px",
         };
+      case 8:
+        return {
+          transition: "background-color 200ms",
+          marginTop: "20px",
+        };
       default:
         return {
           backgroundColor: "",
@@ -160,6 +165,28 @@ const TrainingScreen = () => {
             style={getStyles(6)}
           >
             MENTAL COACHING —
+          </div>
+        </Link>
+
+        <Link to="/foretagstraning">
+          <div
+            id="mentalTraining"
+            onMouseEnter={() => handleMouseEnter(7)}
+            onMouseLeave={handleMouseLeave}
+            style={getStyles(7)}
+          >
+            FÖRETAGSTRÄNING —
+          </div>
+        </Link>
+
+        <Link to="/ungdomstraning">
+          <div
+            id="mentalTraining"
+            onMouseEnter={() => handleMouseEnter(8)}
+            onMouseLeave={handleMouseLeave}
+            style={getStyles(8)}
+          >
+            UNGDOMSTRÄNING —
           </div>
         </Link>
       </div>

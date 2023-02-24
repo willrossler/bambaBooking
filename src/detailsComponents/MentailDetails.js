@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import NajPrez from "../components/NajPrez";
 const MentailDetails = () => {
   return (
     <div>
@@ -78,7 +79,9 @@ const MentailDetails = () => {
       </ul>
       <br />
       <p className="descriptionTitle">
-        <Link style={{ color: "#fff" }}>Läs mer om vår mentala coach här </Link>
+        <Link to="/shop#mental-coach" style={{ color: "#fff" }}>
+          Läs mer om vår mentala coach här{" "}
+        </Link>
       </p>
     </div>
   );

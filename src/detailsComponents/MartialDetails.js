@@ -118,6 +118,9 @@ const MartialDetails = () => {
         <li>Bättre sömn tack vare fysisk utmattning</li>
       </ul>
       <br />
+      <p className="descriptionTitle" style={{ color: "#fff" }}>
+        I lokalen finns det omklädningsrum, duschar och hygienartiklar.
+      </p>
     </div>
   );
 };
