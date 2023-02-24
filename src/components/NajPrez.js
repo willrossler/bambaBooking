@@ -13,7 +13,7 @@ const NajPrez = () => {
         />
         <h1 className="title">Najmedin Razavi</h1>
         <p className="descriptionTextMobile" style={{ fontWeight: "500" }}>
-          Coach
+          Mental Coach
         </p>
         <hr style={{}} className="aboutUsHR" />
         {/* <hr style={{ color: "#fff", opacity: "0.2" }} /> */}
@@ -38,21 +38,6 @@ const NajPrez = () => {
           klargöra syftet med nästa steg i ditt liv.
         </p>
         <br />
-        <p
-          className="descriptionTitleMobile"
-          style={{ fontWeight: "500", marginTop: "10px" }}
-        >
-          Specialicerad inom:
-        </p>
-        <ul
-          className="descriptionTextMobile"
-          style={{ marginBottom: "30px", lineHeight: "21px" }}
-        >
-          <li>Styrketräning</li>
-          <li>Tyngdlyftning</li>
-          <li>Sportspecifik prestation</li>
-          <li>Öka muskelmassa</li>
-        </ul>
       </div>
     </>
   );

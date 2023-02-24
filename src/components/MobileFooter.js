@@ -24,14 +24,13 @@ const MobileFooter = () => {
         style={{
           backgroundColor: footerColor,
           marginTop: "40px",
-          paddingTop: "40px",
-          paddingBottom: "60px",
+          paddingTop: "60px",
         }}
       >
         <div class="div1 container px-4">
           <img src={bLogo} style={{ width: "70px", height: "70px" }} />
         </div>
-        <div class="div2">
+        <div style={{ marginBottom: "40px" }} class="div2">
           <FooterLinks />
         </div>
         <div class="div3 ">

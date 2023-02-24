@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import NajPrez from "../components/NajPrez";
+import "../globalStyles/textStyles.css";
+
 const MentailDetails = () => {
   return (
     <div>
@@ -79,7 +81,7 @@ const MentailDetails = () => {
       </ul>
       <br />
       <p className="descriptionTitle">
-        <Link to="/shop#mental-coach" style={{ color: "#fff" }}>
+        <Link style={{ fontSize: "18px" }} id="hoverLink" to="/shop#najmedin">
           Läs mer om vår mentala coach här{" "}
         </Link>
       </p>

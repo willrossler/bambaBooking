@@ -43,7 +43,7 @@ const JockeDesktop = () => {
               <br />
               Mitt mål som tränare är att hjälpa dig uppnå dina mål, pusha dig
               till nya nivåer samt ge dig ökad styrka, starkare självkänsla och
-              ett hälsosammare liv
+              ett hälsosammare liv.
             </p>
             <br />
             <p className="descriptionTitle" style={{ fontWeight: "400" }}>
@@ -58,7 +58,7 @@ const JockeDesktop = () => {
               <li>Kampsport</li>
               <li>Teknik</li>
               <li>Fys</li>
-              <li>löpning</li>
+              <li>Löpning</li>
             </ul>
           </div>
         </Col>

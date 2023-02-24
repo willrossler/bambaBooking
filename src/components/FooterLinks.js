@@ -16,6 +16,9 @@ const FooterLinks = () => {
       <Link to="/training" style={linkStyles}>
         <p className="footer-link">— Träning</p>
       </Link>
+      <Link to="/medlemskap" style={linkStyles}>
+        <p className="footer-link">— Medlemskap</p>
+      </Link>
       <Link to="/contact" style={linkStyles}>
         <p className="footer-link">— Kontakt</p>
       </Link>

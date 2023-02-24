@@ -33,7 +33,7 @@ const ShopScreen = () => {
         <AbbeDesktop />
         <JockeDesktop />
         <MartinDesktop />
-        <NajDesktop />
+        <NajDesktop id="najmedin" />
       </Container>
 
       <Container className="mobileView">
