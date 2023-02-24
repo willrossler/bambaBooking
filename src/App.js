@@ -17,6 +17,7 @@ import TestScreen from "./screens/TestScreen";
 import ScheduleComponent from "./components/ScheduleComponent";
 import PtScreen from "./screens/PtScreen";
 import DetailsScreen3 from "./screens/detailscreens/DetailsScreen3";
+import MedlemskapScreen from "./screens/MedlemskapScreen";
 
 function App() {
   const location = useLocation();
@@ -41,7 +42,6 @@ function App() {
         )}
       <Routes>
         <Route path="/" element={<HomeScreen />} />
-
         <Route path="/booking" element={<LandingScreen />} />
         <Route path="/weeklyschedule" element={<ScheduleComponent />} />
         <Route path="/training" element={<TrainingScreen />} />
@@ -55,11 +55,13 @@ function App() {
         <Route path="/bootcamp" element={<DetailsScreen3 />} />
         <Route path="/mentaltraining" element={<DetailsScreen3 />} />
         <Route path="/personaltraining" element={<DetailsScreen3 />} />
+        <Route path="/ungdomstraning" element={<DetailsScreen3 />} />
+        <Route path="/foretagstraning" element={<DetailsScreen3 />} />
         <Route path="/boxing3" element={<DetailsScreen3 />} />
         <Route path="/martialarts" element={<DetailsScreen3 />} />
         <Route path="/contact" element={<ContactScreen />} />
+        <Route path="/medlemskap" element={<MedlemskapScreen />} />
         <Route path="/shop" element={<ShopScreen />} />
-        <Route path="/test" element={<TestScreen />} />
       </Routes>
       <MobileFooter currentPage={location.pathname} />
 

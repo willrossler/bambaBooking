@@ -52,8 +52,10 @@ export const PersonalTrainingDetails = () => {
         klippkort i appen Wondr där du ser lediga tider och boka upp vecka för
         vecka vad som passar just dig.
       </p>
-
       <br />
+      <p className="descriptionTitle" style={{ color: "#fff" }}>
+        I lokalen finns det omklädningsrum, duschar och hygienartiklar.
+      </p>
     </div>
   );
 };

@@ -126,6 +126,16 @@ const WeightliftMobile = () => {
         <li>Minskad stress tack vare total närvaro under passen</li>
         <li>Fler glädjehormoner tack vare fysisk aktivitet</li>
       </ul>
+      <br />
+      <p
+        style={{
+          fontSize: "16px",
+          lineHeight: "19.2px",
+          fontWeight: "500",
+        }}
+      >
+        I lokalen finns det omklädningsrum, duschar och hygienartiklar.
+      </p>
     </>
   );
 };

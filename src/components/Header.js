@@ -137,6 +137,19 @@ function Header() {
               <Nav.Link>
                 <Link
                   id="hoverLink"
+                  to="medlemskap"
+                  className={
+                    location.pathname === "/medlemskap"
+                      ? "d-none d-lg-inline active-link mx-3"
+                      : "d-none d-lg-inline mx-3"
+                  }
+                >
+                  MEDLEMSKAP
+                </Link>
+              </Nav.Link>
+              <Nav.Link>
+                <Link
+                  id="hoverLink"
                   to="contact"
                   className={
                     location.pathname === "/contact"

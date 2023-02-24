@@ -108,6 +108,9 @@ const BoxingDetails = () => {
         <li>Stärkt disciplin</li>
       </ul>
       <br />
+      <p className="descriptionTitle" style={{ color: "#fff" }}>
+        I lokalen finns det omklädningsrum, duschar och hygienartiklar.
+      </p>
     </div>
   );
 };

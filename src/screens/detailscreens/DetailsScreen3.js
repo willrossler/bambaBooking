@@ -3,6 +3,7 @@ import React from "react";
 import TrainerCardAbbe from "../../components/TrainerCardAbbe";
 import TrainerCardJocke from "../../components/TrainerCardJocke";
 import TrainerCardMartin from "../../components/TrainerCardMartin";
+import TrainerCardNaj from "../../components/TrainerCardNaj";
 
 import "../../screenStyles/traingingDetails.css";
 
@@ -31,9 +32,13 @@ import CampDetails from "../../detailsComponents/CampDetails";
 import MartialMobileDetails from "../../detailsComponents/MartialMobileDetails";
 import BoxingMobileDetails from "../../detailsComponents/BoxingMobileDetails";
 import WeightLiftDetails from "../../detailsComponents/WeightliftDetails";
+import ForetagsDetails from "../../detailsComponents/ForetagsDetails";
+import UngdomsDetails from "../../detailsComponents/UngdomsDetails";
 import WeightliftMobile from "../../detailsComponents/WeightliftMobile";
 import { PersonalTrainingDetails } from "../../detailsComponents/PersonalTrainingDetails";
 import MentailDetails from "../../detailsComponents/MentailDetails";
+import ForetagsMobileDetails from "../../detailsComponents/ForetagsMobileDetails";
+import UngdomsMobileDetails from "../../detailsComponents/UngdomsMobileDetails";
 import PersonalTrainingMobileDetails from "../../detailsComponents/PersonalTrainingMobileDetails";
 import CampMobileDetails from "../../detailsComponents/CampMobileDetails";
 import MentalMobile from "../../detailsComponents/MentalMobile";
@@ -46,6 +51,7 @@ const DetailsScreen3 = () => {
   const [title, setTitle] = useState("");
 
   useEffect(() => {
+    console.log(location.pathname);
     switch (location.pathname) {
       case "/boxing":
         setMobileSrc(boxingPicMobile);
@@ -77,6 +83,16 @@ const DetailsScreen3 = () => {
         setSrc(PTpic);
         setTitle("PERSONLIG TRÄNING");
         break;
+      case "/ungdomstraning":
+        setMobileSrc(PTpicMobile);
+        setSrc(PTpic);
+        setTitle("UNGDOMSTRÄNING");
+        break;
+      case "/foretagstraning":
+        setMobileSrc(PTpicMobile);
+        setSrc(PTpic);
+        setTitle("FÖRETAGSTRÄNING");
+        break;
 
       default:
         setMobileSrc();
@@ -96,9 +112,15 @@ const DetailsScreen3 = () => {
               {/* <hr style={{ color: "#fff", opacity: "0.2" }} /> */}
 
               <div>
+                {location.pathname === "/foretagstraning" && (
+                  <ForetagsDetails />
+                )}
+                {location.pathname === "/ungdomstraning" && <UngdomsDetails />}
                 {location.pathname === "/boxing" && <BoxingDetails />}
                 {location.pathname === "/martialarts" && <MartialDetails />}
                 {location.pathname === "/bootcamp" && <CampDetails />}
+                {location.pathname === "/mentaltraining" && <MentailDetails />}
+
                 {location.pathname === "/mentaltraining" && <MentailDetails />}
                 {location.pathname === "/personaltraining" && (
                   <PersonalTrainingDetails />
@@ -122,18 +144,23 @@ const DetailsScreen3 = () => {
               />
               <div className=" ">
                 {/* todo avstånd bilder enligt figma */}
-                <div className="d-flex flex-row justify-content-between">
-                  {location.pathname === "/weightlifting" && (
-                    <TrainerCardMartin />
+                {location.pathname === "/mentaltraining" && <TrainerCardNaj />}
+                {location.pathname === "/bootcamp" && <TrainerCardAbbe />}
+                {location.pathname !== "/mentaltraining" &&
+                  location.pathname !== "/bootcamp" && (
+                    <div className="d-flex flex-row justify-content-between">
+                      {location.pathname === "/weightlifting" && (
+                        <TrainerCardMartin />
+                      )}
+                      <TrainerCardAbbe />
+                      <TrainerCardJocke />
+                      {location.pathname !== "/boxing" &&
+                        location.pathname !== "/martialarts" &&
+                        location.pathname !== "/weightlifting" && (
+                          <TrainerCardMartin />
+                        )}
+                    </div>
                   )}
-                  <TrainerCardAbbe />
-                  <TrainerCardJocke />
-                  {location.pathname !== "/boxing" &&
-                    location.pathname !== "/martialarts" &&
-                    location.pathname !== "/weightlifting" && (
-                      <TrainerCardMartin />
-                    )}
-                </div>
               </div>
             </div>
           </Col>
@@ -157,6 +184,10 @@ const DetailsScreen3 = () => {
           {location.pathname === "/martialarts" && <MartialMobileDetails />}
           {location.pathname === "/bootcamp" && <CampMobileDetails />}
           {location.pathname === "/mentaltraining" && <MentalMobile />}
+          {location.pathname === "/foretagstraning" && (
+            <ForetagsMobileDetails />
+          )}
+          {location.pathname === "/ungdomstraning" && <UngdomsMobileDetails />}
 
           {location.pathname === "/weightlifting" && <WeightliftMobile />}
           {location.pathname === "/personaltraining" && (
@@ -167,12 +198,26 @@ const DetailsScreen3 = () => {
         </div>
         <hr />
         <div className="mobileTrainerGrid">
-          {location.pathname === "/weightlifting" && <TrainerCardMartin />}
-          <TrainerCardAbbe />
-          <TrainerCardJocke />
-          {location.pathname !== "/boxing" &&
-            location.pathname !== "/martialarts" &&
-            location.pathname !== "/weightlifting" && <TrainerCardMartin />}
+          {/* todo avstånd bilder enligt figma */}
+          {location.pathname === "/mentaltraining" && <TrainerCardNaj />}
+          {location.pathname === "/bootcamp" && <TrainerCardAbbe />}
+          {location.pathname === "/foretagstraning" && <TrainerCardAbbe />}
+          {location.pathname === "/ungdomstraning" && <TrainerCardMartin />}
+          {location.pathname !== "/mentaltraining" &&
+            location.pathname !== "/bootcamp" &&
+            location.pathname !== "/foretagstraning" &&
+            location.pathname !== "/ungdomstraning" && (
+              <div className="mobileTrainerGrid">
+                <TrainerCardMartin />
+                <TrainerCardAbbe />
+                <TrainerCardJocke />
+                {location.pathname !== "/boxing" &&
+                  location.pathname !== "/martialarts" &&
+                  location.pathname !== "/weightlifting" && (
+                    <TrainerCardMartin />
+                  )}
+              </div>
+            )}
         </div>
       </Container>
     </>

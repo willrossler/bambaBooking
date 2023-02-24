@@ -126,7 +126,16 @@ const MartialMobileDetails = () => {
         <li>Glädjehormoner</li>
         <li>Bättre sömn tack vare fysisk utmattning</li>
       </ul>
-
+      <br />
+      <p
+        style={{
+          fontSize: "16px",
+          lineHeight: "19.2px",
+          fontWeight: "500",
+        }}
+      >
+        I lokalen finns det omklädningsrum, duschar och hygienartiklar.
+      </p>
       {/* todo ta bort marting */}
     </>
   );

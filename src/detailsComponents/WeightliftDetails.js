@@ -115,6 +115,9 @@ const WeightLiftDetails = () => {
         <li>Fler glädjehormoner tack vare fysisk aktivitet</li>
       </ul>
       <br />
+      <p className="descriptionTitle" style={{ color: "#fff" }}>
+        I lokalen finns det omklädningsrum, duschar och hygienartiklar.
+      </p>
     </div>
   );
 };
