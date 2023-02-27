@@ -7,7 +7,7 @@ const ScheduleComponent = () => {
         <iframe
           id="wondr-2"
           className="wondr-iframe"
-          src="https://bamba.wondr.se/schema/index/6396e248-03e0-4d66-8aab-02d40a1003f5"
+          src="https://bamba.wondr.se/schema/index/63061b9b-e11c-4f28-a1b2-006a0a10058e"
           width="100%"
           height="1500px"
           frameborder="0"

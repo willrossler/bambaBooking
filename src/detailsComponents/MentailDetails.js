@@ -1,7 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import NajPrez from "../components/NajPrez";
 import "../globalStyles/textStyles.css";
+// import { HashLink as Link } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
 const MentailDetails = () => {
   return (
