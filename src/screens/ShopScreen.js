@@ -1,5 +1,4 @@
 import { useState, React } from "react";
-
 import "../screenStyles/aboutUsScreen.css";
 
 import { Row, Col, Container } from "react-bootstrap";

@@ -64,7 +64,14 @@ const MentalMobile = () => {
       </ul>
 
       <p className="descriptionTitleMobile">
-        <Link style={{ color: "#fff" }}>Läs mer om vår mentala coach här </Link>
+        <Link
+          className="descriptionTextMobile"
+          id="hoverLink"
+          style={{ fontSize: "16px" }}
+          to="/shop#najmedin"
+        >
+          Läs mer om vår mentala coach här{" "}
+        </Link>
       </p>
     </>
   );

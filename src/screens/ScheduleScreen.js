@@ -6,7 +6,13 @@ const ScheduleScreen = () => {
       <iframe
         id="wondr-2"
         className="wondr-iframe"
-        src="https://bamba.wondr.se/schema/index/63061b9b-e11c-4f28-a1b2-006a0a10058e"
+        todo
+        ändra
+        till
+        camp
+        screen
+        src="https://bamba.wondr.se/register?category=6396147e-d5e0-4987-b49e-00e80a10002e
+        "
         width="100%"
         height="1500px"
         frameborder="0"

@@ -24,9 +24,11 @@ function App() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-
+    console.log(location);
+    if (location.hash === "") {
+      window.scrollTo(0, 0);
+    }
+  }, [location]);
   return (
     <div
       style={{
