@@ -5,6 +5,8 @@ const MentalMobile = () => {
   return (
     <>
       <br />
+
+      <br />
       <p className="descriptionTitleMobile">Introduktion</p>
 
       <p className="descriptionTextMobile">
@@ -53,7 +55,6 @@ const MentalMobile = () => {
       <br />
 
       <p className="descriptionTitleMobile">Fördelar med mental coaching:</p>
-      <br />
 
       <ul className="descriptionTextMobile" style={{ marginBottom: "30px" }}>
         <li>Ökad självmedvetenhet och självkontroll</li>

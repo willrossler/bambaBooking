@@ -22,6 +22,7 @@ const ForetagsMobileDetails = () => {
               fontSize: "16px",
               lineHeight: "19.2px",
               fontWeight: "500",
+              color: "#fff",
             }}
           >
             Alla träningsupplägg är tillgängliga som presentkort.
