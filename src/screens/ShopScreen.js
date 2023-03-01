@@ -32,7 +32,7 @@ const ShopScreen = () => {
         <AbbeDesktop />
         <JockeDesktop />
         <MartinDesktop />
-        <NajDesktop id="najmedin" />
+        <NajDesktop />
       </Container>
 
       <Container className="mobileView">

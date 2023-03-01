@@ -147,8 +147,16 @@ const DetailsScreen3 = () => {
                 {/* todo avstånd bilder enligt figma */}
                 {location.pathname === "/mentaltraining" && <TrainerCardNaj />}
                 {location.pathname === "/bootcamp" && <TrainerCardAbbe />}
+                {location.pathname === "/foretagstraning" && (
+                  <TrainerCardAbbe />
+                )}
+                {location.pathname === "/ungdomstraning" && (
+                  <TrainerCardMartin />
+                )}
                 {location.pathname !== "/mentaltraining" &&
-                  location.pathname !== "/bootcamp" && (
+                  location.pathname !== "/bootcamp" &&
+                  location.pathname !== "/foretagstraning" &&
+                  location.pathname !== "/ungdomstraning" && (
                     <div className="d-flex flex-row justify-content-between">
                       {location.pathname === "/weightlifting" && (
                         <TrainerCardMartin />
@@ -209,7 +217,9 @@ const DetailsScreen3 = () => {
             location.pathname !== "/foretagstraning" &&
             location.pathname !== "/ungdomstraning" && (
               <div className="mobileTrainerGrid">
-                <TrainerCardMartin />
+                {location.pathname === "/weightlifting" && (
+                  <TrainerCardMartin />
+                )}
                 <TrainerCardAbbe />
                 <TrainerCardJocke />
                 {location.pathname !== "/boxing" &&

@@ -4,6 +4,7 @@ import blackCard from "../assets/images/Card_Black_Square.jpg";
 import whiteCard from "../assets/images/Card_White_Square.jpg";
 import ptCard from "../assets/images/Card_PT_Square.jpg";
 import giftCard from "../assets/images/Card_Klipp_Square.jpg";
+import PersCard from "../assets/images/Card_Pers_Square.jpg";
 
 import BlackCardShort from "../components/BlackCardShort";
 import WhiteCardShort from "../components/WhiteCardShort";
@@ -11,6 +12,7 @@ import WhiteCard from "../components/WhiteCard";
 import BlackCard from "../components/BlackCard";
 import PassCard from "../components/PassCard";
 import GiftCard from "../components/GiftCard";
+import PtCard from "../components/PtCard";
 
 const MedlemskapScreen = () => {
   return (
@@ -141,6 +143,58 @@ const MedlemskapScreen = () => {
         <Row style={{ marginBottom: "120px" }} className="d-flex">
           <Col style={{ paddingRight: "5rem" }} xs={12} md={6}>
             <div>
+              <h1 className="title">BAMBA PT</h1>
+              <hr
+                style={{ marginTop: "20px", marginBottom: "60px" }}
+                className="pinkHr"
+              />
+              <p className="descriptionText">
+                Personlig träning ger många fördelar för dig som vill förbättra
+                din fysiska form och allmänna välbefinnande. Vi tar hänsyn till
+                ditt unika behov, mål och fysiska förmågor för att skapa en
+                träningsplan som är anpassad specifikt för dig. Vi går igenom
+                kortsiktiga och långsiktiga mål och reviderar dessa under resans
+                gång. Allt detta för att hjälpa dig säkerställa att du når dina
+                träningsmål på ett säkert och effektivt sätt.
+                <br />
+                <br />
+                En av våra coacher viger sin fulla kapacitet och den kunskap de
+                besitter inom sina områden helt åt dig och de mål du vill nå. Vi
+                ger rådgivning, stöd och säkerställer att du använder rätt form
+                och teknik under dina träningar, vilket minskar risken för
+                skador.
+                <br />
+                <br />
+                Du har möjlighet att välja tränare efter träningsform du
+                föredrar och vi hjälper dig att utifrån egna mål och
+                skräddarsydda träningsupplägg på återkommande tider varje vecka
+                enbart för dig. Att boka en fast tid hjälper dig att antingen
+                komma igång med träning, komma i bättre form eller få in rutinen
+                att träna varje vecka.
+                <br />
+                <br />
+                Vi finns här för att tillsammans med dig forma ditt nya jag!
+              </p>
+              <br />
+              <p className="descriptionTitle" style={{ color: "#fff" }}>
+                I lokalen finns det omklädningsrum, duschar och hygienartiklar.
+              </p>
+              <br />
+
+              <p className="descriptionTitle" style={{ color: "#fff" }}>
+                Medlemskapet har ingen bindningstid.
+              </p>
+            </div>
+          </Col>
+          <Col xs={12} md={6}>
+            <div>
+              <img src={PersCard} className="img-fluid" alt="Abbe Joof" />
+            </div>
+          </Col>
+        </Row>
+        <Row style={{ marginBottom: "120px" }} className="d-flex">
+          <Col style={{ paddingRight: "5rem" }} xs={12} md={6}>
+            <div>
               <h1 className="title">BAMBA KLIPPKORT</h1>
               <hr
                 style={{ marginTop: "20px", marginBottom: "60px" }}
@@ -232,8 +286,40 @@ const MedlemskapScreen = () => {
 
       <div className="container mobileView">
         <hr style={{ margin: "0" }} />
+        <br />
+        <br />
+        <p className="descriptionTitleMobile">Medlemskap</p>
+        <p className="descriptionTextMobile">
+          Vi på BAMBA erbjuder olika nivåer av medlemskap för att möta allas
+          behov. Vi har därför tagit fram två nivåer av medlemskap ”BAMBA vit”
+          och ”BAMBA svart”. Vi tänker att träning är något man ska hinna med i
+          vardagen även om man under perioder har mycket utanför träningen som
+          tar tid. Hälsofördelarna med träning är för många för att prioritera
+          bort träning även om annat i vardagen kräver vår tid. <br />
+          <br /> Hos oss har du därför möjlighet att ha allt klart när du
+          kommer. Tjänster som tvättservice, uppsättning av BAMBAS
+          träningskläder och eget skåp är delar av det som vi erbjuder. Hos oss
+          finns omklädningsrum, duschar och hygienartiklar. <br />
+          <br />
+          Vi tänker att sammantagna hälsan är avgörande för att hålla sig frisk,
+          hel och må bra i sitt liv över tid. Vi vill att du ska få en
+          fantastisk träningsupplevelse och att du ska längta efter att komma
+          tillbaka till oss för nästa pass.
+          <br />
+          <br /> Du ser till att ta dig till oss och så ser vi till att du har
+          allt du behöver för att träna hos oss helt enkelt. <br />
+          <br />
+          Kontakta oss på
+          <span>
+            <a className="linkHover" href="mailto:info@bambaostermalm.se">
+              &nbsp;info@bambaostermalm.se&nbsp;
+            </a>
+          </span>
+          hjälper vi dig komma igång!
+        </p>
         <WhiteCard />
         <BlackCard />
+        <PtCard />
         <PassCard />
         <GiftCard />
       </div>

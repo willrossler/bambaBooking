@@ -70,6 +70,7 @@ const PersonalTrainingMobileDetails = () => {
           fontSize: "16px",
           lineHeight: "19.2px",
           fontWeight: "500",
+          color: "#fff",
         }}
       >
         I lokalen finns det omklädningsrum, duschar och hygienartiklar.
