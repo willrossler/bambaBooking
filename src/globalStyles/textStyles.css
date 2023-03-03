@@ -2,6 +2,29 @@
 
 /*  GIGA-LARGE SCREEN ??? */
 
+.underline {
+  display: inline-block;
+  position: relative;
+  color: #3c469c;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: -5px;
+  left: 0;
+  background-color: #3c469c;
+  transform-origin: bottom right;
+  transition: transform 0.4s ease-out;
+}
+
+.underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 /* TRAINING FORMS */
 
 a.linkHover {

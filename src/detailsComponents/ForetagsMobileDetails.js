@@ -64,7 +64,11 @@ const ForetagsMobileDetails = () => {
         Är ni intresserade av att veta mer om företagsträning kontaktar ni oss
         på
         <span>
-          <a className="linkHover" href="mailto:info@bambaostermalm.se">
+          <a
+            style={{ color: "#3C469C" }}
+            className="linkHover"
+            href="mailto:info@bambaostermalm.se"
+          >
             &nbsp;info@bambaostermalm.se&nbsp;
           </a>
         </span>
