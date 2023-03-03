@@ -127,7 +127,7 @@ function Header() {
                     location.pathname === "/mentaltraining" ||
                     location.pathname === "/martialarts" ||
                     location.pathname === "/personaltraining"
-                      ? "d-none d-lg-inline active-link mx-3"
+                      ? "d-none d-lg-inline active-link mx-3 "
                       : "d-none d-lg-inline mx-3"
                   }
                 >

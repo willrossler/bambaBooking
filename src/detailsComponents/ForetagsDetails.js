@@ -52,7 +52,10 @@ const ForetagsDetails = () => {
           Är ni intresserade av att veta mer om företagsträning kontaktar ni oss
           på
           <span>
-            <a className="linkHover" href="mailto:info@bambaostermalm.se">
+            <a
+              className="underline linkHover"
+              href="mailto:info@bambaostermalm.se"
+            >
               &nbsp;info@bambaostermalm.se&nbsp;
             </a>
           </span>
