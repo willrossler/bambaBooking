@@ -13,10 +13,10 @@
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 4px;
+  height: 2px;
   bottom: -5px;
   left: 0;
-  background-color: #3c469c;
+  background-color: #f5aac9;
   transform-origin: bottom right;
   transition: transform 0.4s ease-out;
 }
@@ -28,14 +28,14 @@
 /* TRAINING FORMS */
 
 a.linkHover {
-  color: white;
+  color: #3c469c;
   font-weight: 500;
   transition: color 200ms ease-in-out;
 }
 
-a.linkHover:hover {
+/* a.linkHover:hover {
   color: #f5aac9;
-}
+} */
 .mobileParagraph {
   color: #fff;
   font-size: 16px;

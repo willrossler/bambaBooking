@@ -33,15 +33,20 @@
 
 /* iPhone PRO MAX  */
 
-#hoverLink {
-  color: #fff;
-  font-size: 18px;
-  line-height: 21.8px;
+.headerLink {
+  margin: 0px 12px;
 }
 
 .active-link {
   border-bottom: 5px solid #3c469c;
   padding-bottom: 24px;
+}
+
+#hoverLink {
+  color: #fff;
+  font-size: 18px;
+  line-height: 21.8px;
+  margin: 0px 12px 0px 12px;
 }
 
 #hoverLink {

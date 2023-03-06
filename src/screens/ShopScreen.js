@@ -32,7 +32,7 @@ const ShopScreen = () => {
         <AbbeDesktop />
         <JockeDesktop />
         <MartinDesktop />
-        <NajDesktop />
+        <NajDesktop id="najmedin" />
       </Container>
 
       <Container className="mobileView">
@@ -90,7 +90,11 @@ const ShopScreen = () => {
               Läs mer
             </p>
           )}
-          {showFullDescriptionNajmedin ? <NajPrez /> : <NajShort />}
+          {showFullDescriptionNajmedin ? (
+            <NajPrez id="najmedin" />
+          ) : (
+            <NajShort id="najmedin" />
+          )}
           {showFullDescriptionNajmedin ? (
             <p
               className="visaMer"

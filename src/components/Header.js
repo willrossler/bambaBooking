@@ -108,8 +108,8 @@ function Header() {
                   to="/"
                   className={
                     location.pathname === "/"
-                      ? " d-none d-lg-inline active-link mx-3"
-                      : "d-none d-lg-inline mx-3"
+                      ? "d-none d-lg-inline active-link "
+                      : "d-none d-lg-inline "
                   }
                 >
                   FILOSOFI
@@ -126,9 +126,11 @@ function Header() {
                     location.pathname === "/bootcamp" ||
                     location.pathname === "/mentaltraining" ||
                     location.pathname === "/martialarts" ||
+                    location.pathname === "/foretagstraning" ||
+                    location.pathname === "/ungdomstraning" ||
                     location.pathname === "/personaltraining"
-                      ? "d-none d-lg-inline active-link mx-3 "
-                      : "d-none d-lg-inline mx-3"
+                      ? "d-none d-lg-inline active-link  "
+                      : "d-none d-lg-inline "
                   }
                 >
                   TRÄNING
@@ -140,8 +142,8 @@ function Header() {
                   to="medlemskap"
                   className={
                     location.pathname === "/medlemskap"
-                      ? "d-none d-lg-inline active-link mx-3"
-                      : "d-none d-lg-inline mx-3"
+                      ? "d-none d-lg-inline active-link "
+                      : "d-none d-lg-inline "
                   }
                 >
                   MEDLEMSKAP
@@ -153,8 +155,8 @@ function Header() {
                   to="contact"
                   className={
                     location.pathname === "/contact"
-                      ? "d-none d-lg-inline active-link mx-3"
-                      : "d-none d-lg-inline mx-3"
+                      ? "d-none d-lg-inline active-link "
+                      : "d-none d-lg-inline "
                   }
                 >
                   KONTAKT
@@ -166,8 +168,8 @@ function Header() {
                   to="/shop"
                   className={
                     location.pathname === "/shop"
-                      ? "d-none d-lg-inline active-link mx-3"
-                      : "d-none d-lg-inline mx-3"
+                      ? "d-none d-lg-inline active-link "
+                      : "d-none d-lg-inline "
                   }
                 >
                   {" "}
@@ -184,7 +186,6 @@ function Header() {
                   to="/booking"
                   className="d-none d-lg-inline"
                 >
-                  {" "}
                   BOKA
                 </Link>
               </Nav.Link>
