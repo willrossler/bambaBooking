@@ -18,7 +18,7 @@ const MedlemskapScreen = () => {
   return (
     <>
       <div style={{ marginTop: "80px" }} className="container desktopView">
-        <Row style={{ marginBottom: "120px" }} className="d-flex">
+        <Row style={{ marginBottom: "150px" }} className="d-flex">
           <Col style={{ paddingRight: "5rem" }} xs={12} md={6}>
             <div>
               <h1 className="title">MEDLEMSKAP</h1>
@@ -330,9 +330,10 @@ const MedlemskapScreen = () => {
 
       <div className="container mobileView">
         <hr style={{ margin: "0" }} />
-        <br />
-        <br />
-        <p className="descriptionTitleMobile">Medlemskap</p>
+        <h1 style={{ marginTop: "40px" }} className="title">
+          MEDLEMSKAP
+          <hr className="pinkHrMobile" />
+        </h1>
         <p className="descriptionTextMobile">
           Vi på BAMBA erbjuder olika nivåer av medlemskap för att möta allas
           behov. Vi har därför tagit fram två nivåer av medlemskap ”BAMBA vit”
@@ -363,7 +364,10 @@ const MedlemskapScreen = () => {
             </a>
           </span>
           hjälper vi dig komma igång!
+          <br />
+          <br />
         </p>
+
         <WhiteCard />
         <BlackCard />
         <PtCard />

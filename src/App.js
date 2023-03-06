@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { ScrollRestoration, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -12,7 +12,6 @@ import ContactScreen from "./screens/ContactScreen";
 import ShopScreen from "./screens/ShopScreen";
 import MobileFooter from "./components/MobileFooter";
 import TrainingScreen from "./screens/TrainingScreen";
-import TestScreen from "./screens/TestScreen";
 
 import ScheduleComponent from "./components/ScheduleComponent";
 import PtScreen from "./screens/PtScreen";
@@ -22,11 +21,13 @@ import MedlemskapScreen from "./screens/MedlemskapScreen";
 function App() {
   const location = useLocation();
   const { pathname } = useLocation();
-
   useEffect(() => {
-    console.log(location);
     if (location.hash === "") {
       window.scrollTo(0, 0);
+    } else {
+      document
+        .querySelector(location.hash)
+        ?.scrollIntoView({ behavior: "smooth" });
     }
   }, [location]);
   return (
@@ -43,6 +44,7 @@ function App() {
         location.pathname !== "/weeklyschedule" && (
           <Header currentPage={location.pathname} />
         )}
+
       <Routes>
         <Route path="/" element={<HomeScreen />} />
         <Route path="/booking" element={<LandingScreen />} />
@@ -66,6 +68,7 @@ function App() {
         <Route path="/medlemskap" element={<MedlemskapScreen />} />
         <Route path="/shop" element={<ShopScreen />} />
       </Routes>
+
       <MobileFooter currentPage={location.pathname} />
 
       <Footer currentPage={location.pathname} />

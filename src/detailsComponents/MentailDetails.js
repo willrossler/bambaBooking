@@ -81,8 +81,14 @@ const MentailDetails = () => {
         <li>Förbättrat känslomässigt välbefinnande och hälsa</li>
       </ul>
       <br />
-      <p className="descriptionTitle">
-        <Link style={{ fontSize: "18px" }} id="hoverLink" to="/shop#najmedin">
+      <p className="underline linkHover descriptionTitle">
+        <Link
+          style={{ fontSize: "18px" }}
+          id=""
+          className="underline linkHover"
+          to="/shop#najmedin"
+          preventScrollReset={true}
+        >
           Läs mer om vår mentala coach här{" "}
         </Link>
       </p>

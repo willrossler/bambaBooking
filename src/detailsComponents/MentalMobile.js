@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const MentalMobile = () => {
   return (
@@ -68,7 +68,7 @@ const MentalMobile = () => {
         <Link
           className="descriptionTextMobile"
           id="hoverLink"
-          style={{ fontSize: "16px" }}
+          style={{ fontSize: "16px", color: "#3C469C", margin: "0" }}
           to="/shop#najmedin"
         >
           Läs mer om vår mentala coach här{" "}
