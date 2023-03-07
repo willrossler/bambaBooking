@@ -17,6 +17,7 @@ import ScheduleComponent from "./components/ScheduleComponent";
 import PtScreen from "./screens/PtScreen";
 import DetailsScreen3 from "./screens/detailscreens/DetailsScreen3";
 import MedlemskapScreen from "./screens/MedlemskapScreen";
+import NajDesktop from "./components/NajDesktop";
 
 function App() {
   const location = useLocation();
@@ -67,6 +68,7 @@ function App() {
         <Route path="/contact" element={<ContactScreen />} />
         <Route path="/medlemskap" element={<MedlemskapScreen />} />
         <Route path="/shop" element={<ShopScreen />} />
+        <Route path="/najmedin" element={<NajDesktop />} />
       </Routes>
 
       <MobileFooter currentPage={location.pathname} />
