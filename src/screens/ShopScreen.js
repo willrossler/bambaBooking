@@ -26,20 +26,20 @@ const ShopScreen = () => {
   const [showFullDescriptionNajmedin, setShowFullDescriptionNajmedin] =
     useState(false);
 
-  const ref = useRef(null);
+  const refnaj = useRef(null);
   const refToComponent = useRef(null);
   const location = useLocation();
 
   useEffect(() => {
     const params = new URLSearchParams(location.search);
-    if (params.get("ref") && ref.current) {
+    if (params.get("refnaj") && refnaj.current) {
       // added null check
-      ref.current.scrollIntoView({ behavior: "smooth" }); // simplified
+      refnaj.current?.scrollIntoView({ behavior: "auto" }); // simplified
     }
     if (params.get("scrollToComponent")) {
       refToComponent.current?.scrollIntoView({ behavior: "smooth" });
     }
-  }, [location.search, ref]);
+  }, [location.search]);
 
   return (
     <>
@@ -142,11 +142,12 @@ const ShopScreen = () => {
               className="visaMer"
               style={{ marginTop: "10px" }}
               onClick={() => setShowFullDescriptionMartin(true)}
+              ref={refnaj}
             >
               Läs mer
             </p>
           )}
-          <div id="najmedin" ref={ref}></div>
+          <div id="najmedin"></div>
           {showFullDescriptionNajmedin ? <NajPrez /> : <NajShort />}
           {showFullDescriptionNajmedin ? (
             <p
