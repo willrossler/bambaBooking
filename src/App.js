@@ -25,10 +25,6 @@ function App() {
   useEffect(() => {
     if (location.hash === "") {
       window.scrollTo(0, 0);
-    } else {
-      document
-        .querySelector(location.hash)
-        ?.scrollIntoView({ behavior: "smooth" });
     }
   }, [location]);
   return (
