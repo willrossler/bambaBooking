@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef, React } from "react";
 import { useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { Container, Row, Col } from "react-bootstrap";
 import najmedin from "../assets/images/Najmedin.jpg";
@@ -32,10 +33,15 @@ const ShopScreen = () => {
 
   useEffect(() => {
     const params = new URLSearchParams(location.search);
-    if (params.get("refnaj") && refnaj.current) {
-      // added null check
-      refnaj.current?.scrollIntoView({ behavior: "auto" }); // simplified
+    // if (params.get("refnaj") && refnaj.current) {
+    //   // added null check
+    //   refnaj.current?.scrollIntoView({ behavior: "auto" }); // simplified
+    // }
+
+    if (window.location.href.includes("refnaj")) {
+      window.scrollTo(0, window.innerHeight * 2.6);
     }
+
     if (params.get("scrollToComponent")) {
       refToComponent.current?.scrollIntoView({ behavior: "smooth" });
     }
