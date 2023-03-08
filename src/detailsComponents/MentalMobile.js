@@ -69,7 +69,7 @@ const MentalMobile = () => {
           className="descriptionTextMobile"
           id="hoverLink"
           style={{ fontSize: "16px", color: "#3C469C", margin: "0" }}
-          to="/shop?refnaj=true"
+          to="/shop#najmedin"
         >
           Läs mer om vår mentala coach här.{" "}
         </Link>

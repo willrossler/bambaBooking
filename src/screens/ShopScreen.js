@@ -33,13 +33,9 @@ const ShopScreen = () => {
 
   useEffect(() => {
     const params = new URLSearchParams(location.search);
-    // if (params.get("refnaj") && refnaj.current) {
-    //   // added null check
-    //   refnaj.current?.scrollIntoView({ behavior: "auto" }); // simplified
-    // }
-
-    if (window.location.href.includes("refnaj")) {
-      window.scrollTo(0, window.innerHeight * 2.6);
+    if (params.get("refnaj") && refnaj.current) {
+      // added null check
+      refnaj.current?.scrollIntoView({ behavior: "auto" }); // simplified
     }
 
     if (params.get("scrollToComponent")) {
@@ -148,12 +144,12 @@ const ShopScreen = () => {
               className="visaMer"
               style={{ marginTop: "10px" }}
               onClick={() => setShowFullDescriptionMartin(true)}
-              ref={refnaj}
+              id="najmedin"
             >
               Läs mer
             </p>
           )}
-          <div id="najmedin"></div>
+
           {showFullDescriptionNajmedin ? <NajPrez /> : <NajShort />}
           {showFullDescriptionNajmedin ? (
             <p
