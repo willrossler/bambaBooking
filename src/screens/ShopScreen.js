@@ -25,19 +25,18 @@ const ShopScreen = () => {
     useState(false);
   const [showFullDescriptionNajmedin, setShowFullDescriptionNajmedin] =
     useState(false);
+
   const ref = useRef(null);
   const refToComponent = useRef(null);
   const location = useLocation();
 
   useEffect(() => {
-    // Check if the URL contains "scrollToComponent=true"
     const params = new URLSearchParams(location.search);
     if (params.get("ref") && ref.current) {
       // added null check
       ref.current.scrollIntoView({ behavior: "smooth" }); // simplified
     }
-    if (params.get("scrollToComponent") && !params.get("ref")) {
-      // Desktop view: scroll to NajDesktop component
+    if (params.get("scrollToComponent")) {
       refToComponent.current?.scrollIntoView({ behavior: "smooth" });
     }
   }, [location.search, ref]);
@@ -147,12 +146,8 @@ const ShopScreen = () => {
               Läs mer
             </p>
           )}
-          <div ref={ref}></div>
-          {showFullDescriptionNajmedin ? (
-            <NajPrez id="najmedin" />
-          ) : (
-            <NajShort id="najmedin" />
-          )}
+          <div id="najmedin" ref={ref}></div>
+          {showFullDescriptionNajmedin ? <NajPrez /> : <NajShort />}
           {showFullDescriptionNajmedin ? (
             <p
               className="visaMer"
