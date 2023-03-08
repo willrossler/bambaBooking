@@ -32,15 +32,15 @@ const ShopScreen = () => {
   useEffect(() => {
     // Check if the URL contains "scrollToComponent=true"
     const params = new URLSearchParams(location.search);
-    if (params.get("ref") && params.get("ref")) {
-      // Mobile view: scroll to NajShort component
-      ref.current?.scrollIntoView({ behavior: "smooth" });
+    if (params.get("ref") && ref.current) {
+      // added null check
+      ref.current.scrollIntoView({ behavior: "smooth" }); // simplified
     }
     if (params.get("scrollToComponent") && !params.get("ref")) {
       // Desktop view: scroll to NajDesktop component
       refToComponent.current?.scrollIntoView({ behavior: "smooth" });
     }
-  }, [location.search]);
+  }, [location.search, ref]);
 
   return (
     <>
