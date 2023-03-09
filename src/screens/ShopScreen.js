@@ -48,9 +48,7 @@ const ShopScreen = () => {
           </Col>
           <Col style={{ paddingLeft: "5rem" }} xs={12} md={6}>
             <div>
-              <h1 data-id="najmadin" className="title">
-                Najmedin Razavi
-              </h1>
+              <h1 className="title">Najmedin Razavi</h1>
               <p className="descriptionText" style={{ fontWeight: "500" }}>
                 Mental Coach
               </p>
@@ -84,9 +82,8 @@ const ShopScreen = () => {
 
       <Container className="mobileView">
         <hr style={{ margin: "0" }} />
-
         <div>
-          {showFullDescriptionAbbe ? <AbbePrez /> : <AbbeShort />}
+          {/* {showFullDescriptionAbbe ? <AbbePrez /> : <AbbeShort />}
           {showFullDescriptionAbbe ? (
             <p
               className="visaMer"
@@ -97,65 +94,14 @@ const ShopScreen = () => {
           ) : (
             <p
               className="visaMer"
-              style={{ marginTop: "10px" }}
               onClick={() => setShowFullDescriptionAbbe(true)}
             >
               Läs mer
             </p>
-          )}
-          {showFullDescriptionJocke ? <JockePrez /> : <JockeShort />}
-          {showFullDescriptionJocke ? (
-            <p
-              className="visaMer"
-              onClick={() => setShowFullDescriptionJocke(false)}
-            >
-              Visa mindre
-            </p>
-          ) : (
-            <p
-              className="visaMer"
-              style={{ marginTop: "10px" }}
-              onClick={() => setShowFullDescriptionJocke(true)}
-            >
-              Läs mer
-            </p>
-          )}
-          {showFullDescriptionMartin ? <MartinPrez /> : <MartinShort />}
-          {showFullDescriptionMartin ? (
-            <p
-              className="visaMer"
-              onClick={() => setShowFullDescriptionMartin(false)}
-            >
-              Visa mindre
-            </p>
-          ) : (
-            <p
-              className="visaMer"
-              style={{ marginTop: "10px" }}
-              onClick={() => setShowFullDescriptionMartin(true)}
-            >
-              Läs mer
-            </p>
-          )}
-
-          {showFullDescriptionNajmedin ? <NajPrez /> : <NajShort />}
-          {showFullDescriptionNajmedin ? (
-            <p
-              className="visaMer"
-              onClick={() => setShowFullDescriptionNajmedin(false)}
-            >
-              Visa mindre
-            </p>
-          ) : (
-            <p
-              id="najmed"
-              className="visaMer"
-              style={{ marginTop: "10px" }}
-              onClick={() => setShowFullDescriptionNajmedin(true)}
-            >
-              Läs mer
-            </p>
-          )}
+          )} */}
+          <JockePrez />
+          <MartinPrez />
+          <NajPrez id="najmed" />
         </div>
       </Container>
     </>
