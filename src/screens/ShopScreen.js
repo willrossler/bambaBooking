@@ -27,21 +27,7 @@ const ShopScreen = () => {
   const [showFullDescriptionNajmedin, setShowFullDescriptionNajmedin] =
     useState(false);
 
-  const refnaj = useRef(null);
-  const refToComponent = useRef(null);
   const location = useLocation();
-
-  useEffect(() => {
-    const params = new URLSearchParams(location.search);
-    if (params.get("refnaj") && refnaj.current) {
-      // added null check
-      refnaj.current?.scrollIntoView({ behavior: "auto" }); // simplified
-    }
-
-    if (params.get("scrollToComponent")) {
-      refToComponent.current?.scrollIntoView({ behavior: "smooth" });
-    }
-  }, [location.search]);
 
   return (
     <>
@@ -53,6 +39,7 @@ const ShopScreen = () => {
           <Col style={{ paddingRight: "5rem" }} xs={12} md={6}>
             <div>
               <img
+                id="najmedin"
                 src={najmedin}
                 className="najmedinPic"
                 alt="Najmedin Razavi"
@@ -60,8 +47,10 @@ const ShopScreen = () => {
             </div>
           </Col>
           <Col style={{ paddingLeft: "5rem" }} xs={12} md={6}>
-            <div ref={refToComponent}>
-              <h1 className="title">Najmedin Razavi</h1>
+            <div>
+              <h1 data-id="najmadin" className="title">
+                Najmedin Razavi
+              </h1>
               <p className="descriptionText" style={{ fontWeight: "500" }}>
                 Mental Coach
               </p>
@@ -141,10 +130,10 @@ const ShopScreen = () => {
             </p>
           ) : (
             <p
+              id="najmed"
               className="visaMer"
               style={{ marginTop: "10px" }}
               onClick={() => setShowFullDescriptionMartin(true)}
-              id="najmedin"
             >
               Läs mer
             </p>
