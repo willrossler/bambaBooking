@@ -130,7 +130,6 @@ const ShopScreen = () => {
             </p>
           ) : (
             <p
-              id="najmed"
               className="visaMer"
               style={{ marginTop: "10px" }}
               onClick={() => setShowFullDescriptionMartin(true)}
@@ -149,6 +148,7 @@ const ShopScreen = () => {
             </p>
           ) : (
             <p
+              id="najmed"
               className="visaMer"
               style={{ marginTop: "10px" }}
               onClick={() => setShowFullDescriptionNajmedin(true)}
