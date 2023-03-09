@@ -1,5 +1,6 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const MentalMobile = () => {
   return (
@@ -65,14 +66,14 @@ const MentalMobile = () => {
       </ul>
 
       <p className="descriptionTitleMobile">
-        <Link
+        <HashLink
           className="descriptionTextMobile"
           id="hoverLink"
           style={{ fontSize: "16px", color: "#3C469C", margin: "0" }}
-          to="/shop#najmedin"
+          to="/shop#najmed"
         >
           Läs mer om vår mentala coach här.{" "}
-        </Link>
+        </HashLink>
       </p>
     </>
   );

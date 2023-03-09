@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NajPrez from "../components/NajPrez";
 import "../globalStyles/textStyles.css";
-import { NavHashLink } from "react-router-hash-link";
+import { useLocation } from "react-router";
+import { HashLink } from "react-router-hash-link";
 
 const MentailDetails = () => {
   return (
@@ -81,13 +82,13 @@ const MentailDetails = () => {
       </ul>
       <br />
       <p className="underline linkHover descriptionTitle">
-        <NavHashLink
+        <HashLink
           style={{ fontSize: "18px" }}
           className="underline linkHover"
-          to="/shop?scrollToComponent=true"
+          to="/shop#najmedin"
         >
           Läs mer om vår mentala coach här{" "}
-        </NavHashLink>
+        </HashLink>
       </p>
     </div>
   );
