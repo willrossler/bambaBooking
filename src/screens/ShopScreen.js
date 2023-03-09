@@ -83,22 +83,7 @@ const ShopScreen = () => {
       <Container className="mobileView">
         <hr style={{ margin: "0" }} />
         <div>
-          {/* {showFullDescriptionAbbe ? <AbbePrez /> : <AbbeShort />}
-          {showFullDescriptionAbbe ? (
-            <p
-              className="visaMer"
-              onClick={() => setShowFullDescriptionAbbe(false)}
-            >
-              Visa mindre
-            </p>
-          ) : (
-            <p
-              className="visaMer"
-              onClick={() => setShowFullDescriptionAbbe(true)}
-            >
-              Läs mer
-            </p>
-          )} */}
+          <AbbePrez />
           <JockePrez />
           <MartinPrez />
           <NajPrez id="najmed" />
