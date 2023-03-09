@@ -8,8 +8,7 @@ const JockePrez = () => {
     setShowMore(!showMore);
   };
 
-  let descriptionText =
-    "Träning har varit en konstant i mitt liv, allt från hockey, fotboll till kampsport. Jag har gått ett trettiotal matcher som professionell atlet inom Thaiboxning & K-1 och har medaljer från SM & VM i mitt bagage. Efter avslutad karriär sadlade jag om till thaiboxningscoach och är idag förbundstränare åt det Svenska landslaget i thaiboxning. Med min bakgrund inom kampsport har jag förstått vikten av att kunna grunderna i aktiviteter för att utvecklas både inom sport men också som person. Jag tror på fördelen med att nyttja kroppen på alla parametrar: frekvens, styrka, och uthållighet, för att enklare nå atletiska mål. Jag kommer senast från Allstars Training Center där jag var huvudcoach för thaiboxningen och har haft äran att ta fram både svenska och europeiska världsmästare. Som tränare är jag lyhörd och inkännande samtidigt som jag är tuff när det behövs. Som coach är jag pedagogisk och tålmodig. Mitt mål som tränare är att hjälpa dig uppnå dina mål, pusha dig till nya nivåer samt ge dig ökad styrka, starkare självkänsla och ett hälsosammare liv.";
+  let descriptionText = `Träning har varit en konstant i mitt liv, allt från hockey, fotboll till kampsport. Jag har gått ett trettiotal matcher som professionell atlet inom Thaiboxning & K-1 och har medaljer från SM & VM i mitt bagage. Efter avslutad karriär sadlade jag om till thaiboxningscoach och är idag förbundstränare åt det Svenska landslaget i thaiboxning.\n\n Med min bakgrund inom kampsport har jag förstått vikten av att kunna grunderna i aktiviteter för att utvecklas både inom sport men också som person. Jag tror på fördelen med att nyttja kroppen på alla parametrar: frekvens, styrka, och uthållighet, för att enklare nå atletiska mål. Jag kommer senast från Allstars Training Center där jag var huvudcoach för thaiboxningen och har haft äran att ta fram både svenska och europeiska världsmästare. Som tränare är jag lyhörd och inkännande samtidigt som jag är tuff när det behövs. Som coach är jag pedagogisk och tålmodig.\n\n Mitt mål som tränare är att hjälpa dig uppnå dina mål, pusha dig till nya nivåer samt ge dig ökad styrka, starkare självkänsla och ett hälsosammare liv.`;
 
   if (!showMore) {
     descriptionText = descriptionText.substring(0, 200) + "...";
@@ -33,7 +32,15 @@ const JockePrez = () => {
         <hr style={{}} className="aboutUsHR" />
         {/* <hr style={{ color: "#fff", opacity: "0.2" }} /> */}
 
-        <p className="descriptionTextMobile">{descriptionText}</p>
+        <p className="descriptionTextMobile">
+          {" "}
+          {descriptionText.split("\n").map((line, index) => (
+            <React.Fragment key={index}>
+              {line}
+              <br />
+            </React.Fragment>
+          ))}
+        </p>
         {showMore && (
           <>
             <br />
