@@ -1,9 +1,10 @@
 import {
-  HashRouter,
   Routes,
   Route,
   ScrollRestoration,
   useLocation,
+  Router,
+  BrowserRouter,
 } from "react-router-dom";
 import { useEffect } from "react";
 import Footer from "./components/Footer";
@@ -48,7 +49,6 @@ function App() {
         location.pathname !== "/weeklyschedule" && (
           <Header currentPage={location.pathname} />
         )}
-
       <Routes>
         <Route path="/" element={<HomeScreen />} />
         <Route path="/booking" element={<LandingScreen />} />
