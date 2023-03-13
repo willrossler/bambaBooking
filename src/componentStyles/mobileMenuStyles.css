@@ -1,0 +1,37 @@
+.mobileLinksStyle {
+  margin-top: 100px;
+}
+
+.mobileLinksStyle a {
+  color: #fff !important;
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 500;
+}
+
+img .bambaLogo {
+  height: 26px;
+  width: 114px;
+}
+
+.shadowHr {
+  color: #3c469c;
+  width: auto;
+  height: 10px;
+  left: 0px;
+  top: 84px;
+  margin: 0;
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  opacity: 0.1;
+}
+/* const linkStyles = {
+    
+  };
+
+  const pStyles = {
+    paddin: "0px",
+    margin: "0px",
+    fontSize: "13px",
+    color: "#fff",
+    opacity: "0.5",
+  }; */

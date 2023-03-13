@@ -1,0 +1,98 @@
+/* IMAGE BANNER */
+
+.trainingBanner {
+  background-image: url("../assets/images/Traning_Desktop.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 800px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.trainingBanner p {
+  color: #f5aac9;
+  line-height: 57px;
+  font-size: 48px;
+  font-weight: 500;
+}
+
+/* MOBILE MOBILE MOBILE MOBILE AOFDIOASIDFAOISDHFOIASDHFOIASHDF */
+
+.mobileBanner {
+  position: relative;
+}
+
+.mobileBanner p {
+  position: absolute;
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 500;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.trainingLinks {
+  padding-bottom: 10%;
+  font-weight: 500;
+}
+
+/* SCREEN SIZES */
+
+@media screen and (max-width: 1950px) {
+  .trainingBanner {
+    height: 600px;
+    margin-bottom: 100px;
+  }
+
+  .trainingBanner p {
+    color: #f5aac9;
+    line-height: 57px;
+    font-size: 48px;
+    font-weight: 500;
+  }
+}
+@media screen and (max-width: 1401px) {
+  .trainingLinks div {
+    font-size: 70px !important;
+  }
+
+  .trainingBanner {
+    height: 500px;
+  }
+
+  .trainingBanner p {
+    color: #f5aac9;
+    line-height: 45px;
+    font-size: 40px;
+    font-weight: 500;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .trainingLinks div {
+    font-size: 56px !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  .trainingLinks div {
+    font-size: 40px !important;
+  }
+}
+@media screen and (max-width: 430px) {
+  .trainingLinks div {
+    font-size: 28px !important;
+    line-height: 44px;
+  }
+  .trainingLinks {
+    padding-bottom: 15%;
+    font-weight: 500;
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .trainingLinks div {
+    font-size: 24px !important;
+    line-height: 44px;
+  }
+}

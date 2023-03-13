@@ -1,0 +1,90 @@
+.najmedinPic {
+  height: 636px;
+  width: 636px;
+}
+
+.visaMer {
+  font-size: 14px;
+  line-height: 16.8px;
+  font-weight: 500;
+  color: #f5aac9;
+  margin-top: 10px;
+}
+
+.lineClamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 5; /* Number of rows to display */
+}
+
+.aboutUsHR {
+  border: 2px solid #f5aac9;
+  background-color: #f5aac9;
+  opacity: 1;
+  width: 75px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1400px) {
+  .najmedinPic {
+    height: 546px;
+    width: 546px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .najmedinPic {
+    height: 456px;
+    width: 456px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .najmedinPic {
+    height: 336px;
+    width: 336px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .najmedinPic {
+    height: 696px;
+    width: 696px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .najmedinPic {
+    height: 401px;
+    width: 401px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .najmedinPic {
+    height: 396px;
+    width: 396px;
+  }
+}
+
+@media screen and (max-width: 393px) {
+  .najmedinPic {
+    height: 369px;
+    width: 369px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .najmedinPic {
+    height: 366px;
+    width: 366px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .najmedinPic {
+    height: 351px;
+    width: 351px;
+  }
+}

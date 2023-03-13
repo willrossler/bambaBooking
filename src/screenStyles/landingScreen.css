@@ -1,0 +1,226 @@
+.top-left-svg {
+  position: absolute;
+  width: 35%;
+  top: 170px;
+  left: 0;
+  opacity: 0.2;
+}
+
+.bottom-right-svg {
+  position: absolute;
+  width: 35%;
+  transform: rotate(180deg);
+  bottom: -80%;
+  right: 0;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.backgroundCont {
+  background-image: url("../assets/logos/bLogoNew.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center 30px;
+  width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.grid-item {
+  background-color: #fff;
+  text-align: center;
+}
+.sectionWrapper {
+  padding-bottom: 120px;
+}
+
+.textOne {
+  color: #fff;
+  line-height: 78px;
+  font-size: 64px;
+  font-weight: 500;
+  margin-top: 80px;
+}
+
+.textTwo {
+  color: #fff;
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 1950px) {
+  .textOne {
+    color: #fff;
+    line-height: 57px;
+    font-size: 48px;
+    font-weight: 500;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .desktop {
+    display: none;
+  }
+
+  .top-left-svg {
+    position: absolute;
+    width: 40%;
+    top: 170px;
+    left: 0;
+    opacity: 0.2;
+  }
+
+  .bottom-right-svg {
+    position: absolute;
+    width: 40%;
+    transform: rotate(180deg);
+    bottom: -70%;
+    right: 0;
+    opacity: 0.2;
+    z-index: 0;
+  }
+
+  .bLogoBG {
+    display: flex;
+    position: absolute;
+    opacity: 0.2;
+    width: 800px;
+    height: 1000px;
+    padding-top: 40px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .top-left-svg {
+    position: absolute;
+    width: 55%;
+    top: 170px;
+    left: 0;
+    opacity: 0.2;
+  }
+
+  .bottom-right-svg {
+    position: absolute;
+    width: 55%;
+    transform: rotate(180deg);
+    bottom: -40%;
+    right: 0;
+    opacity: 0.2;
+    z-index: 0;
+  }
+
+  .bLogoBG {
+    width: 400px;
+  }
+  .textOne {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .top-left-logo img {
+    width: 500px !important;
+    height: 600px !important;
+  }
+
+  .bottom-right-logo img {
+    position: absolute;
+    width: 500px !important;
+    height: 600px !important;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .bLogoBG {
+    width: 700px;
+    position: absolute;
+    left: 8%;
+  }
+
+  .sectionWrapper {
+    padding: 0 !important;
+  }
+  .textOne {
+    font-size: 46px;
+    line-height: 44px;
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .sectionWrapper {
+    padding: 0 !important;
+  }
+  .textOne {
+    font-size: 32px;
+    line-height: 38px;
+    margin-top: 20px;
+  }
+}
+
+/* iphone PRO MAX  */
+@media screen and (max-width: 430px) {
+  .desktop {
+    display: none;
+  }
+
+  .break {
+    display: none;
+  }
+
+  .textTwo {
+    font-size: 16px;
+    line-height: 19.2px;
+    margin-bottom: 20px;
+  }
+
+  .sectionWrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .desktop2 {
+    display: none;
+  }
+
+  .textOne {
+    font-size: 32px;
+    line-height: 38px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+  }
+
+  .sectionWrapper {
+    padding: 0 !important;
+  }
+}
+
+/* iphone 12 size  */
+@media screen and (max-width: 400px) {
+  .desktop {
+    display: none;
+  }
+
+  .desktop2 {
+    display: none;
+  }
+
+  .sectionWrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .textOne {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .textTwo {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .sectionWrapper {
+    padding: 0 !important;
+  }
+}

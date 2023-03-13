@@ -1,0 +1,10 @@
+.footer-link {
+  margin-bottom: 0;
+  font-size: 18px;
+  line-height: 36px;
+}
+
+/* .footer-link::before {
+  content: "— ";
+  margin: 0px 10px 0px 10px;
+} */

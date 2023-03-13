@@ -1,0 +1,190 @@
+/* <----------------------------- TEXT STYLING GOBAL --------------------> */
+
+/*  GIGA-LARGE SCREEN ??? */
+
+.underline {
+  display: inline-block;
+  position: relative;
+  color: #3c469c;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #f5aac9;
+  transform-origin: bottom right;
+  transition: transform 0.4s ease-out;
+}
+
+.underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/* TRAINING FORMS */
+
+a.linkHover {
+  color: #3c469c;
+  font-weight: 500;
+  transition: color 200ms ease-in-out;
+}
+
+/* a.linkHover:hover {
+  color: #f5aac9;
+} */
+.mobileParagraph {
+  color: #fff;
+  font-size: 16px;
+  line-height: 19.2px;
+  font-weight: 300;
+}
+
+.textHeaderPinkMobile {
+  font-size: 16px;
+  line-height: 19.2px;
+  font-weight: 500;
+  color: #f5aac9;
+  margin-bottom: 18px;
+}
+
+.pinkHr {
+  border: 3px solid #f5aac9;
+  opacity: 1;
+  width: 112px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+#hoverPink:hover {
+  color: #f5aac9;
+  transition: all 0.2s ease-in-out;
+}
+
+.title {
+  color: #fff;
+  font-size: 64px;
+  line-height: 76.8px;
+  font-weight: 400;
+}
+
+.trainingForms {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21px;
+  margin-bottom: 20px;
+}
+.trainingForms p {
+  margin-bottom: 0;
+}
+.trainingFormsTitle {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.8px;
+  color: #fff;
+}
+
+@media screen and (max-width: 1800px) {
+  h1 {
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+    font-weight: 500;
+  }
+  /* .pinkHr {
+    border: 2px solid #f5aac9;
+    opacity: 1;
+    width: 112px;
+    margin-top: 14px;
+    margin-bottom: 45px;
+  } */
+
+  .title {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 400;
+  }
+
+  h1 {
+    font-size: 36px;
+    line-height: 43px;
+    color: #fff;
+    font-weight: 500;
+  }
+}
+
+/* -------------------------------------------- */
+
+/* LARGE LAPTOP/DESKTOP */
+
+/* LAPTOP REGULAR */
+
+/* SMALLER SCREENS/IPAD */
+
+.textHeaderPink {
+  color: #f5aac9;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .textHeaderPink {
+    color: #f5aac9;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .title {
+    color: #fff;
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 400;
+  }
+
+  h1 {
+    font-size: 24px;
+    line-height: 28px;
+    color: #fff;
+    font-weight: 500;
+  }
+
+  .trainingForms p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19.2px;
+    margin: 0;
+  }
+  .trainingForms h3 {
+    font-size: 13.5px;
+    color: #fff;
+    font-weight: 500;
+  }
+}
+
+.pinkHrMobile {
+  border: 2px solid #f5aac9;
+  background-color: #f5aac9;
+  opacity: 1;
+  width: 75px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.map-container {
+  height: 100%;
+  width: 100%;
+}
+
+.kartaBild {
+  background-image: url("../assets/images/kartaPrint.png");
+  width: 100%;
+  height: auto;
+  zoom: 80%;
+  margin-left: 60px;
+}

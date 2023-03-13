@@ -1,0 +1,195 @@
+.d-sm-inline.d-md-inline .nav-link-text::before {
+  content: "— ";
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 0;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.nav-link {
+  padding: 0;
+  font-weight: 400;
+}
+#navBar {
+  align-items: center;
+  height: 120px;
+  padding-top: 4px;
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+
+.navbar {
+  height: 120px;
+}
+
+.bambaLogo {
+  width: 178px;
+  height: 40px;
+}
+
+/* iPhone PRO MAX  */
+
+.headerLink {
+  margin: 0px 12px;
+}
+
+.active-link {
+  border-bottom: 5px solid #3c469c;
+  padding-bottom: 24px;
+}
+
+#hoverLink {
+  color: #fff;
+  font-size: 18px;
+  line-height: 21.8px;
+  margin: 0px 12px 0px 12px;
+}
+
+#hoverLink {
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+#hoverLink:hover {
+  color: #f5aac9;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-primary {
+  --bs-btn-color: #000;
+  --bs-btn-bg: #f5aac9;
+  --bs-btn-border-color: #d9d9d9;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #f5aac9;
+  --bs-btn-hover-border-color: #f5aac9;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #f5aac9;
+  --bs-btn-active-border-color: #f5aac9;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #000;
+  --bs-btn-disabled-bg: #f5aac9;
+  --bs-btn-disabled-border-color: #f5aac9;
+}
+
+.offcanvas-header {
+  padding-left: 12px;
+}
+
+.mobileBtn {
+  width: 100%;
+  border-radius: 0;
+  color: #000;
+  background-color: #d9d9d9;
+  height: 50px;
+  margin-top: 7em;
+  margin-bottom: 2em;
+}
+.mobileBtn p {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+
+#bookingBtn {
+  width: 147px;
+  height: 50px;
+  padding: 14px 50px;
+  gap: 10px;
+  top: 40px;
+  font-size: 18px;
+  color: #000;
+  font-weight: 500;
+  margin-left: 5em;
+}
+
+@media (min-width: 767px) {
+  #bookingBtn:hover {
+    background-color: #f5aac9 !important;
+    color: #000;
+    transition: all 0.2s ease-in-out !important;
+  }
+}
+
+@media screen and (max-width: 2000px) {
+  #hoverLink {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .navbar {
+    height: 90px;
+  }
+
+  .active-link {
+    border-bottom: 4px solid #3c469c;
+    padding-bottom: 18px;
+  }
+
+  .bambaLogo {
+    width: 133px;
+    height: 30px;
+  }
+
+  #bookingBtn {
+    width: 110.25px;
+    height: 37.5px;
+    padding: 10.5px 37.5px;
+    gap: 7.5px;
+    top: 30px;
+    font-size: 13.5px;
+    color: #000;
+    font-weight: 500;
+    margin-left: 5.25em;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar {
+    padding: 24px 0px 24px 0px;
+    height: 82px;
+  }
+  .bambaLogo {
+    width: 114px;
+    height: 26px;
+  }
+  #navBar {
+    /* padding-top: 15px; */
+    align-items: start !important;
+  }
+}
+@media screen and (max-width: 430px) {
+  body > div.offcanvas-lg.offcanvas-start.show {
+    width: 100dvh;
+  }
+  .navbar {
+    padding: 24px 0px 24px 0px;
+    height: 82px;
+    align-content: center;
+  }
+
+  .bambaLogo {
+    width: 114px;
+    height: 26px;
+    margin-bottom: 1px;
+  }
+}
+
+/* iPhone 12 size  */
+
+@media screen and (max-width: 400px) {
+  .navbar {
+    padding: 24px 0px 24px 0px;
+  }
+
+  .bambaLogo {
+    width: 114px;
+    height: 26px;
+    margin-bottom: 1px;
+  }
+}
