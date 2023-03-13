@@ -11,7 +11,20 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import MembershipScreen from "./screens/MembershipScreen";
 import LandingScreen from "./screens/LandingScreen";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import ScheduelScreen from "./screens/ScheduleScreen";
+import CampScreen from "./screens/CampScreen";
+import HomeScreen from "./screens/HomeScreen";
+import ContactScreen from "./screens/ContactScreen";
+import ShopScreen from "./screens/ShopScreen";
+import MobileFooter from "./components/MobileFooter";
+import TrainingScreen from "./screens/TrainingScreen";
+
+import ScheduleComponent from "./components/ScheduleComponent";
+import PtScreen from "./screens/PtScreen";
+import DetailsScreen3 from "./screens/detailscreens/DetailsScreen3";
+import MedlemskapScreen from "./screens/MedlemskapScreen";
+import NajDesktop from "./components/NajDesktop";
+import NotFound from "./screens/NotFound";
 
 function App() {
   const location = useLocation();
@@ -61,7 +74,10 @@ function App() {
         <Route path="/najmedin" element={<NajDesktop />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-      <Footer />
+
+      <MobileFooter currentPage={location.pathname} />
+
+      <Footer currentPage={location.pathname} />
     </div>
   );
 }
