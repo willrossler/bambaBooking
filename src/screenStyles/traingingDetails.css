@@ -1,0 +1,99 @@
+.mobileView {
+  display: none;
+}
+
+.img-fluid {
+}
+
+.descriptionTitle {
+  font-weight: 500;
+  color: #f5aac9;
+  font-size: 18px;
+  line-height: 21.6px;
+  margin: 0;
+}
+
+.descriptionText {
+  font-size: 18px;
+  line-height: 21.6px;
+  color: #fff;
+  font-weight: 300;
+  margin: 0;
+}
+
+.descriptionTextMobile {
+  font-weight: 300;
+  font-size: 16px;
+  color: #fff;
+  line-height: 19.2px;
+  margin: 0;
+}
+
+.descriptionTitleMobile {
+  font-size: 16px;
+  line-height: 19.2px;
+  font-weight: 500;
+  color: #f5aac9;
+}
+
+.boxerBannerContainer {
+  background-color: rgb(59, 91, 134);
+}
+
+.mobileTrainerGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between !important;
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+  .mobileTrainerGrid {
+  }
+
+  .mobileTrainerGrid > * {
+    width: 33.33%;
+  }
+}
+@media (max-width: 767px) {
+}
+
+.wrapper {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .descriptionText {
+    font-size: 16.5px;
+    line-height: 19px;
+    color: #fff;
+    font-weight: 300;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .desktopView {
+    display: none;
+  }
+
+  .mobileView {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .desktopView {
+    display: none;
+  }
+
+  .mobileView {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,41 @@
+.marker {
+  position: relative;
+  width: 44px;
+  height: 44px;
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+/* white outer circle */
+.outer-circle {
+  width: 37px; /* adjust size of white circle */
+  height: 37px; /* adjust size of white circle */
+  border: 4px solid #ffffff; /* adjust border width */
+}
+
+/* blue middle circle */
+.middle-circle {
+  width: 28px;
+  height: 28px;
+  border: 16px solid #3c469c; /* adjust border width to make the blue circle thicker */
+}
+
+/* pink inner circle */
+.inner-circle::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 14px; /* adjust size of pink circle */
+  height: 14px; /* adjust size of pink circle */
+  border-radius: 50%;
+  background-color: #f5aac9;
+}

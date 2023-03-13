@@ -1,85 +1,106 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import bLogo from "../assets/logos/bLogo.svg";
-import bambaLogo from "../assets/logos/bambaLogo.svg";
-
+import "../componentStyles/footer.css";
+import "../globalStyles/textStyles.css";
+import { Link, useLocation } from "react-router-dom";
+import { Container, Row, Col } from "react-bootstrap";
 
 const Footer = () => {
+  const location = useLocation();
+  const [footerColor, setfooterColor] = useState("black");
+
+  useEffect(() => {
+    if (location.pathname === "/booking") {
+      setfooterColor("black");
+    } else {
+      setfooterColor("#3C469C");
+    }
+  }, [location.pathname]);
+
   return (
-    <>
-      <div style={{ backgroundColor: "black" }}>
-        <nav className="navbar navbar-dark py-5">
-          <div className="container d-flex justify-content-start sm-col">
-            <a href="/">
-              <img className="navbar-brand" src={bLogo}></img>
-            </a>
-
-            <div className="row ">
-              <hr
-                style={{
-                  borderTop: "2px solid white",
-                  width: "230px",
-                  opactity: "1",
-                  transform: "rotate(90deg)",
-                }}
-              />
-              <div className="col text-start text-white ">
-                <p style={{ marginBottom: "0" }}>Bamba</p>
-                <p style={{ marginBottom: "0", opacity: "0.5" }}>
-                  Lützengatan 10
-                </p>
-                <p style={{ marginBottom: "0", opacity: "0.5" }}>
-                  11520 Stockholm
-                </p>
+    <div
+      className="desktopView"
+      style={{
+        backgroundColor: footerColor,
+        padding: "50px",
+        marginTop: "100px",
+      }}
+    >
+      <Container style={{ paddingTop: "40px" }} className="desktopView">
+        <Row>
+          <Col xs={12} md={6} style={{ display: "flex", flexDirection: "row" }}>
+            <Link style={{ marginRight: "15%" }} to="/">
+              <img className="footerLogo " src={bLogo} />
+            </Link>
+            <ul className="list-unstyled h-100 text-start infoStylesFooter">
+              <li>
+                <Link to="/">
+                  <p id="hoverPink">Bamba</p>
+                </Link>
+              </li>
+              <li>
+                <p style={{ opacity: "0.5" }}>Lützengatan 10</p>
+                <p style={{ opacity: "0.5" }}>11520 Stockholm</p>
                 <p style={{ opacity: "0.5" }}>Sweden</p>
-                <p style={{ marginBottom: "0" }}>info@bamba.se</p>
-                <p style={{}}>www.bambaostermalm.se</p>
-                <p style={{ marginBottom: "0" }}>Instagram@bambaostermalm</p>
-              </div>
+              </li>
+              <br />
+              <li>
+                <a href="mailto:info@bambaostermalm.se">
+                  <p id="hoverPink">
+                    {" "}
+                    <span>info@bambaostermalm.se</span>
+                  </p>
+                </a>
+                <a href="www.bambaostermalm.se">
+                  <p id="hoverPink">www.bambaostermalm.se</p>
+                </a>
+              </li>
+              <br />
+              <li>
+                <a href="https://www.instagram.com/bambaostermalm/">
+                  <p id="hoverPink">Instagram@bambaostermalm</p>
+                </a>
+              </li>
+            </ul>
+          </Col>
+          <Col xs={12} md={6}>
+            <div className="col linkStylesFooter">
+              <ul className="list-unstyled">
+                <li>
+                  <Link to="/">
+                    <p id="hoverPink">— Filosofi</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/training">
+                    <p id="hoverPink">— Träning </p>
+                  </Link>
+                  <Link to="/medlemskap">
+                    <p id="hoverPink">— Medlemskap </p>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/contact">
+                    {" "}
+                    <p id="hoverPink">— Kontakt </p>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/shop">
+                    <p id="hoverPink"> — Om oss</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/booking">
+                    <p id="hoverPink">— Boka</p>
+                  </Link>
+                </li>
+              </ul>
             </div>
-          </div>
-        </nav>
-      </div>
-
-      {/* <hr
-          style={{
-            borderTop: "2px solid white",
-            width: "230px",
-            opactity: "1",
-            transform: "rotate(90deg)",
-          }}
-        />
-        <div className="col text-start text-white ">
-          <p style={{ marginBottom: "0" }}>— PHILOSPHY</p>
-          <p style={{ marginBottom: "0", opacity: "0.5" }}>— TRAINING</p>
-          <p style={{ marginBottom: "0", opacity: "0.5" }}>— CONTACT</p>
-          <p style={{ opacity: "0.5" }}>— BOOK CLASSES</p>
-        </div> */}
-    </>
-    // <footer
-    //   style={{ backgroundColor: "black" }}
-    //   className="p-5 d-flex text-white text-center position-relative"
-    // >
-    //   <div
-    //     style={{ gap: "" }}
-    //     className="container d-flex flex-row justify-content-start"
-    //   >
-    //     {/* <p className="lead">Copyright &copy; 2022 Bamba AB</p> */}
-    //     <img src={bLogo} />
-    //     <div className="contactInfo text-start">
-    //       <p>Bamba</p>
-    //       <p>Lützengatan 10</p>
-    //       <p>11520 Stockholm</p>
-    //       <p>Sweden</p>
-    //       <p>info@bamba.se</p>
-    //       <p>www.bambaostermalm.se</p>
-    //       <p>Instagram @bambaostermalm</p>
-    //     </div>
-
-    //     <a href="/" className="position-absolute bottom-0 end-0 p-5">
-    //       <i className="bi bi-arrow-up-circle h1 color-white"></i>
-    //     </a>
-    //   </div>
-    // </footer>
+          </Col>
+        </Row>
+      </Container>
+    </div>
   );
 };
 
