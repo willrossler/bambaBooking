@@ -86,7 +86,8 @@ const ShopScreen = () => {
           <AbbePrez />
           <JockePrez />
           <MartinPrez />
-          <NajPrez id="najmed" />
+          <div id="najmed"></div>
+          <NajPrez />
         </div>
       </Container>
     </>

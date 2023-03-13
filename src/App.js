@@ -1,4 +1,10 @@
-import { ScrollRestoration, useLocation } from "react-router-dom";
+import {
+  HashRouter,
+  Routes,
+  Route,
+  ScrollRestoration,
+  useLocation,
+} from "react-router-dom";
 import { useEffect } from "react";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -6,7 +12,6 @@ import MembershipScreen from "./screens/MembershipScreen";
 import LandingScreen from "./screens/LandingScreen";
 import ScheduelScreen from "./screens/ScheduleScreen";
 import CampScreen from "./screens/CampScreen";
-import { Routes, Route } from "react-router-dom";
 import HomeScreen from "./screens/HomeScreen";
 import ContactScreen from "./screens/ContactScreen";
 import ShopScreen from "./screens/ShopScreen";
@@ -18,9 +23,11 @@ import PtScreen from "./screens/PtScreen";
 import DetailsScreen3 from "./screens/detailscreens/DetailsScreen3";
 import MedlemskapScreen from "./screens/MedlemskapScreen";
 import NajDesktop from "./components/NajDesktop";
+import NotFound from "./screens/NotFound";
 
 function App() {
   const location = useLocation();
+
   const { pathname } = useLocation();
   useEffect(() => {
     if (location.hash === "") {
@@ -65,6 +72,7 @@ function App() {
         <Route path="/medlemskap" element={<MedlemskapScreen />} />
         <Route path="/shop" element={<ShopScreen />} />
         <Route path="/najmedin" element={<NajDesktop />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
 
       <MobileFooter currentPage={location.pathname} />

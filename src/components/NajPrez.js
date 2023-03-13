@@ -1,9 +1,16 @@
-import React, { useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import najmedin from "../assets/images/Najmedin.jpg";
+import { useLocation } from "react-router";
 
 const NajPrez = () => {
+  const location = useLocation();
+
   const [showFullDescription, setShowFullDescription] = useState(false);
   const maxDescriptionLength = 240;
+
+  const myRef = useRef(null);
+
+  const executeScroll = () => myRef.current.scrollIntoView();
 
   const toggleShowFullDescription = () => {
     setShowFullDescription((prevState) => !prevState);
@@ -16,6 +23,13 @@ const NajPrez = () => {
   const truncatedDescription =
     descriptionText.substring(0, maxDescriptionLength) + "...";
 
+  useEffect(() => {
+    console.log(location);
+    if (location.hash === "#najmed") {
+      executeScroll();
+    }
+  }, [location]);
+
   return (
     <>
       <div>
@@ -26,7 +40,11 @@ const NajPrez = () => {
           style={{ marginBottom: "40px", marginTop: "40px" }}
         />
         <h1 className="title">Najmedin Razavi</h1>
-        <p className="descriptionTextMobile" style={{ fontWeight: "500" }}>
+        <p
+          ref={myRef}
+          className="descriptionTextMobile"
+          style={{ fontWeight: "500" }}
+        >
           Mental Coach
         </p>
         <hr style={{}} className="aboutUsHR" />

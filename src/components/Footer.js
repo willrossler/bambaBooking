@@ -12,10 +12,8 @@ const Footer = () => {
   useEffect(() => {
     if (location.pathname === "/booking") {
       setfooterColor("black");
-      console.log(footerColor);
     } else {
       setfooterColor("#3C469C");
-      console.log(footerColor);
     }
   }, [location.pathname]);
 
