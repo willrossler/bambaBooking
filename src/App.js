@@ -8,6 +8,8 @@ import {
 } from "react-router-dom";
 import { useEffect } from "react";
 import Footer from "./components/Footer";
+import MobileFooter from "./components/MobileFooter";
+
 import Header from "./components/Header";
 import MembershipScreen from "./screens/MembershipScreen";
 import LandingScreen from "./screens/LandingScreen";
@@ -16,7 +18,6 @@ import CampScreen from "./screens/CampScreen";
 import HomeScreen from "./screens/HomeScreen";
 import ContactScreen from "./screens/ContactScreen";
 import ShopScreen from "./screens/ShopScreen";
-import MobileFooter from "./components/MobileFooter";
 import TrainingScreen from "./screens/TrainingScreen";
 
 import ScheduleComponent from "./components/ScheduleComponent";
