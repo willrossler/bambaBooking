@@ -8,12 +8,12 @@ const MartinPrez = () => {
     setShowMore(!showMore);
   };
 
-  let descriptionText =
-    "Mitt sportutövande tar avstamp i amerikansk fotboll där jag, efter några år i landslaget, bl.a. tog guld i det nordiska mästerskapet. Med en avslutad sportkarriär i ryggen så är jag idag specialist inom tyngdlyftning och styrketräning samtidigt som jag själv lär mig diverse kampsporter. Arbetskarriären inom träning började på West Barbell Club i Bromma, ett gym med fokus på att bygga upp och utveckla atleter. Utöver det har jag varit coach för Alvik Basket, Brommapojkarna och Bromma Maniacs i amerikansk fotboll. Sedan 2015 har jag arbetat som lärare på Personal Training School, där jag utbildar personliga tränare i det praktiska utövandet samt i grundläggande anatomi.";
-
   if (!showMore) {
     descriptionText = descriptionText.substring(0, 200) + "...";
   }
+
+  let descriptionText =
+    "Mitt sportutövande tar avstamp i amerikansk fotboll där jag, efter några år i landslaget, bl.a. tog guld i det nordiska mästerskapet. Med en avslutad sportkarriär i ryggen så är jag idag specialist inom tyngdlyftning och styrketräning samtidigt som jag själv lär mig diverse kampsporter. Arbetskarriären inom träning började på West Barbell Club i Bromma, ett gym med fokus på att bygga upp och utveckla atleter. Utöver det har jag varit coach för Alvik Basket, Brommapojkarna och Bromma Maniacs i amerikansk fotboll. Sedan 2015 har jag arbetat som lärare på Personal Training School, där jag utbildar personliga tränare i det praktiska utövandet samt i grundläggande anatomi.";
 
   return (
     <>
@@ -29,7 +29,7 @@ const MartinPrez = () => {
           Personlig Tränare
         </p>
         <hr style={{}} className="aboutUsHR" />
-        {/* <hr style={{ color: "#fff", opacity: "0.2" }} /> */}
+        <hr style={{ color: "#fff", opacity: "0.2" }} />
 
         <p className="descriptionTextMobile">{descriptionText}</p>
         {showMore && (

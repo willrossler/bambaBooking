@@ -53,7 +53,6 @@ const DetailsScreen3 = () => {
   const [title, setTitle] = useState("");
 
   useEffect(() => {
-    console.log(location.pathname);
     switch (location.pathname) {
       case "/boxing":
         setMobileSrc(boxingPicMobile);
