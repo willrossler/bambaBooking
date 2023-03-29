@@ -19,11 +19,11 @@ const TrainerCardJocke = () => {
               jocke@bamba.se
             </p>
           </a>
-          <a href="tel:+1234567890">
+          {/* <a href="tel:+1234567890">
             <p id="hoverPink" style={{ fontWeight: "400" }}>
               +467 012 345 67
             </p>
-          </a>
+          </a> */}
         </div>
       </div>
     </div>
