@@ -15,8 +15,8 @@ const TrainerCardJocke = () => {
           <p style={{ opacity: "0.5", fontWeight: "400" }}>Personlig Tränare</p>
           <p style={{ opacity: "0.5", fontWeight: "400" }}> — </p>
           <a href="mailto:email@example.com">
-            <p id="hoverPink" style={{ fontWeight: "400" }}>
-              jocke@bamba.se
+            <p id="hoverPink" style={{ fontWeight: "400", fontSize: "14px" }}>
+              jocke@bambaostermalm.se
             </p>
           </a>
           {/* <a href="tel:+1234567890">

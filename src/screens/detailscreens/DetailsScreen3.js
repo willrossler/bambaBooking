@@ -142,33 +142,18 @@ const DetailsScreen3 = () => {
                 className="img-fluid"
                 alt="Workout Image"
               />
-              <div className=" ">
-                {/* todo avstånd bilder enligt figma */}
+              <div className="">
                 {location.pathname === "/mentaltraining" && <TrainerCardNaj />}
-                {location.pathname === "/bootcamp" && <TrainerCardAbbe />}
-                {location.pathname === "/foretagstraning" && (
-                  <TrainerCardAbbe />
+                {location.pathname === "/weightlifting" && <TrainerCardAbbe />}
+                {!(
+                  location.pathname === "/mentaltraining" ||
+                  location.pathname === "/weightlifting"
+                ) && (
+                  <div className="d-flex flex-row justify-content-between">
+                    <TrainerCardAbbe />
+                    <TrainerCardJocke />
+                  </div>
                 )}
-                {location.pathname === "/ungdomstraning" && (
-                  <TrainerCardMartin />
-                )}
-                {location.pathname !== "/mentaltraining" &&
-                  location.pathname !== "/bootcamp" &&
-                  location.pathname !== "/foretagstraning" &&
-                  location.pathname !== "/ungdomstraning" && (
-                    <div className="d-flex flex-row justify-content-between">
-                      {location.pathname === "/weightlifting" && (
-                        <TrainerCardMartin />
-                      )}
-                      <TrainerCardAbbe />
-                      <TrainerCardJocke />
-                      {location.pathname !== "/boxing" &&
-                        location.pathname !== "/martialarts" &&
-                        location.pathname !== "/weightlifting" && (
-                          <TrainerCardMartin />
-                        )}
-                    </div>
-                  )}
               </div>
             </div>
           </Col>
@@ -206,28 +191,17 @@ const DetailsScreen3 = () => {
         </div>
         <hr />
         <div className="mobileTrainerGrid">
-          {/* todo avstånd bilder enligt figma */}
           {location.pathname === "/mentaltraining" && <TrainerCardNaj />}
-          {location.pathname === "/bootcamp" && <TrainerCardAbbe />}
-          {location.pathname === "/foretagstraning" && <TrainerCardAbbe />}
-          {location.pathname === "/ungdomstraning" && <TrainerCardMartin />}
-          {location.pathname !== "/mentaltraining" &&
-            location.pathname !== "/bootcamp" &&
-            location.pathname !== "/foretagstraning" &&
-            location.pathname !== "/ungdomstraning" && (
-              <div className="mobileTrainerGrid">
-                {location.pathname === "/weightlifting" && (
-                  <TrainerCardMartin />
-                )}
-                <TrainerCardAbbe />
-                <TrainerCardJocke />
-                {location.pathname !== "/boxing" &&
-                  location.pathname !== "/martialarts" &&
-                  location.pathname !== "/weightlifting" && (
-                    <TrainerCardMartin />
-                  )}
-              </div>
-            )}
+          {location.pathname === "/weightlifting" && <TrainerCardAbbe />}
+          {!(
+            location.pathname === "/mentaltraining" ||
+            location.pathname === "/weightlifting"
+          ) && (
+            <>
+              <TrainerCardAbbe />
+              <TrainerCardJocke />
+            </>
+          )}
         </div>
       </Container>
     </>
