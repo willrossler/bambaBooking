@@ -142,16 +142,29 @@ const DetailsScreen3 = () => {
                 className="img-fluid"
                 alt="Workout Image"
               />
-              <div className="">
+              <div className="d-flex flex-row justify-content-between">
                 {location.pathname === "/mentaltraining" && <TrainerCardNaj />}
-                {location.pathname === "/weightlifting" && <TrainerCardAbbe />}
+                {location.pathname === "/bootcamp" && <TrainerCardAbbe />}
+                {location.pathname === "/weightlifting" && (
+                  <>
+                    <TrainerCardAbbe /> <TrainerCardMartin />
+                  </>
+                )}
+                {location.pathname === "/boxing" && (
+                  <>
+                    <TrainerCardAbbe /> <TrainerCardJocke />
+                  </>
+                )}
                 {!(
                   location.pathname === "/mentaltraining" ||
-                  location.pathname === "/weightlifting"
+                  location.pathname === "/weightlifting" ||
+                  location.pathname === "/bootcamp" ||
+                  location.pathname === "/boxing"
                 ) && (
                   <div className="d-flex flex-row justify-content-between">
                     <TrainerCardAbbe />
                     <TrainerCardJocke />
+                    <TrainerCardMartin />
                   </div>
                 )}
               </div>
@@ -192,14 +205,28 @@ const DetailsScreen3 = () => {
         <hr />
         <div className="mobileTrainerGrid">
           {location.pathname === "/mentaltraining" && <TrainerCardNaj />}
-          {location.pathname === "/weightlifting" && <TrainerCardAbbe />}
+          {location.pathname === "/bootcamp" && <TrainerCardAbbe />}
+
+          {location.pathname === "/weightlifting" && (
+            <>
+              <TrainerCardAbbe /> <TrainerCardMartin />
+            </>
+          )}
+          {location.pathname === "/boxing" && (
+            <>
+              <TrainerCardAbbe /> <TrainerCardJocke />
+            </>
+          )}
           {!(
             location.pathname === "/mentaltraining" ||
-            location.pathname === "/weightlifting"
+            location.pathname === "/weightlifting" ||
+            location.pathname === "/bootcamp" ||
+            location.pathname === "/boxing"
           ) && (
             <>
               <TrainerCardAbbe />
               <TrainerCardJocke />
+              <TrainerCardMartin />
             </>
           )}
         </div>
