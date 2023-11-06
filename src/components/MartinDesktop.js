@@ -8,7 +8,7 @@ const MartinDesktop = () => {
       <Row className="d-flex">
         <Col style={{ paddingRight: "5rem" }} xs={12} md={6}>
           <div>
-            <h1 className="title">Martin Pettersson</h1>
+            <h1 className="title">Altan Celik</h1>
             <hr
               style={{ marginTop: "20px", marginBottom: "60px" }}
               className="pinkHr"
@@ -19,23 +19,19 @@ const MartinDesktop = () => {
             <br />
             <br />
             <p className="descriptionText">
-              Mitt sportutövande tar avstamp i amerikansk fotboll där jag, efter
-              några år i landslaget, bl.a. tog guld i det nordiska mästerskapet.
-              Med en avslutad sportkarriär i ryggen så är jag idag specialist
-              inom tyngdlyftning och styrketräning samtidigt som jag själv lär
-              mig diverse kampsporter. Arbetskarriären inom träning började på
-              West Barbell Club i Bromma, ett gym med fokus på att bygga upp och
-              utveckla atleter. Utöver det har jag varit coach för Alvik Basket,
-              Brommapojkarna och Bromma Maniacs i amerikansk fotboll. Sedan 2015
-              har jag arbetat som lärare på Personal Training School, där jag
-              utbildar personliga tränare i det praktiska utövandet samt i
-              grundläggande anatomi.
+              Jag har utövat kampsport sedan 8 års ålder inkluderat karate,
+              kickboxning, boxning, taekwondo och Brasilianskt Jiu Jitsu. Mina
+              främsta meriter som profissionell är pallplatser inom BJJ och
+              Submission Wrestling. Sedan 2010 sitter jag i utbildningskomitten
+              för Svenska Budo & Kampsportsförbundet med stor inblick i
+              föreningslivet och utvecklingen av tränarna i Sverige.
               <br />
               <br />
-              Min drivkraft som personlig tränare är att se din utveckling för
-              att tillsammans kunna glädjas åt att du uppnått dina mål. Under
-              våra sessioner kan du förvänta dig fokus på precision och
-              noggrannhet i både utövande och träningsprogram.{" "}
+              Utöver mitt yrke jobbar jag ideellt som tränare för MMA och
+              Grappling utövare, allt från motionärer till amatörer och proffs.
+              Min drivkraft är att engagera mig i människors idrottsliga och
+              fysiska utveckling och prestation. Med stor motivation tränar jag
+              både nybörjare och elitutövare på proffsnivå.{" "}
             </p>
             <br />
             <p className="descriptionTitle" style={{ fontWeight: "400" }}>
@@ -44,10 +40,9 @@ const MartinDesktop = () => {
             <ul className="descriptionText" style={{ lineHeight: "21px" }}>
               <br />
 
-              <li>Styrketräning</li>
-              <li>Tyngdlyftning</li>
+              <li>Personlig Träning & Utveckling</li>
+              <li>Kampsport</li>
               <li>Sportspecifik prestation</li>
-              <li>Öka muskelmassa</li>
             </ul>
           </div>
         </Col>

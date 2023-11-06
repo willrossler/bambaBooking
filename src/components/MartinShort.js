@@ -10,7 +10,7 @@ const MartinShort = () => {
           className="img-fluid"
           alt="Martin Pettersson"
         />
-        <h1 className="title">Martin Pettersson</h1>
+        <h1 className="title">Altan Celik</h1>
         <p className="descriptionTextMobile" style={{ fontWeight: "500" }}>
           Personlig Tränare
         </p>
