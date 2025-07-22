@@ -33,7 +33,6 @@ const ShopScreen = () => {
     <>
       <Container style={{ marginTop: "80px" }} className="desktopView">
         <AbbeDesktop />
-        <JockeDesktop />
         <MartinDesktop />
         <Row style={{ marginTop: "120px" }} className="d-flex">
           <Col style={{ paddingRight: "5rem" }} xs={12} md={6}>
@@ -84,7 +83,6 @@ const ShopScreen = () => {
         <hr style={{ margin: "0" }} />
         <div>
           <AbbePrez />
-          <JockePrez />
           <MartinPrez />
           <div id="najmed"></div>
           <NajPrez />
@@ -92,6 +90,6 @@ const ShopScreen = () => {
       </Container>
     </>
   );
-};
+};  
 
 export default ShopScreen;
