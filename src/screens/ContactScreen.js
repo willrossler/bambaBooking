@@ -96,7 +96,6 @@ const ContactScreen = () => {
           </h1>
           <div className="mobileTrainerGrid">
             <TrainerCardAbbe />
-            <TrainerCardJocke />
             <TrainerCardMartin />
           </div>{" "}
         </section>

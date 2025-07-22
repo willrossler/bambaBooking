@@ -37,7 +37,7 @@ const NajPrez = () => {
           src={najmedin}
           className="najmedinPic"
           alt="Najmedin Razavi"
-          style={{ marginBottom: "40px", marginTop: "40px" }}
+          style={{ marginBottom: "40px", marginTop: "40px", maxWidth: '100%', height: 'auto', display: 'block' }}
         />
         <h1 className="title">Najmedin Razavi</h1>
         <p
