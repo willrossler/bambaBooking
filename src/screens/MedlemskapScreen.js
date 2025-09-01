@@ -273,7 +273,7 @@ const membershipSections = [
   },
 ];
 
-// --- Återanvändbar Sektionskomponent ---
+// --- Återanvändbar Sektionskomponent ---// --- Återanvändbar Sektionskomponent ---
 const MembershipSection = ({ title, image, imageAlt, content }) => (
   <Row style={{ marginBottom: "120px" }} className="d-flex">
     <Col style={{ paddingRight: "5rem" }} xs={12} md={6}>
