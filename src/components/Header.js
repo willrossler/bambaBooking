@@ -152,7 +152,7 @@ function Header() {
               <Nav.Link>
   <Link
     id="hoverLink"
-    to="https://www.bambaostermalm.se/weeklyschedule"
+    to="/weeklyschedule"
     className={
       location.pathname === "/weeklyschedule"
         ? "d-none d-lg-inline active-link "
