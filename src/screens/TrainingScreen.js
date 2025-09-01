@@ -106,7 +106,7 @@ const TrainingScreen = () => {
         className="container text-start trainingLinks"
         style={getParentStyles(hoveredIndex)}
       >
-        <Link to="/bootcamp">
+       {/*  <Link to="/bootcamp">
           <div
             id="personalTraining"
             onMouseEnter={() => handleMouseEnter(1)}
@@ -115,7 +115,7 @@ const TrainingScreen = () => {
           >
             BOOT CAMP —
           </div>
-        </Link>
+        </Link>*/}
         <Link to="/weightlifting">
           <div
             id="weightLifting"
@@ -179,7 +179,7 @@ const TrainingScreen = () => {
           </div>
         </Link>
 
-        <Link to="/ungdomstraning">
+      {/*  <Link to="/ungdomstraning">
           <div
             id="mentalTraining"
             onMouseEnter={() => handleMouseEnter(8)}
@@ -188,7 +188,7 @@ const TrainingScreen = () => {
           >
             UNGDOMSTRÄNING —
           </div>
-        </Link>
+        </Link>*/}
       </div>
     </>
   );

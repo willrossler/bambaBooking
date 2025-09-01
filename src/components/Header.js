@@ -150,6 +150,19 @@ function Header() {
                 </Link>
               </Nav.Link>
               <Nav.Link>
+  <Link
+    id="hoverLink"
+    to="https://www.bambaostermalm.se/weeklyschedule"
+    className={
+      location.pathname === "/weeklyschedule"
+        ? "d-none d-lg-inline active-link "
+        : "d-none d-lg-inline "
+    }
+  >
+    SCHEMA
+  </Link>
+</Nav.Link>
+              <Nav.Link>
                 <Link
                   id="hoverLink"
                   to="contact"
@@ -215,6 +228,11 @@ function Header() {
                     — MEDLEMSKAP
                   </Link>
                 </Nav.Link>
+                <Nav.Link>
+  <Link to="https://www.bambaostermalm.se/weeklyschedule" className="d-lg-none" onClick={handleClose}>
+    — SCHEMA
+  </Link>
+</Nav.Link>
                 <Nav.Link>
                   <Link
                     to="contact"

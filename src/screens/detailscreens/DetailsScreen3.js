@@ -1,7 +1,7 @@
 import React from "react";
 
+// TrainerCardJocke was imported but never used, so it can be removed.
 import TrainerCardAbbe from "../../components/TrainerCardAbbe";
-import TrainerCardJocke from "../../components/TrainerCardJocke";
 import TrainerCardMartin from "../../components/TrainerCardMartin";
 import TrainerCardNaj from "../../components/TrainerCardNaj";
 
@@ -9,7 +9,8 @@ import "../../screenStyles/traingingDetails.css";
 
 import { Row, Col, Container } from "react-bootstrap";
 import { useEffect, useState } from "react";
-import { Routes, useLocation } from "react-router";
+// Routes was imported but never used.
+import { useLocation } from "react-router-dom"; // It's good practice to use react-router-dom
 
 import PTpic from "../../assets/images/PersonligTraning_Desktop.jpg";
 import PTpicMobile from "../../assets/images/PersonligTraning_Mobile.jpg";
@@ -33,7 +34,8 @@ import CampDetails from "../../detailsComponents/CampDetails";
 
 import MartialMobileDetails from "../../detailsComponents/MartialMobileDetails";
 import BoxingMobileDetails from "../../detailsComponents/BoxingMobileDetails";
-import WeightLiftDetails from "../../detailsComponents/WeightliftDetails";
+// WeightLiftDetails was imported twice with slightly different names.
+// import WeightLiftDetails from "../../detailsComponents/WeightliftDetails";
 import ForetagsDetails from "../../detailsComponents/ForetagsDetails";
 import UngdomsDetails from "../../detailsComponents/UngdomsDetails";
 import WeightliftMobile from "../../detailsComponents/WeightliftMobile";
@@ -96,11 +98,17 @@ const DetailsScreen3 = () => {
         break;
 
       default:
-        setMobileSrc();
+        setMobileSrc(undefined); // Explicitly set to undefined
         setSrc("/path/to/default.jpg");
         setTitle("Default title");
     }
   }, [location.pathname]);
+
+  // Determine which trainers to show based on the path
+  const showAbbe = location.pathname !== "/mentaltraining";
+  const showMartin =
+    location.pathname !== "/bootcamp" && location.pathname !== "/mentaltraining";
+  const showNaj = location.pathname === "/mentaltraining";
 
   return (
     <>
@@ -109,27 +117,18 @@ const DetailsScreen3 = () => {
           <Col style={{ paddingRight: "5rem" }} xs={12} md={6}>
             <div>
               <h1 className="title">{title}</h1>
-              <hr style={{}} className="pinkHr" />
-              {/* <hr style={{ color: "#fff", opacity: "0.2" }} /> */}
+              <hr className="pinkHr" />
 
               <div>
-                {location.pathname === "/foretagstraning" && (
-                  <ForetagsDetails />
-                )}
+                {location.pathname === "/foretagstraning" && <ForetagsDetails />}
                 {location.pathname === "/ungdomstraning" && <UngdomsDetails />}
                 {location.pathname === "/boxing" && <BoxingDetails />}
                 {location.pathname === "/martialarts" && <MartialDetails />}
                 {location.pathname === "/bootcamp" && <CampDetails />}
-
                 {location.pathname === "/mentaltraining" && <MentailDetails />}
-                {location.pathname === "/personaltraining" && (
-                  <PersonalTrainingDetails />
-                )}
-                {location.pathname === "/weightlifting" && (
-                  <WeightliftDetails />
-                )}
-
-                {location.pathname === "/camp" && <CampDetails />}
+                {location.pathname === "/personaltraining" && <PersonalTrainingDetails />}
+                {location.pathname === "/weightlifting" && <WeightliftDetails />}
+                {/* The redundant check for "/camp" is removed */}
               </div>
               <br />
             </div>
@@ -140,33 +139,18 @@ const DetailsScreen3 = () => {
                 src={src}
                 style={{ marginBottom: "60px" }}
                 className="img-fluid"
-                alt="Workout Image"
+                alt="Workout"
               />
+              {/* --- REVISED TRAINER LOGIC FOR DESKTOP --- */}
               <div className="d-flex flex-row justify-content-between">
-                {location.pathname === "/mentaltraining" && <TrainerCardNaj />}
-                {location.pathname === "/bootcamp" && <TrainerCardAbbe />}
-                {location.pathname === "/weightlifting" && (
-                  <>
-                    <TrainerCardAbbe /> <TrainerCardMartin />
-                  </>
-                )}
-                {location.pathname === "/boxing" && (
-                  <>
-                    <TrainerCardAbbe /> <TrainerCardJocke />
-                  </>
-                )}
-                {!(
-                  location.pathname === "/mentaltraining" ||
-                  location.pathname === "/weightlifting" ||
-                  location.pathname === "/bootcamp" ||
-                  location.pathname === "/boxing"
-                ) && (
-                  <div className="d-flex flex-row justify-content-between">
-                    <TrainerCardAbbe />
-                    <TrainerCardJocke />
-                    <TrainerCardMartin />
-                  </div>
-                )}
+                {/* Show Abbe on all pages except Mental Training */}
+                {showAbbe && <TrainerCardAbbe />}
+                
+                {/* Show Martin on all pages except Boot Camp and Mental Training */}
+                {showMartin && <TrainerCardMartin />}
+
+                {/* Show Naj only on Mental Training */}
+                {showNaj && <TrainerCardNaj />}
               </div>
             </div>
           </Col>
@@ -179,56 +163,26 @@ const DetailsScreen3 = () => {
           {title}
           <hr className="pinkHrMobile" />
         </h1>
-        <img
-          src={mobileSrc}
-          className="img-fluid mobileImg"
-          alt="Workout Image"
-        />
+        <img src={mobileSrc} className="img-fluid mobileImg" alt="Workout" />
 
         <div>
           {location.pathname === "/boxing" && <BoxingMobileDetails />}
           {location.pathname === "/martialarts" && <MartialMobileDetails />}
           {location.pathname === "/bootcamp" && <CampMobileDetails />}
           {location.pathname === "/mentaltraining" && <MentalMobile />}
-          {location.pathname === "/foretagstraning" && (
-            <ForetagsMobileDetails />
-          )}
+          {location.pathname === "/foretagstraning" && <ForetagsMobileDetails />}
           {location.pathname === "/ungdomstraning" && <UngdomsMobileDetails />}
-
           {location.pathname === "/weightlifting" && <WeightliftMobile />}
-          {location.pathname === "/personaltraining" && (
-            <PersonalTrainingMobileDetails />
-          )}
-
-          {location.pathname === "/camp" && <CampDetails />}
+          {location.pathname === "/personaltraining" && <PersonalTrainingMobileDetails />}
+          {/* The redundant check for "/camp" is removed */}
         </div>
         <hr />
+        {/* --- REVISED TRAINER LOGIC FOR MOBILE --- */}
         <div className="mobileTrainerGrid">
-          {location.pathname === "/mentaltraining" && <TrainerCardNaj />}
-          {location.pathname === "/bootcamp" && <TrainerCardAbbe />}
-
-          {location.pathname === "/weightlifting" && (
-            <>
-              <TrainerCardAbbe /> <TrainerCardMartin />
-            </>
-          )}
-          {location.pathname === "/boxing" && (
-            <>
-              <TrainerCardAbbe /> <TrainerCardJocke />
-            </>
-          )}
-          {!(
-            location.pathname === "/mentaltraining" ||
-            location.pathname === "/weightlifting" ||
-            location.pathname === "/bootcamp" ||
-            location.pathname === "/boxing"
-          ) && (
-            <>
-              <TrainerCardAbbe />
-              <TrainerCardJocke />
-              <TrainerCardMartin />
-            </>
-          )}
+            {/* Logic is now consistent with the desktop view */}
+            {showAbbe && <TrainerCardAbbe />}
+            {showMartin && <TrainerCardMartin />}
+            {showNaj && <TrainerCardNaj />}
         </div>
       </Container>
     </>

@@ -49,15 +49,11 @@ const LandingScreen = () => {
           </div>
 
           <div class="grid-container " style={{ marginBottom: "120px" }}>
-            <div class="grid-item">
-              <BookingMembership />
-            </div>
+  
             <div class="grid-item">
               <BookingClass />
             </div>
-            <div class="grid-item">
-              <BookingPT />
-            </div>
+
             <div class="grid-item">
               <BookingCamp />
             </div>
@@ -78,18 +74,18 @@ const LandingScreen = () => {
           </div>
 
           <div class="grid-container " style={{ marginBottom: "80px" }}>
-            <div class="grid-item">
+        {/*     <div class="grid-item">
               <BookingMembership />
-            </div>
-            <div class="grid-item">
-              <BookingClass />
-            </div>
-            <div class="grid-item">
+            </div> */}
+           <div class="grid-item">
+              <BookingClass /> 
+            </div> 
+         {/*    <div class="grid-item">
               <BookingPT />
-            </div>
-            <div class="grid-item">
+            </div> */}
+           <div class="grid-item">
               <BookingCamp />
-            </div>
+            </div>  
           </div>
         </div>
       </section>

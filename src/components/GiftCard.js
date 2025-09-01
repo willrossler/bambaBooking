@@ -43,6 +43,27 @@ const GiftCard = () => {
         <p className="descriptionTitleMobile" style={{ color: "#fff" }}>
           I lokalen finns det omklädningsrum, duschar och hygienartiklar.
         </p>
+        <div style={{ marginTop: "20px" }}>
+  <a
+    href="https://www.bambaostermalm.se/membership"
+  
+    style={{
+      display: "inline-block",
+      backgroundColor: "#6a4c93", // Lila
+      color: "#fff",
+      fontWeight: "bold",
+      padding: "10px 20px",
+      borderRadius: "8px",
+      textDecoration: "none",
+      fontSize: "1.1rem",
+      transition: "background-color 0.3s ease",
+    }}
+    onMouseOver={(e) => (e.target.style.backgroundColor = "#56377d")}
+    onMouseOut={(e) => (e.target.style.backgroundColor = "#6a4c93")}
+  >
+    Läs mer och bli medlem →
+  </a>
+</div>
       </div>
     </>
   );

@@ -19,6 +19,9 @@ const FooterLinks = () => {
       <Link to="/medlemskap" style={linkStyles}>
         <p className="footer-link">— Medlemskap</p>
       </Link>
+      <Link to="https://www.bambaostermalm.se/weeklyschedule" style={linkStyles}>
+        <p className="footer-link">— Schema</p>
+      </Link>
       <Link to="/contact" style={linkStyles}>
         <p className="footer-link">— Kontakt</p>
       </Link>

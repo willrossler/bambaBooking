@@ -64,40 +64,46 @@ const Footer = () => {
             </ul>
           </Col>
           <Col xs={12} md={6}>
-            <div className="col linkStylesFooter">
-              <ul className="list-unstyled">
-                <li>
-                  <Link to="/">
-                    <p id="hoverPink">— Filosofi</p>
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/training">
-                    <p id="hoverPink">— Träning </p>
-                  </Link>
-                  <Link to="/medlemskap">
-                    <p id="hoverPink">— Medlemskap </p>
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/contact">
-                    {" "}
-                    <p id="hoverPink">— Kontakt </p>
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/shop">
-                    <p id="hoverPink"> — Om oss</p>
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/booking">
-                    <p id="hoverPink">— Boka</p>
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </Col>
+  <div className="col linkStylesFooter">
+    <ul className="list-unstyled">
+      <li>
+        <Link to="/">
+          <p id="hoverPink">— Filosofi</p>
+        </Link>
+      </li>
+      <li>
+        <Link to="/training">
+          <p id="hoverPink">— Träning </p>
+        </Link>
+        <Link to="/medlemskap">
+          <p id="hoverPink">— Medlemskap </p>
+        </Link>
+      </li>
+      {/* New "Schema" Link */}
+      <li>
+        <Link to="https://www.bambaostermalm.se/weeklyschedule">
+          <p id="hoverPink">— Schema</p>
+        </Link>
+      </li>
+      <li>
+        <Link to="/contact">
+          <p id="hoverPink">— Kontakt </p>
+        </Link>
+      </li>
+      <li>
+        <Link to="/shop">
+          <p id="hoverPink"> — Om oss</p>
+        </Link>
+      </li>
+      <li>
+        <Link to="/booking">
+          <p id="hoverPink">— Boka</p>
+        </Link>
+      </li>
+    </ul>
+  </div>
+</Col>
+
         </Row>
       </Container>
     </div>
