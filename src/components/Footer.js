@@ -81,7 +81,7 @@ const Footer = () => {
       </li>
       {/* New "Schema" Link */}
       <li>
-        <Link to="https://www.bambaostermalm.se/weeklyschedule">
+        <Link to="/weeklyschedule">
           <p id="hoverPink">— Schema</p>
         </Link>
       </li>

@@ -229,7 +229,7 @@ function Header() {
                   </Link>
                 </Nav.Link>
                 <Nav.Link>
-  <Link to="https://www.bambaostermalm.se/weeklyschedule" className="d-lg-none" onClick={handleClose}>
+  <Link to="/weeklyschedule" className="d-lg-none" onClick={handleClose}>
     — SCHEMA
   </Link>
 </Nav.Link>
