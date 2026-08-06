@@ -1,9 +1,7 @@
 import React from "react";
 
-// TrainerCardJocke was imported but never used, so it can be removed.
-import TrainerCardAbbe from "../../components/TrainerCardAbbe";
-import TrainerCardMartin from "../../components/TrainerCardMartin";
-import TrainerCardNaj from "../../components/TrainerCardNaj";
+import TrainerCard from "../../components/TrainerCard";
+import { trainers } from "../../data/trainers";
 
 import "../../screenStyles/traingingDetails.css";
 
@@ -144,13 +142,13 @@ const DetailsScreen3 = () => {
               {/* --- REVISED TRAINER LOGIC FOR DESKTOP --- */}
               <div className="d-flex flex-row justify-content-between">
                 {/* Show Abbe on all pages except Mental Training */}
-                {showAbbe && <TrainerCardAbbe />}
+                {showAbbe && <TrainerCard trainer={trainers.abbe} />}
                 
                 {/* Show Martin on all pages except Boot Camp and Mental Training */}
-                {showMartin && <TrainerCardMartin />}
+                {showMartin && <TrainerCard trainer={trainers.martin} />}
 
                 {/* Show Naj only on Mental Training */}
-                {showNaj && <TrainerCardNaj />}
+                {showNaj && <TrainerCard trainer={trainers.naj} />}
               </div>
             </div>
           </Col>
@@ -180,9 +178,9 @@ const DetailsScreen3 = () => {
         {/* --- REVISED TRAINER LOGIC FOR MOBILE --- */}
         <div className="mobileTrainerGrid">
             {/* Logic is now consistent with the desktop view */}
-            {showAbbe && <TrainerCardAbbe />}
-            {showMartin && <TrainerCardMartin />}
-            {showNaj && <TrainerCardNaj />}
+            {showAbbe && <TrainerCard trainer={trainers.abbe} />}
+            {showMartin && <TrainerCard trainer={trainers.martin} />}
+            {showNaj && <TrainerCard trainer={trainers.naj} />}
         </div>
       </Container>
     </>

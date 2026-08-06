@@ -1,7 +1,5 @@
-import React, { useEffect } from "react";
-import NajPrez from "../components/NajPrez";
+import React from "react";
 import "../globalStyles/textStyles.css";
-import { useLocation } from "react-router";
 import { HashLink } from "react-router-hash-link";
 
 const MentailDetails = () => {

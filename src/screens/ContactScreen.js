@@ -3,14 +3,9 @@ import React from "react";
 import "../screenStyles/contactScreen.css";
 
 import ContactInfo from "../components/ContactInfo";
-import TrainerCardAbbe from "../components/TrainerCardAbbe";
-import TrainerCardMartin from "../components/TrainerCardMartin";
-import TrainerCardJocke from "../components/TrainerCardJocke";
+import TrainerCard from "../components/TrainerCard";
 import MapComponent from "../components/MapComponent";
-import MapMobile from "../detailsComponents/MapMobile";
-import { Row, Col } from "react-bootstrap";
-
-import contactPic from "../assets/images/contactPic.jpg";
+import { trainers } from "../data/trainers";
 
 const ContactScreen = () => {
   return (
@@ -66,11 +61,11 @@ const ContactScreen = () => {
               className="d-flex flex-row justify-content-start"
             >
               <div style={{ marginRight: "5%" }}>
-                <TrainerCardAbbe />
+                <TrainerCard trainer={trainers.abbe} />
               </div>
     
               <div style={{ marginRight: "5%", marginLeft: "5%" }}>
-                <TrainerCardMartin />
+                <TrainerCard trainer={trainers.martin} />
               </div>
             </div>
           </div>
@@ -93,8 +88,8 @@ const ContactScreen = () => {
             <hr className="pinkHrMobile" />
           </h1>
           <div className="mobileTrainerGrid">
-            <TrainerCardAbbe />
-            <TrainerCardMartin />
+            <TrainerCard trainer={trainers.abbe} />
+            <TrainerCard trainer={trainers.martin} />
           </div>{" "}
         </section>
       </div>

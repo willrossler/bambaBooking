@@ -1,5 +1,18 @@
+:root {
+  /* BAMBA brand palette - "Editorial noir, luftig" direction.
+     Same brand colors as before (pink from the logo, purple from the map
+     pin), just centralized here instead of being re-typed as literal hex
+     values across dozens of files. */
+  --bamba-bg: #141416;
+  --bamba-bg-raised: #0b0b0c;
+  --bamba-text: #ffffff;
+  --bamba-accent-pink: #f5aac9;
+  --bamba-accent-purple: #3c469c;
+}
+
 body {
   scroll-behavior: smooth;
+  background-color: var(--bamba-bg);
 }
 
 @font-face {

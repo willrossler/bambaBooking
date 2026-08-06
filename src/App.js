@@ -1,12 +1,6 @@
-import {
-  Routes,
-  Route,
-  ScrollRestoration,
-  useLocation,
-  Router,
-  BrowserRouter,
-} from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import { Container } from "react-bootstrap";
 import Footer from "./components/Footer";
 import MobileFooter from "./components/MobileFooter";
 
@@ -24,7 +18,8 @@ import ScheduleComponent from "./components/ScheduleComponent";
 import PtScreen from "./screens/PtScreen";
 import DetailsScreen3 from "./screens/detailscreens/DetailsScreen3";
 import MedlemskapScreen from "./screens/MedlemskapScreen";
-import NajDesktop from "./components/NajDesktop";
+import TrainerBio from "./components/TrainerBio";
+import { trainers } from "./data/trainers";
 import NotFound from "./screens/NotFound";
 
 function App() {
@@ -39,7 +34,10 @@ function App() {
   return (
     <div
       style={{
-        backgroundColor: location.pathname === "/booking" ? "#3C469C" : "black",
+        backgroundColor:
+          location.pathname === "/booking"
+            ? "var(--bamba-accent-purple)"
+            : "var(--bamba-bg)",
       }}
       className="App"
     >
@@ -67,12 +65,18 @@ function App() {
         <Route path="/personaltraining" element={<DetailsScreen3 />} />
         <Route path="/ungdomstraning" element={<DetailsScreen3 />} />
         <Route path="/foretagstraning" element={<DetailsScreen3 />} />
-        <Route path="/boxing3" element={<DetailsScreen3 />} />
         <Route path="/martialarts" element={<DetailsScreen3 />} />
         <Route path="/contact" element={<ContactScreen />} />
         <Route path="/medlemskap" element={<MedlemskapScreen />} />
         <Route path="/shop" element={<ShopScreen />} />
-        <Route path="/najmedin" element={<NajDesktop />} />
+        <Route
+          path="/najmedin"
+          element={
+            <Container style={{ marginTop: "120px" }}>
+              <TrainerBio trainer={trainers.naj} expandable={false} />
+            </Container>
+          }
+        />
         <Route path="*" element={<NotFound />} />
       </Routes>
 

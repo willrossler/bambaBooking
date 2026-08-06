@@ -3,6 +3,39 @@
   width: 636px;
 }
 
+.trainerBio {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 80px;
+}
+
+.trainerBioImage {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+}
+
+.trainerBioContent {
+  flex: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .trainerBio {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 60px;
+    margin-bottom: 120px;
+  }
+
+  .trainerBioImage {
+    flex: 1;
+    max-width: none;
+  }
+}
+
 .visaMer {
   font-size: 14px;
   line-height: 16.8px;

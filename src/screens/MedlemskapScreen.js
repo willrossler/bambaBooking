@@ -8,13 +8,6 @@ import ptCard from "../assets/images/Card_PT_Square.jpg";
 import giftCard from "../assets/images/Card_Klipp_Square.jpg";
 import PersCard from "../assets/images/Card_Pers_Square.jpg";
 
-// Importer för mobilvyn
-import WhiteCard from "../components/WhiteCard";
-import BlackCard from "../components/BlackCard";
-import PassCard from "../components/PassCard";
-import GiftCard from "../components/GiftCard";
-import PtCard from "../components/PtCard";
-
 // --- Återanvändbar Knappkomponent ---
 const MembershipButton = () => {
   const buttonStyle = {
@@ -299,8 +292,10 @@ const MembershipSection = ({ title, image, imageAlt, content }) => (
 const MedlemskapScreen = () => {
   return (
     <>
-      {/* --- DESKTOP VIEW --- */}
-      <div style={{ marginTop: "80px" }} className="container desktopView">
+      {/* Bootstrap's grid (xs=12 / md=6 on MembershipSection) already
+          reflows to a single column on small screens, so one render here
+          covers every size - no separate mobile duplicate needed. */}
+      <div style={{ marginTop: "80px" }} className="container">
         {/* Introduktionstext */}
         <Row style={{ marginBottom: "150px" }}>
           <Col style={{ paddingRight: "5rem" }} xs={12} md={6}>
@@ -367,64 +362,6 @@ const MedlemskapScreen = () => {
             content={section.content}
           />
         ))}
-      </div>
-
-      {/* --- MOBILE VIEW (Funktionellt oförändrad) --- */}
-      <div className="container mobileView">
-        <hr style={{ margin: "0" }} />
-        <h1 style={{ marginTop: "40px" }} className="title">
-          MEDLEMSKAP
-          <hr className="pinkHrMobile" />
-        </h1>
-        <p className="descriptionTextMobile">
-          Vi på BAMBA erbjuder olika nivåer av medlemskap för att möta allas
-          behov. Vi har därför tagit fram två nivåer av medlemskap ”BAMBA vit”
-          och ”BAMBA svart”. Vi tänker att träning är något man ska hinna med i
-          vardagen även om man under perioder har mycket utanför träningen som
-          tar tid. Hälsofördelarna med träning är för många för att prioritera
-          bort träning även om annat i vardagen kräver vår tid. <br />
-          <br /> Hos oss har du därför möjlighet att ha allt klart när du
-          kommer. Tjänster som tvättservice, uppsättning av BAMBAS
-          träningskläder och eget skåp är delar av det som vi erbjuder. Hos oss
-          finns omklädningsrum, duschar och hygienartiklar. <br />
-          <br />
-          Vi tänker att sammantagna hälsan är avgörande för att hålla sig frisk,
-          hel och må bra i sitt liv över tid. Vi vill att du ska få en
-          fantastisk träningsupplevelse och att du ska längta efter att komma
-          tillbaka till oss för nästa pass.
-          <br />
-          <br /> Du ser till att ta dig till oss och så ser vi till att du har
-          allt du behöver för att träna hos oss helt enkelt. <br />
-          <br />
-          <strong>
-            <a
-              href="https://www.bambaostermalm.se/membership"
-              className="underline linkHover"
-            >
-              Du hittar alla våra medlemskap här
-            </a>
-          </strong>
-          <br />
-          <br />
-          Kontakta oss på
-          <span>
-            <a
-              className="underline linkHover"
-              href="mailto:info@bambaostermalm.se"
-            >
-              &nbsp;info@bambaostermalm.se&nbsp;
-            </a>
-          </span>
-          hjälper vi dig komma igång!
-          <br />
-          <br />
-        </p>
-
-        <WhiteCard />
-        <BlackCard />
-        <PtCard />
-        <PassCard />
-        <GiftCard />
       </div>
     </>
   );
