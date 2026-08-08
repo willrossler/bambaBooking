@@ -101,7 +101,7 @@ const MapComponent = () => {
   ];
 
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: "REDACTED_GOOGLE_MAPS_KEY",
+    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_KEY,
   });
 
   const position = { lat: 59.33816952392279, lng: 18.092797456516912 };
