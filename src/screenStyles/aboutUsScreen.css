@@ -12,8 +12,9 @@
 
 .trainerBioImage {
   width: 100%;
-  max-width: 480px;
-  height: auto;
+  max-width: 420px;
+  aspect-ratio: 1;
+  object-fit: cover;
   border-radius: 4px;
   display: block;
 }
@@ -31,8 +32,12 @@
   }
 
   .trainerBioImage {
-    flex: 1;
-    max-width: none;
+    /* Was flex:1 with no width cap, so the image scaled to whatever the
+       source photo's resolution happened to be - some of these files are
+       several thousand pixels wide, which is what made them fill the
+       screen. Fixed width instead of an open-ended flex share. */
+    flex: 0 0 360px;
+    max-width: 360px;
   }
 }
 

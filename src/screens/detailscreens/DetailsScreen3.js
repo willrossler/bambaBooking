@@ -104,8 +104,6 @@ const DetailsScreen3 = () => {
 
   // Determine which trainers to show based on the path
   const showAbbe = location.pathname !== "/mentaltraining";
-  const showMartin =
-    location.pathname !== "/bootcamp" && location.pathname !== "/mentaltraining";
   const showNaj = location.pathname === "/mentaltraining";
 
   return (
@@ -143,9 +141,6 @@ const DetailsScreen3 = () => {
               <div className="d-flex flex-row justify-content-between">
                 {/* Show Abbe on all pages except Mental Training */}
                 {showAbbe && <TrainerCard trainer={trainers.abbe} />}
-                
-                {/* Show Martin on all pages except Boot Camp and Mental Training */}
-                {showMartin && <TrainerCard trainer={trainers.martin} />}
 
                 {/* Show Naj only on Mental Training */}
                 {showNaj && <TrainerCard trainer={trainers.naj} />}
@@ -179,7 +174,6 @@ const DetailsScreen3 = () => {
         <div className="mobileTrainerGrid">
             {/* Logic is now consistent with the desktop view */}
             {showAbbe && <TrainerCard trainer={trainers.abbe} />}
-            {showMartin && <TrainerCard trainer={trainers.martin} />}
             {showNaj && <TrainerCard trainer={trainers.naj} />}
         </div>
       </Container>

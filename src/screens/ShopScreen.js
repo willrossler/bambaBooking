@@ -14,7 +14,6 @@ const ShopScreen = () => {
   return (
     <Container style={{ marginTop: "80px" }}>
       <TrainerBio trainer={trainers.abbe} />
-      <TrainerBio trainer={trainers.martin} />
       <div id="najmedin" />
       <TrainerBio trainer={trainers.naj} />
     </Container>

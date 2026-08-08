@@ -63,10 +63,6 @@ const ContactScreen = () => {
               <div style={{ marginRight: "5%" }}>
                 <TrainerCard trainer={trainers.abbe} />
               </div>
-    
-              <div style={{ marginRight: "5%", marginLeft: "5%" }}>
-                <TrainerCard trainer={trainers.martin} />
-              </div>
             </div>
           </div>
         </section>
@@ -89,7 +85,6 @@ const ContactScreen = () => {
           </h1>
           <div className="mobileTrainerGrid">
             <TrainerCard trainer={trainers.abbe} />
-            <TrainerCard trainer={trainers.martin} />
           </div>{" "}
         </section>
       </div>
